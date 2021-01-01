@@ -1,5 +1,6 @@
 {
 	"name" : "Canada's Best",
+	"creator" : "Standard Campaign, flori2412",
 	"start_date" : "1944.08.08",
 	"end_date" : "1945.05.04",
 	"player_nation" : "Canada",
@@ -7,109 +8,196 @@
 	"region" : "Northwestern Europe",
 	"desc" : "Join the 4th Armoured Division as it participates in the liberation of France, Belgium, the Netherlands, and the invasion of Germany.",
 	"player_unit_list" : [
-		"Sherman II", "Sherman V", "Sherman VC"
+		"Sherman II", "Sherman V", "Sherman VC", "3in SPM M10", "Achilles", "Stuart VI"
 	],
+	"tank_vp_modifiers" : {
+		"Sherman V" : 1.1,
+		"Sherman VC" : 0.9,
+		"3in SPM M10" : 1.1,
+		"Stuart VI" : 1.2
+	},
 	"player_squad_list" : {
 		"Sherman II" : ["Sherman II", "Sherman V"],
 		"Sherman V" : ["Sherman II", "Sherman V"],
 		"Sherman VC" : ["Sherman II", "Sherman V"]
 	},
-	"national_skills" : [
+	"campaign_skills" : [
 		"To Victory!"
 	],
 	"player_air_support": [
 		"Typhoon"
 	],
+	"player_arty_support": [
+		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["PIAT Team", "OQF 17-Pounder", "3in SPM M10", "Achilles"],
+		"Anti-Infantry" : ["M3A1 half-track", "Ram Kangaroo", "SMG Squad", "HMG Team", "Flame Thrower Team", "SMG Squad"],
+		"Recon" : ["Humber IV", "AEC II", "AEC III", "Otter", "Staghound I"],
+		"Artillery" : ["Light Mortar Team", "OQF 18-Pounder", "OQF 25-Pounder", "Sexton"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 half-track" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"PIAT Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"Ram Kangaroo" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20
+		}
+	},
+	"enemy_arty_support": {
+		"Germany": ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "Hummel", "Wespe"]
+	},
 	"enemy_unit_list" : {
 		"Germany" : [
-			"Panzer IV A", "Panzer IV C", "Panzer IV H", "Panzer VG", "Panzer VIe",
-			"Panzer VIe (Late)",
-			"StuG III G", "Marder II", "Marder III M", "Jagdpanzer IV", "Jagdpanzer 38(t)",
+			"Flakpanzer 38(t)", "Panzer III L", "Panzer III N", "Panzer III M",
+			"Panzer IV C", "Panzer IV H", "Panzer IV J", "Panzer VG",
+			"Flakpanzer IV Wirbelwind", "Flakpanzer IV Mobelwagen",
+			"Panzer VIb", "Panzer VIe (Late)",
+			"StuG III G", "StuG IV", "StuH 42", "Sturmpanzer IV", "Hummel", "Wespe",
+			"Marder II", "Marder III M", "Jagdpanzer IV",
+			"Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)",
+			"Jagdpanzer 38(t)", "Jagdpanzer V", "Jagdpanzer VI",
+			"Nashorn",
 			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)",
 			"PSW 231 (8 rad)", "PSW 234/2",
-			"PaK 38", "PaK 40", "PaK 43", "Opel Blitz 3-ton",
-			"Riflemen", "HMG Team"
+			"SPW 251/1", "SPW 251/2", "SPW 251/22",
+			"PaK 38", "PaK 40", "PaK 43", 
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18",
+			"8.8cm FlaK 18 o. 36", "Sd. Kfz. 7/1",
+			"Flakpanzer 38(t)", "Flakpanzer IV Wirbelwind", "Flakpanzer IV Mobelwagen",
+			"Opel Blitz 3-ton", "Kfz 1",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "Panzerschreck Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
 		]
 	},
 	"enemy_unit_class_odds" : {
-		"Light Tank" : "70",
-		"Assault Gun" : "80",
-		"Tank Destroyer" : "50",
-		"Medium Tank" : "15",
-		"Heavy Tank" : "5",
-		"Armoured Car" : "90",
-		"Anti-Tank Gun" : "35",
-		"Anti-Aircraft Gun" : "5",
-		"Truck" : "90",
-		"Infantry Squad" : "100",
-		"MG Team" : "100"
+		"Light Tank" : 3,
+		"Assault Gun" : 80,
+		"Tank Destroyer" : 50,
+		"Medium Tank" : 45,
+		"Heavy Tank" : 10,
+		"Armoured Car" : 90,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Self-Propelled AA Gun" : 5,
+		"APC" : 70,
+		"Truck" : 50,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			}
+		}
 	},
 	"decorations_list" : {
-		"4500" : "Military Medal",
-		"5000" : "Military Cross",
-		"5200" : "Distinguished Service Order",
-		"5500" : "Victoria Cross"
+		"2000" : "Military Medal",
+		"2800" : "Military Cross",
+		"3200" : "Distinguished Service Order",
+		"3500" : "Victoria Cross"
 	},
 	"combat_days" : 70,
 	"calendar_weeks": [
 		{
 			"start_date" : "1944.08.08",
 			"end_date" : "1944.08.10",
-			"day_start" : "05:00",
-			"day_end" : "19:15",
+			"location" : "49.05,-0.29",
 			"combat_chance" : 85,
+			"average_resistance" : 7,
 			"week_title" : "Cintheaux",
+			"week_description" : "Just over two months after the D-Day invasion, the First Canadian Army has launched Operation Totalize, designed to break through German defenses south of the town of Caen. Supported by mechanized infantry, your battlegroup is to advance into the town of Cintheaux.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "45",
-				"Counterattack" : "15",
-				"Spearhead" : "30"
+				"Advance" : 10,
+				"Battle" : 45,
+				"Counterattack" : 15,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 80.0
+			"air_support_level" : 80.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 100.0
 		},
 		{
 			"start_date" : "1944.08.14",
-			"day_start" : "05:00",
-			"day_end" : "19:15",
+			"location" : "48.93,-0.11",
 			"combat_chance" : 80,
+			"average_resistance" : 9,
 			"week_title" : "Laison Valley",
+			"week_description" : "Faced with heavy resistance, Operation Totalize is brought to an end, less than 12 kilometres from its objective of Falaise. The new plan, Operation Tractable, will continue the advance. The 4th Armoured is to lead the strike along the Laison valley.",
 			"mission_odds" : {
-				"Advance" : "35",
-				"Battle" : "25",
-				"Counterattack" : "10",
-				"Spearhead" : "30"
+				"Advance" : 35,
+				"Battle" : 25,
+				"Counterattack" : 10,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 65,
+				"Hills" : 30
+			}
 		},
 		{
 			"start_date" : "1944.08.21",
-			"day_start" : "05:00",
-			"day_end" : "19:15",
+			"location" : "48.81,0.11",
 			"combat_chance" : 40,
+			"average_resistance" : 9,
 			"week_title" : "Chambois and Le Newbourg",
+			"week_description" : "After the fall of Falaise, a large number of German forces have been surrounded in the city of Chambois. Facing Polish, American, and Canadian encirclement, they have launched a counterattack to try to break free.",
 			"mission_odds" : {
-				"Advance" : "5",
-				"Battle" : "85",
-				"Counterattack" : "10"
+				"Battle" : 20,
+				"Counterattack" : 80
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.08.28",
 			"end_date" : "1944.08.30",
-			"day_start" : "05:00",
-			"day_end" : "19:15",
+			"location" : "49.29,1.01",
 			"combat_chance" : 60,
+			"average_resistance" : 6,
 			"week_title" : "Elbeuf-Seine Crossing",
+			"week_description" : "The division has now advanced over one hundred kilometres from its starting point. This week your aim is to take the village of Elbeuf and secure a safe crossing point over the Seine.",
 			"mission_odds" : {
-				"Advance" : "80",
-				"Spearhead" : "20"
+				"Advance" : 80,
+				"Spearhead" : 20
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.08.31",
@@ -118,58 +206,70 @@
 		},
 		{
 			"start_date" : "1944.09.09",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "51.25,3.64",
 			"combat_chance" : 60,
+			"average_resistance" : 5,
 			"week_title" : "Ghent Canal and Molentje",
+			"week_description" : "The division has pushed into Belgium, but arriving at the Ghent Canal linking Ghent with the sea, the Germans have destroyed every crossing. Support the combat engineers who are building a bridge over the canal.",
 			"mission_odds" : {
-				"Advance" : "50",
-				"Battle" : "50"
+				"Advance" : 50,
+				"Battle" : 50
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.09.16",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "51.32,3.73",
 			"combat_chance" : 40,
+			"average_resistance" : 6,
 			"week_title" : "Braakman Inlet",
+			"week_description" : "This area, inside the Netherlands and on the south bank of the Scheldt, is a key port and must be secured. It is heavily defended.",
 			"mission_odds" : {
-				"Advance" : "70",
-				"Battle" : "10",
-				"Spearhead" : "30"
+				"Advance" : 70,
+				"Battle" : 10,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.09.23",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "51.25,3.55",
 			"combat_chance" : 50,
+			"average_resistance" : 8,
 			"week_title" : "Leopold Canal",
+			"week_description" : "Your battlegroup has been ordered to advance along the Leopold Canal in order to gain control over this vital shipping connection.",
 			"mission_odds" : {
-				"Advance" : "40",
-				"Battle" : "30",
-				"Spearhead" : "30"
+				"Advance" : 40,
+				"Battle" : 30,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.09.30",
 			"end_date" : "1944.10.05",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "51.25,3.55",
 			"combat_chance" : 30,
+			"average_resistance" : 3,
 			"week_title" : "Regroup and Mop Up",
+			"week_description" : "Most of the defenders have been destroyed or scattered, there's only a few units in this area that might put up some resistance.",
 			"mission_odds" : {
-				"Advance" : "90",
-				"Battle" : "10"
+				"Advance" : 15,
+				"Patrol" : 85
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.10.06",
@@ -178,87 +278,129 @@
 		},
 		{
 			"start_date" : "1944.10.09",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
+			"location" : "51.35,4.64",
 			"combat_chance" : 40,
-			"week_title" : "Brecht and Stroolburg",
+			"average_resistance" : 6,
+			"week_title" : "Brecht",
+			"week_description" : "Your battlegroup has advanced east past Antwerp to advance on the village of Brecht, which stands on one of the main canals leading out of the city.",
 			"mission_odds" : {
-				"Advance" : "40",
-				"Battle" : "10",
-				"Spearhead" : "50"
+				"Advance" : 40,
+				"Battle" : 10,
+				"Spearhead" : 50
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.10.16",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
+			"location" : "51.47,4.47",
 			"combat_chance" : 60,
-			"week_title" : "Esschen",
+			"average_resistance" : 7,
+			"week_title" : "Essen",
+			"week_description" : "This small town, right on the border with the Netherlands to the north, is the gateway to advancing on the port of Bergen op Zoom.",
 			"mission_odds" : {
-				"Advance" : "50",
-				"Battle" : "10",
-				"Spearhead" : "40"
+				"Advance" : 50,
+				"Battle" : 10,
+				"Spearhead" : 40
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1944.10.23",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
+			"location" : "51.49,4.29",
 			"combat_chance" : 50,
+			"average_resistance" : 8,
 			"week_title" : "Beveland Canal and Bergen op Zoom",
+			"week_description" : "This week we join Operation Vitality, designed to capture the pennisula of Zuid-Beveland. We advance into the area around the Beveland Canal, which cuts through the penninsula.",
 			"mission_odds" : {
-				"Advance" : "60",
-				"Battle" : "10",
-				"Spearhead" : "30"
+				"Advance" : 60,
+				"Battle" : 10,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1944.10.30",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
+			"location" : "51.59,4.32",
 			"combat_chance" : 70,
-			"week_title" : "Steebergen",
+			"average_resistance" : 8,
+			"week_title" : "Steenbergen",
+			"week_description" : "This town, a few kilometres north of Bergen op Zoom, is in the centre of several important canals, and must be captured in order to gain control of the area.",
 			"mission_odds" : {
-				"Advance" : "40",
-				"Battle" : "50",
-				"Spearhead" : "10"
+				"Advance" : 40,
+				"Battle" : 50,
+				"Spearhead" : 10
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1944.11.06",
-			"day_start" : "07:15",
-			"day_end" : "16:15",
+			"location" : "52.79,4.79",
 			"combat_chance" : 30,
+			"average_resistance" : 5,
 			"week_title" : "Zijpe",
+			"week_description" : "The area around Bergen op Zoom having been liberated, your battlegroup moves to take the area near Zijpe, an estuary separating the mainland from the island of Schouwen.",
 			"mission_odds" : {
-				"Advance" : "60",
-				"Battle" : "10",
-				"Spearhead" : "30"
+				"Advance" : 60,
+				"Battle" : 10,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1944.11.13",
 			"end_date" : "1944.11.16",
-			"day_start" : "07:15",
-			"day_end" : "16:15",
+			"location" : "52.79,4.79",
 			"combat_chance" : 20,
+			"average_resistance" : 3,
 			"week_title" : "Clearing Zone of Responsibility",
+			"week_description" : "Most enemy forces in this area have been eliminated, and we now scout the area for any remaining pockets of resistance.",
 			"mission_odds" : {
-				"Advance" : "90",
-				"Battle" : "10"
+				"Patrol" : 90,
+				"Advance" : 10
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1944.11.20",
@@ -268,16 +410,25 @@
 		{
 			"start_date" : "1945.01.26",
 			"end_date" : "1945.01.30",
-			"day_start" : "07:45",
-			"day_end" : "16:00",
+			"location" : "51.69,4.98",
 			"combat_chance" : 70,
+			"average_resistance" : 9,
 			"week_title" : "Operation Elephant",
+			"week_description" : "After nearly two months, the division has been reactivated in order to advance northwards into the Netherlands and secure the Kapelsche Veer.",
 			"mission_odds" : {
-				"Advance" : "5",
-				"Battle" : "95"
+				"Advance" : 5,
+				"Battle" : 95
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1945.01.31",
@@ -286,17 +437,23 @@
 		},
 		{
 			"start_date" : "1945.02.26",
-			"end_date" : "1945.03.04",
-			"day_start" : "07:15",
-			"day_end" : "17:30",
+			"end_date" : "1945.03.03",
+			"location" : "51.75,6.02",
 			"combat_chance" : 80,
-			"week_title" : "Hochwald Gap",
+			"average_resistance" : 10,
+			"week_title" : "Operation Blockbuster",
+			"week_description" : "Allied forces have moved into Germany. As part of Operation Blockbuster, your division is to attack a key strategic area where a railway pierces the dense Hochwald forest.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "90"
+				"Advance" : 10,
+				"Battle" : 90
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 85
+			}
 		},
 		{
 			"start_date" : "1945.03.04",
@@ -306,16 +463,22 @@
 		{
 			"start_date" : "1945.03.06",
 			"end_date" : "1945.03.10",
-			"day_start" : "06:15",
-			"day_end" : "18:00",
+			"location" : "51.61,6.46",
 			"combat_chance" : 80,
+			"average_resistance" : 7,
 			"week_title" : "Veen",
+			"week_description" : "The Battle of Hochwald Gap resulted in some 5300 Canadian casualities, but the area has been secured. This week we push forward toward the town of Veen.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "90"
+				"Advance" : 10,
+				"Battle" : 90
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 85
+			}
 		},
 		{
 			"start_date" : "1945.03.11",
@@ -324,75 +487,111 @@
 		},
 		{
 			"start_date" : "1945.04.01",
-			"day_start" : "05:15",
-			"day_end" : "19:00",
+			"location" : "51.69,7.30",
 			"combat_chance" : 50,
-			"week_title" : "Eiten, Twente, Almedo, Meppen",
+			"average_resistance" : 4,
+			"week_title" : "Eiten, Twente, Almedo",
+			"week_description" : "The division has been recalled to help liberate towns in the Netherlands near the border with Germany, still occupied by stubborn German forces.",
 			"mission_odds" : {
-				"Advance" : "40",
-				"Battle" : "50",
-				"Spearhead" : "10"
+				"Advance" : 40,
+				"Battle" : 50,
+				"Spearhead" : 10
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0
+			}
 		},
 		{
 			"start_date" : "1945.04.08",
-			"day_start" : "05:15",
-			"day_end" : "19:00",
+			"location" : "52.84,7.52",
 			"combat_chance" : 40,
-			"week_title" : "Sogel",
+			"average_resistance" : 5,
+			"week_title" : "Sögel",
+			"week_description" : "We are again in Germany this week, aiming to capture the town of Sögel, located at the intersection of two important canals.",
 			"mission_odds" : {
-				"Advance" : "60",
-				"Battle" : "10",
-				"Spearhead" : "30"
+				"Advance" : 60,
+				"Battle" : 10,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1945.04.15",
-			"day_start" : "05:15",
-			"day_end" : "19:00",
+			"location" : "53.08,7.94",
 			"combat_chance" : 60,
-			"week_title" : "Edewechterdamm",
+			"average_resistance" : 7,
+			"week_title" : "Edewechterdamm and Oldenburg",
+			"week_description" : "This area on the Kusten Canal has entrenched German defenders. We must assault them so that a canal crossing can be secured.",
 			"mission_odds" : {
-				"Advance" : "50",
-				"Battle" : "20",
-				"Counterattack" : "20",
-				"Spearhead" : "10"
+				"Advance" : 10,
+				"Battle" : 70,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1945.04.22",
-			"day_start" : "05:15",
-			"day_end" : "19:00",
+			"location" : "53.13,7.98",
 			"combat_chance" : 50,
+			"average_resistance" : 5,
 			"week_title" : "Edewecht and Querenstede",
+			"week_description" : "These small towns, just outside of Oldenburg, must be secured so that the division can continue its drive north.",
 			"mission_odds" : {
-				"Advance" : "50",
-				"Battle" : "10",
-				"Spearhead" : "40"
+				"Advance" : 50,
+				"Battle" : 10,
+				"Spearhead" : 40
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 5,
+				"Hills" : 0,
+				"Marsh" : 80,
+				"Lake" : 5
+			}
 		},
 		{
 			"start_date" : "1945.04.29",
 			"end_date" : "1945.05.04",
-			"day_start" : "05:15",
-			"day_end" : "19:00",
+			"location" : "53.14,8.21",
 			"combat_chance" : 50,
+			"average_resistance" : 7,
 			"week_title" : "Bad Zwischerwahn and Oldenburg",
+			"week_description" : "Our first target contains the largest airbase in Northern Germany. Once that is secure, we will return to Oldenburg to mop up any remaining pockets of resistance.",
 			"mission_odds" : {
-				"Advance" : "30",
-				"Battle" : "10",
-				"Spearhead" : "60"
+				"Advance" : 30,
+				"Battle" : 10,
+				"Spearhead" : 60
 			},
 			"enemy_nations" : ["Germany"],
-			"air_support_level" : 50.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
 		}
 	]
 }

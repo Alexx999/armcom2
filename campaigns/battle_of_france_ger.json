@@ -1,72 +1,136 @@
 {
 	"name" : "Battle of France (Germany)",
+	"creator" : "Standard Campaign",
 	"start_date" : "1940.05.10",
-	"end_date" : "1940.06.16",
+	"end_date" : "1940.06.20",
 	"player_nation" : "Germany",
 	"enemy_nations" : ["France", "United Kingdom"],
 	"region" : "Northwestern Europe",
-	"desc" : "After months of a 'Phoney War', Germany has attacked through the Low Countries. Lead your battlegroup over the border and into France.",
+	"desc" : "After months of a 'Phoney War', Germany invades France through the Low Countries. Join the 19th army corps over the border and into France.",
 	"player_unit_list" : [
-		"Panzer II A", "Panzer 35(t)", "Panzer 38(t) A", "Panzer III D",
+		"Panzer I B", "Panzer II A", "Panzer II F", "Panzer 35(t)", "Panzer 38(t) A", "Panzer III D",
 		"Panzer III F", "Panzer IV A", "Panzer IV C", "Panzer IV D",
 		"StuG III B", "Panzerjager I"
 	],
 	"player_squad_list" : {
 		"Panzer 38(t) A" : ["Panzer II A", "Panzer 38(t) A"]
 	},
-	"national_skills" : [
-		"Blitzkrieg"
+	"tank_vp_modifiers" : {
+		"Panzer I B" : 1.4,
+		"Panzer II A" : 1.3,
+		"Panzer II F" : 1.1,
+		"Panzer III D" : 1.1,
+		"Panzer IV A" : 1.2,
+		"StuG III B" : 0.9,
+		"Panzerjager I" : 1.2
+	},
+	"campaign_skills" : [
+		"Combined Operations"
 	],
 	"player_air_support": [
 		"Ju 87B Stuka"
 	],
 	"player_arty_support": [
-		"7.5cm leIG 18"
+		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"
 	],
-	"enemy_arty_support": [
-		"75mm mle 1897", "75mm mle 1928", "OQF 25-Pounder", "OQF 4.5\" Howitzer",
-		"105mm C mle 1935"
-	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "Panzerjager I", "SPW 251/10", "8.8cm FlaK 18 o. 36"],
+		"Anti-Infantry" : ["SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18"]
+	},
+	"friendly_transported_units" : {
+		"SPW 251/1" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_arty_support": {
+		"France" : ["75mm mle 1928", "105mm C mle 1935", "105mm L mle 1913", "155mm C mle 1917"],
+		"United Kingdom" : ["OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"]
+	},
 	"enemy_unit_list" : {
 		"France" : [
 			"Renault FT", "Renault FT (MG)",
-			"H35", "H35 (Late)", "R35 (Late)",
-			"SOMUA S35",
+			"H35", "H35 (Late)", "H39 (Late)", "R35 (Late)", "AMC 29",
+			"SOMUA S35", "AMC 35", "FCM 36",
 			"Char B-1 Bis",
 			"AMD 35",
 			"SA-L 34",
-			"75mm mle 1897", "75mm mle 1928", "105mm C mle 1935",
-			"Riflemen", "Motorcycle MG Team", "HMG Team", "AT Rifle Team",
-			"Laffly S20TL", "Citroen 23"
+			"75mm mle 1897", "75mm mle 1928", "105mm C mle 1935", "105mm L mle 1913", "155mm C mle 1917",
+			"20mm mle 1939 AA Gun", "25mm mle 1938 AA Gun",
+			"Autocanon de 75mm",
+			"Riflemen", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team",
+			"Laffly S20TL", "Lorraine 38L",
+			"Citroen 23", "Motorcycle MG Team"
 		],
 		"United Kingdom" : [
 			"Mk VI B", "Mk VI C",
-			"A9 Cruiser Mk I", "A9 Cruiser Mk I CS", "A10 Cruiser Mk II", "A13 Mk I", "A13 Mk II",
-			"A11", "A12",
+			"A9 Cruiser Mk I", "A9 Cruiser Mk I CS", "A10 Mk IA", "A13 Mk I", "A13 Mk II",
+			"Matilda", "Matilda II",
 			"Morris CS9 (MG)", "Daimler Scout Car",
 			"OQF 2-Pounder",
 			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer",
-			"OQF 3.7\" AA Gun",
-			"Riflemen", "Motorcycle MG Team", "HMG Team", "AT Rifle Team",
-			"Morris 15 cwt"
+			"OQF 3.7\" AA Gun", "40mm AA Gun",
+			"Riflemen", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "SMG Squad",
+			"Bren Gun Carrier", "AT Rifle Carrier",
+			"Morris 15 cwt", "Motorcycle MG Team"
 		]
 	},
 	"enemy_unit_class_odds" : {
-		"Light Tank" : "80",
-		"Medium Tank" : "50",
-		"Heavy Tank" : "20",
-		"Assault Gun" : "70",
-		"Tank Destroyer" : "50",
-		"Armoured Car" : "80",
-		"Anti-Tank Gun" : "30",
-		"Artillery Gun" : "15",
-		"Anti-Aircraft Gun" : "5",
-		"Armoured Personnel Carrier" : "75",
-		"Truck" : "80",
-		"Infantry Squad" : "100",
-		"MG Team" : "80",
-		"ATR Team" : "90",
-		"Motorcycle Team" : "85"
+		"Light Tank" : 60,
+		"Medium Tank" : 80,
+		"Heavy Tank" : 45,
+		"Assault Gun" : 70,
+		"Tank Destroyer" : 50,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 60,
+		"Artillery Gun" : 35,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 40,
+		"APC" : 75,
+		"Truck" : 80,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 85
+	},
+	"enemy_transported_units" : {
+		"France" : {
+			"Laffly S20TL" : {
+				"Riflemen" : 50,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20
+			},
+			"Lorraine 38L" : {
+				"Riflemen" : 80,
+				"HMG Team" : 20,
+				"AT Rifle Team" : 20
+			},
+			"Citroen 23" : {
+				"Riflemen" : 100
+			}
+		},
+		"United Kingdom" : {
+			"Morris 15 cwt" : {
+				"Riflemen" : 50,
+				"HMG Team" : 30,
+				"SMG Squad" : 20,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 15
+			},
+			"Bren Gun Carrier" : {
+				"HMG Team" : 30,
+				"SMG Squad" : 20,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 15
+			}
+		}
 	},
 	"decorations_list" : {
 		"700" : "Iron Cross Second Class",
@@ -74,89 +138,120 @@
 		"1000" : "Knight's Cross",
 		"1100" : "Knight's Cross with Oak Leaves"
 	},
-	"combat_days" : 18,
+	"combat_days" : 20,
 	"calendar_weeks": [
 		{
 			"start_date" : "1940.05.10",
-			"day_start" : "06:15",
-			"day_end" : "21:15",
+			"location" : "49.97,5.71",
 			"combat_chance" : 80,
-			"average_resistance" : "8",
+			"average_resistance" : 8,
 			"week_title" : "Fall Gelb",
+			"week_description" : "We have launched our invasion. Our group is moving into Luxembourg, and from there into Belgian territory, toward France.",
 			"mission_odds" : {
-				"Advance" : "25",
-				"Spearhead" : "75"
+				"Advance" : 25,
+				"Spearhead" : 75
 			},
 			"enemy_nations" : ["France", "United Kingdom"],
 			"air_support_level" : 80.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 80
+			}
 		},
 		{
 			"start_date" : "1940.05.17",
-			"day_start" : "06:00",
-			"day_end" : "21:30",
+			"location" : "50.25,3.34",
 			"combat_chance" : 80,
-			"average_resistance" : "8",
-			"week_title" : "Stalemate",
+			"average_resistance" : 8,
+			"week_title" : "Spearhead",
+			"week_description" : "Having passed through Belgium and into France, we continue to meet with heavy resistance as we capture key river crossings.",
 			"mission_odds" : {
-				"Advance" : "25",
-				"Battle" : "10",
-				"Spearhead" : "65"
+				"Advance" : 10,
+				"Battle" : 25,
+				"Spearhead" : 65
 			},
 			"enemy_nations" : ["France", "United Kingdom"],
 			"air_support_level" : 80.0,
-			"arty_support_level" : 60.0
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 70.0,
+			"enemy_class_odds_modifier" : {
+				"Medium Tank" : 60,
+				"Heavy Tank" : 35
+			}
 		},
 		{
 			"start_date" : "1940.05.24",
-			"end_date" : "1944.05.30",
+			"end_date" : "1944.05.29",
+			"location" : "50.88,2.49",
+			"coastal_chance" : 90,
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Siege of Dunkirk",
+			"week_description" : "We have reached the coast and have surrounded a large number of allied forces who are trying to escape across the channel.",
+			"mission_odds" : {
+				"Battle" : 20,
+				"Patrol" : 20,
+				"Counterattack" : 60
+			},
+			"enemy_nations" : ["France", "United Kingdom"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1940.05.30",
+			"end_date" : "1940.06.04",
 			"refitting" : "TRUE"
 		},
 		{
-			"start_date" : "1940.05.31",
-			"day_start" : "06:00",
-			"day_end" : "21:45",
+			"start_date" : "1940.06.05",
+			"location" : "50.06,2.50",
 			"combat_chance" : 80,
-			"average_resistance" : "8",
-			"week_title" : "Second Offensive",
-			"mission_odds" : {
-				"Advance" : "50",
-				"Battle" : "50"
-			},
-			"enemy_nations" : ["France", "United Kingdom"],
-			"air_support_level" : 80.0,
-			"arty_support_level" : 80.0
-		},
-		{
-			"start_date" : "1940.06.07",
-			"day_start" : "05:45",
-			"day_end" : "21:45",
-			"combat_chance" : 80,
-			"average_resistance" : "8",
+			"average_resistance" : 8,
 			"week_title" : "Fall Rot",
+			"week_description" : "This week we continue our advance into French territory, pushing south toward the Siene River and Paris.",
 			"mission_odds" : {
-				"Advance" : "95",
-				"Battle" : "5"
+				"Advance" : 95,
+				"Battle" : 5
 			},
-			"enemy_nations" : ["France", "United Kingdom"],
+			"enemy_nations" : ["France"],
 			"air_support_level" : 80.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 40,
+				"Medium Tank" : 20,
+				"Heavy Tank" : 5,
+				"Assault Gun" : 20,
+				"Tank Destroyer" : 10,
+				"Armoured Car" : 30
+			},
+			"terrain_odds_modifier" : {
+				"Fields" : 5,
+				"Forest" : 50
+			}
 		},
 		{
-			"start_date" : "1940.06.14",
-			"day_start" : "05:45",
-			"day_end" : "21:45",
+			"start_date" : "1940.06.12",
+			"location" : "49.23,1.45",
 			"combat_chance" : 80,
-			"average_resistance" : "8",
+			"average_resistance" : 8,
 			"week_title" : "Fall of France",
+			"week_description" : "German forces are now in control of Paris, and we continue our advance south toward the Swiss border, cutting off the remaining defenders on the Maginot Line.", 
 			"mission_odds" : {
-				"Advance" : "70",
-				"Battle" : "10",
-				"Spearhead" : "30"
+				"Advance" : 70,
+				"Battle" : 10,
+				"Spearhead" : 30
 			},
-			"enemy_nations" : ["France", "United Kingdom"],
+			"enemy_nations" : ["France"],
 			"air_support_level" : 80.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0,
+			"terrain_odds_modifier" : {
+				"Fields" : 5,
+				"Forest" : 50
+			}
 		}
 	]
 }

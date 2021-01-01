@@ -1,0 +1,320 @@
+{
+	"name" : "Afrika Korps",
+	"creator" : "Standard Campaign",
+	"start_date" : "1941.03.24",
+	"end_date" : "1941.12.15",
+	"player_nation" : "Germany",
+	"enemy_nations" : ["United Kingdom"],
+	"region" : "North Africa",
+	"desc" : "Join the German expeditionary forces under Erwin Rommel as they support their Italian allies in North Africa against the British and Commonwealth forces.",
+	"player_unit_list" : [
+		"Panzer I B", "Panzer II F", "Panzer III G", "Panzer III H", "Panzer IV D",
+		"Panzer IV E", "Panzerjager I", "Stuart I", "Matilda II", "Valentine II"
+	],
+	"player_unit_dates" : {
+		"Stuart I" : "1941.11.15",
+		"Matilda II" : "1941.11.15",
+		"Valentine II" : "1941.12.01"
+	},
+	"tank_vp_modifiers" : {
+		"Panzer I B" : 1.3,
+		"Panzer II F" : 1.1,
+		"Panzer III H" : 0.9,
+		"Panzer IV E" : 0.8,
+		"Panzerjager I" : 1.2
+	},
+	"campaign_skills" : [
+		"Unique Opportunities"
+	],
+	"player_air_support": [
+		"Ju 87B Stuka"
+	],
+	"player_arty_support": [
+		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "PaK 38", "8.8cm FlaK 18 o. 36", "Panzerjager I"],
+		"Anti-Infantry" : ["SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "7.5cm leIG 18", "10cm sK 18"]
+	},
+	"friendly_transported_units" : {
+		"SPW 251/1" : {
+			"Riflemen" : 50,
+			"HMG Team" : 30,
+			"AT Rifle Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20
+		}
+	},
+	"enemy_arty_support": {
+		"United Kingdom" : ["OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"]
+	},
+	"enemy_unit_list" : {
+		"United Kingdom" : [
+			"Mk VI B", "Mk VI C",
+			"A9 Cruiser Mk I", "A9 Cruiser Mk I CS", "A10 Mk IA", "A10 Mk IA CS", "A13 Mk II", "Crusader I", "Crusader I CS", "M11/39", "M13/40", 
+			"Matilda II", "Matilda II CS", "Valentine II",
+			"2 Pdr Portee",
+			"Morris CS9 (MG)", "Daimler Scout Car", "Rolls Royce AC", "Marmon-Herrington II", "Marmon-Herrington III", "Humber II", "Daimler Armoured Car",
+			"OQF 2-Pounder", "47/32",
+			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer",
+			"20/65", "40mm AA Gun",
+			"Autocannone da 20/65",
+			"Bren Gun Carrier", "AT Rifle Carrier",
+			"Morris 15 cwt",
+			"Riflemen", "SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team",
+			"Medium Mortar Team", "Heavy Mortar Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_captured_units" : [
+		"M11/39", "M13/40", "Autocannone da 20/65", "20/65", "47/32"
+	],
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 80,
+		"Medium Tank" : 60,
+		"Heavy Tank" : 40,
+		"Tank Destroyer" : 40,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 60,
+		"Artillery Gun" : 35,
+		"Anti-Aircraft Gun" : 25,
+		"Self-Propelled AA Gun" : 15,
+		"APC" : 75,
+		"Truck" : 80,
+		"Infantry Squad" : 60,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 35
+	},
+	"enemy_transported_units" : {
+		"United Kingdom" : {
+			"Bren Gun Carrier" : {
+				"HMG Team" : 40,
+				"AT Rifle Team" : 40,
+				"Light Mortar Team" : 30,
+				"SMG Squad" : 20
+			},
+			"Morris 15 cwt" : {
+				"Riflemen" : 80,
+				"HMG Team" : 20,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 15,
+				"Medium Mortar Team" : 10
+			}
+		}
+	},
+	"decorations_list" : {
+		"700" : "Iron Cross Second Class",
+		"900" : "Iron Cross First Class",
+		"1000" : "Knight's Cross",
+		"1100" : "Knight's Cross with Oak Leaves"
+	},
+	"combat_days" : 40,
+	"calendar_weeks": [
+		{
+			"start_date" : "1941.03.24",
+			"end_date" : "1941.03.30",
+			"location" : "30.41,19.57",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"coastal_chance" : 80,
+			"landmines_chance" : 20,
+			"week_title" : "Mersa El Brega",
+			"week_description" : "Having arrived in North Africa to support the beleagured Italian forces there, the newly formed Deutsches Afrikakorps is now on the offensive against British forces in northern Libya.",
+			"mission_odds" : {
+				"Advance" : 75,
+				"Battle" : 5,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1941.04.03",
+			"end_date" : "1941.04.09",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"coastal_chance" : 100,
+			"landmines_chance" : 30,
+			"week_title" : "Drive Toward Tobruk",
+			"week_description" : "We have taken the fort at Brega and continue our advance along the coast of Cyrenaica.",
+			"mission_odds" : {
+				"Advance" : 75,
+				"Battle" : 5,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.04.11",
+			"end_date" : "1941.04.13",
+			"location" : "32.07,23.95",
+			"combat_chance" : 80,
+			"average_resistance" : 2,
+			"coastal_chance" : 100,
+			"landmines_chance" : 35,
+			"week_title" : "Siege of Tobruk",
+			"week_description" : "The port of Tobruk is heavily defended, and although we surround it from all sides, enemy units may still be operating in the region.",
+			"mission_odds" : {
+				"Advance" : 15,
+				"Patrol" : 85
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.04.14",
+			"end_date" : "1941.04.15",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"coastal_chance" : 100,
+			"landmines_chance" : 35,
+			"week_title" : "Attack on Tobruk",
+			"week_description" : "Rommel has ordered an attack on the fortified port, hoping to catch the defenders off-guard.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1941.04.16",
+			"end_date" : "1941.04.29",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.04.30",
+			"end_date" : "1941.05.03",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"coastal_chance" : 100,
+			"landmines_chance" : 35,
+			"week_title" : "Second Attack on Tobruk",
+			"week_description" : "Having failed to take the port on 14 April, Rommel now commits his forces for another assault.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 75.0
+		},
+		{
+			"start_date" : "1941.05.15",
+			"end_date" : "1941.05.16",
+			"combat_chance" : 100,
+			"average_resistance" : 8,
+			"coastal_chance" : 0,
+			"landmines_chance" : 15,
+			"week_title" : "Operation Brevity",
+			"week_description" : "British forces have attacked an Italian fort east Of Tobruk, and elements of the DAK are heading to reinforce them.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 80
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 40.0
+		},
+		{
+			"start_date" : "1941.05.17",
+			"end_date" : "1941.06.14",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.06.15",
+			"end_date" : "1941.06.17",
+			"location" : "31.68,24.89",
+			"combat_chance" : 100,
+			"average_resistance" : 8,
+			"coastal_chance" : 90,
+			"landmines_chance" : 15,
+			"week_title" : "Operation Battleaxe",
+			"week_description" : "British forces have attacked along the coast, looking to drive our forces back.",
+			"mission_odds" : {
+				"Battle" : 20,
+				"Counterattack" : 60,
+				"Fighting Withdrawal" : 20
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.06.18",
+			"end_date" : "1941.11.17",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.11.18",
+			"end_date" : "1941.11.24",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"coastal_chance" : 90,
+			"landmines_chance" : 15,
+			"week_title" : "Operation Crusader",
+			"week_description" : "The British Eighth Army has launched a surprise offensive, aiming to relieve Tobruk.",
+			"mission_odds" : {
+				"Counterattack" : 80,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1941.11.25",
+			"end_date" : "1941.12.01",
+			"location" : "31.86,24.30",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"coastal_chance" : 90,
+			"landmines_chance" : 15,
+			"week_title" : "Operation Crusader",
+			"week_description" : "British forces have nearly linked up with Tobruk, we must hold the 7th Armoured Brigade back from their goal.",
+			"mission_odds" : {
+				"Counterattack" : 40,
+				"Battle" : 60
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 30.0
+		},
+		{
+			"start_date" : "1941.12.02",
+			"end_date" : "1941.12.08",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.12.09",
+			"end_date" : "1941.12.15",
+			"location" : "32.38,20.69",
+			"combat_chance" : 60,
+			"average_resistance" : 6,
+			"coastal_chance" : 90,
+			"landmines_chance" : 15,
+			"week_title" : "Operation Crusader",
+			"week_description" : "Having lost most of our tanks and low on supply, our forces must retreat to the west to regain access to our supply lines.",
+			"mission_odds" : {
+				"Battle" : 10,
+				"Fighting Withdrawal" : 90
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 30.0
+		}
+	]
+}

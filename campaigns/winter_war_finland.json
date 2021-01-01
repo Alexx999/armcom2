@@ -1,5 +1,6 @@
 {
 	"name" : "The Winter War (Finland)",
+	"creator" : "Standard Campaign",
 	"start_date" : "1939.11.30",
 	"end_date" : "1940.03.12",
 	"player_nation" : "Finland",
@@ -9,113 +10,158 @@
 	"player_unit_list" : [
 		"Vickers 6-Ton Mark E", "T-26 M33", "BT-5 M34", "BT-7 M37", "T-28 M34"
 	],
-	"national_skills" : [
+	"player_unit_dates" : {
+		"T-26 M33" : "1940.12.21",
+		"BT-5 M34" : "1939.12.28",
+		"BT-7 M37" : "1939.12.28",
+		"T-28 M34" : "1939.12.28"
+	},
+	"player_squad_list" : {
+		"Vickers 6-Ton Mark E" : ["Vickers 6-Ton Mark E"],
+		"T-26 M33" : ["T-26 M33"],
+		"BT-5 M34" : ["BT-5 M34", "BT-7 M37"],
+		"BT-7 M37" : ["BT-5 M34", "BT-7 M37"],
+		"T-28 M34" : ["T-28 M34"]
+	},
+	"tank_vp_modifiers" : {
+		"Vickers 6-Ton Mark E" : 1.1,
+		"BT-5 M34" : 1.1,
+		"T-28 M34" : 0.8
+	},
+	"campaign_skills" : [
 		"Motti"
 	],
 	"player_air_support": [
 		"Fokker CX"
 	],
-	"enemy_air_support": [
-		"I-153 Chaika"
-	],
-	"enemy_arty_support": [
-		"76.2mm obr. 00/02P"
-	],
 	"player_arty_support": [
-		"105 K/13"
+		"105 K/13", "76 K/02"
 	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["37 PstK/37", "45 PstK/32", "AT Rifle Team"],
+		"Anti-Infantry" : ["3-ton Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Artillery" : ["Medium Mortar Team", "105 K/13", "76 K/02"]
+	},
+	"friendly_transported_units" : {
+		"3-ton Truck" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20,
+			"SMG Squad" : 60,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 60
+		}
+	},
+	"enemy_air_support": {
+		"Soviet Union" : ["I-153 Chaika"]
+	},
+	"enemy_arty_support": {
+		"Soviet Union" : ["76.2mm obr. 36", "76.2mm obr. 00/02P"]
+	},
 	"enemy_unit_list" : {
 		"Soviet Union" : [
-			"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "BA-20",
-			"BA-6", "SU-12", "45mm obr. 1932", "76.2mm obr. 00/02P",
-			"Riflemen", "HMG Team", "AT Rifle Team"
+			"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "T-28E M40",
+			"BA-20", "BA-6", "BA-10", "SU-12",
+			"45mm obr. 1932", "76.2mm obr. 36", "76.2mm obr. 00/02P",
+			"85mm obr. 1939",
+			"ZIS-5 Truck",
+			"Riflemen",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Flame Thrower Team",
+			"Rifle Cavalry"
 		]
 	},
 	"enemy_unit_class_odds" : {
-		"Light Tank" : "25",
-		"Medium Tank" : "10",
-		"Assault Gun" : "50",
-		"Armoured Car" : "80",
-		"Anti-Tank Gun" : "15",
-		"Artillery Gun" : "5",
-		"Truck" : "80",
-		"Infantry Squad" : "100",
-		"MG Team" : "80",
-		"ATR Team" : "25"
+		"Light Tank" : 25,
+		"Medium Tank" : 10,
+		"Assault Gun" : 50,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Artillery Gun" : 5,
+		"Truck" : 80,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 55,
+		"Cavalry Squad" : 20
+	},
+	"enemy_transported_units" : {
+		"Soviet Union" : {
+			"ZIS-5 Truck" : {
+				"Riflemen" : 50,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Flame Thrower Team" : 20
+			}
+		}
 	},
 	"decorations_list" : {
-		"2000" : "Order of the White Rose of Finland",
-		"2500" : "Order of the Cross of Liberty"
+		"1100" : "Order of the White Rose of Finland",
+		"1500" : "Order of the Cross of Liberty"
 	},
-	"combat_days" : 50,
+	"combat_days" : 40,
 	"calendar_weeks": [
 		{
 			"start_date" : "1939.11.30",
-			"day_start" : "08:55",
-			"day_end" : "15:20",
+			"location" : "60.62,29.72",
 			"combat_chance" : 80,
-			"average_resistance" : "7",
+			"average_resistance" : 7,
 			"week_title" : "The Tide Breaks",
+			"week_description" : "Days after a border skirmish, Soviet forces have launched an invasion of Finnish territory. Although we are outnumbered, we know the territory and must hold back the advance.",
 			"mission_odds" : {
-				"Advance" : "0",
-				"Battle" : "0",
-				"Counterattack" : "20",
-				"Fighting Withdrawal" : "80"
+				"Counterattack" : 20,
+				"Fighting Withdrawal" : 80
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0
 		},
 		{
 			"start_date" : "1939.12.07",
-			"day_start" : "09:05",
-			"day_end" : "15:15",
 			"combat_chance" : 80,
-			"average_resistance" : "7",
-			"week_title" : "Invasion",
+			"average_resistance" : 7,
+			"week_title" : "Mannerheim Line",
+			"week_description" : "We have withdrawn to a defensive line where we have strong artillery support, and must hold this line for as long as possible.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "0",
-				"Counterattack" : "30",
-				"Fighting Withdrawal" : "60"
+				"Advance" : 10,
+				"Counterattack" : 80,
+				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
 		},
 		{
 			"start_date" : "1939.12.14",
-			"day_start" : "09:15",
-			"day_end" : "15:15",
 			"combat_chance" : 65,
-			"average_resistance" : "7",
-			"week_title" : "Invasion",
+			"average_resistance" : 7,
+			"week_title" : "Holding the Line",
+			"week_description" : "In spite of heavy losses, the Soviet invaders continue to assault our defensive lines.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "0",
-				"Counterattack" : "30",
-				"Fighting Withdrawal" : "60"
+				"Advance" : 10,
+				"Counterattack" : 30,
+				"Fighting Withdrawal" : 60
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
 		},
 		{
 			"start_date" : "1939.12.21",
-			"day_start" : "09:25",
-			"day_end" : "15:15",
 			"combat_chance" : 50,
-			"average_resistance" : "7",
-			"week_title" : "Invasion",
+			"average_resistance" : 9,
+			"week_title" : "Motti Attack",
+			"week_description" : "The Soviets continue to be stymied by our defenses. This week we are to launch a counterattack and encircle the Soviets where possible.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "0",
-				"Counterattack" : "30",
-				"Fighting Withdrawal" : "60"
+				"Advance" : 30,
+				"Spearhead" : 40,
+				"Battle" : 30
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 60.0
 		},
 		{
 			"start_date" : "1939.12.28",
@@ -124,161 +170,91 @@
 		},	
 		{
 			"start_date" : "1940.01.04",
-			"day_start" : "09:20",
-			"day_end" : "15:25",
-			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Counterattack",
+			"combat_chance" : 20,
+			"average_resistance" : 6,
+			"week_title" : "Standoff",
+			"week_description" : "Small-scale Soviet attempts at breaking through our defenses continue, in spite of a bitterly-cold winter.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
+				"Advance" : 10,
+				"Battle" : 20,
+				"Counterattack" : 60,
+				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
 		},
 		{
 			"start_date" : "1940.01.11",
-			"day_start" : "09:15",
-			"day_end" : "15:40",
-			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Counterattack",
-			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
-			},
-			"enemy_nations" : ["Soviet Union"],
-			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
-		},
-		{
-			"start_date" : "1940.01.18",
-			"day_start" : "09:05",
-			"day_end" : "15:55",
-			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Counterattack",
-			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
-			},
-			"enemy_nations" : ["Soviet Union"],
-			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
-		},
-		{
-			"start_date" : "1940.01.25",
-			"end_date" : "1940.01.31",
+			"end_date" : "1940.02.14",
 			"refitting" : "TRUE"
 		},
 		{
-			"start_date" : "1940.02.01",
-			"day_start" : "08:35",
-			"day_end" : "16:35",
+			"start_date" : "1940.02.15",
 			"combat_chance" : 80,
-			"average_resistance" : "9",
+			"average_resistance" : 9,
 			"week_title" : "Soviet Offensive",
+			"week_description" : "After weeks of gathering reinforcements, nearly half a million Soviet troops are breaking through our strongholds one by one.",
 			"mission_odds" : {
-				"Advance" : "0",
-				"Battle" : "20",
-				"Counterattack" : "0",
-				"Fighting Withdrawal" : "80"
+				"Fighting Withdrawal" : 100
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 10.0,
-			"arty_support_level" : 80.0
-		},
-		{
-			"start_date" : "1940.02.08",
-			"day_start" : "08:15",
-			"day_end" : "16:50",
-			"combat_chance" : 80,
-			"average_resistance" : "10",
-			"week_title" : "Soviet Offensive Continues",
-			"mission_odds" : {
-				"Advance" : "0",
-				"Battle" : "10",
-				"Counterattack" : "0",
-				"Fighting Withdrawal" : "90"
-			},
-			"enemy_nations" : ["Soviet Union"],
-			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
-		},
-		{
-			"start_date" : "1940.02.15",
-			"day_start" : "08:00",
-			"day_end" : "17:05",
-			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Desparation",
-			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
-			},
-			"enemy_nations" : ["Soviet Union"],
-			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 90.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 45,
+				"Medium Tank" : 40,
+				"Assault Gun" : 65
+			}
 		},
 		{
 			"start_date" : "1940.02.22",
-			"day_start" : "07:40",
-			"day_end" : "17:25",
+			"location" : "61.05,28.77",
 			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Counterattack",
+			"average_resistance" : 6,
+			"week_title" : "Retreat to Fallback Line",
+			"week_description" : "Soviet breakthroughs are occuring all over the defensive line, and we must withdraw further into Finnish territory.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
+				"Fighting Withdrawal" : 100
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 50.0
 		},
 		{
 			"start_date" : "1940.02.29",
-			"day_start" : "07:25",
-			"day_end" : "17:45",
 			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Counterattack",
+			"average_resistance" : 6,
+			"week_title" : "Fighting Withdrawal",
+			"week_description" : "Although our forces continue to retreat, we can still harrass the enemy with our few remaining armoured units.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
+				"Advance" : 30,
+				"Battle" : 50,
+				"Fighting Withdrawal" : 20
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 40.0
 		},
 		{
 			"start_date" : "1940.03.07",
-			"day_start" : "07:00",
-			"day_end" : "18:00",
-			"combat_chance" : 50,
-			"average_resistance" : "6",
-			"week_title" : "Counterattack",
+			"combat_chance" : 20,
+			"average_resistance" : 6,
+			"week_title" : "Desparation",
+			"week_description" : "Exhausted and nearly out of supply, our forces can only hope to hold on until an armastice is signed with the Societ Union.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Counterattack" : "60",
-				"Fighting Withdrawal" : "10"
+				"Advance" : 10,
+				"Battle" : 20,
+				"Fighting Withdrawal" : 70
 			},
 			"enemy_nations" : ["Soviet Union"],
-			"air_support_level" : 20.0,
-			"arty_support_level" : 80.0
+			"air_support_level" : 10.0,
+			"arty_support_level" : 20.0,
+			"unit_support_level" : 10.0
 		}
 	]
 }

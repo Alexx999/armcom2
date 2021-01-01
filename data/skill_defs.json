@@ -1,12 +1,49 @@
 {
+	"Trained Commander": {
+		"desc" : "Allows crewmen to operate Commander positions without penalty.",
+		"antirequisites" : ["Experienced Commander"]
+	},
+	
+	"Experienced Commander": {
+		"desc" : "Allows crewmen to operate Commander positions without penalty and to gain Commander-specific skills.",
+		"prerequisite" : "Trained Commander",
+		"replaces" : "Trained Commander"
+	},
+	
+	"Trained Gunner": {
+		"desc" : "Allows crewmen to operate Gunner positions without penalty.",
+		"antirequisites" : ["Experienced Gunner"]
+	},
+	
+	"Experienced Gunner": {
+		"desc" : "Allows crewmen to operate Gunner positions without penalty and to gain Gunner-specific skills.",
+		"prerequisite" : "Trained Gunner",
+		"replaces" : "Trained Gunner"
+	},
+	
+	"Trained Driver": {
+		"desc" : "Allows crewmen to operate Driver positions without penalty.",
+		"antirequisites" : ["Experienced Driver"]
+	},
+	
+	"Experienced Driver": {
+		"desc" : "Allows crewmen to operate Driver positions without penalty and to gain Driver-specific skills.",
+		"prerequisite" : "Trained Driver",
+		"replaces" : "Trained Driver"
+	},
+	
+	
+	
+	
 	"Fire Spotter": {
 		"desc" : "Slightly increases effect of Direct Fire action.",
-		"position_list" : ["Commander"]
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander"
 	},
 	
 	"MG Spotter": {
 		"desc" : "Greatly increases effect of Direct Fire action when attacking with a Machine Gun.",
-		"position_list" : ["Commander"],
+		"position_list" : ["Commander", "Commander/Gunner"],
 		"prerequisite" : "Fire Spotter"
 	},
 	
@@ -18,7 +55,8 @@
 	
 	"Driver Direction": {
 		"desc" : "Slightly increases effect of Direct Movement action.",
-		"position_list" : ["Commander", "Commander/Gunner"]
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander"
 	},
 	
 	"Lay of the Land": {
@@ -35,13 +73,40 @@
 	
 	"Enemy Spotted!": {
 		"desc" : "Less chance of being ambushed at the start of a battle encounter.",
-		"position_list" : ["Commander", "Commander/Gunner"]
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander",
+		"antirequisites" : ["Motti", "Unique Opportunities"]
+	},
+	
+	"Explorer": {
+		"desc" : "Greater chance of quickly finding a crossing point when attempting to ford a river.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander"
+	},
+	
+	"Natural Leader": {
+		"desc" : "All other crewmen in the tank have a bonus to Morale checks.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander"
+	},
+	
+	"Tactical Retreat": {
+		"desc" : "Bonus chance to withdraw from a battle when Directing Movement.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander"
+	},
+	
+	"Improved Recon": {
+		"desc" : "Recon reports on enemy resistance will be more accurate.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"prerequisite" : "Experienced Commander"
 	},
 	
 	
 	"Quick Trigger": {
 		"desc" : "Slightly increases chance of maintaining Rate of Fire when firing a Gun.",
-		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"]
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisite" : "Experienced Gunner"
 	},
 	
 	"Time on Target": {
@@ -58,7 +123,8 @@
 	
 	"Crack Shot": {
 		"desc" : "Slightly increases chance to hit when firing a Gun.",
-		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"]
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisite" : "Experienced Gunner"
 	},
 	
 	"Target Tracker": {
@@ -81,7 +147,13 @@
 	
 	"Knows Weak Spots": {
 		"desc" : "Slightly increases chance of scoring a Critical Hit when firing a Gun at an armoured target.",
-		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"]
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisite" : "Experienced Gunner"
+	},
+	
+	"Gun Maintenance": {
+		"desc" : "Decreases chance of a jam or breakdown for the gun that the crewman is reloading. Also helps when attempting to unjam a weapon.",
+		"position_list" : ["Loader"]
 	},
 	
 	"Fast Hands": {
@@ -89,67 +161,157 @@
 		"position_list" : ["Loader"]
 	},
 	
+	"Ammo Scrounger" : {
+		"desc" : "Increased number of rare ammo available at start of day.",
+		"position_list" : ["Loader"]
+	},
+	
 	"Quick Shifter": {
 		"desc" : "Slightly increases chance of a successful Move Forward or Backward action.",
-		"position_list" : ["Driver"]
+		"position_list" : ["Driver"],
+		"prerequisite" : "Experienced Driver"
 	},
 	
 	"Eye for Cover": {
 		"desc" : "Slightly increases chance to achieve Hull Down status after moving.",
-		"position_list" : ["Driver"]
+		"position_list" : ["Driver"],
+		"prerequisite" : "Experienced Driver"
+	},
+	
+	"Eye for Terrain": {
+		"desc" : "Slightly increases chance to enter desired terrain type when moving or repositioning.",
+		"position_list" : ["Driver"],
+		"prerequisite" : "Experienced Driver"
+	},	
+	
+	"Cautious Driver": {
+		"desc" : "Decreases chance of bogging down and triggering land mines.",
+		"position_list" : ["Driver"],
+		"prerequisite" : "Experienced Driver"
+	},
+	
+	"Mechanic": {
+		"desc" : "Decreases chance of breakdown when moving on the Scenario map. Also helps when attempting to unjam a weapon.",
+		"position_list" : ["Driver"],
+		"prerequisite" : "Experienced Driver"
+	},
+	
+	"Shell Tosser": {
+		"desc" : "Increases chance of RoF when crewman is on Pass Ammo command.",
+		"position_list" : ["Assistant Driver"]
 	},
 	
 	"Eagle Eyed": {
 		"desc" : "When hatch is open, slightly increases chance to spot and identify enemy units."
 	},
 	
+	"Quick Reflexes": {
+		"desc" : "When hatch is open, slightly decreases chance of injury or death from incoming firepower attacks.",
+		"antirequisites" : ["Lightning Reflexes"]
+	},
+	
+	"Lightning Reflexes": {
+		"desc" : "When hatch is open, greatly decreases chance of injury or death from incoming firepower attacks.",
+		"prerequisite" : "Quick Reflexes",
+		"replaces" : "Quick Reflexes"
+	},
+	
 	"Gymnast": {
 		"desc" : "Slightly increases chance to successfully bail out."
 	},
 	
+	"Acclimatized (Desert)": {
+		"desc" : "Reduced chance of gaining fatigue from Extreme Hot conditions."
+	},
+	
+	"Acclimatized (Nordic)": {
+		"desc" : "Reduced chance of gaining fatigue from Extreme Cold conditions."
+	},
+	
+	
+	
 	"Blitzkrieg": {
 		"desc" : "Modern warfare relies on shock attacks from fast-moving armoured and motorized units. Travel time on the Campaign Day map is reduced.",
 		"position_list" : ["Commander", "Commander/Gunner"],
-		"national_skill" : true
+		"campaign_skill" : true
+	},
+	
+	"Combined Operations": {
+		"desc" : "Modern warfare relies on coorindation between multiple types of forces. Support requests are always more likely to be granted.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"campaign_skill" : true
 	},
 	
 	"Defend the Motherland": {
 		"desc" : "The very future of your nation is at stake. Crew start with a higher morale stat.",
-		"national_skill" : true
+		"campaign_skill" : true
 	},
 	
 	"Centralized Fire": {
 		"desc" : "Assault guns and artillery batteries coordinate to concentrate fire on targets. Artillery attacks are more effective and more likely to be granted.",
 		"position_list" : ["Commander", "Commander/Gunner"],
-		"national_skill" : true
+		"campaign_skill" : true
 	},
 	
 	"Motti": {
 		"desc" : "Finnish troops know the terrain very well, and concentrate on isolating pockets of enemy forces. Finnish forces cannot be ambushed, and tanks are less likely to bog in snowy terrain.",
 		"position_list" : ["Commander", "Commander/Gunner"],
-		"national_skill" : true
+		"campaign_skill" : true
 	},
 	
 	"Defensive Strategy": {
 		"desc" : "The French command has been planning for years for a defensive, Great War style conflict. Destroying enemy units is worth 1 extra VP, but capturing hex zones 1 less VP.",
 		"position_list" : ["Commander", "Commander/Gunner"],
-		"national_skill" : true
+		"campaign_skill" : true
 	},
 	
 	"Combined Bombardment": {
 		"desc" : "British experience in the Great War led to the tactic of massed bombardments to pin down enemy infantry and guns. Artillery bombardments are more effective against these targets.",
 		"position_list" : ["Commander", "Commander/Gunner"],
-		"national_skill" : true
+		"campaign_skill" : true
 	},
 	
 	"To Victory!": {
 		"desc" : "Canadian troops are all volunteers, and are highly trained and motivated, quickly gaining a reputation as assault troops. Crewmen start with a higher Grit stat.",
-		"national_skill" : true
+		"campaign_skill" : true
 	},
 	
 	"Superior Firepower": {
 		"desc" : "American forces are well-supplied with ammunition, and are not afraid to use it. Rate of Fire chance for all machine gun weapons is increased.",
 		"position_list" : ["Commander", "Commander/Gunner"],
-		"national_skill" : true
+		"campaign_skill" : true
+	},
+	
+	"Audacia": {
+		"desc" : "Although only somewhat trained and often ill-equipped, the tankers of the Babini Group consistently surprised the British with their bold attacks and maneuvers. All crewmen start with a higher Perception stat.",
+		"campaign_skill" : true
+	},
+	
+	"Unique Opportunities": {
+		"desc" : "Under the command of Erwin Rommel, the Afrika Korps wages an unconventional campaign of deception and positioning. Enemy units will be more likely to start the Scenario further away from you, and you are less likely to be Ambushed.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"campaign_skill" : true
+	},
+	
+	"Ad Hoc": {
+		"desc" : "The 7th Armoured Division was adept at organizing their forces quickly to seize opportunities as they appeared. Travel time to reach the front lines each morning is reduced, and time required to request support is also reduced.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"campaign_skill" : true
+	},
+	
+	"Prepared Positions": {
+		"desc" : "Fighting on familiar territory brings many advantages. River crossings automatically succeed, and when moving in Scenarios it's easier to enter a desired terrain type.",
+		"position_list" : ["Commander", "Commander/Gunner"],
+		"campaign_skill" : true
+	},
+	
+	"Baptism of Fire": {
+		"desc" : "Excellent training can help prepare soldiers, but they must still experience the crucible of actual combat. Crewman start with a higher Knowledge stat, and will thus learn faster from their initial, perhaps difficult, experiences in battle.",
+		"campaign_skill" : true
+	},
+	
+	"Imperial Ambitions": {
+		"desc" : "The soldiers of the Imperial Japanese Army are the vanguard of imperial expansion, and are highly motivated. Crews start with a higher Morale stat.",
+		"campaign_skill" : true
 	}
 }

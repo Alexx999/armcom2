@@ -1,0 +1,506 @@
+{
+	"name" : "Monty's Best",
+	"creator" : "flori2412",
+	"start_date" : "1944.06.07",
+	"end_date" : "1945.05.03",
+	"player_nation" : "United Kingdom",
+	"enemy_nations" : ["Germany"],
+	"region" : "Northwestern Europe",
+	"desc" : "Join the 7th Armoured Division as it participates in the liberation of Western Europe and invasion of Germany.",
+	"player_unit_list" : [
+		"Sherman I", "Sherman II", "Sherman IIC", "Sherman V", "Sherman VC",
+		"3in SPM M10", "Achilles", "Stuart VI",
+		"Churchill IV", "Churchill V CS", "Churchill VI",
+		"Churchill AVRE", "Churchill VII", "Churchill VIII",
+		"Cromwell I", "Cromwell IV", "Cromwell VI",
+		"Challenger"
+	],
+	"player_squad_list" : {
+		"Sherman I" : ["Sherman I", "Sherman II", "Sherman V"],
+		"Sherman II" : ["Sherman I", "Sherman II", "Sherman V"],
+		"Sherman IIC" : ["Sherman I", "Sherman II", "Sherman V"],
+		"Sherman V" : ["Sherman I", "Sherman II", "Sherman V"],
+		"Sherman VC" : ["Sherman I", "Sherman II", "Sherman V"],
+		"Achilles" : ["3in SPM M10", "Achilles"],
+		"Churchill V CS" : ["Churchill IV", "Churchill VI"],
+		"Churchill VI" : ["Churchill IV", "Churchill VI"],
+		"Churchill AVRE" : ["Churchill IV", "Churchill VI"],
+		"Churchill VII" : ["Churchill IV", "Churchill VI", "Churchill VII"],
+		"Churchill VIII CS" : ["Churchill IV", "Churchill VI", "Churchill VII"],
+		"Cromwell IV" : ["Cromwell I", "Cromwell IV"],
+		"Cromwell VI CS" : ["Cromwell I", "Cromwell IV"]
+	},
+	"tank_vp_modifiers" : {
+		"Sherman V" : 1.1,
+		"Stuart VI" : 1.4,
+		"Churchill IV" : 1.1,
+		"Cromwell I" : 1.1
+	},
+	"campaign_skills" : [
+		"Combined Bombardment"
+	],
+	"player_air_support": [
+		"Typhoon"
+	],
+	"player_arty_support": [
+		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["PIAT Team", "OQF 17-Pounder", "3in SPM M10", "Achilles"],
+		"Anti-Infantry" : ["Morris 15 cwt", "Ram Kangaroo", "Bren Gun Carrier", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Recon" : ["Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "Daimler Armoured Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "OQF 18-Pounder", "OQF 25-Pounder", "Sexton"]
+	},
+	"friendly_transported_units" : {
+		"Morris 15 cwt" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"PIAT Team" : 40,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"Ram Kangaroo" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20
+		}
+	},
+	"enemy_arty_support": {
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "Wespe"]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Flakpanzer 38(t)", "Panzer III L", "Panzer III N", "Panzer III M",
+			"Panzer IV C", "Panzer IV H", "Panzer IV J", "Panzer VG",
+			"Flakpanzer IV Wirbelwind", "Flakpanzer IV Mobelwagen",
+			"Panzer VIb", "Panzer VIe (Late)",
+			"StuG III G", "StuG IV", "StuH 42", "Sturmpanzer IV", "Hummel", "Wespe",
+			"Marder II", "Marder III M", "Jagdpanzer IV",
+			"Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)",
+			"Jagdpanzer 38(t)", "Jagdpanzer V", "Jagdpanzer VI",
+			"Nashorn",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)",
+			"PSW 231 (8 rad)", "PSW 234/2",
+			"SPW 251/1", "SPW 251/2", "SPW 251/22",
+			"PaK 38", "PaK 40", "PaK 43", 
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18",
+			"8.8cm FlaK 18 o. 36", "Sd. Kfz. 7/1",
+			"Flakpanzer 38(t)", "Flakpanzer IV Wirbelwind", "Flakpanzer IV Mobelwagen",
+			"Opel Blitz 3-ton", "Kfz 1",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "Panzerschreck Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team" 
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 3,
+		"Assault Gun" : 80,
+		"Tank Destroyer" : 50,
+		"Medium Tank" : 15,
+		"Heavy Tank" : 5,
+		"Armoured Car" : 90,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Self-Propelled AA Gun" : 5,
+		"APC" : 70,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			}
+		}
+	},
+	"decorations_list" : {
+		"2800" : "Military Medal",
+		"3600" : "Military Cross",
+		"4000" : "Distinguished Service Order",
+		"4300" : "Victoria Cross"
+	},
+	"combat_days" : 80,
+	"calendar_weeks": [
+		{
+			"start_date" : "1944.06.07",
+			"end_date" : "1944.06.13",
+			"location" : "49.29,-0.48",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Operation Perch",
+			"week_description" : "Having secured Gold Beach, our troops must quickly advance south-east to take the city of Caen. Our division will move south and attack the Germans at Tilly-sur-Seulles and Villers-Bocage.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 30,
+				"Spearhead" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1944.06.14",
+			"end_date" : "1944.06.20",
+			"location" : "49.14,-0.65",
+			"combat_chance" : 50,
+			"average_resistance" : 4,
+			"week_title" : "Retreat to Caumont",
+			"week_description" : "German resistance around Caen has been stronger than expected. We need reinforcements before we can attempt another push towards the city. Our orders are to fall back to the village of Caumont to the west.",
+			"mission_odds" : {
+				"Counterattack" : 50,
+				"Fighting Withdrawal" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.06.21",
+			"end_date" : "1944.07.17",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.07.18",
+			"end_date" : "1944.07.24",
+			"location" : "49.22,-0.27",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Operation Goodwood",
+			"week_description" : "A heavy storm delayed the arrival of our reinforcements for several weeks, but now we are ready. Having repositioned north-east of the city, we will move south to encircle the remaining German troops around Caen.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 30,
+				"Spearhead" : 20,
+				"Counterattack": 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.07.25",
+			"end_date" : "1944.08.07",
+			"location" : "49.02,-0.26",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Operation Spring",
+			"week_description" : "After six weeks of costly fighting, Caen has finally been taken. Our next objective is the small town of Falaise further south-east, but the Germans are doing everything they can to slow down our advance.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 35,
+				"Counterattack" : 35
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.08.08",
+			"end_date" : "1944.08.14",
+			"location" : "49.02,-0.26",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "Converging on Falaise",
+			"week_description" : "We have only gained little ground, but the Germans were unable to reinforce their troops in Western Normandy. We must keep the enemy pinned around Falaise until the Americans coming from the west can cut them off.",
+			"mission_odds" : {
+				"Battle" : 60,
+				"Counterattack" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.08.15",
+			"end_date" : "1944.08.21",
+			"location" : "48.89,-0.20",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "The Battle of the Falaise Pocket",
+			"week_description" : "The Germans have failed to retreat in time and are now surrounded. This is our chance to wipe out the bulk of the enemy forces stationed in France. Do not let them escape!",
+			"mission_odds" : {
+				"Battle" : 40,
+				"Counterattack" : 60
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1944.08.22",
+			"end_date" : "1944.08.29",
+			"location" : "50.11,2.24",
+			"combat_chance" : 40,
+			"average_resistance" : 3,
+			"week_title" : "Advance into Belgium",
+			"week_description" : "The Germans have suffered devastating casualties at Falaise. Our division is pressing the advantage by advancing north-east into Belgium.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.08.30",
+			"end_date" : "1944.09.06",
+			"location" : "50.95,3.69",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Brussels, Antwerp and Ghent",
+			"week_description" : "Our fellow troops are about to liberate Brussels and Antwerp. The objective of our division is the Belgian city of Ghent.",
+			"mission_odds" : {
+				"Advance" : 45,
+				"Battle" : 10,
+				"Spearhead" : 45
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.09.07",
+			"end_date" : "1944.09.13",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.09.14",
+			"end_date" : "1944.10.17",
+			"location" : "51.02,4.75",
+			"combat_chance" : 30,
+			"average_resistance" : 4,
+			"week_title" : "Securing the River Meuse",
+			"week_description" : "Allied troops have launched a massive offensive in the Netherlands spearheaded by our paratroopers. In the meantime, the 7th Armoured Division is heading east, towards the River Meuse, to set up a defensive position.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.10.18",
+			"end_date" : "1944.11.22",
+			"location" : "51.00,5.75",
+			"combat_chance" : 30,
+			"average_resistance" : 2,
+			"week_title" : "Guarding the River Meuse",
+			"week_description" : "Operation Market Garden has failed, denying us an easy northern route into Germany. Our division has halted the advance to watch the river. Patrol the area and engage any enemies you may encounter!",
+			"mission_odds" : {
+				"Advance": 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 40.0
+		},
+		{
+			"start_date" : "1944.11.23",
+			"end_date" : "1945.01.13",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.01.14",
+			"end_date" : "1945.01.20",
+			"location" : "51.07,5.97",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Operation Blackcock",
+			"week_description" : "The 7th Armoured Division has been reactivated to join the attack on the so-called Roer Triangle, formed by the Dutch towns of Roermond and Sittard and the German town of Heinsberg.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.01.21",
+			"end_date" : "1945.01.27",
+			"location" : "51.07,5.97",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Hamlet by hamlet, house by house",
+			"week_description" : "The Germans are fiercely defending the villages in the Roer Triangle. Our infantry units are suffering heavy casualties. We must break the enemy resistance by any means.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 60
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 70.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 30
+			}	
+		},
+		{
+			"start_date" : "1945.01.28",
+			"end_date" : "1945.02.11",
+			"location" : "51.07,5.97",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Mopping up",
+			"week_description" : "Operation Blackcock has been a success, but there is still some sporadic enemy resistance in the surrounding area. Move out and secure it!",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead": 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.02.12",
+			"end_date" : "1945.03.22",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.03.23",
+			"end_date" : "1945.03.27",
+			"location" : "51.67,6.54",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"week_title" : "Operation Plunder",
+			"week_description" : "Our division has received orders to cross the River Rhine near Xanten and Wesel. Having made it across using improvised bridges, we must break the German resistance on the other side.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 50,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.03.28",
+			"end_date" : "1945.04.03",
+			"location" : "52.31,7.76",
+			"combat_chance" : 40,
+			"average_resistance" : 3,
+			"week_title" : "Decisive breakthrough",
+			"week_description" : "Having crossed the River Rhine, we are now finally advancing deep into Germany.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 60
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.04.04",
+			"end_date" : "1945.04.10",
+			"location" : "52.74,8.65",
+			"combat_chance" : 40,
+			"average_resistance" : 3,
+			"week_title" : "Forward!",
+			"week_description" : "Our troops are taking cities and towns all across Western Germany. Keep advancing, but look out for ambushes.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 60
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.04.11",
+			"end_date" : "1945.04.17",
+			"location" : "53.31,9.59",
+			"combat_chance" : 40,
+			"average_resistance" : 3,
+			"week_title" : "Towards Hamburg",
+			"week_description" : "The 7th Armoured Division is pushing north-east, towards the city of Hamburg.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 60
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1945.04.18",
+			"end_date" : "1945.04.24",
+			"location" : "53.52,9.99",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Hamburg",
+			"week_description" : "Our troops have met fierce enemy resistance in Hamburg. We need to move into the city and secure it.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 80
+			}	
+		},
+		{
+			"start_date" : "1945.04.25",
+			"end_date" : "1945.05.03",
+			"location" : "53.52,9.99",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "Capture of Hamburg",
+			"week_description" : "More and more German soldiers in the city are surrendering. Victory is close. It's time to finish this, Gentlemen!",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 80
+			}	
+		}
+	]
+}

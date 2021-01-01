@@ -400,6 +400,13 @@
 		]
 	},
 	
+	"Free France": {
+		"short_code" : "FRA",
+		"adjective" : "Free French",
+		"flag_image" : "flag_FREE_FRA.xp",
+		"inherit" : ["France", ["rank_names", "first_names", "surnames"]]
+	},
+	
 	"United States of America": {
 		"short_code" : "USA",
 		"adjective" : "American",
@@ -627,6 +634,94 @@
 			"Cox", "Phillips", "Clarke", "Lewis", "Jackson", "Morris", "Young",
 			"Parker", "Hunt", "Stevens", "Scott", "James", "Adams", "Chapman",
 			"Lee"
+		]
+	},
+	
+	"Italy": {
+		"short_code" : "ITA",
+		"adjective" : "Italian",
+		"flag_image" : "flag_ITA.xp",
+		"rank_names" : {
+			"0" : "Soldato",
+			"1" : "Caporale",
+			"2" : "Caporale Maggiore",
+			"3" : "Sergente",
+			"4" : "Sottotenente",
+			"5" : "Tenente",
+			"6" : "Capitano"
+		},
+		"first_names" : [
+			"Giovanni", "Antonio", "Piero", "Francesco", "Iacopo", "Bartolomeo",
+			"Niccolo", "Domenico", "Lorenzo", "Andrea", "Michele", "Tommaso",
+			"Matteo", "Filippo", "Bernardo", "Pagolo", "Simone", "Nanni",
+			"Cristofano", "Zanobi", "Agnolo", "Leonardo", "Luca", "Bartolo",
+			"Benedetto", "Stefano", "Marco", "Lodovico", "Guido", "Salvestro",
+			"Niccolaio", "Maso", "Biagio", "Martino", "Sandro", "Cecco",
+			"Donato", "Neri", "Giorgio", "Taddeo", "Meo", "Carlo", "Frosino",
+			"Agostino", "Luigi", "Guasparre", "Papi", "Gherardo", "Nardo",
+			"Nofri", "Bastiano", "Berto", "Pippo", "Santi", "Arrigo",
+			"Guglielmo", "Mariotto", "Giusto", "Mariano", "Vanni", "Dino",
+			"Goro", "Betto", "Ugolino", "Battista", "Lapo ", "Rinaldo",
+			"Baldo", "Rinieri", "Roberto", "Buono", "Cipriano", "Geri",
+			"Guccio", "Romolo", "Baldassarr", "Cambio", "Lazzero", "Lotto",
+			"Bernaba", "Cenni", "Chimento", "Corso", "Girolamo", "Miniato",
+			"Salvadore", "Alessandro", "Amerigo", "Bindo", "Duccio",
+			"Alberto", "Alesso", "Ambrogio", "Bettino", "Gabbriello",
+			"Marchionne", "Nencio", "Bianco", "Bonacorso", "Bruno",
+			"Daniello", "Federigo", "Lando", "Manetto", "Pace", "Riccardo"
+		],
+		"surnames" : [
+			"Abenante", "Accettola", "Alessi", "Altera", "Albano", "Amato",
+			"Andolini", "Andresano", "Angelo", "Alfera", "Alfonso", "Arcuri",
+			"Argentino", "Astrella", "Auriemma", "Arosio", "Balboa",
+			"Balotelli", "Banetti", "Baresi", "Baroffio", "Barzaghi",
+			"Bellini", "Bellucci", "Benatti", "Beneventi", "Bianchi", "Boni",
+			"Bonacina", "Bonocchi", "Bongiovanni", "Borroni", "Brambilla",
+			"Brichese", "Brioschi", "Briffa", "Bruschi", "Buccio", "Buffon",
+			"Buratti", "Bedacholli", "Buoncuore", "Buonocore", "Cafaro",
+			"Campagna", "Canali", "Candreva", "Cangemi", "Capone", "Caprio",
+			"Caprioli", "Capuano", "Carangi", "Caruso", "Cesareo",
+			"Castiglione", "Chiecco", "Chiellini", "Ciccone", "Clemenza",
+			"Cociarelli", "Cocci", "Colangelo", "Colombo", "Consoli",
+			"Consonni", "Contarini", "Conti", "Corsetti", "Costa", "Cresci",
+			"Crippa", "Cilibrasi", "cimorelli", "Cutillo", "Davide",
+			"De Luca", "Dellucci", "Detti", "Del Gatto", "De Jesus",
+			"De Marchi", "De Marco", "De Pinto", "De Rose", "De Rossi",
+			"De Santo", "De Stefano", "Di Angelo", "Di Adamo", "Di Maggio",
+			"Di Moze", "Di Norcia", "Di Donato", "Di Traglia", "Donati",
+			"Donini", "Donnatiello", "D'Agostino", "D'Amore", "DeFilippis",
+			"Durante", "D’Amiano", "Endrizzi", "Eneide", "Esposito",
+			"Fallaci", "Farina", "Fazio", "Fanucci", "Faugno", "Femia",
+			"Ferrari", "Ferraro", "Ferri", "Fiore", "Fiorentino",
+			"Florentino", "Folliero", "Fontana", "Faulmino", "Frizza",
+			"Fragomeni", "Galbiati", "Gallo", "Gatti", "Garza", "Gelli",
+			"Genovese", "Gentile", "Gentilini", "Giambi", "Giordano",
+			"Giovinco", "Girardi", "Golino", "Gorgazzi", "Greco", "Gucci",
+			"Guercio", "Iadanza", "Insigne", "Ientile", "Jilani",
+			"Lacertosa", "Lastra", "Lettiere", "Li Fonti", "Lionetti",
+			"Leonetti", "Lo Duca", "Loggia", "Lorenzo", "Lombardi", "Longo",
+			"Lombardo", "Lori", "Lucciano", "Luoni", "Massera", "Mandelli",
+			"Mancini", "Manna", "Marcello", "Marchesi", "Marino", "Marotta",
+			"Mauri", "Mazzanti", "Mazzeo", "Mazzi", "Mele", "Milani",
+			"Milano", "Miniati", "Monaldo", "Montalti", "Molinaro",
+			"Montalto", "Moretti", "Morandi", "Napolitano", "Necci", "Neri",
+			"Nicini", "Ninotti", "Nucci", "Oddo", "Offredi", "Oldani", "Onio",
+			"Opizzi", "Origlio", "Orlando", "Oscuro", "Ossani", "Pappalardo",
+			"Pappaianni", "Paccioretti", "Pagnotto", "Palazzo", "Palermo",
+			"Palmiotto", "Palmisano", "Panicucci", "Panettiere", "Parlatore",
+			"Passero", "Piazza", "Piccio", "Pinto", "Pirlo", "Pirovano",
+			"Pirozzi", "Pisani", "Pisano", "Pugliesi", "Presutti", "Pozzoli",
+			"Perego", "Papasergio", "Ragusa", "Redaelli", "Regio", "Reviello",
+			"Riboldi", "Ricci", "Rizzo", "Rinaldi", "Ripamonti", "Romano",
+			"Rossi", "Ruggiero", "Russo", "Rivera", "Rosiello", "Rua",
+			"Sabbatini", "Sabino", "Sagese", "Sal", "Santarossa",
+			"Sanfilippo", "Sasso", "Scaletta", "Schiavone", "Sepulcri",
+			"Siciliano", "Scutari", "Spina", "Strinati", "Teruzzi",
+			"Timbano", "Tinari", "Tocci", "Toscani", "Toscano", "Tremolada",
+			"Trevisan", "Trevisani", "Trimboli", "Tripoli", "Turina",
+			"Udinese", "Udinesi", "Valtolina", "Vecellio", "Vecoli",
+			"Venturi", "Verratti", "Verrilli", "Violante", "Volpe", "Volta",
+			"Valentino", "Zanetti", "Zampa", "Zetticci", "Zito", "Zullo"
 		]
 	}
 }

@@ -1,5 +1,6 @@
 {
 	"name" : "The Poland Campaign",
+	"creator" : "Standard Campaign",
 	"start_date" : "1939.09.01",
 	"end_date" : "1939.10.06",
 	"player_nation" : "Germany",
@@ -7,45 +8,87 @@
 	"region" : "Northeastern Europe",
 	"desc" : "Join the 3rd Panzer Division in the invasion of Poland, 1939.",
 	"player_unit_list" : [
-		"Panzer II A", "Panzer 35(t)", "Panzer 38(t) A", "Panzer III D",
-		"Panzer III F"
+		"Panzer I B", "Panzer II A", "Panzer 35(t)", "Panzer 38(t) A", "Panzer III D",
+		"Panzer III F", "Panzer IV A", "Panzer IV C"
 	],
 	"player_squad_list" : {
-		"Panzer 38(t) A" : ["Panzer II A", "Panzer 38(t) A"]
+		"Panzer II A" : ["Panzer II A", "Panzer 35(t)", "Panzer 38(t) A"],
+		"Panzer 38(t) A" : ["Panzer II A", "Panzer 35(t)", "Panzer 38(t) A"],
+		"Panzer III D" : ["Panzer III D", "Panzer III F"],
+		"Panzer III F" : ["Panzer III D", "Panzer III F"],
+		"Panzer IV A" : ["Panzer IV A", "Panzer IV C"],
+		"Panzer IV C" : ["Panzer IV A", "Panzer IV C"]
 	},
-	"national_skills" : [
-		"Blitzkrieg"
+	"tank_vp_modifiers" : {
+		"Panzer I B" : 1.4,
+		"Panzer II A" : 1.3,
+		"Panzer III D" : 1.1,
+		"Panzer IV C" : 0.9
+	},
+	"campaign_skills" : [
+		"Combined Operations"
 	],
 	"player_air_support": [
 		"Ju 87B Stuka"
 	],
 	"player_arty_support": [
-		"7.5cm leIG 18"
+		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"
 	],
-	"enemy_arty_support": [
-		"75mm wz. 02/26", "105mm wz. 29"
-	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "8.8cm FlaK 18 o. 36"],
+		"Anti-Infantry" : ["SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["PSW 231 (6 rad)", "PSW 231 (8 rad)"],
+		"Artillery" : ["Medium Mortar Team", "7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18"]
+	},
+	"friendly_transported_units" : {
+		"SPW 251/1" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_arty_support": {
+		"Poland" : ["75mm wz. 02/26", "105mm wz. 29"]
+	},
 	"enemy_unit_list" : {
 		"Poland" : [
-			"TK-3", "TKS", "TKS (20mm)", "Renault FT", "Renault FT (MG)",
+			"TK-3", "TKS", "TKS (20mm)",
+			"Renault FT", "Renault FT (MG)",
 			"Vickers 6-Ton Mark E", "7TP",
-			"wz. 34 (MG)", "wz. 34 (37mm)", "37mm wz. 36", "75mm wz. 02/26",
-			"75mm wz. 97/25", "Polski Fiat 621", "Riflemen", "HMG Team",
-			"AT Rifle Team", "Light Artillery Car"
+			"wz. 34 (MG)", "wz. 34 (37mm)",
+			"37mm wz. 36", 
+			"75mm wz. 02/26", "105mm wz. 29",
+			"75mm wz. 97/25",
+			"Polski Fiat 621",
+			"Riflemen",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Fiat 508 Taczanka",
+			"Rifle Cavalry",
+			"Light Artillery Car"
 		]
 	},
 	"enemy_unit_class_odds" : {
-		"Tankette" : "40",
-		"Light Tank" : "25",
-		"Armoured Car" : "80",
-		"Anti-Tank Gun" : "60",
-		"Artillery Gun" : "20",
-		"Anti-Aircraft Gun" : "25",
-		"Truck" : "80",
-		"Infantry Squad" : "100",
-		"MG Team" : "80",
-		"ATR Team" : "60",
-		"Armoured Train Car" : "10"
+		"Tankette" : 40,
+		"Light Tank" : 25,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 60,
+		"Artillery Gun" : 20,
+		"Anti-Aircraft Gun" : 25,
+		"Truck" : 80,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Cavalry Squad" : 20,
+		"Armoured Train Car" : 10
+	},
+	"enemy_transported_units" : {
+		"Poland" : {
+			"Polski Fiat 621" : {
+				"Riflemen" : 40,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 10,
+				"HMG Team" : 20
+			}
+		}
 	},
 	"decorations_list" : {
 		"700" : "Iron Cross Second Class",
@@ -57,93 +100,109 @@
 	"calendar_weeks": [
 		{
 			"start_date" : "1939.09.01",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "52.91,16.37",
 			"combat_chance" : 80,
-			"average_resistance" : "7",
+			"average_resistance" : 8,
 			"week_title" : "Over the Polish Border",
 			"week_description" : "The first major engagement of the new German panzerwaffe has begun. Lead your tank across the border and into Polish territory.",
 			"mission_odds" : {
-				"Advance" : "25",
-				"Battle" : "5",
-				"Spearhead" : "70"
+				"Advance" : 25,
+				"Battle" : 5,
+				"Spearhead" : 70
 			},
 			"enemy_nations" : ["Poland"],
 			"air_support_level" : 80.0,
 			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
 			"terrain_odds_modifier" : {
 				"Forest" : 30
 			}
 		},
 		{
 			"start_date" : "1939.09.08",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
 			"combat_chance" : 70,
-			"average_resistance" : "5",
+			"average_resistance" : 6,
 			"week_title" : "Into Western Poland",
+			"week_description" : "The invasion has broken through the first line of defense. Continue to move into Western Poland with your battlegroup.",
 			"mission_odds" : {
-				"Advance" : "25",
-				"Battle" : "15",
-				"Spearhead" : "60"
+				"Advance" : 25,
+				"Battle" : 15,
+				"Spearhead" : 60
 			},
 			"enemy_nations" : ["Poland"],
 			"air_support_level" : 70.0,
-			"arty_support_level" : 50.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 80.0,
 			"enemy_class_odds_modifier" : {
-				"Armoured Car" : "50"
+				"Armoured Car" : 50
 			}
 		},
 		{
 			"start_date" : "1939.09.15",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "52.81,17.22",
 			"combat_chance" : 60,
-			"average_resistance" : "4",
+			"average_resistance" : 5,
 			"week_title" : "Breaking Resistance",
+			"week_description" : "Armoured divisions have moved far, but pockets of resistance remain. Support the infantry in clearing out these hold-outs.",
 			"mission_odds" : {
-				"Advance" : "25",
-				"Battle" : "35",
-				"Spearhead" : "40"
+				"Advance" : 25,
+				"Battle" : 35,
+				"Spearhead" : 40
 			},
 			"enemy_nations" : ["Poland"],
 			"air_support_level" : 70.0,
 			"arty_support_level" : 30.0,
+			"unit_support_level" : 80.0,
 			"enemy_class_odds_modifier" : {
-				"Anti-Tank Gun" : "40"
+				"Anti-Tank Gun" : 40,
+				"Light Tank" : 10
+			},
+			"terrain_odds_modifier" : {
+				"Villages" : 30
 			}
 		},
 		{
 			"start_date" : "1939.09.22",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
 			"combat_chance" : 50,
-			"average_resistance" : "4",
+			"average_resistance" : 4,
 			"week_title" : "Mopping Up",
+			"week_description" : "Defending forces are collapsing across the line, and now the Soviet Union is attacking from the East.",
 			"mission_odds" : {
-				"Advance" : "30",
-				"Battle" : "20",
-				"Counterattack" : "10",
-				"Spearhead" : "40"
+				"Advance" : 30,
+				"Battle" : 20,
+				"Counterattack" : 10,
+				"Spearhead" : 40
 			},
 			"enemy_nations" : ["Poland"],
 			"air_support_level" : 70.0,
-			"arty_support_level" : 50.0
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 60.0,
+			"terrain_odds_modifier" : {
+				"Fields" : 40
+			}
 		},
 		{
 			"start_date" : "1939.09.29",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
-			"combat_chance" : 50,
-			"average_resistance" : "3",
+			"location" : "52.22,20.65",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
 			"week_title" : "Taking the Capital",
+			"week_description" : "Warsaw stands as the last major pocket of resistance. Advance into the outlying area and destroy the final lines of resistance.",
 			"mission_odds" : {
-				"Advance" : "80",
-				"Spearhead" : "20"
+				"Advance" : 80,
+				"Spearhead" : 20
 			},
 			"enemy_nations" : ["Poland"],
-			"air_support_level" : 70.0,
-			"arty_support_level" : 60.0
+			"air_support_level" : 50.0,
+			"arty_support_level" : 20.0,
+			"unit_support_level" : 60.0,
+			"enemy_class_odds_modifier" : {
+				"Artillery Gun" : 50,
+				"Anti-Aircraft Gun" : 55
+			},
+			"terrain_odds_modifier" : {
+				"Villages" : 60
+			}
 		}
 	]
 }

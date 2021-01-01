@@ -1,94 +1,115 @@
 {
 	"None": {
-		"desc" : "Crewman cannot act",
+		"desc" : "Crewman unable to act.",
 		"spotting_allowed" : false
 	},
 	
 	"Spot": {
-		"desc" : "Scan terrain for enemies",
+		"desc" : "Attempt to spot any concealed enemy units within this crewman's Field of View.",
 		"spotting_allowed" : true
 	},
 	
 	"Direct Movement" : {
-		"desc" : "Direct the movement of the vehicle",
+		"desc" : "Direct the movement of the vehicle, adding a bonus to successfully move into a new hex.",
 		"position_list" : ["Commander", "Commander/Gunner"],
 		"spotting_allowed" : true
 	},
 	
 	"Direct Fire" : {
-		"desc" : "Direct fire against enemy targets",
-		"position_list" : ["Commander"],
+		"desc" : "Direct fire against enemy targets, adding a bonus to hit or affect.",
+		"position_list" : ["Commander", "Commander/Gunner"],
 		"spotting_allowed" : true
 	},
 	
 	"Smoke Grenade" : {
-		"desc" : "Throw a smoke-emitting grenade out of the tank",
+		"desc" : "Throw a smoke-emitting grenade out of the tank, must have an open hatch.",
 		"position_list" : ["Commander", "Commander/Gunner"],
 		"spotting_allowed" : false
 	},
 	
 	"Operate Gun" : {
-		"desc" : "Operate a main gun and the turret",
-		"spotting_allowed" : false
+		"desc" : "Operate any main gun from this position, also operate the turret.",
+		"spotting_allowed" : false,
+		"rst_ce_na" : true
 	},
 	
 	"Operate MG" : {
-		"desc" : "Operate the MG from this position",
-		"spotting_allowed" : false
+		"desc" : "Operate any MG from this position.",
+		"spotting_allowed" : false,
+		"rst_ce_na" : true
+	},
+	
+	"Unjam Weapon" : {
+		"desc" : "Attempt to unjam any jammed weapons in this location.",
+		"spotting_allowed" : false,
+		"rst_ce_na" : true
 	},
 	
 	"Reload" : {
-		"desc" : "Assist in reloading the main gun, increasing fire rate",
+		"desc" : "Assist in reloading the main gun, increasing chance of maintaining Rate of Fire.",
 		"position_list" : ["Loader"],
 		"spotting_allowed" : false
 	},
 	
 	"Manage Ready Rack" : {
-		"desc" : "Add or remove ammo from the Ready Rack",
-		"spotting_allowed" : false
+		"desc" : "Add/remove ammo from the Ready Rack:",
+		"spotting_allowed" : false,
+		"rst_ce_na" : true
 	},
 	
 	"Drive" : {
-		"desc" : "Move forward or backward, pivot hull, attempt to gain Hull Down, or reposition within the same hex",
+		"desc" : "Move forward or backward, pivot hull, attempt to gain Hull Down, or reposition within the same hex.",
+		"position_list" : ["Driver"],
+		"spotting_allowed" : false
+	},
+		
+	"Drive Into Terrain" : {
+		"desc" : "Move forward or backward, pivot hull, attempt to gain Hull Down, or reposition within the same hex. For forward/backward moves, will prompt for a desired terrain type.",
 		"position_list" : ["Driver"],
 		"spotting_allowed" : false
 	},
 	
 	"Overrun" : {
-		"desc" : "Move forward into close range with enemy infantry or guns",
+		"desc" : "Move slightly forward for a close range attack against enemy infantry or guns.",
 		"position_list" : ["Driver"],
 		"spotting_allowed" : false
 	},
 	
 	"Attempt Unbog" : {
-		"desc" : "Attempt to free the vehicle from being bogged down",
+		"desc" : "Attempt to free the vehicle from being bogged down.",
 		"position_list" : ["Driver"],
 		"spotting_allowed" : false
 	},
 	
 	"Withdraw" : {
-		"desc" : "Withdraw from the battlefield, moving into an adjacent map hex",
+		"desc" : "Attempt to withdraw from the battle, moving into an adjacent map hex on the Campaign Day map.",
 		"position_list" : ["Driver"],
 		"spotting_allowed" : true
 	},
 	
+	"Pass Ammo" : {
+		"desc" : "Pass ammo up to the Loader, increasing chance of RoF if the Ready Rack is not used.",
+		"position_list" : ["Assistant Driver"],
+		"spotting_allowed" : false
+	},
+	
 	"Abandon Tank" : {
-		"desc" : "All crew bail out of the tank and retreat to friendly lines",
+		"desc" : "All crew bail out of the tank and retreat to friendly lines.",
 		"spotting_allowed" : false
 	},
 	
 	"First Aid" : {
-		"desc" : "Adds recovery bonus to any crewman that is Stunned, Unconscious, or has a Critical wound",
+		"desc" : "Adds recovery bonus to any crewman that has a Critical wound.",
 		"spotting_allowed" : false
 	},
 	
 	"Swap Position" : {
-		"desc" : "Swap positions in the tank with another crewman, or take up a vacant position",
+		"desc" : "Swap positions in the tank with another crewman, or take up a vacant position.",
 		"spotting_allowed" : false
 	},
 	
 	"Fire Smoke Mortar" : {
-		"desc" : "Fire the smoke mortar, creating concealing smoke in front of the turret",
+		"desc" : "Fire the smoke mortar, creating concealing smoke in front of the turret.",
 		"spotting_allowed" : false
 	}
 }

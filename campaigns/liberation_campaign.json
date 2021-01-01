@@ -1,41 +1,84 @@
 {
 	"name" : "The Liberation Campaign of the Red Army",
+	"creator" : "Standard Campaign",
 	"start_date" : "1939.09.17",
 	"end_date" : "1939.10.06",
 	"player_nation" : "Soviet Union",
 	"enemy_nations" : ["Poland"],
 	"region" : "Northeastern Europe",
-	"desc" : "Soviet invasion of Poland, 1939.",
+	"desc" : "Soviet invasion of Poland, September 1939.",
 	"player_unit_list" : [
-		"T-26 M33", "BT-5 M34", "BT-7 M37", "T-28 M34"
+		"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34"
 	],
-	"national_skills" : [
+	"player_squad_list" : {
+		"BT-7 M37" : ["BT-7 M37", "BT-7A"],
+		"BT-7A" : ["BT-7 M37", "BT-7A"]
+	},
+	"tank_vp_modifiers" : {
+		"BT-5 M34" : 1.1,
+		"T-28 M34" : 0.8
+	},
+	"campaign_skills" : [
 		"Centralized Fire"
 	],
 	"player_arty_support": [
-		"76.2mm obr. 00/02P"
+		"76.2mm PP obr. 27", "76.2mm obr. 00/02P"
 	],
-	"enemy_arty_support": [
-		"75mm wz. 02/26", "105mm wz. 29"
-	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
+		"Anti-Infantry" : ["ZIS-5 Truck", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["BA-6", "BA-10", "BA-20"],
+		"Artillery" : ["Light Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 00/02P"]
+	},
+	"friendly_transported_units" : {
+		"ZIS-5 Truck" : {
+			"Riflemen" : 50,
+			"HMG Team" : 30,
+			"Flame Thrower Team" : 20
+		}
+	},
+	"enemy_arty_support": {
+		"Poland" : ["75mm wz. 02/26", "105mm wz. 29"]
+	},
 	"enemy_unit_list" : {
 		"Poland" : [
-			"TK-3", "TKS", "TKS (20mm)", "Renault FT", "Renault FT (MG)",
+			"TK-3", "TKS", "TKS (20mm)",
+			"Renault FT", "Renault FT (MG)",
 			"Vickers 6-Ton Mark E", "7TP",
-			"wz. 34 (MG)", "wz. 34 (37mm)", "37mm wz. 36", "75mm wz. 02/26",
-			"75mm wz. 97/25", "Polski Fiat 621", "Riflemen", "HMG Team"
+			"wz. 34 (MG)", "wz. 34 (37mm)",
+			"37mm wz. 36", 
+			"75mm wz. 02/26", "105mm wz. 29",
+			"75mm wz. 97/25",
+			"Polski Fiat 621",
+			"Riflemen",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Fiat 508 Taczanka",
+			"Rifle Cavalry",
+			"Light Artillery Car"
 		]
 	},
 	"enemy_unit_class_odds" : {
-		"Tankette" : "40",
-		"Light Tank" : "25",
-		"Armoured Car" : "80",
-		"Anti-Tank Gun" : "60",
-		"Field Gun" : "20",
-		"Anti-Aircraft Gun" : "25",
-		"Truck" : "80",
-		"Infantry Squad" : "100",
-		"MG Team" : "80"
+		"Tankette" : 40,
+		"Light Tank" : 25,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 60,
+		"Field Gun" : 20,
+		"Anti-Aircraft Gun" : 25,
+		"Truck" : 80,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 55,
+		"Cavalry Squad" : 20,
+		"Armoured Train Car" : 10
+	},
+	"enemy_transported_units" : {
+		"Poland" : {
+			"Polski Fiat 621" : {
+				"Riflemen" : 40,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 10,
+				"HMG Team" : 20
+			}
+		}
 	},
 	"decorations_list" : {
 		"400" : "Medal for Battle Merit",
@@ -47,54 +90,60 @@
 	"calendar_weeks": [
 		{
 			"start_date" : "1939.09.17",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "51.29,22.61",
 			"combat_chance" : 80,
-			"average_resistance" : "6",
+			"average_resistance" : 8,
 			"week_title" : "The Liberation Begins",
+			"week_description" : "This week we enter eastern Poland, as the Polish state has collapsed and we must secure the safety of our countrymen living within its borders.",
 			"mission_odds" : {
-				"Advance" : "40",
-				"Battle" : "10",
-				"Spearhead" : "50"
-			},
-			"enemy_nations" : ["Poland"],
-			"arty_support_level" : 80.0
-		},
-		{
-			"start_date" : "1939.09.24",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
-			"combat_chance" : 70,
-			"average_resistance" : "6",
-			"week_title" : "Further Into Poland",
-			"mission_odds" : {
-				"Advance" : "40",
-				"Battle" : "15",
-				"Counterattack" : "10",
-				"Spearhead" : "35"
+				"Advance" : 40,
+				"Battle" : 10,
+				"Spearhead" : 50
 			},
 			"enemy_nations" : ["Poland"],
 			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1939.09.24",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"week_title" : "Further Into Poland",
+			"week_description" : "Some Polish forces have been falling back, but others continue to resist our advance.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 15,
+				"Counterattack" : 10,
+				"Spearhead" : 35
+			},
+			"enemy_nations" : ["Poland"],
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
 			"enemy_class_odds_modifier" : {
-				"Tankette" : "20",
-				"Field Gun" : "30"
+				"Tankette" : 20,
+				"Field Gun" : 30
 			}
 		},
 		{
 			"start_date" : "1939.10.01",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
 			"combat_chance" : 70,
-			"average_resistance" : "3",
+			"average_resistance" : 4,
 			"week_title" : "Final Resistance",
+			"week_description" : "Only scattered defenders remain; secure this region and our campaign will be complete.",
 			"mission_odds" : {
-				"Advance" : "35",
-				"Battle" : "5",
-				"Counterattack" : "10",
-				"Spearhead" : "50"
+				"Advance" : 95,
+				"Spearhead" : 5
 			},
 			"enemy_nations" : ["Poland"],
-			"arty_support_level" : 80.0
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 5
+			},
+			"terrain_odds_modifier" : {
+				"Forest" : 55,
+				"Hills" : 10
+			}
 		}
 	]
 }

@@ -1,0 +1,570 @@
+{
+	"name" : "Operation Torch (USA)",
+	"creator" : "flori2412",
+	"start_date" : "1942.11.08",
+	"end_date" : "1943.05.07",
+	"player_nation" : "United States of America",
+	"enemy_nations" : ["France", "Italy", "Germany"],
+	"region" : "North Africa",
+	"desc" : "Join the American forces in their first deployment in Europe, as they help their British, Commonwealth and Free French allies in an invasion of Axis-occupied North Africa.",
+	"player_unit_list" : [
+		"M3A1 Stuart", "M3A3 Stuart", "M5A1 Stuart",
+		"M3 Lee", "M3A1 Lee", "M3A3 Lee", "M3A4 Lee", "M3A5 Lee",
+		"M4 Sherman", "M4A1 Sherman", "M10 Wolverine"
+	],
+	"player_squad_list" : {
+		"M3A1 Stuart" : ["M3A1 Stuart", "M3A3 Stuart"],
+		"M3A3 Stuart" : ["M3A1 Stuart", "M3A3 Stuart"],
+		"M5A1 Stuart" : ["M3A1 Stuart", "M3A3 Stuart", "M5A1 Stuart"],
+		"M3A1 Lee" : ["M3 Lee", "M3A1 Lee"],
+		"M3A3 Lee" : ["M3 Lee", "M3A3 Lee"],
+		"M3A4 Lee" : ["M3 Lee", "M3A4 Lee"],
+		"M3A5 Lee" : ["M3 Lee", "M3A5 Lee"]
+	},
+	"tank_vp_modifiers" : {
+		"M3A1 Stuart" : 1.2,
+		"M3A3 Stuart" : 1.2,
+		"M5A1 Stuart" : 1.2
+	},
+	"campaign_skills" : [
+		"Baptism of Fire"
+	],
+	"player_arty_support": [
+		"M2A1 105mm Howitzer", "M1 155mm Howitzer"
+	],
+	"enemy_arty_support": [
+		"7.5cm leIG 18", "105/28", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18"
+	],
+	"player_air_support": [
+		"P-40 Warhawk"
+	],
+	"enemy_air_support": [
+		"Fiat CR.42 Falco", "Ju 87 Picchiatello", "Ju 87B Stuka"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["Bazooka Team", "M3 GMC", "M6 GMC Fargo", "M10 Wolverine"],
+		"Anti-Infantry" : ["M3 half-track", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["Willys MB", "M3A1 Stuart", "M5A1 Stuart"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M2A1 105mm Howitzer", "M7 Priest"]
+	},
+	"friendly_transported_units" : {
+		"M3 half-track" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Bazooka Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_unit_list" : {
+		"France" : [
+			"Renault FT", "Renault FT (MG)",
+			"H35", "H35 (Late)", "R35 (Late)", "AMC 29",
+			"SOMUA S35", "H39 (Late)",
+			"Char B-1 Bis",
+			"AMD 35",
+			"SA-L 34",
+			"75mm mle 1897", "75mm mle 1928", "105mm C mle 1935", "105mm L mle 1913", "155mm C mle 1917",
+			"20mm mle 1939 AA Gun", "25mm mle 1938 AA Gun",
+			"Autocanon de 75mm",
+			"Laffly S20TL", "Lorraine 38L", "Citroen 23",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
+		],
+		"Italy" : [
+			"L3/35", "L3 cc", "L6/40", "M11/39", "M13/40", "M14/41",
+			"Semovente da 47/32", "Semovente da 75/18",
+			"47/32",
+			"AB 41", "AS 42 - MG AA", "AS 42 - AA", "AS 42 - MG", "AS 42 - AT",
+			"65/17", "75/27", "100/17", "105/28",
+			"20/65",
+			"Autocannone da 20/65",
+			"Fiat 626",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
+		],
+		"Germany" : [
+			"Panzer II F", "Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M",
+			"Panzer III N", "Panzer IV D", "Panzer IV E", "Panzer IV F1", "Panzer IV F2", 
+			"Panzer IV G", "Panzer IV H", "Panzer VIe",
+			"Panzerjager I", "Marder II", "Marder III",
+			"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
+			"PaK 38", "PaK 40",
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", 
+			"8.8cm FlaK 18 o. 36", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Kfz 1",
+			"SPW 251/1", "SPW 251/2",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 30,
+		"Medium Tank" : 70,
+		"Heavy Tank" : 50,
+		"Tank Destroyer" : 40,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 60,
+		"Artillery Gun" : 35,
+		"Anti-Aircraft Gun" : 25,
+		"Self-Propelled AA Gun" : 15,
+		"APC" : 75,
+		"Truck" : 80,
+		"Infantry Squad" : 60,
+		"Support Weapon Team" : 45,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"France" : {
+			"Laffly S20TL" : {
+				"Riflemen" : 80,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"Lorraine 38L" : {
+				"Riflemen" : 80,
+				"HMG Team" : 20,
+				"AT Rifle Team" : 20
+			},
+			"Citroen 23" : {
+				"Riflemen" : 100
+			}
+		},
+		"Italy" : {
+			"Fiat 626" : {
+				"Riflemen" : 80,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		},
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"decorations_list" : {
+		"4000" : "Bronze Star",
+		"4200" : "Silver Star",
+		"4400" : "Distinguished Service Cross",
+		"4700" : "Congressional Medal of Honor"
+	},
+	"combat_days" : 57,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.11.08",
+			"end_date" : "1942.11.09",
+			"location" : "33.70,-7.41",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"coastal_chance" : 100,
+			"landmines_chance" : 20,
+			"week_title" : "Operation Brushwood",
+			"week_description" : "We have landed near Fedala, about 25 km north-east of Casablanca. Unfortunately, the Vichy French forces have decided to fight rather than join us. We need to break their resistance and capture the port of Fedala. Our warships and carrier-based planes are ready to provide fire support.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 60
+			},
+			"enemy_nations" : ["France"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.11.10",
+			"end_date" : "1942.11.11",
+			"location" : "33.70,-7.41",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"coastal_chance" : 80,
+			"landmines_chance" : 20,
+			"week_title" : "The Siege of Casablanca",
+			"week_description" : "We have taken the port of Fedala and are moving south-west to take Casablanca and the surrounding area. Our warships and bombers are pounding the defenders. This shouldn't take too long.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 30,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["France"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.11.12",
+			"end_date" : "1942.11.23",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.11.24",
+			"end_date" : "1942.11.26",
+			"location" : "36.89,9.30",
+			"combat_chance" : 60,
+			"average_resistance" : 6,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Blade Force",
+			"week_description" : "Our unit has joined a task force that is supposed to support an advance of American, British and Free French forces into Tunisia. We are going to push east from a position between Djebel Abiod and Beja, heading towards Tunis.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 60
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 40.0
+		},
+		{
+			"start_date" : "1942.11.27",
+			"end_date" : "1942.11.30",
+			"location" : "36.88,9.80",
+			"combat_chance" : 40,
+			"average_resistance" : 5,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Waiting for Reinforcements",
+			"week_description" : "Blade Force carried out a successful attack on an enemy airfield at Djedeida, but - lacking infantry support - had to withdraw to Chouigui to the west. Patrol the surrounding area until we are ready for another attack on Djedeida.",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 30.0
+		},
+		{
+			"start_date" : "1942.12.01",
+			"end_date" : "1942.12.02",
+			"location" : "36.88,9.80",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Enemy Counterattack",
+			"week_description" : "The 10th Panzer Division has arrived and launched an overwhelming counterattack on our forces. A push towards Djedeida is no longer possible.",
+			"mission_odds" : {
+				"Counterattack" : 50,
+				"Fighting Withdrawal" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 40.0
+		},
+		{
+			"start_date" : "1942.12.03",
+			"end_date" : "1942.12.09",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.12.10",
+			"end_date" : "1942.12.11",
+			"location" : "36.75,9.77",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Bou Aoukaz",
+			"week_description" : "Having withdrawn to Bou Aoukaz, we are forced to fight off another Axis counterattack. However, we are in a much better position this time.",
+			"mission_odds" : {
+				"Battle" : 50,
+				"Counterattack" : 50
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.12.12",
+			"end_date" : "1942.12.21",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.12.22",
+			"end_date" : "1942.12.24",
+			"location" : "36.79,9.66",
+			"combat_chance" : 60,
+			"average_resistance" : 8,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "Longstop Hill",
+			"week_description" : "Together with our British allies, we are going to attack a large hill in the river corridor from Medjez to Tebourba. If we can take and hold Longstop Hill, it will be a favourable position for further advances towards Tunis.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 60,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Hills" : 50
+			}	
+		},
+		{
+			"start_date" : "1942.12.25",
+			"end_date" : "1942.12.26",
+			"location" : "36.71,9.66",
+			"combat_chance" : 60,
+			"average_resistance" : 8,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "Retreat from Longstop Hill",
+			"week_description" : "We are outnumbered and running low on ammunition. Axis forces are about to overrun our positions on the hill. We need to retreat to Medjez in the south-west.",
+			"mission_odds" : {
+				"Counterattack" : 40,
+				"Fighting Withdrawal" : 60
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 30.0,
+			"terrain_odds_modifier" : {
+				"Hills" : 40
+			}	
+		},
+		{
+			"start_date" : "1942.12.27",
+			"end_date" : "1943.02.13",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1943.02.14",
+			"end_date" : "1943.02.17",
+			"location" : "35.04,9.48",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Battle of Sidi Bou Zid",
+			"week_description" : "After a long period of refitting, our unit has been posted further south, at Sidi Bou Zid. Several German battle groups have launched a major offensive in this area, trying to push our forces back to the west.",
+			"mission_odds" : {
+				"Battle" : 30,
+				"Counterattack" : 40,
+				"Fighting Withdrawal" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1943.02.19",
+			"end_date" : "1943.02.21",
+			"location" : "35.25,8.75",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "Battle of Kasserine Pass",
+			"week_description" : "Sidi Bou Zid has been lost and we have taken up defensive positions at Kasserine Pass further west. Supported by Italian units, the Germans continue to press their advantage.",
+			"mission_odds" : {
+				"Counterattack" : 60,
+				"Fighting Withdrawal" : 40
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1943.02.22",
+			"end_date" : "1943.02.24",
+			"location" : "35.25,8.75",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Gaining the Upper Hand",
+			"week_description" : "Our forces suffered devastating casualties, but they held the pass. Now we are ready to launch a counterattack with reinforcements, air and artillery support. Hit the Germans and Italians as hard as you can and drive them all the way back to Sidi Bou Zid!",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Germany", "Italy"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.02.25",
+			"end_date" : "1943.03.16",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1943.03.17",
+			"end_date" : "1943.03.20",
+			"location" : "34.36,8.86",
+			"combat_chance" : 50,
+			"average_resistance" : 3,
+			"coastal_chance" : 0,
+			"landmines_chance" : 15,
+			"week_title" : "Gafsa and El Guettar",
+			"week_description" : "After the disastrous performance of our troops at Kasserine Pass, we spent several weeks reorganising our unit and command structures. Help our infantry take the town of Gafsa and the oasis of El Guettar, which are lightly defended by Italian troops. Then proceed to secure the surrounding area.",
+			"mission_odds" : {
+				"Advance" : 70,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["Italy"],
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1943.03.21",
+			"end_date" : "1943.03.22",
+			"location" : "34.31,8.97",
+			"combat_chance" : 40,
+			"average_resistance" : 3,
+			"coastal_chance" : 0,
+			"landmines_chance" : 15,
+			"week_title" : "Calm before the Storm",
+			"week_description" : "Gafsa and El Guettar have been secured. Patrol the surrounding area and mop up any Italian forces you may encounter.",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Italy"],
+			"arty_support_level" : 50.0
+		},
+		{
+			"start_date" : "1943.03.23",
+			"end_date" : "1943.03.23",
+			"location" : "34.31,8.97",
+			"combat_chance" : 100,
+			"average_resistance" : 7,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "The Battle of El Guettar",
+			"week_description" : "The 10th Panzer Division is attacking our forces in the El Guettar valley, coming from the east. Fortunately, we have been able to lay some minefields which should help slow down the Germans. Hold the line!",
+			"mission_odds" : {
+				"Battle" : 50,
+				"Counterattack" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.03.24",
+			"end_date" : "1943.03.29",
+			"location" : "34.31,8.97",
+			"combat_chance" : 40,
+			"average_resistance" : 5,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "Stalemate",
+			"week_description" : "We were able to repel the assault on El Guettar, but the Germans have taken up defensive positions to the east. None of the two sides is currently willing to attack. Patrol the area between the battle lines and engage any enemy units you encounter. Be careful!",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"arty_support_level" : 50.0
+		},
+		{
+			"start_date" : "1943.03.30",
+			"end_date" : "1943.04.03",
+			"location" : "34.22,8.97",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "Hill 369",
+			"week_description" : "The Italians are holding two large hills south of El Guettar - Hill 369 and Hill 772. Your battlegroup has orders to help our infantry take the first of these two hills.",
+			"mission_odds" : {
+				"Battle" : 50,
+				"Counterattack" : 50
+			},
+			"enemy_nations" : ["Italy"],
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Hills" : 60
+			}	
+		},
+		{
+			"start_date" : "1943.04.04",
+			"end_date" : "1943.04.07",
+			"location" : "34.21,8.68",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"coastal_chance" : 0,
+			"landmines_chance" : 30,
+			"week_title" : "Hill 772",
+			"week_description" : "We have taken Hill 369, but further west Italian troops with German support are still defending Hill 772.",
+			"mission_odds" : {
+				"Battle" : 40,
+				"Counterattack" : 60
+			},
+			"enemy_nations" : ["Italy", "Germany"],
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Hills" : 50
+			}	
+		},
+		{
+			"start_date" : "1943.04.08",
+			"end_date" : "1943.04.26",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1943.04.27",
+			"end_date" : "1943.05.03",
+			"location" : "36.95,9.43",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"coastal_chance" : 0,
+			"landmines_chance" : 20,
+			"week_title" : "Towards Mateur",
+			"week_description" : "The Axis forces have abandoned the Mareth Line and retreated into the north-east of Tunisia. Our aerial and naval forces have prevented any German and Italian attempts to reinforce their troops. We are now ready to finish off the Afrika Korps. Our unit has been ordered to push east and take Mateur.",
+			"mission_odds" : {
+				"Advance" : 60,
+				"Battle" : 20,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Italy", "Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1943.05.04",
+			"end_date" : "1943.05.07",
+			"location" : "37.10,9.71",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"coastal_chance" : 40,
+			"landmines_chance" : 10,
+			"week_title" : "The Final Push",
+			"week_description" : "Having taken Mateur, our unit is moving north-east towards the town of Ferryville, located between Lake Ichkeul and the Lake of Bizerte. Thousands of German and Italian soldiers all across Tunisia have already surrendered. Victory is close!",
+			"mission_odds" : {
+				"Advance" : 60,
+				"Spearhead" : 40
+			},
+			"enemy_nations" : ["Italy", "Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		}
+	]
+}

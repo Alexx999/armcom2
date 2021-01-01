@@ -1,47 +1,103 @@
 {
 	"name" : "The September Campaign",
+	"creator" : "Standard Campaign",
 	"start_date" : "1939.09.01",
 	"end_date" : "1939.10.06",
 	"player_nation" : "Poland",
 	"enemy_nations" : ["Germany"],
 	"region" : "Northeastern Europe",
-	"desc" : "The Polish defense against the German invasion, 1939.",
+	"desc" : "Join the Polish defense against German invasion, 1939.",
 	"player_unit_list" : [
-		"TKS (20mm)", "Vickers 6-Ton Mark E", "7TP"
+		"TK-3", "TKS", "TKS (20mm)", "Vickers 6-Ton Mark E", "7TP"
 	],
-	"national_skills" : [
+	"player_squad_list" : {
+		"TK-3" : ["TK-3", "TKS", "TKS (20mm)"],
+		"TKS" : ["TK-3", "TKS", "TKS (20mm)"],
+		"TKS (20mm)" : ["TK-3", "TKS", "TKS (20mm)"]
+	},
+	"tank_vp_modifiers" : {
+		"TK-3" : 1.8,
+		"TKS" : 1.5,
+		"TKS (20mm)" : 1.2
+	},
+	"campaign_skills" : [
 		"Defend the Motherland"
 	],
 	"player_arty_support": [
 		"75mm wz. 02/26", "105mm wz. 29"
 	],
-	"enemy_air_support": [
-		"Ju 87B Stuka"
-	],
-	"enemy_arty_support": [
-		"7.5cm leIG 18"
-	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "37mm wz. 36"],
+		"Anti-Infantry" : ["Polski Fiat 621", "HMG Team", "Fiat 508 Taczanka", "Riflemen", "Rifle Cavalry"],
+		"Recon" : ["wz. 34 (MG)", "wz. 34 (37mm)"],
+		"Artillery" : ["Medium Mortar Team", "75mm wz. 02/26", "105mm wz. 29"]
+	},
+	"friendly_transported_units" : {
+		"Polski Fiat 621" : {
+			"Riflemen" : 40,
+			"AT Rifle Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 10,
+			"HMG Team" : 20
+		}
+	},
+	"enemy_air_support": {
+		"Germany" : ["Ju 87B Stuka"]
+	},
+	"enemy_arty_support": {
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "15cm sIG 33", "15cm sFH 18"]
+	},
 	"enemy_unit_list" : {
 		"Germany" : [
 			"Panzer I B", "Panzer II A", "Panzer 35(t)", "Panzer 38(t) A", 
 			"Panzer III D", "Panzer III F", "Panzer IV A", "Panzer IV C",
 			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)",
-			"PSW 231 (8 rad)", "PaK 35/36", "8.8cm FlaK 18 o. 36", "Opel Blitz 3-ton",
-			"SPW 251/1", "Riflemen", "Motorcycle MG Team", "HMG Team", "AT Rifle Team"
+			"PSW 231 (8 rad)", "PaK 35/36",
+			"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sIG 33", "15cm sFH 18",
+			"8.8cm FlaK 18 o. 36", "Opel Blitz 3-ton",
+			"SPW 251/1", "SPW 251/2",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team",
+			"Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
 		]
 	},
 	"enemy_unit_class_odds" : {
-		"Light Tank" : "70",
-		"Medium Tank" : "15",
-		"Armoured Car" : "90",
-		"Anti-Tank Gun" : "35",
-		"Anti-Aircraft Gun" : "5",
-		"Truck" : "90",
-		"Armoured Personnel Carrier" : "25",
-		"Infantry Squad" : "100",
-		"MG Team" : "50",
-		"ATR Team" : "60",
-		"Motorcycle Team" : "85"
+		"Light Tank" : 70,
+		"Medium Tank" : 15,
+		"Armoured Car" : 90,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 10,
+		"Anti-Aircraft Gun" : 5,
+		"Truck" : 90,
+		"APC" : 25,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 75
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Heavy Mortar Team" : 10,
+				"Flame Thrower Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 20,
+				"AT Rifle Team" : 10,
+				"Light Mortar Team" : 10,
+				"Medium Mortar Team" : 20,
+				"Heavy Mortar Team" : 10,
+				"Flame Thrower Team" : 10
+			}
+		}
 	},
 	"decorations_list" : {
 		"700" : "Cross of Valour",
@@ -53,90 +109,104 @@
 	"calendar_weeks": [
 		{
 			"start_date" : "1939.09.01",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "52.91,16.37",
 			"combat_chance" : 80,
-			"average_resistance" : "7",
+			"average_resistance" : 9,
 			"week_title" : "Invasion",
+			"week_description" : "German forces have invaded from the north, west, and south. Although our armoured forces are few in number, we must support the infantry in blunting the advance.",
 			"mission_odds" : {
-				"Advance" : "5",
-				"Battle" : "10",
-				"Counterattack" : "15",
-				"Fighting Withdrawal" : "70"
+				"Advance" : 5,
+				"Battle" : 10,
+				"Counterattack" : 15,
+				"Fighting Withdrawal" : 70
 			},
 			"enemy_nations" : ["Germany"],
-			"arty_support_level" : 90.0
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 30
+			}
 		},
 		{
 			"start_date" : "1939.09.08",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
 			"combat_chance" : 70,
-			"average_resistance" : "8",
-			"week_title" : "Holding Back the Tide",
+			"average_resistance" : 8,
+			"week_title" : "Counter-offensive",
+			"week_description" : "Although the Germans have occupied a great deal of territory, we now have an opportunity to mount a large scale counterattack on their overextended lines.",
 			"mission_odds" : {
-				"Advance" : "0",
-				"Battle" : "10",
-				"Counterattack" : "20",
-				"Fighting Withdrawal" : "70"
+				"Battle" : 70,
+				"Spearhead" : 30
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0,
 			"enemy_class_odds_modifier" : {
-				"Anti-Tank Gun" : "20"
+				"Anti-Tank Gun" : 20,
+				"Artillery Gun" : 30
+			},
+			"terrain_odds_modifier" : {
+				"Fields" : 30
 			}
 		},
 		{
 			"start_date" : "1939.09.15",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
+			"location" : "52.81,17.22",
 			"combat_chance" : 60,
-			"average_resistance" : "5",
-			"week_title" : "Pincer Movement",
+			"average_resistance" : 5,
+			"week_title" : "Encirclement",
+			"week_description" : "Our attack has ground to a halt, and massive German reinformcents are trying to surround us. We must break out of the encirclement and rejoin the main defense force.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "40",
-				"Counterattack" : "10",
-				"Fighting Withdrawal" : "10",
-				"Spearhead" : "30"
+				"Advance" : 10,
+				"Battle" : 30,
+				"Spearhead" : 60
 			},
 			"enemy_nations" : ["Germany"],
-			"arty_support_level" : 70.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0,
 			"enemy_class_odds_modifier" : {
-				"Infantry Squad" : "50"
+				"Infantry Squad" : 50
 			}
 		},
 		{
 			"start_date" : "1939.09.22",
-			"day_start" : "05:30",
-			"day_end" : "18:15",
 			"combat_chance" : 60,
-			"average_resistance" : "7",
+			"average_resistance" : 5,
 			"week_title" : "Retreat",
+			"week_description" : "We have received word that Soviet forces have invaded us from the east. The situation is no longer tenable. We must drive toward Romania so we can survive to fight another day.",
 			"mission_odds" : {
-				"Battle" : "10",
-				"Fighting Withdrawal" : "90"
+				"Battle" : 10,
+				"Fighting Withdrawal" : 90
 			},
 			"enemy_nations" : ["Germany"],
-			"arty_support_level" : 50.0,
+			"arty_support_level" : 20.0,
+			"unit_support_level" : 30.0,
 			"enemy_class_odds_modifier" : {
-				"Infantry Squad" : "30"
+				"Infantry Squad" : 30
+			},
+			"terrain_odds_modifier" : {
+				"Forest" : 55,
+				"Hills" : 40
 			}
 		},
 		{
 			"start_date" : "1939.09.29",
-			"day_start" : "06:30",
-			"day_end" : "17:15",
+			"location" : "50.35,19.75",
 			"combat_chance" : 60,
-			"average_resistance" : "8",
+			"average_resistance" : 5,
 			"week_title" : "Break Out",
+			"week_description" : "Only isolated garrisons remain. Our battlegroup must make it across the border to continue the fight for the Polish Republic.",
 			"mission_odds" : {
-				"Advance" : "10",
-				"Battle" : "20",
-				"Spearhead" : "70"
+				"Advance" : 10,
+				"Battle" : 20,
+				"Spearhead" : 70
 			},
 			"enemy_nations" : ["Germany"],
-			"arty_support_level" : 40.0
+			"arty_support_level" : 10.0,
+			"unit_support_level" : 10.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 75,
+				"Hills" : 60
+			}
 		}
 	]
 }
