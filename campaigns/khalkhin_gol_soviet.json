@@ -1,0 +1,205 @@
+{
+	"name" : "Khalkhin Gol (Soviet Union)",
+	"creator" : "flori2412",
+	"start_date" : "1939.07.03",
+	"end_date" : "1939.08.28",
+	"player_nation" : "Soviet Union",
+	"enemy_nations" : ["Empire of Japan"],
+	"region" : "Asian Steppes",
+	"desc" : "Join the Soviet border troops in Mongolia as they are facing a Japanese offensive near the Khalkhin Gol River.",
+	"player_unit_list" : [
+		"T-26 M33", "T-26 M37/39", "BT-5 M34", "BT-7 M37", "BT-7A"
+	],
+	"player_squad_list" : {
+		"BT-7 M37" : ["BT-7 M37", "BT-7A"],
+		"BT-7A" : ["BT-7 M37", "BT-7A"]
+	},
+	"tank_vp_modifiers" : {
+		"T-26 M33" : 1.1
+	},
+	"campaign_skills" : [
+		"Centralized Fire"
+	],
+	"player_air_support": [
+		"I-153 Chaika"
+	],
+	"player_arty_support": [
+		"76.2mm PP obr. 27", "76.2mm obr. 00/02P", "76.2mm obr. 36", "107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38", "152mm GP obr. 37"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
+		"Anti-Infantry" : ["ZIS-5 Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["BA-6", "BA-10", "BA-20"],
+		"Artillery" : ["Light Mortar Team", "76.2mm obr. 00/02P", "76.2mm PP obr. 27", "76.2mm obr. 36"]
+	},
+	"friendly_transported_units" : {
+		"ZIS-5 Truck" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 20,
+			"Flame Thrower Team" : 20
+		}
+	},
+	"enemy_air_support": {
+		"Empire of Japan" : ["Kawasaki Ki-32"]
+	},
+	"enemy_arty_support": {
+		"Empire of Japan" : ["Type 92 70mm Battalion Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 38 15cm Howitzer", "Type 96 15cm Howitzer"]
+	},
+	"enemy_unit_list" : {
+		"Empire of Japan" : [
+			"Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)", "Type 95 Ha-Go", "Type 89 I-Go", "Type 97 Chi-Ha",
+			"Type 94 37mm AT Gun", 
+			"Type 11 37mm Infantry Gun", "Type 92 70mm Battalion Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", 
+			"Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 4 15cm Howitzer", "Type 96 15cm Howitzer", 
+			"Type 88 75mm AA Gun",
+			"Type 94 Truck", "Type 95 Scout Car",
+			"Riflemen",
+			"HMG Team", "AT Rifle Team", "Medium Mortar Team",
+			"Rifle Cavalry",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Tankette" : 0,
+		"Light Tank" : 0,
+		"Medium Tank" : 0,
+		"Anti-Tank Gun" : 30,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Truck" : 50,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 55,
+		"Cavalry Squad" : 40,
+		"Motorcycle Team" : 15
+	},
+	"enemy_transported_units" : {
+		"Empire of Japan": {
+			"Type 94 Truck" : {
+				"Riflemen" : 80,
+				"HMG Team" : 20,
+				"AT Rifle Team" : 20,
+				"Medium Mortar Team" : 20
+			},
+			"Type 95 Scout Car" : {
+				"HMG Team" : 50,
+				"AT Rifle Team" : 50
+			}
+		}
+	},
+	"decorations_list" : {
+		"600" : "Medal for Battle Merit",
+		"800" : "Order of the Red Star",
+		"900" : "Order of the Red Banner",
+		"1000" : "Order of Lenin"
+	},
+	"combat_days" : 12,
+	"calendar_weeks": [
+		{
+			"start_date" : "1939.07.03",
+			"end_date" : "1939.07.03",
+			"location" : "47.95,118.56",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Bain Tsagan Hill",
+			"week_description" : "Over the last two months, there have been skirmishes between Soviet and Japanese troops on the border between Mongolia and Manchukuo. Now the Japanese have launched an offensive near the Khalkhin Gol. Advance onto Bain Tsagan Hill on the west bank of the river. We do not expect any resistance.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 30.0,
+			"terrain_odds_modifier" : {
+				"Hills" : 50
+			}
+		},
+		{
+			"start_date" : "1939.07.04",
+			"end_date" : "1939.07.05",
+			"location" : "47.95,118.56",
+			"combat_chance" : 100,
+			"average_resistance" : 6,
+			"week_title" : "Securing Bain Tsagan Hill",
+			"week_description" : "To our surprise, we ran into a strong concentration of Japanese infantry on the hill. Our armoured units have suffered heavy casualties, but the enemy resistance is beginning to falter and we have achieved air superiority. Advance and secure the hill!",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 70
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 60.0,
+			"terrain_odds_modifier" : {
+				"Hills" : 50
+			}
+		},
+		{
+			"start_date" : "1939.07.06",
+			"end_date" : "1939.07.22",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1939.07.23",
+			"end_date" : "1939.07.25",
+			"location" : "47.95,118.56",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Defending the East Bank",
+			"week_description" : "Our infantry had to repel a series of Japanese night attacks over the last two weeks while our armoured forces were kept in reserve. Your unit has crossed the river and received reinforcements. We need to repel another Japanese assault on the east bank of the river.",
+			"mission_odds" : {
+				"Battle" : 40,
+				"Counterattack" : 60
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_class_odds_modifier" : {
+				"Tankette" : 10,
+				"Light Tank" : 20,
+				"Medium Tank" : 20
+			}
+		},
+		{
+			"start_date" : "1939.07.26",
+			"end_date" : "1939.08.19",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1939.08.20",
+			"end_date" : "1939.08.24",
+			"location" : "47.95,118.56",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Soviet Assault",
+			"week_description" : "General Zhukov has reinforced our troops with hundreds of planes, guns, tanks and thousands of soldiers. The time has come to crush any Japanese resistance near the Khalkhin Gol.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1939.08.25",
+			"end_date" : "1939.08.28",
+			"location" : "47.95,118.56",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "Encirclement",
+			"week_description" : "Our troops have overrun the Japanese flanks and occupied Nomonhan to the north-east of our position. The enemy troops in front of us are now encircled. Press the attack and finish them off!",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 60,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		}
+	]
+}

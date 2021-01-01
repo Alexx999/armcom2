@@ -8,13 +8,16 @@
 	"region" : "Northeastern Europe",
 	"desc" : "Soviet invasion of Poland, September 1939.",
 	"player_unit_list" : [
-		"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34"
+		"T-26 M33", "T-26 M37/39", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34"
 	],
 	"player_squad_list" : {
+		"T-26 M33" : ["T-26 M33", "T-26 M37/39"],
+		"T-26 M37/39" : ["T-26 M33", "T-26 M37/39"],
 		"BT-7 M37" : ["BT-7 M37", "BT-7A"],
 		"BT-7A" : ["BT-7 M37", "BT-7A"]
 	},
 	"tank_vp_modifiers" : {
+		"T-26 M37/39" : 0.9,
 		"BT-5 M34" : 1.1,
 		"T-28 M34" : 0.8
 	},
@@ -22,13 +25,15 @@
 		"Centralized Fire"
 	],
 	"player_arty_support": [
-		"76.2mm PP obr. 27", "76.2mm obr. 00/02P"
+		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 00/02P",
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
+		"152mm GP obr. 37"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
 		"Anti-Infantry" : ["ZIS-5 Truck", "HMG Team", "Riflemen", "Flame Thrower Team"],
 		"Recon" : ["BA-6", "BA-10", "BA-20"],
-		"Artillery" : ["Light Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 00/02P"]
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 00/02P"]
 	},
 	"friendly_transported_units" : {
 		"ZIS-5 Truck" : {

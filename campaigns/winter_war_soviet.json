@@ -26,7 +26,9 @@
 		"I-153 Chaika"
 	],
 	"player_arty_support": [
-		"76.2mm obr. 00/02P", "76.2mm obr. 39"
+		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 00/02P",
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
+		"152mm GP obr. 37"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12", "76.2mm obr. 39"],
@@ -50,7 +52,8 @@
 	"enemy_unit_list" : {
 		"Finland" : [
 			"Vickers 6-Ton Mark E", "T-26 M33", "BT-5 M34", "BT-7 M37", "T-28 M34",
-			"37 PstK/37", "45 PstK/32", "105 K/13", "76 K/02",
+			"37 PstK/37", "45 PstK/32", "105 K/13", "76 K/02", "75 PstK/97-38",
+			"20 ItK/38", "40 ItK/38",
 			"3-ton Truck",
 			"Riflemen", "SMG Squad",
 			"HMG Team", "AT Rifle Team", "Medium Mortar Team", "Flame Thrower Team", "SMG Squad",
@@ -71,6 +74,7 @@
 		"Medium Tank" : 5,
 		"Anti-Tank Gun" : 65,
 		"Artillery Gun" : 45,
+		"Anti-Aircraft Gun" : 15,
 		"Truck" : 80,
 		"Infantry Squad" : 100,
 		"Support Weapon Team" : 80,

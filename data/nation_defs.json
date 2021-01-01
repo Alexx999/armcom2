@@ -723,5 +723,59 @@
 			"Venturi", "Verratti", "Verrilli", "Violante", "Volpe", "Volta",
 			"Valentino", "Zanetti", "Zampa", "Zetticci", "Zito", "Zullo"
 		]
+	},
+	
+	"Empire of Japan": {
+		"short_code" : "JAP",
+		"adjective" : "Japanese",
+		"flag_image" : "flag_JAP.xp",
+		"surnames_first" : "TRUE",
+		"rank_names" : {
+			"0" : "Nitohei",
+			"1" : "Ittohei",
+			"2" : "Gocho",
+			"3" : "Gunso",
+			"4" : "Socho",
+			"5" : "Rikugun-Shoi",
+			"6" : "Rikugun-Chui"
+		},
+		"first_names" : [
+			"Akemi", "Akihiko", "Akihiro", "Akira", "Arakan", "Arata", "Atsushi",
+			"Botan", "Daichi", "Daisuke", "Eichi", "Eiko", "Ena", "Ezume",
+			"Fudo", "Fujita", "Genki", "Goro", "Hachiro", "Hajime", "Haru", "Haruo",
+			"Hayao", "Hikaru", "Hiroki", "Hiroshi", "Hiroyuki", "Hisoka", "Hoshi", 
+			"Isao", "Izanagi", "Jiro", "Joben", "Joe", "Kanaye", "Kano", "Kaori", 
+			"Katashi", "Kazuhiko", "Ken", "Kenji", "Kentaro", "Kichi", "Kin", "Kioshi",
+			"Kishi", "Kisho", "Kitaro", "Kiyo", "Kiyoshi", "Kono", "Koshiro",
+			"Mamoru", "Manzo", "Masaaki", "Masahiro", "Masakazu", "Masanori", "Masashi",
+			"Masayuki", "Masuyo", "Michi", "Michiya", "Minori", "Mitsuo", "Monterio",
+			"Namiyo", "Naoko", "Nen", "Nikko", "Nobu", "Nobuyuki", "Osamu",
+			"Ozuru", "Raidon", "Rei", "Renjiro", "Ringo", "Ronin", "Ryo",
+			"Ryoichi", "Ryozo", "Ryuichi", "Ryuji", "Saburo", "Sadao", "Satoshi",
+			"Seiichi", "Senichi", "Shamon", "Shige", "Shigekazu", "Shin", "Shinichi",
+			"Shoichi", "Shoma", "Shuichi", "Shuji", "Shunichi", "Sinichi", "Taigen",
+			"Taishiro", "Taiyo", "Takahiro", "Takai", "Takeo", "Takiyo", "Taku",
+			"Tama", "Tani", "Taro", "Tatsuo", "Tenchi", "Teru", "Teruma", "Tetsip",
+			"Tetsuya", "Tomo", "Torio", "Toshi", "Toshishita", "Toyo", "Tozen",
+			"Tsutomu", "Uta", "Yasashiku", "Yasuo", "Yogi", "Yoichi", "Yori",
+			"Yoshi", "Yoshifumi", "Yoshikazu", "Yoshimitsu", "Yoshinori", "Yoshito",
+			"Yoshiyuki", "Yuji", "Yuki", "Yukio", "Yutaka", "Yuudai", "Zinan"
+		],
+		"surnames" : [
+			"Abe", "Ando", "Aoki", "Arai", "Chiba", "Endo", "Fujii", "Fujimoto", 
+			"Fujita", "Fujiwara", "Fukuda", "Goto", "Hara", "Harada", "Hasegawa", 
+			"Hashimoto", "Hayashi", "Hirano", "Hisaishi", "Ikeda", "Imai", "Inoue", 
+			"Ishida", "Ishii", "Ishikawa", "Ito", "Iwasaki", "Kaneko", "Kato", 
+			"Kikuchi", "Kimura", "Kinoshita", "Kobayashi", "Kojima", "Kondo", "Kubo", 
+			"Kudo", "Maeda", "Maruyama", "Masuda", "Matsuda", "Matsui", "Matsumoto", 
+			"Matsuo", "Miura", "Miyamoto", "Miyazaki", "Mori", "Morita", "Murakami", 
+			"Murata", "Nakagawa", "Nakajima", "Nakamura", "Nakayama", "Nakano", 
+			"Nishimura", "Noguchi", "Nomura", "Ogawa", "Ohno", "Okada", "Okamoto", 
+			"Onishi", "Ono", "Ota", "Otsuka", "Saito", "Sakai", "Sakamoto", "Sakurai", 
+			"Sano", "Sasaki", "Sato", "Shibata", "Shimizu", "Sugawara", "Sugimoto", 
+			"Sugiyama", "Suzuki", "Takada", "Takagi", "Takahashi", "Takeda", "Takeuchi", 
+			"Tamura", "Tanaka", "Taniguchi", "Uchida", "Ueda", "Ueno", "Watanabe", "Wada", 
+			"Yamada", "Yamaguchi", "Yamamoto", "Yamashita", "Yamazaki", "Yokoyama", "Yoshida"
+		]
 	}
 }

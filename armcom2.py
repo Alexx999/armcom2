@@ -13,7 +13,7 @@
 #                             Full Steam release ???                                     #
 ##########################################################################################
 #
-#    Copyright (c) 2016-2020 Gregory Adam Scott
+#    Copyright (c) 2016-2021 Gregory Adam Scott
 #    (armouredcommander@gmail.com)
 #
 #    This file is part of Armoured Commander II.
@@ -74,7 +74,7 @@ from steamworks import STEAMWORKS			# main steamworks library
 ##########################################################################################
 
 NAME = 'Armoured Commander II'				# game name
-VERSION = '7.1.3'					# game version
+VERSION = '7.2.1'					# game version
 DISCLAIMER = 'This is a work of fiction and no endorsement of any historical ideologies or events depicted within is intended.'
 DATAPATH = 'data/'.replace('/', os.sep)			# path to data files
 SAVEPATH = 'saved_campaigns/'.replace('/', os.sep)	# path to saved campaign folder
@@ -1546,15 +1546,28 @@ class Campaign:
 			if self.today < '1941.10.01' and self.player_unit.GetStat('category') == 'Vehicle':
 				self.player_unit.stats['unreliable'] = True
 		
+		# check for enemy class odds modifiers in the first week
+		if 'enemy_class_odds_modifier' in self.current_week:
+			for k, v in self.current_week['enemy_class_odds_modifier'].items():
+				if k in self.stats['enemy_unit_class_odds']:
+					self.stats['enemy_unit_class_odds'][k] = v
+		
 	
 	# check for the start of a new campaign week given the current date, apply any modifiers
+	# can jump ahead several weeks
 	def CheckForNewWeek(self):
 		week_index = self.stats['calendar_weeks'].index(self.current_week)
-		if week_index < len(self.stats['calendar_weeks']) - 1:
+		
+		# final week of campaign
+		if week_index == len(self.stats['calendar_weeks']) - 1: return
+		
+		for i in range(len(self.stats['calendar_weeks']) - week_index - 1):
+		
 			week_index += 1
-			if self.today >= self.stats['calendar_weeks'][week_index]['start_date'] or 'refitting' in self.current_week:
+			
+			if self.today >= self.stats['calendar_weeks'][week_index]['start_date']:
 				
-				# start of new week
+				# advance calendar one week
 				self.current_week = self.stats['calendar_weeks'][week_index]
 				
 				# check for modified class spawn odds
@@ -1569,6 +1582,10 @@ class Campaign:
 					position.crewman.PromotionCheck()
 				
 				session.ModifySteamStat('weeks_passed', 1)
+			
+			else:
+				# we've reached the correct week
+				return
 	
 	
 	# handle a Player Commander heading to the field hospital for a period of time
@@ -1606,8 +1623,6 @@ class Campaign:
 		# we're still in the campaign, set the current day to the next possible combat day
 		i = self.combat_calendar.index(self.today)
 		for combat_day in self.combat_calendar[i+1:]:
-			
-			self.CheckForNewWeek()
 			
 			# recalculate commander age
 			crewman.CalculateAge()
@@ -1698,7 +1713,7 @@ class Campaign:
 						libtcod.console_set_default_background(con, libtcod.darkest_blue)
 					libtcod.console_rect(con, 1, y, 28, 3, True, libtcod.BKGND_SET)
 					libtcod.console_set_default_background(con, libtcod.black)
-				PrintExtended(con, 1, y+1, crewman.GetName(), first_initial=True)
+				PrintExtended(con, 1, y+1, crewman.GetCrewmanName(), first_initial=True, nation=crewman.nation)
 				y += 3
 				i += 1
 			
@@ -1741,7 +1756,7 @@ class Campaign:
 				libtcod.console_print(con, x+5, 57, 'Advance Points')
 				
 				libtcod.console_set_default_foreground(con, libtcod.white)
-				PrintExtended(con, x+9, 17, crewman.GetName())
+				PrintExtended(con, x+9, 17, crewman.GetCrewmanName())
 				libtcod.console_print(con, x+9, 19, session.nations[crewman.nation]['rank_names'][str(crewman.rank)])
 				
 				if crewman.current_position is None:
@@ -1981,9 +1996,12 @@ class Campaign:
 		
 		if CAMPAIGN_LENGTH_MULTIPLIERS[campaign_length] != 1.0:
 			new_length = int(ceil(len(refit_days) * CAMPAIGN_LENGTH_MULTIPLIERS[campaign_length]))
+			if new_length < 1:
+				new_length = 1
 			refit_days = sample(refit_days, new_length)
 		
-		#print('DEBUG: Adding ' + str(len(refit_days)) + ' refit days')
+		#print('DEBUG: Added following refit days: ' + str(refit_days))
+		
 		self.combat_calendar += refit_days
 
 		self.combat_calendar.sort()
@@ -1999,7 +2017,6 @@ class Campaign:
 		
 		# if the final date in the combat calendar is a refit day, remove it
 		if self.combat_calendar[-1] in refit_days:
-			#print('DEBUG: Removing a refit day at the end of the combat calendar')
 			self.combat_calendar.pop(-1)
 		
 		#print('DEBUG: Generated a combat calendar of ' + str(len(self.combat_calendar)) + ' days:')
@@ -2964,7 +2981,7 @@ class Campaign:
 			if position.crewman is None: continue
 			libtcod.console_set_default_foreground(con, libtcod.white)
 			libtcod.console_print(con, 18, y, position.name)
-			PrintExtended(con, 18, y+1, position.crewman.GetName(), first_initial=True)
+			PrintExtended(con, 18, y+1, position.crewman.GetCrewmanName(), first_initial=True, nation=position.crewman.nation)
 			libtcod.console_set_default_foreground(con, libtcod.light_grey)
 			for x in range(18, 72):
 				libtcod.console_put_char(con, x, y+3, '.')
@@ -3162,7 +3179,7 @@ class Campaign:
 		
 			DisplayLine(25, 11, 'Name:')
 			Wait(20, ignore_animations=True)
-			PrintExtended(con, 31, 11, crewman.GetName())
+			PrintExtended(con, 31, 11, crewman.GetCrewmanName())
 			libtcod.console_blit(con, 0, 0, 0, 0, 0, window_x, window_y)
 			Wait(60, ignore_animations=True)
 			
@@ -3243,7 +3260,7 @@ class Campaign:
 				exit_menu = True
 		
 		# add an entry to the morgue file
-		session.UpdateMorguefile((crewman.GetName(), crewman.level, self.player_vp,
+		session.UpdateMorguefile((crewman.GetCrewmanName(), crewman.level, self.player_vp,
 			fate_text, self.records['Combat Days'], self.stats['name'], VERSION))
 	
 	
@@ -3600,7 +3617,7 @@ class Campaign:
 					libtcod.console_rect(calendar_main_panel, 2, y, 57, 2, False, libtcod.BKGND_SET)
 					libtcod.console_set_default_background(calendar_main_panel, libtcod.black)
 				
-				PrintExtended(calendar_main_panel, 2, y, crewman.GetName(), first_initial=True)
+				PrintExtended(calendar_main_panel, 2, y, crewman.GetCrewmanName(), first_initial=True, nation=crewman.nation)
 				
 				(days_min, days_max) = crewman.field_hospital
 				if days_min == 0:
@@ -3644,6 +3661,15 @@ class Campaign:
 				if position.crewman is None: continue
 				if not position.crewman.alive: continue
 				position.crewman.CalculateAge()
+			
+			# check for reliability change
+			if 'unreliable' in self.player_unit.stats and self.stats['region'] == 'North Africa' and self.player_unit.nation in ['Germany', 'Italy']:
+				if self.today < '1941.10.01':
+					self.player_unit.stats['unreliable'] = True
+				else:
+					unit_type = session.unit_types[self.player_unit.unit_id]
+					if 'unreliable' not in unit_type:
+						self.player_unit.stats['unreliable'] = False
 			
 			# check for start of new week
 			self.CheckForNewWeek()
@@ -4174,6 +4200,7 @@ class CDMapHex:
 			enemy_units_remaining = num_units
 			
 			enemy_unit_classes = list(campaign.stats['enemy_unit_class_odds'].items())
+						
 			enemy_class_dict = {}
 			
 			while enemy_units_remaining > 0:
@@ -4191,6 +4218,9 @@ class CDMapHex:
 				while unit_class is None:
 					if libtcod.console_is_window_closed(): sys.exit()
 					k, value = choice(enemy_unit_classes)
+					
+					# not possible
+					if value == 0: continue
 					
 					# special - some classes less likely if player is being attacked
 					if player_attacked:
@@ -7041,7 +7071,19 @@ class CampaignDay:
 		
 		# don't bother for dead units or if campaign is already over
 		if not unit.alive or campaign.ended: return
-				
+		
+		# NEW: see if crewman need to be put back into their usual positions
+		needs_replacing = False
+		for position in unit.positions_list:
+			if position.crewman is None:
+				needs_replacing = True
+				break
+		
+		if not needs_replacing: return
+		
+		ShowMessage('One or more positions are empty; you may now move crew back into their usual position if needed. Any empty positions will receive a new crewman.')
+		ShowSwapPositionMenu()
+		
 		# add new recruits to fill in any empty positions
 		for position in unit.positions_list:
 			if position.crewman is None:
@@ -10239,7 +10281,7 @@ class Scenario:
 					libtcod.console_set_default_background(con, libtcod.black)
 				
 				# crewman name and current status
-				PrintExtended(con, 2, y, crewman.GetName(), first_initial=True)
+				PrintExtended(con, 2, y, crewman.GetCrewmanName(), first_initial=True, nation=crewman.nation)
 				
 				if not crewman.alive:
 					libtcod.console_set_default_foreground(con, libtcod.light_red)
@@ -10468,8 +10510,32 @@ class Scenario:
 					exit_menu = True
 					continue
 				
-				# if tank is on fire, check for crewmen injuries
+				# if tank is on fire, check for explosion, then crewmen injuries
 				if on_fire:
+					
+					if self.player_unit.DoExplosionRoll(None, None, fire=True):
+						PlaySoundFor(self.player_unit, 'vehicle_explosion')
+						ShowSimpleMessage('The fire ignites an explosion in your tank, destroying it from the inside out.')
+						smoke = True
+						
+						crew_effect = False
+						for crewman in player_crew:
+							if not crewman.alive: continue
+							if crewman.current_position.location == 'Safe Location':
+								continue
+							
+							result = crewman.ResolveAttack({}, explosion=True, show_messages=False)
+							
+							# display result if any
+							if result is not None:
+								UpdateBailOutConsole(no_highlight=True)
+								DisplayResult(crewman, 'Affected by explosion: ' + result, False)
+								crew_effect = True
+						if not crew_effect:
+							ShowSimpleMessage('No effect on your crew.')
+					
+					ShowSimpleMessage('The fire in your tank continues to burn.')
+					
 					for crewman in player_crew:
 						if crewman.current_position.location in ['Tank Exterior', 'Safe Location']:
 							continue
@@ -10552,6 +10618,17 @@ class Scenario:
 							fp_result = True
 					if not fp_result:
 						ShowSimpleMessage('No effect.')
+				
+				# do another all dead check
+				all_dead = True
+				for crewman in player_crew:
+					if crewman.alive:
+						all_dead = False
+						break
+				if all_dead:
+					ShowSimpleMessage('All your crew are dead.')
+					exit_menu = True
+					continue
 				
 				# end of final round 
 				if current_round == max_rounds:
@@ -11037,6 +11114,10 @@ class Scenario:
 		if weapon.GetStat('name') in ['Demolition Charge', 'Flame Thrower', 'Molotovs']:
 			profile['critical_hit'] = 0.0
 		
+		# Ballistic attacks much less likely to get a direct hit
+		elif profile['ballistic_attack']:
+			profile['critical_hit'] = round(CRITICAL_HIT * 0.5, 1)
+		
 		# point fire attacks (eg. guns)
 		if profile['type'] == 'Point Fire':
 			
@@ -11158,7 +11239,10 @@ class Scenario:
 						text = 'Acquired Target'
 						if level == 1:
 							text += '+'
-						modifier_list.append((text, AC_BONUS[distance][level]))
+						mod = AC_BONUS[distance][level]
+						if weapon.GetStat('ballistic_attack') is not None:
+							mod = round(mod * 1.5, 1)
+						modifier_list.append((text, mod))
 				
 				# target is moving
 				if target.moving:
@@ -12517,7 +12601,7 @@ class Scenario:
 							result_text = 'HIT'
 						# no critical hit for DC, FT, MOL
 						elif profile['weapon'].GetStat('name') in ['Demolition Charge', 'Flame Thrower', 'Molotovs']:
-							result_text = 'HIT'
+							result_text = 'HIT' 
 						else:
 							result_text = 'CRITICAL HIT'
 				
@@ -14836,7 +14920,7 @@ class Scenario:
 				if position.crewman.nickname != '':
 					libtcod.console_print(crew_con, 0, y+1, '"' + position.crewman.nickname + '"')
 				else:
-					PrintExtended(crew_con, 0, y+1, position.crewman.GetName(), first_initial=True)
+					PrintExtended(crew_con, 0, y+1, position.crewman.GetCrewmanName(), first_initial=True, nation=position.crewman.nation)
 				libtcod.console_set_default_foreground(crew_con, libtcod.white)
 				
 				if not position.hatch:
@@ -16502,7 +16586,9 @@ class Personnel:
 		
 	
 	# return the crewman's full name
-	def GetName(self):
+	def GetCrewmanName(self):
+		if 'surnames_first' in session.nations[self.nation]:
+			return self.last_name + ' ' + self.first_name
 		return self.first_name + ' ' + self.last_name
 	
 	
@@ -16641,6 +16727,11 @@ class Personnel:
 		if self.unit != scenario.player_unit:
 			show_messages = False
 		
+		# if tank exploded and Realistic Explosions campaign option is active, automatic KIA
+		if explosion and campaign.options['explosion_kills']:
+			self.KIA()
+			return 'KIA'
+		
 		# final injury roll modifier
 		modifier = 0
 		
@@ -16686,12 +16777,7 @@ class Personnel:
 		
 		# initial KO hit on vehicle
 		elif 'ko_hit' in attack_profile:
-			
-			# if tank exploded and Realistic Explosions campaign option is active, automatic KIA
-			if explosion and campaign.options['explosion_kills']:
-				self.KIA()
-				return 'KIA'
-			
+						
 			# additional risk if attack was close combat and crewman is CE
 			if attack_profile['weapon'] is not None:
 				if attack_profile['weapon'].GetStat('type') == 'Close Combat' and self.ce:
@@ -16702,26 +16788,20 @@ class Personnel:
 				if attack_profile['location'] == self.current_position.location:
 					modifier += 20.0
 			
-			# tank explosion modifier
-			if explosion:
-				modifier += 80.0
-			
-			else:
-			
-				# additional risk from extra ammo from each gun
-				for weapon in campaign_day.gun_list:
-					total_ammo = 0
-					for ammo_type in AMMO_TYPES:
-						if ammo_type in weapon.ammo_stores:
-							total_ammo += weapon.ammo_stores[ammo_type]
-					
-					if total_ammo > weapon.max_ammo:
-						if weapon.stats['calibre'] is not None:
-							if int(weapon.stats['calibre']) <= 37:
-								mod = 1.0 * (total_ammo - weapon.max_ammo)
-							else:
-								mod = 2.0 * (total_ammo - weapon.max_ammo)
-							modifier += mod
+			# additional risk from extra ammo from each gun	
+			for weapon in campaign_day.gun_list:
+				total_ammo = 0
+				for ammo_type in AMMO_TYPES:
+					if ammo_type in weapon.ammo_stores:
+						total_ammo += weapon.ammo_stores[ammo_type]
+				
+				if total_ammo > weapon.max_ammo:
+					if weapon.stats['calibre'] is not None:
+						if int(weapon.stats['calibre']) <= 37:
+							mod = 1.0 * (total_ammo - weapon.max_ammo)
+						else:
+							mod = 2.0 * (total_ammo - weapon.max_ammo)
+						modifier += mod
 		
 		# part of bail-out - caught in burning vehicle
 		elif 'burn_up' in attack_profile:
@@ -16731,20 +16811,30 @@ class Personnel:
 		elif 'landmine' in attack_profile:
 			modifier = -20.0
 		
-		# skill checks
-		if 'firepower' in attack_profile:
-			if self.condition != 'Unconscious':
-				if 'Lightning Reflexes' in self.skills:
-					modifier = round(modifier * 0.75, 1)
-				elif 'Quick Reflexes' in self.skills:
-					modifier = round(modifier * 0.90, 1)
+		# tank explosion
+		if explosion:
+			
+			if self.current_position.location == 'Tank Exterior':
+				modifier += 20.0
+			else:
+				modifier += 80.0
 		
-		# crewman grit modifier
-		modifier -= self.stats['Grit'] * 3.0
+		else:
 		
-		# shaken modifier
-		if self.condition == 'Shaken':
-			modifier += 15.0
+			# skill checks
+			if 'firepower' in attack_profile:
+				if self.condition != 'Unconscious':
+					if 'Lightning Reflexes' in self.skills:
+						modifier = round(modifier * 0.75, 1)
+					elif 'Quick Reflexes' in self.skills:
+						modifier = round(modifier * 0.90, 1)
+			
+			# crewman grit modifier
+			modifier -= self.stats['Grit'] * 3.0
+			
+			# shaken modifier
+			if self.condition == 'Shaken':
+				modifier += 15.0
 		
 		# do injury roll
 		roll = GetPercentileRoll()
@@ -17170,7 +17260,7 @@ class Personnel:
 			libtcod.console_set_default_foreground(crewman_menu_con, libtcod.white)
 			if self.is_player_commander:
 				libtcod.console_set_default_foreground(crewman_menu_con, libtcod.gold)
-			PrintExtended(crewman_menu_con, 39, 5, self.GetName())
+			PrintExtended(crewman_menu_con, 39, 5, self.GetCrewmanName())
 			libtcod.console_set_default_foreground(crewman_menu_con, libtcod.white)
 			
 			# nickname if any
@@ -19380,20 +19470,11 @@ class AI:
 			
 			elif action[0] == 'Unload Passengers':
 				
-				# spawn passenger unit
-				unit = Unit(self.owner.transport)
-				unit.owning_player = self.owner.owning_player
-				unit.nation = self.owner.nation
-				unit.ai = AI(unit)
-				unit.GenerateNewPersonnel()
-				unit.SpawnAt(self.owner.hx, self.owner.hy)
-				scenario.GenerateUnitLoS(unit)
-				
-				if self.owner.spotted:
-					unit.spotted = True
+				# spawn passenger unit if possible
+				unit = self.owner.UnloadPassengers()
+				if unit is not None and self.owner.spotted:
 					ShowMessage(self.owner.GetName() + ' has unloaded a ' + unit.GetName() + '!',
 						scenario_highlight=(self.owner.hx, self.owner.hy))
-				self.owner.transport = None
 			
 			
 			##########################################################
@@ -19714,6 +19795,25 @@ class Unit:
 		if stat_name not in self.stats:
 			return None
 		return self.stats[stat_name]
+	
+	
+	# spawn a transported unit
+	def UnloadPassengers(self):
+		if self.transport is None: return None
+		if scenario is None: return None
+		
+		unit = Unit(self.transport)
+		unit.owning_player = self.owning_player
+		unit.nation = self.nation
+		unit.ai = AI(unit)
+		unit.GenerateNewPersonnel()
+		unit.SpawnAt(self.hx, self.hy)
+		scenario.GenerateUnitLoS(unit)
+		if self.spotted:
+			unit.spotted = True
+		
+		self.transport = None
+		return unit
 	
 	
 	# returns true if any personel in the list have the given skill
@@ -21930,10 +22030,28 @@ class Unit:
 				if self.transport is not None:
 					vp_amount += 1
 					text = self.GetStat('class') + ' was transporting a ' + self.transport + ' unit, '
-					if surrender:
-						text += 'which also surrenders.'
+					
+					# NEW - passengers can bail out
+					roll = GetPercentileRoll()
+					
+					# APC
+					if self.GetStat('armour') is not None:
+						roll -= 15.0
+					
+					if roll <= 25.0:
+						unit = self.UnloadPassengers()
+						if unit is None:
+							text += 'also destroyed.'
+						else:
+							text += 'which bails out of the destroyed transport!'
+							unit.pinned = True
+						
 					else:
-						text += 'also destroyed.'
+					
+						if surrender:
+							text += 'which also surrenders.'
+						else:
+							text += 'also destroyed.'
 					ShowMessage(text, scenario_highlight=(self.hx, self.hy))
 				
 				if campaign.stats['region'] == 'North Africa':
@@ -21970,7 +22088,7 @@ class Unit:
 	
 	
 	# do an explosion roll on a vehicle that has been destroyed
-	def DoExplosionRoll(self, location, weapon):
+	def DoExplosionRoll(self, location, weapon, fire=False):
 		
 		if self.GetStat('category') != 'Vehicle': return False
 		
@@ -22005,6 +22123,12 @@ class Unit:
 		if self.GetStat('wet_stowage') is None:
 			chance += 3.0
 		
+		# explosion check if there is an ongoing fire
+		if fire:
+			chance = round(chance * 0.25)
+			if chance <= 0.5:
+				chance = 0.5
+			
 		roll = GetPercentileRoll()
 		
 		if roll <= chance:
@@ -22044,7 +22168,7 @@ class MapHex:
 
 # display a string of text with extended characters to a console
 # has options for formatting crew names
-def PrintExtended(console, x, y, text, firstname_only=False, lastname_only=False, first_initial=False, center=False):
+def PrintExtended(console, x, y, text, first_initial=False, nation=None, center=False):
 	
 	# static character mapping for extended characters
 	CHAR_MAP = {
@@ -22069,14 +22193,19 @@ def PrintExtended(console, x, y, text, firstname_only=False, lastname_only=False
 		}
 	
 	# determine if string needs to be re-formatted
-	if firstname_only:
-		display_text = text.split(' ')[0]
-	elif lastname_only:
-		display_text = text.split(' ')[1]
-	elif first_initial:
-		display_text = text.split(' ')[0][0]
-		display_text += '. '
-		display_text += text.split(' ')[1]
+	if first_initial:
+		
+		surname_first = False
+		if nation is not None:
+			if 'surnames_first' in session.nations[nation]:
+				surname_first = True
+		
+		if surname_first:
+			display_text = text.split(' ')[0] + ' '
+			display_text += text.split(' ')[1][0] + '.'
+		else:
+			display_text = text.split(' ')[0][0] + '. '
+			display_text += text.split(' ')[1]
 	else:
 		display_text = text
 	
@@ -22144,7 +22273,7 @@ def ExportLog():
 			if position.crewman is None:
 				f.write('  [Empty]\n\n')
 				continue
-			f.write('  ' + position.crewman.GetName() + '\n')
+			f.write('  ' + position.crewman.GetCrewmanName() + '\n')
 			if not position.crewman.alive:
 				f.write('  KIA\n')
 			else:
@@ -22649,7 +22778,7 @@ def ShowMessage(text, longer_pause=False, portrait=None, cd_highlight=None, scen
 	# display crewman name if any
 	if crewman is not None:
 		y += 1
-		text = crewman.GetName()
+		text = crewman.GetCrewmanName()
 		x = int(width / 2) - int(len(text) / 2)
 		PrintExtended(session.msg_con, x, y, text)
 		y += 1
@@ -22718,7 +22847,7 @@ def ShowSimpleMessage(text, crewman=None):
 		text_y += 1
 	if crewman is not None:
 		text_y += 1
-		text = crewman.GetName()
+		text = crewman.GetCrewmanName()
 		text_x = int(width / 2) - int(len(text) / 2)
 		PrintExtended(temp_con, text_x, text_y, text)
 		text_y += 1
@@ -23213,13 +23342,21 @@ def CheckSavedGameVersion(saved_version):
 
 # remove a saved game
 def EraseGame(directory):
-	if not os.path.isdir(SAVEPATH + directory): return
 	if DEBUG:
 		if session.debug['Suspend Save']: return
+	
+	if not os.path.isdir(SAVEPATH + directory): return
 	os.remove(SAVEPATH + directory + os.sep + 'savegame.dat')
 	os.remove(SAVEPATH + directory + os.sep + 'savegame.dir')
 	os.remove(SAVEPATH + directory + os.sep + 'savegame.bak')
 	os.rmdir(SAVEPATH + directory)
+	
+	# remove backup too if it exists
+	if not os.path.isdir(BACKUP_PATH + directory + os.sep): return
+	os.remove(BACKUP_PATH + directory + os.sep + 'savegame.dat')
+	os.remove(BACKUP_PATH + directory + os.sep + 'savegame.dir')
+	os.remove(BACKUP_PATH + directory + os.sep + 'savegame.bak')
+	os.rmdir(BACKUP_PATH + directory)
 	
 
 # try to load game settings from config file
@@ -23375,6 +23512,32 @@ def ShowSwapPositionMenu():
 		for y in range(y1+1, y2):
 			libtcod.console_put_char(con, 61, y, 179)
 		libtcod.console_print(con, 60, y2, '<' + chr(217))
+		
+		# display position skills for position 1 and 2
+		libtcod.console_set_default_foreground(con, libtcod.white)
+		libtcod.console_print(con, 3, 19, 'Position 1 Skills')
+		libtcod.console_set_default_foreground(con, libtcod.light_grey)
+		if unit.positions_list[position_1].crewman is None:
+			libtcod.console_print(con, 4, 20, 'Empty')
+		else:
+			y = 20
+			for skill_name in unit.positions_list[position_1].crewman.skills:
+				if 'Experienced' in skill_name or 'Trained' in skill_name:
+					libtcod.console_print(con, 4, y, skill_name)
+					y += 1
+		
+		libtcod.console_set_default_foreground(con, libtcod.white)
+		libtcod.console_print(con, 3, 30, 'Position 2 Skills')
+		libtcod.console_set_default_foreground(con, libtcod.light_grey)
+		if unit.positions_list[position_2].crewman is None:
+			libtcod.console_print(con, 4, 31, 'Empty')
+		else:
+			y = 31
+			for skill_name in unit.positions_list[position_2].crewman.skills:
+				if 'Experienced' in skill_name or 'Trained' in skill_name:
+					libtcod.console_print(con, 4, y, skill_name)
+					y += 1
+		
 		
 		# main commands
 		libtcod.console_set_default_foreground(con, ACTION_KEY_COL)
@@ -24293,7 +24456,7 @@ def DisplayCrew(unit, console, x, y, highlight, darken_highlight=False, show_def
 			if position.crewman.nickname != '':
 				libtcod.console_print(console, x, y+1, '"' + position.crewman.nickname + '"')
 			else:
-				PrintExtended(console, x, y+1, position.crewman.GetName(), first_initial=True)
+				PrintExtended(console, x, y+1, position.crewman.GetCrewmanName(), first_initial=True, nation=position.crewman.nation)
 			
 			libtcod.console_set_default_foreground(console, libtcod.white)
 			if not position.hatch:
@@ -24442,6 +24605,7 @@ def LoadCampaignMenu(continue_most_recent):
 	
 	# generate a list of all saved campaigns
 	saved_game_list = []
+	delete_list = []
 	for directory in os.listdir(SAVEPATH):
 		if not os.path.isdir(SAVEPATH + directory): continue
 		
@@ -24468,11 +24632,13 @@ def LoadCampaignMenu(continue_most_recent):
 				backup_path = BACKUP_PATH + directory + os.sep
 				
 				# no backup available
-				if not os.path.isdir(backup_path):
-					ShowNotification('Error in saved campaign: ' + directory + ', no backup available.')
+				if not os.path.isdir(backup_path):				
+					if ShowNotification('Error in saved campaign: ' + directory + ', no backup available. Erase this corrupted save?', confirm=True):
+						delete_list.append(directory)
+						ShowNotification('Erased corrupted save: ' + directory)
 					finished_with_file = True
 				else:
-					if not ShowNotification('Error in saved campaign: ' + directory + ', try to restore backup copy?', confirm=True):
+					if not ShowNotification('Error in saved campaign: ' + directory + ', restore from backup copy?', confirm=True):
 						finished_with_file = True
 					else:
 						copyfile(backup_path + 'savegame.dat', path + 'savegame.dat')
@@ -24483,6 +24649,10 @@ def LoadCampaignMenu(continue_most_recent):
 						os.remove(backup_path + 'savegame.bak')
 						os.rmdir(backup_path)
 						ShowNotification('Restored backup, will attempt to load.')
+	
+	# see if we need to delete any corrupted saves
+	for directory in delete_list:
+		EraseGame(directory)
 	
 	# make sure there's at least one saved game
 	if len(saved_game_list) == 0:
@@ -25466,11 +25636,9 @@ except:
 libtcod.console_clear(con)
 libtcod.console_blit(LoadXP('cats.xp'), 0, 0, 0, 0, con, WINDOW_XM-15, WINDOW_YM-25)
 libtcod.console_set_default_foreground(con, libtcod.white)
-libtcod.console_print_ex(con, WINDOW_XM, WINDOW_YM+20, libtcod.BKGND_NONE,
-	libtcod.CENTER, 'Copyright 2016-2020')
 	
 libtcod.console_set_default_foreground(con, libtcod.light_grey)
-y = WINDOW_YM+22
+y = WINDOW_YM+18
 lines = wrap(DISCLAIMER, 40)
 for line in lines:
 	libtcod.console_print_ex(con, WINDOW_XM, y, libtcod.BKGND_NONE, libtcod.CENTER, line)
@@ -25505,7 +25673,7 @@ libtcod.console_set_default_foreground(main_title, libtcod.light_grey)
 libtcod.console_print_ex(main_title, WINDOW_XM, WINDOW_HEIGHT-4, libtcod.BKGND_NONE,
 	libtcod.CENTER, 'Early Access - ' + VERSION)
 libtcod.console_print_ex(main_title, WINDOW_XM, WINDOW_HEIGHT-2, libtcod.BKGND_NONE,
-	libtcod.CENTER, 'Copyright 2016-2020 Gregory Adam Scott')
+	libtcod.CENTER, 'Copyright 2016-2021 Gregory Adam Scott')
 
 today = datetime.today()
 if today.month == 11 and 1 <= today.day <= 11:

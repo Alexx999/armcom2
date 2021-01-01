@@ -3422,6 +3422,242 @@
 		
 	},
 	
+	"StuG III E": {
+		"category" : "Vehicle",
+		"class" : "Assault Gun",
+		"portrait" : "unit_stug_iiib.xp",
+		"size_class" : "Small",
+		"movement_class" : "Tank",
+		"wet_stowage" : "TRUE",
+		"turret" : "FIXED",
+		"armour" : {
+			"turret_front" : "6",
+			"turret_side" : "3",
+			"hull_front" : "6",
+			"hull_side" : "3"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"rr_size" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "HEAT", "AP"],
+				"special_ammo" : {
+					"HEAT" : {
+						"1940.01.01" : "6"
+					},
+					"AP" : {
+						"1940.01.01" : "7"
+					}
+				},
+				"max_ammo" : "85"
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Loader",
+				"hatch" : "TRUE",
+				"location" : "Turret",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"This later model of StuG III has a slightly larger hull with more room for ",
+			"radio equipment and ammo."
+		],
+		"rarity" : {
+			"1942.01.01" : "60",
+			"1944.01.01" : "40"
+		}
+	},
+	
+	"StuG III F": {
+		"category" : "Vehicle",
+		"class" : "Assault Gun",
+		"portrait" : "unit_stug_iiig.xp",
+		"size_class" : "Small",
+		"movement_class" : "Tank",
+		"wet_stowage" : "TRUE",
+		"turret" : "FIXED",
+		"armour" : {
+			"turret_front" : "6",
+			"turret_side" : "3",
+			"hull_front" : "6",
+			"hull_side" : "3"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "L",
+				"rof" : "16.7",
+				"rr_size" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "APCR"],
+				"max_ammo" : "79",
+				"special_ammo" : {
+					"APCR" : {
+						"1942.01.01" : "6",
+						"1944.01.01" : "4"
+					}
+				}
+			},
+			{
+				"type" : "AA MG",
+				"front_only" : "TRUE",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Loader"],
+				"firing_group" : 1
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Loader",
+				"hatch" : "TRUE",
+				"location" : "Turret",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"The F variant of the StuG III was the first to be armed with the ",
+			"7.5cm StuF 40 L/43 gun."
+		],
+		"rarity" : {
+			"1942.04.01" : "90",
+			"1942.06.01" : "0"
+		}
+	},
+	
+	"StuG III F (late)": {
+		"category" : "Vehicle",
+		"class" : "Assault Gun",
+		"portrait" : "unit_stug_iiig.xp",
+		"size_class" : "Small",
+		"movement_class" : "Tank",
+		"wet_stowage" : "TRUE",
+		"turret" : "FIXED",
+		"armour" : {
+			"turret_front" : "8",
+			"turret_side" : "3",
+			"hull_front" : "8",
+			"hull_side" : "3"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "L",
+				"rof" : "16.7",
+				"rr_size" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "APCR"],
+				"max_ammo" : "79",
+				"special_ammo" : {
+					"APCR" : {
+						"1942.01.01" : "6",
+						"1944.01.01" : "4"
+					}
+				}
+			},
+			{
+				"type" : "AA MG",
+				"front_only" : "TRUE",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Loader"],
+				"firing_group" : 1
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Loader",
+				"hatch" : "TRUE",
+				"location" : "Turret",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"From June 1942 the F variant of the StuG III had had additional armour ",
+			"plating welded to the front."
+		],
+		"rarity" : {
+			"1942.06.01" : "90"
+		}
+	},
+	
 	"StuG III G": {
 		"category" : "Vehicle",
 		"class" : "Assault Gun",
@@ -3503,7 +3739,6 @@
 			"1943.01.01" : "100",
 			"1944.01.01" : "110"
 		}
-		
 	},
 	
 	"StuG IV": {
@@ -5832,6 +6067,49 @@
 		}
 	},
 	
+	"PaK 97/38": {
+		"category" : "Gun",
+		"class" : "Anti-Tank Gun",
+		"portrait" : "unit_pak_97.xp",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"rof" : "33.3",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "HEAT"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"HEAT" : {
+						"1941.09.01" : "6"
+					}
+				},
+				"unreliable" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This was a stop-gap solution to the need for heavier anti-tank firepower ",
+			"on the Eastern Front. A French 75 mm gun is mounted on the carriage of ",
+			"a PaK 38."
+		],
+		"rarity" : {
+			"1941.09.01" : "60",
+			"1943.01.01" : "20"
+		}
+	},
+	
 	"PaK 40": {
 		"category" : "Gun",
 		"class" : "Anti-Tank Gun",
@@ -5919,11 +6197,48 @@
 		}
 	},
 	
+	"2cm FlaK 38": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_flak_38.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "20",
+				"long_range" : "L",
+				"rof" : "33.3",
+				"fp" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This was the standard German light anti-aircraft gun of the war."
+		],
+		"rarity" : {
+			"1939.09.01" : "100"
+		}
+	},
+	
 	"8.8cm FlaK 18 o. 36": {
 		"category" : "Gun",
 		"class" : "Anti-Aircraft Gun",
 		"portrait" : "unit_flak_36.xp",
-		"size_class" : "Small",
+		"size_class" : "Large",
 		"movement_class" : "Gun",
 		"gun_shield" : "TRUE",
 		"weapon_list" : [
@@ -6548,7 +6863,7 @@
 			"holes in enemy defensive lines."
 		],
 		"rarity" : {
-			"1939.09.01" : "90",
+			"1933.01.01" : "90",
 			"1941.08.01" : "80",
 			"1941.09.01" : "70",
 			"1941.10.01" : "60",
@@ -6620,7 +6935,7 @@
 			"armour, and a new engine and drive train."
 		],
 		"rarity" : {
-			"1939.09.01" : "100"
+			"1939.05.11" : "100"
 		}
 	},
 	
@@ -7329,7 +7644,6 @@
 		"movement_class" : "Slow Tank",
 		"ground_pressure" : "Light",
 		"turret" : "RST",
-		
 		"armour" : {
 			"turret_front" : "2",
 			"turret_side" : "1",
@@ -7523,6 +7837,151 @@
 		],
 		"rarity" : {
 			"1942.02.01" : "100"
+		}
+	},
+	
+	"T-35" : {
+		"category" : "Vehicle",
+		"class" : "Heavy Tank",
+		"portrait" : "unit_t35.xp",
+		"size_class" : "Very Large",
+		"movement_class" : "Slow Tank",
+		"ground_pressure" : "Light",
+		"unreliable" : true,
+		"turret" : "ST",
+		"armour" : {
+			"turret_front" : "2",
+			"turret_side" : "2",
+			"hull_front" : "3",
+			"hull_side" : "2"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "76",
+				"long_range" : "S",
+				"rr_size" : "4",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE"],
+				"max_ammo" : "135"
+			},
+			{
+				"type" : "Co-ax MG",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"firing_group" : 0
+			},
+			{
+				"type" : "Hull MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Port MG Gunner"],
+				"firing_group" : 1,
+				"extra_facings_covered" : ["4", "5"]
+			},
+			{
+				"type" : "Gun",
+				"calibre" : "45",
+				"long_range" : "L",
+				"rr_size" : "4",
+				"mount" : "Hull",
+				"fired_by" : ["Starboard Gunner"],
+				"reloaded_by" : ["Starboard Loader"],
+				"firing_group" : 2,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "135",
+				"extra_facings_covered" : ["1", "2"]
+			},
+			{
+				"type" : "Hull MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Starboard MG Gunner"],
+				"firing_group" : 3,
+				"rear_facing" : true,
+				"extra_facings_covered" : ["2", "4"]
+			},
+			{
+				"type" : "Gun",
+				"calibre" : "45",
+				"long_range" : "L",
+				"rr_size" : "4",
+				"mount" : "Hull",
+				"fired_by" : ["Port Gunner"],
+				"reloaded_by" : ["Port Loader"],
+				"firing_group" : 4,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "135",
+				"rear_facing" : true,
+				"extra_facings_covered" : ["4", "5"]
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Loader",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Starboard Gunner",
+				"location" : "Hull",
+				"bu_visible" : ["0", "1", "2"]
+			},
+			{
+				"name" : "Starboard Loader",
+				"location" : "Hull",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Port Gunner",
+				"location" : "Hull",
+				"bu_visible" : ["3", "4", "5"]
+			},
+			{
+				"name" : "Port Loader",
+				"location" : "Hull",
+				"bu_visible" : ["3"]
+			},
+			{
+				"name" : "Port MG Gunner",
+				"location" : "Hull",
+				"bu_visible" : ["4", "5", "0"]
+			},
+			{
+				"name" : "Starboard MG Gunner",
+				"location" : "Hull",
+				"bu_visible" : ["2", "3", "4"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0"]
+			}
+			
+		],
+		"description" : [
+			"One of the last 'Land Battleship' tanks, the T-35 looked very impressive ",
+			"but was difficult to command, prone to breakdown, and only lightly armoured."
+		],
+		"rarity" : {
+			"1934.01.01" : "5",
+			"1942.01.01" : "0"
 		}
 	},
 	
@@ -8467,6 +8926,111 @@
 		
 	},
 	
+	"GAZ-4M-AA": {
+		"category" : "Vehicle",
+		"class" : "Self-Propelled AA Gun",
+		"portrait" : "unit_gaz_4m_aa.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Fast Wheeled",
+		"weapon_list" : [
+			{
+				"type" : "AA MG",
+				"rof" : "16.7",
+				"fp" : "16",
+				"mount" : "Turret",
+				"blocked_hull_dirs" : ["0"],
+				"fired_by" : ["Gunner"],
+				"firing_group" : 0
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Hull",
+				"crew_always_exposed" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Hull",
+				"crew_always_exposed" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0", "1", "5"]
+			}
+		],
+		"description" : [
+			"This is a quad MG mounted on the back of a GAZ truck, and was the standard Soviet ",
+			"anti-aircraft vehicle of the war."
+		],
+		"rarity" : {
+			"1931.01.01" : "80"
+		}
+	},
+	
+	"ZIS-42-AA": {
+		"category" : "Vehicle",
+		"class" : "Self-Propelled AA Gun",
+		"portrait" : "unit_ZIS_42_aa.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Wheeled",
+		"ground_pressure" : "Heavy",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "25",
+				"long_range" : "LL",
+				"rof" : "50.0",
+				"fp" : "6",
+				"rr_size" : "4",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180",
+				"blocked_hull_dirs" : ["0"],
+				"unreliable" : true
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"crew_always_exposed" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"crew_always_exposed" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"]
+			},
+			{
+				"name" : "Loader",
+				"location" : "Turret",
+				"crew_always_exposed" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0", "1", "5"]
+			}
+		],
+		"description" : [
+			"A small number of ZIS-5 trucks were outfitted with 25mm M1940 ",
+			"anti-aircraft guns."
+		],
+		"rarity" : {
+			"1941.01.01" : "20",
+			"1942.01.01" : "0"
+		}
+	},
+	
 	"45mm obr. 1932": {
 		"category" : "Gun",
 		"class" : "Anti-Tank Gun",
@@ -8594,7 +9158,7 @@
 			"was introduced in 1936. It proved to be an excellent anti-tank gun."
 		],
 		"rarity" : {
-			"1939.11.01" : "80",
+			"1936.01.01" : "80",
 			"1942.01.01" : "60",
 			"1943.01.01" : "0"
 		}
@@ -8924,6 +9488,118 @@
 		],
 		"rarity" : {
 			"1937.01.01" : "70"
+		}
+	},
+	
+	"37mm ZP obr. 39": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_40mm_bofors.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Gun",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "37",
+				"long_range" : "L",
+				"rof" : "50.0",
+				"fp" : "8",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"}
+		],
+		"description" : [
+			"One of the standard light anti-aircraft guns in Soviet service, derived from ",
+			"a design by Bofors."
+		],
+		"rarity" : {
+			"1939.09.01" : "80",
+			"1943.01.01" : "70"
+		}
+	},
+	
+	"76.2mm ZP obr. 38": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_76mm_aa.xp",
+		"size_class" : "Large",
+		"movement_class" : "Gun",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "76",
+				"long_range" : "LL",
+				"rof" : "33.3",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This was the standard heavy anti-aircraft gun in Soviet service in the 1930s and early 1940s."
+		],
+		"rarity" : {
+			"1931.09.01" : "80",
+			"1942.01.01" : "60",
+			"1943.01.01" : "0"
+		}
+	},
+	
+	"85mm ZP obr. 39": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_85mm_aa_gun.xp",
+		"size_class" : "Large",
+		"movement_class" : "Gun",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "85",
+				"long_range" : "L",
+				"rof" : "33.3",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This heavy anti-aircraft gun was intended to replace the earlier 76.2mm AA gun."
+		],
+		"rarity" : {
+			"1939.01.01" : "70"
 		}
 	},
 	
@@ -11840,6 +12516,7 @@
 	},
 	
 	"M4A3(76)W Sherman": {
+		"nick_name" : "Easy Eight",
 		"category" : "Vehicle",
 		"class" : "Medium Tank",
 		"portrait" : "unit_m4a3_76.xp",
@@ -20213,6 +20890,95 @@
 		}
 	},
 	
+	"75 PstK/97-38": {
+		"category" : "Gun",
+		"class" : "Anti-Tank Gun",
+		"portrait" : "unit_pak_97.xp",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"rof" : "33.3",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "HEAT"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"HEAT" : {
+						"1941.09.01" : "6"
+					}
+				},
+				"unreliable" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This is the Finnish designation for the German PaK 97/38 anti-tank gun."
+		],
+		"rarity" : {
+			"1940.02.01" : "10",
+			"1941.07.01" : "40",
+			"1943.01.01" : "0"
+		}
+	},
+	
+	"75 PstK/40": {
+		"category" : "Gun",
+		"class" : "Anti-Tank Gun",
+		"portrait" : "unit_pak_40.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "L",
+				"rof" : "33.3",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "APCR"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"APCR" : {
+						"1942.01.01" : "5",
+						"1943.01.01" : "4",
+						"1944.01.01" : "3"
+					}
+				}
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This is the Finnish designation for the German PaK 40."
+		],
+		"rarity" : {
+			"1942.01.01" : "50",
+			"1942.04.01" : "60",
+			"1942.08.01" : "70",
+			"1942.12.01" : "80",
+			"1943.04.01" : "90"
+		}
+	},
+	
 	"76 K/02" : {
 		"category" : "Gun",
 		"class" : "Artillery Gun",
@@ -20451,6 +21217,78 @@
 		],
 		"rarity" : {
 			"1941.06.01" : "40"
+		}
+	},
+	
+	"20 ItK/38": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_flak_38.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "20",
+				"long_range" : "L",
+				"rof" : "33.3",
+				"fp" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This was the Finnish designation for the German 2cm FlaK 38 light anti-aircraft gun."
+		],
+		"rarity" : {
+			"1939.09.01" : "100"
+		}
+	},
+	
+	"40 ItK/38": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_40mm_bofors.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "40",
+				"long_range" : "L",
+				"rof" : "40.0",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"}
+		],
+		"description" : [
+			"This is the Finnish designation for the 40mm anti-aircraft gun produced ",
+			"by the Swedish arms manufacturer AB Bofors."
+		],
+		"rarity" : {
+			"1939.09.01" : "100"
 		}
 	},
 	
@@ -21837,6 +22675,1306 @@
 	"Ju 87 Picchiatello": {
 		"category" : "Airplane",
 		"class" : "Dive Bomber",
+		"movement_class" : "Airplane",
+		"weapon_list" : [
+			{
+				"type" : "Ordinance",
+				"name" : "Bombs",
+				"calibre" : "200",
+				"max_range" : "1",
+				"max_ammo" : "1"
+			},
+			{
+				"type" : "MG",
+				"fp" : "5"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Pilot"},
+			{"name" : "Radio Operator"}
+		],
+		"description" : [
+			""
+		]
+	},
+	
+	
+	
+	
+	"Type 94 Te-Ke": {
+		"category" : "Vehicle",
+		"class" : "Tankette",
+		"portrait" : "unit_type_94_te_ke.xp",
+		"size_class" : "Very Small",
+		"movement_class" : "Fast Tank",
+		"ground_pressure" : "Light",
+		"turret" : "RST",
+		"unreliable" : true,
+		"armour" : {
+			"turret_front" : "1",
+			"turret_side" : "1",
+			"hull_front" : "2",
+			"hull_side" : "0"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Co-ax MG",
+				"fp" : "4",
+				"rof" : "16.7",
+				"mount" : "Turret",
+				"fired_by" : ["Commander/Gunner"],
+				"firing_group" : 0,
+				"unreliable" : true
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander/Gunner",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"Designed in the early 1930s, the Type 94 Te-Ke was the ", 
+			"first mass-produced Japanese tankette. It was armed with ",
+			"the powerful but slow and unreliable Type 92 7.7mm machine ", 
+			"gun and deployed until the end of World War Two."
+		],
+		"rarity" : {
+			"1937.07.01" : "100",
+			"1939.01.01" : "90",
+			"1940.01.01" : "80",
+			"1941.01.01" : "70",
+			"1942.01.01" : "60",
+			"1943.01.01" : "50",
+			"1944.01.01" : "40",
+			"1945.01.01" : "30"
+		}
+	},
+	
+	"Type 97 Te-Ke (MG)": {
+		"category" : "Vehicle",
+		"class" : "Tankette",
+		"portrait" : "unit_type_97_te_ke_mg.xp",
+		"size_class" : "Very Small",
+		"movement_class" : "Fast Tank",
+		"ground_pressure" : "Light",
+		"turret" : "RST",
+		"armour" : {
+			"turret_front" : "2",
+			"turret_side" : "1",
+			"hull_front" : "3",
+			"hull_side" : "0"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Co-ax MG",
+				"fp" : "4",
+				"rof" : "16.7",
+				"mount" : "Turret",
+				"fired_by" : ["Commander/Gunner"],
+				"firing_group" : 0
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander/Gunner",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"The Type 97 was meant to replace the Type 94 Te-Ke tankette ",
+			"but often ended up serving alongside it. Since its intended ",
+			"37mm main gun was in short supply, this particular variant ",
+			"was armed with a powerful but slow and unreliable Type 92 ",
+			"7.7mm machine gun instead."
+		],
+		"rarity" : {
+			"1938.01.01" : "20",
+			"1938.07.01" : "30",
+			"1939.01.01" : "40",
+			"1939.07.01" : "60",
+			"1940.01.01" : "80",
+			"1940.07.01" : "100",
+			"1941.01.01" : "90",
+			"1942.01.01" : "70",
+			"1943.01.01" : "50",
+			"1944.01.01" : "40",
+			"1945.01.01" : "30"
+		}
+	},
+	
+	"Type 97 Te-Ke (37mm)": {
+		"category" : "Vehicle",
+		"class" : "Tankette",
+		"portrait" : "unit_type_97_te_ke_37.xp",
+		"size_class" : "Very Small",
+		"movement_class" : "Fast Tank",
+		"ground_pressure" : "Light",
+		"turret" : "RST",
+		"armour" : {
+			"turret_front" : "2",
+			"turret_side" : "1",
+			"hull_front" : "3",
+			"hull_side" : "0"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "37",
+				"rr_size" : "4",
+				"mount" : "Turret",
+				"fired_by" : ["Commander/Gunner"],
+				"reloaded_by" : ["Commander/Gunner"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "96"
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander/Gunner",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"The Type 97 was meant to replace the Type 94 Te-Ke tankette, ",
+			"but often ended up serving alongside it. Its 37mm gun was an ",
+			"unusually powerful weapon for a tankette."
+		],
+		"rarity" : {
+			"1938.01.01" : "20",
+			"1938.07.01" : "30",
+			"1939.01.01" : "40",
+			"1939.07.01" : "60",
+			"1940.01.01" : "80",
+			"1940.07.01" : "100",
+			"1941.01.01" : "90",
+			"1942.01.01" : "70",
+			"1943.01.01" : "50",
+			"1944.01.01" : "40",
+			"1945.01.01" : "30"
+		}
+	},
+	
+	"Type 95 Ha-Go": {
+		"category" : "Vehicle",
+		"class" : "Light Tank",
+		"portrait" : "unit_type_95_ha_go.xp",
+		"size_class" : "Small",
+		"movement_class" : "Fast Tank",
+		"ground_pressure" : "Light",
+		"turret" : "RST",
+		"armour" : {
+			"turret_front" : "2",
+			"turret_side" : "2",
+			"hull_front" : "1",
+			"hull_side" : "1"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "37",
+				"rr_size" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Commander/Gunner"],
+				"reloaded_by" : ["Commander/Gunner"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "119"
+			},
+			{
+				"type" : "Co-ax MG",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Commander/Gunner"],
+				"rear_facing" : true,
+				"firing_group" : 0
+			},
+			{
+				"type" : "Hull MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Assistant Driver"],
+				"firing_group" : 1
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander/Gunner",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Assistant Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"The Type 95 Ha-Go was the most common Japanese tank during ",
+			"World War Two. It was designed to be a fast and only lightly ",
+			"armoured infantry support tank. One of its most distinctive ",
+			"characteristics was the fact that the turret machine gun ",
+			"was placed in a five-o'clock position."
+		],
+		"rarity" : {
+			"1937.07.01" : "100",
+			"1944.01.01" : "80",
+			"1945.01.01" : "60"
+		}
+	},
+	
+	"Type 89 I-Go": {
+		"category" : "Vehicle",
+		"class" : "Medium Tank",
+		"portrait" : "unit_type_89_i_go.xp",
+		"size_class" : "Large",
+		"movement_class" : "Slow Tank",
+		"turret" : "ST",
+		"armour" : {
+			"turret_front" : "2",
+			"turret_side" : "2",
+			"hull_front" : "1",
+			"hull_side" : "1"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "57",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"rr_size" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Gunner"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "HEAT"],
+				"max_ammo" : "100",
+				"unreliable" : "TRUE",
+				"special_ammo" : {
+					"HEAT" : {
+						"1944.01.01" : "7"
+					}
+				}
+			},
+			{
+				"type" : "Co-ax MG",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"rear_facing" : true,
+				"firing_group" : 0
+			},
+			{
+				"type" : "Hull MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Assistant Driver"],
+				"firing_group" : 1
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Assistant Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"Designed in the 1920s, the Type 89 I-Go (or Chi-Ro) was a medium infantry ",
+			"support tank. The 57mm main gun was effective against infantry ", 
+			"and gun emplacements, but lacked armour-piercing power until ", 
+			"the later stages of World War Two. One of the two 6.5mm machine ", 
+			"guns was placed in the back of the turret."
+		],
+		"rarity" : {
+			"1937.07.01" : "60",
+			"1940.01.01" : "50",
+			"1942.01.01" : "40",
+			"1944.01.01" : "30"
+		}
+	},
+	
+	"Type 97 Chi-Ha": {
+		"category" : "Vehicle",
+		"class" : "Medium Tank",
+		"portrait" : "unit_type_97_chi_ha.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Tank",
+		"turret" : "ST",
+		"armour" : {
+			"turret_front" : "4",
+			"turret_side" : "3",
+			"hull_front" : "3",
+			"hull_side" : "2"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "57",
+				"rof" : "16.7",
+				"rr_size" : "6",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Gunner"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "100"
+			},
+			{
+				"type" : "Co-ax MG",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"rear_facing" : true,
+				"firing_group" : 0
+			},
+			{
+				"type" : "Hull MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Assistant Driver"],
+				"firing_group" : 1
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0", "1", "2", "3", "4", "5"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Assistant Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0"]
+			}
+		],
+		"description" : [
+			"The Type 97 Chi-Ha had the highest production numbers of all ", 
+			"Japanese medium tanks in World War Two. Like most Japanese ",
+			"tanks, it was designed for an infantry support role. The ",
+			"low-velocity 57mm main gun was ineffective against Allied tanks ", 
+			"and replaced by a more powerful 47mm gun with armour-piercing ", 
+			"ammunition in 1942."
+		],
+		"rarity" : {
+			"1938.07.01" : "60",
+			"1939.01.01" : "80",
+			"1939.07.01" : "100",
+			"1942.01.01" : "20"
+		}
+	},
+	
+	"Type 91 Armoured Car": {
+		"category" : "Vehicle",
+		"class" : "Armoured Car",
+		"portrait" : "unit_type_91_ac.xp",
+		"size_class" : "Large",
+		"movement_class" : "Wheeled",
+		"ground_pressure" : "Heavy",
+		"turret" : "ST",
+		"armour" : {
+			"turret_front" : "1",
+			"turret_side" : "1",
+			"hull_front" : "1",
+			"hull_side" : "1"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Co-ax MG",
+				"fp" : "4",
+				"rof" : "16.7",
+				"mount" : "Turret",
+				"fired_by" : ["Commander"],
+				"firing_group" : 0,
+				"unreliable" : true
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1","5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Co-Driver",
+				"location" : "Hull",
+				"bu_visible" : ["2"]
+			},
+			{
+				"name" : "Co-Driver",
+				"location" : "Hull",
+				"bu_visible" : ["3"]
+			},
+			{
+				"name" : "Co-Driver",
+				"location" : "Hull",
+				"bu_visible" : ["4"]
+			},
+			{
+				"name" : "Co-Driver",
+				"location" : "Hull",
+				"bu_visible" : ["5"]
+			}
+		],
+		"description" : [
+			"The Type 91, or Sumida M.2593, was an armoured car designed ",
+			"to be driven on railroad tracks, but it could also traverse ",
+			"roads. It served from 1933 until the end of World War Two."
+		],
+		"rarity" : {
+			"1933.01.01" : "100"
+		}
+	},
+	
+	"Type 93 Armoured Car": {
+		"category" : "Vehicle",
+		"class" : "Armoured Car",
+		"portrait" : "unit_type_93_ac.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Wheeled",
+		"ground_pressure" : "Heavy",
+		"turret" : "ST",
+		"armour" : {
+			"turret_front" : "0",
+			"turret_side" : "0",
+			"hull_front" : "0",
+			"hull_side" : "0"
+		},
+		"weapon_list" : [
+			{
+				"type" : "Co-ax MG",
+				"fp" : "4",
+				"rof" : "16.7",
+				"mount" : "Turret",
+				"fired_by" : ["Gunner"],
+				"firing_group" : 0,
+				"unreliable" : true
+			},
+			{
+				"type" : "AA MG",
+				"fp" : "2",
+				"mount" : "Turret",
+				"fired_by" : ["Commander"],
+				"firing_group" : 1,
+				"unreliable" : true
+			},
+			{
+				"type" : "Hull MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Assistant Driver"],
+				"firing_group" : 2,
+				"unreliable" : true
+			},
+			{
+				"type" : "Turret MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Port MG Gunner"],
+				"firing_group" : 3,
+				"extra_facings_covered" : ["5"],
+				"unreliable" : true
+			},
+			{
+				"type" : "Turret MG",
+				"fp" : "2",
+				"mount" : "Hull",
+				"fired_by" : ["Starboard MG Gunner"],
+				"firing_group" : 4,
+				"extra_facings_covered" : ["1"],
+				"unreliable" : true
+			}
+		],
+		"crew_positions" : [
+			{
+				"name" : "Commander",
+				"location" : "Turret",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1", "2", "3", "4", "5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Gunner",
+				"location" : "Turret",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Driver",
+				"location" : "Hull",
+				"hatch" : "TRUE",
+				"ce_visible" : ["0", "1","5"],
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Assistant Driver",
+				"location" : "Hull",
+				"bu_visible" : ["0"]
+			},
+			{
+				"name" : "Port MG Gunner",
+				"location" : "Hull",
+				"bu_visible" : ["0", "5"]
+			},
+			{
+				"name" : "Starboard MG Gunner",
+				"location" : "Hull",
+				"bu_visible" : ["0", "1"]
+			}
+		],
+		"description" : [
+			"The Type 93 was an armoured car designed to be driven on ", 
+			"railroad tracks, but it could also traverse roads. Armed ", 
+			"with up to five machine guns and produced in limited numbers, ", 
+			"it served from 1933 until the end of World War Two."
+		],
+		"rarity" : {
+			"1933.01.01" : "40"
+		}
+	},
+	
+	"Type 94 37mm AT Gun": {
+		"category" : "Gun",
+		"class" : "Anti-Tank Gun",
+		"portrait" : "unit_type_94_37mm_AT_gun.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "37",
+				"long_range" : "L",
+				"rof" : "50.0",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced in 1936, this Japanese anti-tank gun was ",
+			"designed to be operated from a squatting or prone ",
+			"position. It was not powerful enough to penetrate ",
+			"the front armour of most Allied tanks in the Pacific ",
+			"theatre."
+		],
+		"rarity" : {
+			"1936.01.01" : "100",
+			"1941.01.01" : "90",
+			"1942.01.01" : "80"
+		}
+	},
+	
+	"Type 11 37mm Infantry Gun": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_11_37mm_infantry_gun.xp",
+		"size_class" : "Very Small",
+		"movement_class" : "Gun",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "37",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced in 1922, this small-calibre artillery gun ", 
+			"was designed to be directly deployed by infantry squads, ",
+			"mounting it on a portable steel tripod. It could also fire ",
+			"AP shells, but because of the low velocity of the gun they ",
+			"were not very effective."
+		],
+		"rarity" : {
+			"1922.01.01" : "100"
+		}
+	},
+	
+	"Type 92 70mm Battalion Gun": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_92_70mm_battalion_gun.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "70",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "HEAT"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"HEAT" : {
+						"1944.01.01" : "6"
+					}
+				}
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Since 1932, every Japanese infantry battalion was equipped ",
+			"with two of these low-profile artillery guns. They were ", 
+			"capable of both direct and indirect fire support. From 1944 ",
+			"on they were supplied with HEAT in addition to HE ammunition."
+		],
+		"rarity" : {
+			"1932.01.01" : "100"
+		}
+	},
+	
+	"Type 41 75mm Mountain Gun": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_41_75mm_mountain_gun.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke", "HEAT"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"HEAT" : {
+						"1944.01.01" : "6"
+					}
+				},
+				"inferior_gun" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"This Japanese mountain gun was already used during ", 
+			"the Great War and remained in service until the end ",
+			"of World War Two. It was supplied with HE, AP, smoke ",
+			"and - starting in 1944 - HEAT ammunition."
+		],
+		"rarity" : {
+			"1908.01.01" : "100",
+			"1934.01.01" : "80"
+		}
+	},
+	
+	"Type 94 75mm Mountain Gun": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_94_75mm_mountain_gun.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke", "HEAT"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"HEAT" : {
+						"1944.01.01" : "6"
+					}
+				}
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced in 1934, this Japanese mountain gun was ", 
+			"supposed to replace the Type 41 but often ended up ", 
+			"serving alongside it. It was more reliable and accurate ",
+			"than its predecessor. Just like the Type 41, it could ",
+			"fire a variety of shells, including HEAT rounds from ", 
+			"1944 on."
+		],
+		"rarity" : {
+			"1934.01.01" : "100"
+		}
+	},
+	
+	"Type 38 75mm Field Gun": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_38_75mm_field_gun.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"long_range" : "S",
+				"rof" : "16.7",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke", "HEAT"],
+				"max_ammo" : "180",
+				"special_ammo" : {
+					"HEAT" : {
+						"1944.01.01" : "6"
+					}
+				},
+				"inferior_gun" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Originally purchased by Krupp after the Russo-Japanese ",
+			"War, the Type 38 remained the standard field gun of the ",
+			"Imperial Japanese Army until the end of World War Two."
+		],
+		"rarity" : {
+			"1905.10.01" : "100"
+		}
+	},
+	
+	"Type 90 75mm Field Gun": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_90_75mm_field_gun.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"rof" : "16.7",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke"],
+				"max_ammo" : "180",
+				"unreliable" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced in 1932, the Type 90 was meant to replace ",
+			"the obsolete Type 38 75mm Field Gun, but its production ",
+			"numbers remained too low even until the end of World War ",
+			"Two. Because of its relatively high muzzle velocity, its ",
+			"AP rounds were a serious threat to all Allied tanks."
+		],
+		"rarity" : {
+			"1932.01.01" : "50"
+		}
+	},
+	
+	"Type 91 10cm Howitzer": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_91_10cm_howitzer.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "105",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Based on the French Canon de 105 mle 1913 Schneider, ",
+			"this howitzer was deployed by the Imperial Japanese ",
+			"Army from the invasion of Manchuria in 1931 until the ",
+			"end of World War Two."
+		],
+		"rarity" : {
+			"1931.01.01" : "80"
+		}
+	},
+	
+	"Type 92 10cm Cannon": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_92_10cm_cannon.xp",
+		"size_class" : "Large",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "105",
+				"long_range" : "L",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced in 1934, the Type 92 10cm Cannon was a rare and ", 
+			"cumbersome but very successful long-range artillery gun. ",
+			"Apart from its 16 kg HE shells, it could also fire AP and ", 
+			"smoke rounds."
+		],
+		"rarity" : {
+			"1934.01.01" : "20"
+		}
+	},
+	
+	"Type 38 15cm Howitzer": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_38_15cm_howitzer.xp",
+		"size_class" : "Large",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "150",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "Smoke"],
+				"max_ammo" : "180",
+				"inferior_gun" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Originally purchased by Krupp after the Russo-Japanese ",
+			"War, about 220 of these heavy howitzers were produced for ", 
+			"the Imperial Japanese Army. In the 1930s it was outranged ",
+			"by other, superior artillery guns. Because of this, the Type ",
+			"38 howitzer was removed from the frontlines in 1942."
+		],
+		"rarity" : {
+			"1905.10.01" : "20",
+			"1942.01.01" : "0"
+		}
+	},
+	
+	"Type 4 15cm Howitzer": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_4_15cm_howitzer.xp",
+		"size_class" : "Small",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "150",
+				"long_range" : "S",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke"],
+				"max_ammo" : "180",
+				"inferior_gun" : "TRUE"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced during the Great War, the Type 4 was supposed ",
+			"to replace the outdated Type 38 15cm howitzer, but ended ",
+			"up serving alongside it. It was deployed until the end of ",
+			"World War Two."
+		],
+		"rarity" : {
+			"1915.01.01" : "30"
+		}
+	},
+	
+	"Type 96 15cm Howitzer": {
+		"category" : "Gun",
+		"class" : "Artillery Gun",
+		"portrait" : "unit_type_96_15cm_howitzer.xp",
+		"size_class" : "Large",
+		"movement_class" : "Gun",
+		"gun_shield" : "TRUE",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "150",
+				"long_range" : "S",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Originally intended to replace all outdated 15cm howitzers ",
+			"in 1937, the Type 96 was used by the Imperial Japanese Army ",
+			"in addition to older models during the Second Sino-Japanese ", 
+			"War and World War Two."
+		],
+		"rarity" : {
+			"1937.01.01" : "50"
+		}
+	},
+	
+	"Type 88 75mm AA Gun": {
+		"category" : "Gun",
+		"class" : "Anti-Aircraft Gun",
+		"portrait" : "unit_type_88_75mm_aa_gun.xp",
+		"size_class" : "Large",
+		"movement_class" : "Gun",
+		"weapon_list" : [
+			{
+				"type" : "Gun",
+				"calibre" : "75",
+				"rof" : "33.3",
+				"mount" : "Hull",
+				"fired_by" : ["Gunner"],
+				"reloaded_by" : ["Loader"],
+				"firing_group" : 0,
+				"ammo_type_list" : ["HE", "AP", "Smoke"],
+				"max_ammo" : "180"
+			}
+		],
+		"crew_positions" : [
+			{"name" : "Commander"},
+			{"name" : "Spotter"},
+			{"name" : "Gunner"},
+			{"name" : "Loader"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"},
+			{"name" : "Ammo Handler"}
+		],
+		"description" : [
+			"Introduced in 1928, this was the standard Japanese ", 
+			"anti-aircraft gun until the end of World War Two. ",
+			"Because of its excellent accuracy and velocity, it was ",
+			"sometimes used in an anti-tank role."
+		],
+		"rarity" : {
+			"1928.01.01" : "100"
+		}
+	},
+	
+	"Type 94 Truck" : {
+		"category" : "Vehicle",
+		"class" : "Truck",
+		"portrait" : "unit_type_94_truck.xp",
+		"size_class" : "Normal",
+		"movement_class" : "Wheeled",
+		"crew_positions" : [
+			{
+				"name" : "Driver",
+				"location" : "Hull"
+			}
+		],
+		"description" : [
+			"Introduced in 1934 and praised for its performance, ",
+			"the Isuzu Type 94 Lorry quickly became the standard ",
+			"truck of the Japanese military before and during World ",
+			"War Two."
+		],
+		"rarity" : {
+			"1934.01.01" : "100"
+		}
+	},
+	
+	"Type 95 Scout Car" : {
+		"nick_name" : "Yonki",
+		"category" : "Vehicle",
+		"class" : "Truck",
+		"portrait" : "unit_type_95_scout_car.xp",
+		"size_class" : "Very Small",
+		"movement_class" : "Fast Wheeled",
+		"off_road" : "TRUE",
+		"crew_positions" : [
+			{
+				"name" : "Driver",
+				"location" : "Hull"
+			}
+		],
+		"description" : [
+			"First produced in 1936, the Kurogane Type 95 Scout Car ", 
+			"was a fast and versatile Japanese reconnaisance vehicle. ", 
+			"It was one of the world's first four-wheel drive ", 
+			"passenger vehicles. Its nickname 'Yonki' means ",
+			"'all-wheel drive' in Japanese."
+		],
+		"rarity" : {
+			"1936.01.01" : "50"
+		}
+	},
+	
+	"Kawasaki Ki-32": {
+		"category" : "Airplane",
+		"class" : "Dive Bomber",
+		"portrait" : "unit_ki_32.xp",
 		"movement_class" : "Airplane",
 		"weapon_list" : [
 			{

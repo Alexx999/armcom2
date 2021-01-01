@@ -38,7 +38,7 @@
 		"105 K/13", "76 K/02"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["37 PstK/37", "45 PstK/32", "AT Rifle Team"],
+		"Anti-Armour" : ["37 PstK/37", "45 PstK/32", "75 PstK/97-38", "AT Rifle Team"],
 		"Anti-Infantry" : ["3-ton Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
 		"Artillery" : ["Medium Mortar Team", "105 K/13", "76 K/02"]
 	},
@@ -62,7 +62,8 @@
 			"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "T-28E M40",
 			"BA-20", "BA-6", "BA-10", "SU-12",
 			"45mm obr. 1932", "76.2mm obr. 36", "76.2mm obr. 00/02P",
-			"85mm obr. 1939",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA",
 			"ZIS-5 Truck",
 			"Riflemen",
 			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Flame Thrower Team",
@@ -76,6 +77,7 @@
 		"Armoured Car" : 80,
 		"Anti-Tank Gun" : 15,
 		"Anti-Aircraft Gun" : 5,
+		"Self-Propelled AA Gun" : 10,
 		"Artillery Gun" : 5,
 		"Truck" : 80,
 		"Infantry Squad" : 100,

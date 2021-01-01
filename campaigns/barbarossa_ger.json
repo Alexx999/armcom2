@@ -59,7 +59,7 @@
 		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "PaK 38", "8.8cm FlaK 18 o. 36", "Panzerjager I"],
+		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "PaK 38", "PaK 97/38", "8.8cm FlaK 18 o. 36", "Panzerjager I"],
 		"Anti-Infantry" : ["SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
 		"Recon" : ["PSW 221", "PSW 222", "PSW 231 (8 rad)"],
 		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "7.5cm leIG 18", "10cm sK 18"]
@@ -86,7 +86,7 @@
 		"Soviet Union" : [
 			"T-60 M40", "T-26 M33", "T-26 M37/39",
 			"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57",
-			"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "KV-2",
+			"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "KV-2", "T-35",
 			"ZiS-30",
 			"BT-5 M34", "BT-7 M37", "BT-7A", "SU-12",
 			"BA-6", "BA-10", "BA-20",
@@ -94,8 +94,9 @@
 			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
 			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
 			"152mm GP obr. 37",
-			"85mm obr. 1939",
-			"ZIS-5 Truck",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA",
+			"ZIS-5 Truck", 
 			"Riflemen",
 			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
 			"Light Artillery Car",
@@ -112,6 +113,7 @@
 		"Anti-Tank Gun" : 60,
 		"Artillery Gun" : 35,
 		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
 		"Truck" : 90,
 		"Infantry Squad" : 100,
 		"Support Weapon Team" : 75,
