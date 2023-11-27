@@ -1,6 +1,7 @@
 {
 	"name" : "The Winter War (Soviet Union)",
 	"creator" : "Standard Campaign",
+	"difficulty" : "7",
 	"start_date" : "1939.11.30",
 	"end_date" : "1940.03.12",
 	"player_nation" : "Soviet Union",
@@ -8,7 +9,10 @@
 	"region" : "Nordic",
 	"desc" : "Join the forces of the Soviet Union as they invade Finland.",
 	"player_unit_list" : [
-		"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "T-28E M40"
+		"BA-6", "BA-10", "BA-20",
+		"T-37A", "T-38", "T-26 M33", "T-26 M37/39",
+		"BT-2", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "T-28E M40",
+		"OT-130", "OT-133"
 	],
 	"player_squad_list" : {
 		"BT-7 M37" : ["BT-7 M37", "BT-7A"],
@@ -17,18 +21,25 @@
 		"T-28E M40" : ["T-28 M34", "T-28E M40"]
 	},
 	"tank_vp_modifiers" : {
-		"T-28 M34" : 0.8
+		"BA-6" : 1.1,
+		"BA-20" : 1.6,
+		"T-37A" : 1.4,
+		"T-38" : 1.4,
+		"BT-2" : 1.1,
+		"T-26 M37/39" : 0.9,
+		"T-28 M34" : 0.8,
+		"T-28E M40" : 0.7
 	},
 	"campaign_skills" : [
 		"Centralized Fire"
 	],
 	"player_air_support": [
-		"I-153 Chaika"
+		"I-16", "I-153 Chaika"
 	],
 	"player_arty_support": [
 		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 00/02P",
-		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
-		"152mm GP obr. 37"
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+		"152mm G obr. 38", "152mm GP obr. 37"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12", "76.2mm obr. 39"],
@@ -44,30 +55,24 @@
 		}
 	},
 	"enemy_air_support": {
-		"Finland" : ["Fokker CX"]
+		"Finland" : ["Fokker C.X", "Fiat G.50 (FIN)", "MS.406 (FIN)", "MS.410 (FIN)"]
 	},
 	"enemy_arty_support": {
 		"Finland" : ["105 K/13", "76 K/02"]
 	},
 	"enemy_unit_list" : {
 		"Finland" : [
-			"Vickers 6-Ton Mark E", "T-26 M33", "BT-5 M34", "BT-7 M37", "T-28 M34",
+			"Renault FT (FIN)", "Renault FT (MG, FIN)", "Vickers 6-Ton Mark F", "T-26 M33 (FIN)", "T-26 M37/39 (FIN)",
+			"BT-5 M34 (FIN)", "BT-7 M37 (FIN)", "T-28E M40 (FIN)", "T-37A (FIN)", "T-34 M40 (FIN)",
+			"OT-133 (FIN)",
 			"37 PstK/37", "45 PstK/32", "105 K/13", "76 K/02", "75 PstK/97-38",
 			"20 ItK/38", "40 ItK/38",
 			"3-ton Truck",
 			"Riflemen", "SMG Squad",
-			"HMG Team", "AT Rifle Team", "Medium Mortar Team", "Flame Thrower Team", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Medium Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Light Artillery Car",
 			"Rifle Cavalry"
 		]
-	},
-	"enemy_captured_units" : [
-		"T-26 M33", "BT-5 M34", "BT-7 M37", "T-28 M34"
-	],
-	"enemy_unit_dates" : {
-		"T-26 M33" : "1940.12.21",
-		"BT-5 M34" : "1939.12.28",
-		"BT-7 M37" : "1939.12.28",
-		"T-28 M34" : "1939.12.28"
 	},
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 15,
@@ -78,7 +83,8 @@
 		"Truck" : 80,
 		"Infantry Squad" : 100,
 		"Support Weapon Team" : 80,
-		"Cavalry Squad" : 20
+		"Cavalry Squad" : 20,
+		"Armoured Train Car" : 1
 	},
 	"enemy_transported_units" : {
 		"Finland" : {
@@ -91,12 +97,6 @@
 				"Flame Thrower Team" : 80
 			}
 		}
-	},
-	"decorations_list" : {
-		"1100" : "Medal for Battle Merit",
-		"1200" : "Order of the Red Star",
-		"1500" : "Order of the Red Banner",
-		"1800" : "Order of Lenin"
 	},
 	"combat_days" : 40,
 	"calendar_weeks": [
@@ -153,7 +153,8 @@
 			"week_title" : "Counterattack",
 			"week_description" : "After weeks of no progress we have taken heavy losses. The Finns have launched counterattacks from their defensive positions.",
 			"mission_odds" : {
-				"Counterattack" : 80,
+				"Hold the Line" : 50,
+				"Counterattack" : 30,
 				"Battle" : 20
 			},
 			"enemy_nations" : ["Finland"],
@@ -192,7 +193,7 @@
 			"combat_chance" : 50,
 			"average_resistance" : 5,
 			"week_title" : "On the Offensive",
-			"week_description" : "After weeks of gathering reinforcements, nearly half a million of our troops are breaking through our strongholds one by one.",
+			"week_description" : "After weeks of gathering reinforcements, nearly half a million of our troops are breaking through Finnish strongholds one by one.",
 			"mission_odds" : {
 				"Spearhead" : 40,
 				"Advance" : 50,
@@ -244,7 +245,7 @@
 			"combat_chance" : 30,
 			"average_resistance" : 2,
 			"week_title" : "Victory",
-			"week_description" : "Only scattered resistance remains, as we continue to mop-up Finnish strongholds.",
+			"week_description" : "Only scattered resistance remains, as we continue to mop up Finnish strongholds.",
 			"mission_odds" : {
 				"Patrol" : 85,
 				"Advance" : 15

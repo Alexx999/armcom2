@@ -1,0 +1,59 @@
+{
+	"start_of_day" : [
+		"I've got a good feeling about today.",
+		"Another day, another battle.",
+		"Again, back into the fight.",
+		"Another day, will we survive this one?"
+	],
+	"attacked_in_zone" : [
+		"We're under attack!",
+		"Incoming!",
+		"Enemy contact!",
+		"Here they come!"
+	],
+	"high_resistance" : [
+		"That's going to be a tough nut to crack.",
+		"I have a bad feeling about this...",
+		"This looks like trouble.",
+		"Would be a difficult battle there.",
+		"Might need some support for that one."
+	],
+	"low_resistance" : [
+		"Shouldn't be too much of a challenge.",
+		"Doesn't seem like this will be too much trouble.",
+		"Should be a walk in the park. In a tank."
+	],
+	"ambushed" : [
+		"They're all around us!",
+		"We're surrounded!",
+		"Where are they coming from!?",
+		"Get down!"
+	],
+	"hull_down_get" : [
+		"We'll be safer here.",
+		"Here's a good position.",
+		"Here's some good cover.",
+		"Safe and sound here."
+	],
+	"ap_save" : [
+		"That was a close one!",
+		"We're fine!",
+		"They didn't get through our armour!",
+		"The armour took it, we're ok!"
+	],
+	"breakdown" : [
+		"Ah that's some bad luck!"
+	],
+	"attacked_during_resupply" : [
+		"This ain't good!"
+	],
+	"resupplied" : [
+		"Finally!"
+	],
+	"rescued" : [
+		"Thanks for the lift, guys!"
+	],
+	"survived_another_day" : [
+		"We survived another one."
+	]
+}

@@ -1,0 +1,677 @@
+{
+	"name" : "Ukraine to Stalingrad (Germany)",
+	"creator" : "flori2412",
+	"difficulty" : "8",
+	"start_date" : "1942.02.27",
+	"end_date" : "1942.12.23",
+	"player_nation" : "Germany",
+	"enemy_nations" : ["Soviet Union"],
+	"region" : "Western USSR",
+	"desc" : "The war against the Soviet Union continues. Join the forces of Army Group South in Ukraine as they capture the Kerch Peninsula and experience the crucible of Stalingrad.",
+	"player_unit_list" : [
+		"Panzer II F", "Panzer II J", "Panzer 38(t) E",
+		"Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N",
+		"Panzer IV E", "Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H",
+		"Panzer T-70", "Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer KV-1E 753",
+		"StuG III E", "StuG III F", "StuG III F (late)", "StuG III G", "StuH 42",
+		"Panzerjager I", "Marder II", "Marder III", "Marder III H"
+	],
+	"player_squad_list" : {
+		"Panzer III H" : ["Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N"],
+		"Panzer III J" : ["Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N"],
+		"Panzer III L" : ["Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N"],
+		"Panzer III M" : ["Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N"],
+		"Panzer III N" : ["Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N"],
+		
+		"Panzer IV F1" : ["Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H"],
+		"Panzer IV F2" : ["Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H"],
+		"Panzer IV G" : ["Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H"],
+		"Panzer IV H" : ["Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H"],
+		
+		"StuG III E" : ["StuG III E", "StuG III F", "StuG III F (late)", "StuG III G"],
+		"StuG III F" : ["StuG III E", "StuG III F", "StuG III G"],
+		"StuG III F (late)" : ["StuG III E", "StuG III F (late)", "StuG III G"],
+		"StuG III G" : ["StuG III E", "StuG III F", "StuG III F (late)", "StuG III G"],
+		
+		"Marder III" : ["Marder III", "Marder III H"],
+		"Marder III H" : ["Marder III", "Marder III H"],
+		
+		"Panzer T-34 747 M42" : ["Panzer T-34 747 M41", "Panzer T-34 747 M42"]
+		
+	},
+	"tank_vp_modifiers" : {
+		"Panzer II F" : 1.3,
+		"Panzer 38(t) E" : 1.1,
+		"Panzerjager I" : 1.2
+	},
+	"campaign_skills" : [
+		"Combined Operations"
+	],
+	"player_air_support": [
+		"Ju 87B Stuka", "Ju 87D Stuka", "Hs 129", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"
+	],
+	"player_arty_support": [
+		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41", "StuH 42"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["PaK 36", "PaK 38", "PaK 40", "8.8cm FlaK 18 o. 36", "Panzerjager I", "Marder II", "Marder III", "Marder III H"],
+		"Anti-Infantry" : ["SPW 250/1", "SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "StuG III G", "StuH 42", "SPW 251/9", "SPW 250/8"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "Panzerspahwagen P204", "SPW 250/10"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "SPW 250/7", "SPW 251/2", "7.5cm leIG 18", "10cm sK 18"]
+	},
+	"friendly_transported_units" : {
+		"SPW 250/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"SPW 251/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Soviet Union" : ["Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "Hurricane Mk IIB", "Spitfire Mk V", "P-39Q Airacobra", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Yak-9"]
+	},
+	"enemy_arty_support": {
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
+		]
+	},
+	"enemy_unit_list" : {
+		"Soviet Union" : [
+			"T-50", "T-50 (Late)", "T-60 M40", "T-60 M42", "T-26 M37/39", "T-70", "BT-5 M34", "BT-7 M37", "LT-38 Praga", "M3L",
+			"T-34 M40", "T-34 M41", "T-34-57", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)", "M3S", "T-III", "T-IV",
+			"Mark II", "Mark II 76mm", "Mark III", "KV-1E", "KV-1 M41",
+			"OT-133", "OT-34 M41", "OT-34 M42",
+			"ZiS-30",
+			"SU-12", "SU-75", "BM-13",
+			"BA-6", "BA-10",
+			"45mm obr. 1932", "45mm obr. 1942",
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA",
+			"MG Carrier",
+			"ZIS-5 Truck", "Dodge 3/4-ton Truck",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Motorcycle MG Team", "Bazooka Team (USSR)",
+			"Rifle Cavalry"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 70,
+		"Medium Tank" : 60,
+		"Heavy Tank" : 15,
+		"Tank Destroyer" : 25,
+		"Assault Gun" : 25,
+		"Armoured Car" : 40,
+		"Anti-Tank Gun" : 30,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
+		"APC" : 20,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 30,
+		"Cavalry Squad" : 20
+	},
+	"enemy_transported_units" : {
+		"Soviet Union" : {
+			"ZIS-5 Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"Dodge 3/4-ton Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"MG Carrier" : {
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 60,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.02.27",
+			"end_date" : "1942.03.03",
+			"location" : "45.24,35.44",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"landmines_chance" : 10,
+			"week_title" : "The Battle of the Parpach Narrows",
+			"week_description" : "In December and January, the Red Army regained control over the Kerch Peninsula. Now the Russians are launching an offensive to recapture Crimea from the east. Thankfully, our forces are well-prepared to defend it. Help them repel the Soviet attacks in the northern part of the frontline.",
+			"mission_odds" : {
+				"Battle" : 30,
+				"Hold the Line" : 70
+			},
+			"terrain_odds_modifier": {
+				"Fortification" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.03.04",
+			"end_date" : "1942.03.12",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.03.13",
+			"end_date" : "1942.03.15",
+			"location" : "45.18,35.44",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"landmines_chance" : 20,
+			"week_title" : "Koi-Asan",
+			"week_description" : "We managed to repel the first Russian attacks, but now General Kozlov is concentrating most of his forces for an assault on the area around the village of Koi-Asan. We will attempt to hold this position with the help of extensive minefields and defensive artillery barrages.",
+			"mission_odds" : {
+				"Battle" : 20,
+				"Hold the Line" : 60,
+				"Counterattack" : 20
+			},
+			"terrain_odds_modifier": {
+				"Fortification" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.03.16",
+			"end_date" : "1942.03.19",
+			"location" : "45.18,35.44",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Waiting for Reinforcements",
+			"week_description" : "Koi-Asan is still under our control. Sporadic fighting continues as both sides are waiting for reinforcements to arrive. Soon we will get the chance to mount a counterattack with the newly formed 22nd Panzer Division, but for now we must stay here and patrol the frontline.",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.03.20",
+			"end_date" : "1942.03.20",
+			"location" : "45.20,35.49",
+			"combat_chance" : 100,
+			"average_resistance" : 10,
+			"landmines_chance" : 10,
+			"week_title" : "Counterattack",
+			"week_description" : "We are joining the 22nd Panzer Division for a counterattack on the Soviet forces. Push the enemy back as far as you can!",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.03.21",
+			"end_date" : "1942.03.25",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.03.26",
+			"end_date" : "1942.03.26",
+			"location" : "45.18,35.44",
+			"combat_chance" : 100,
+			"average_resistance" : 7,
+			"landmines_chance" : 20,
+			"week_title" : "Second Assault on Koi-Asan",
+			"week_description" : "The counterattack of the 22nd Panzer Division was repelled with heavy casualties and we had to go back on the defense. General Kozlov's forces are launching another assault on the village of Koi-Asan. Hold the line!",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"terrain_odds_modifier": {
+				"Fortification" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.03.27",
+			"end_date" : "1942.04.08",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.04.09",
+			"end_date" : "1942.04.11",
+			"location" : "45.18,35.44",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"landmines_chance" : 10,
+			"week_title" : "Armoured Assault",
+			"week_description" : "Over the last months, the Soviets have suffered heavy casualties attacking our fortified positions on the western end of the Kerch Peninsula. This time they are employing a large number of tanks to achieve a breakthrough. Call in anti-armour support when necessary, commander!",
+			"mission_odds" : {
+				"Battle" : 25,
+				"Hold the Line" : 50,
+				"Counterattack" : 25
+			},
+			"terrain_odds_modifier": {
+				"Fortification" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 90,
+				"Medium Tank" : 70,
+				"Heavy Tank" : 25
+			}
+		},
+		{
+			"start_date" : "1942.04.12",
+			"end_date" : "1942.05.08",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.05.09",
+			"end_date" : "1942.05.11",
+			"location" : "45.18,35.57",
+			"combat_chance" : 90,
+			"average_resistance" : 7,
+			"landmines_chance" : 5,
+			"week_title" : "Operation Trappenjagd",
+			"week_description" : "We are finally ready for a large-scale counteroffensive against the Soviet troops on the Kerch Peninsula. We will begin this operation with a concentrated attack on the marshy terrain in the southern part of the frontline. Then we will swing north and initiate a pincer maneuver.",
+			"mission_odds" : {
+				"Battle" : 50,
+				"Advance" : 50
+			},
+			"terrain_odds_modifier": {
+				"Marsh" : 40
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 70,
+				"Medium Tank" : 60,
+				"Heavy Tank" : 15
+			}
+		},
+		{
+			"start_date" : "1942.05.12",
+			"end_date" : "1942.05.14",
+			"location" : "45.27,36.03",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"coastal_chance" : 30,
+			"week_title" : "Pursuit towards Kerch",
+			"week_description" : "Our successful attack in the south has broken the enemy defenses across the entire frontline. Thousands of Russian soldiers have already surrendered. The others are retreating east to the city of Kerch, where they hope to be evacuated by ship.",
+			"mission_odds" : {
+				"Battle" : 10,
+				"Advance" : 60,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.05.15",
+			"end_date" : "1942.05.15",
+			"location" : "45.36,36.46",
+			"combat_chance" : 100,
+			"average_resistance" : 6,
+			"coastal_chance" : 100,
+			"week_title" : "Assault on Kerch",
+			"week_description" : "We have reached the coastal city of Kerch. The Soviets are deperately trying to evacuate their fleeing troops by ship. Our orders are to help our infantry units capture the city and its port.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.05.16",
+			"end_date" : "1942.05.20",
+			"location" : "45.32,36.33",
+			"combat_chance" : 40,
+			"average_resistance" : 3,
+			"coastal_chance" : 30,
+			"week_title" : "Securing the Peninsula",
+			"week_description" : "The city of Kerch and most of the Kerch Peninsula are now under our control, but some pockets of Soviet resistance remain. We must destroy them.",
+			"mission_odds" : {
+				"Patrol" : 50,
+				"Advance" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.05.21",
+			"end_date" : "1942.06.27",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.06.28",
+			"location" : "51.61,38.22",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"week_title" : "Battle of Voronezh",
+			"week_description" : "The entire army group has been sent north to attack and capture the city of Voronezh on the Don river. Our unit will leave the Kerch Peninsula and join the assault.",
+			"mission_odds" : {
+				"Spearhead" : 70,
+				"Battle" : 10,
+				"Advance" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 60.0,
+			"enemy_class_odds_modifier" : {
+				"Cavalry Squad" : 0
+			}
+		},
+		{
+			"start_date" : "1942.07.05",
+			"end_date" : "1942.07.06",
+			"location" : "51.63,38.71",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Battle of Voronezh II",
+			"week_description" : "We continue our advance toward Voronezh. Resistance grows as we near the outskirts of the city.",
+			"mission_odds" : {
+				"Spearhead" : 50,
+				"Battle" : 20,
+				"Advance" : 20,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.07.07",
+			"end_date" : "1942.07.11",
+			"location" : "51.66,39.18",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Taking Voronezh",
+			"week_description" : "The 2nd Army, due to reinforce us here, has been delayed. We must take the city ourselves in spite of Soviet troops pouring into the city.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0,
+			"enemy_class_odds_modifier" : {
+				"Support Weapon Team" : "100"
+			}
+		},
+		{
+			"start_date" : "1942.07.12",
+			"end_date" : "1942.07.24",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.07.25",
+			"location" : "50.90,40.07",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Sweeping Southward",
+			"week_description" : "With the 2nd Army in control of Voroezh, we now advance south toward the city of Stalingrad to join in the offensive there.",
+			"mission_odds" : {
+				"Advance" : 70,
+				"Patrol" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0,
+			"enemy_class_odds_modifier" : {
+				"Support Weapon Team" : "75"
+			}
+		},
+		{
+			"start_date" : "1942.08.01",
+			"location" : "50.04,40.88",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Sweeping Southward II",
+			"week_description" : "We continue our advance along the Don river toward Stalingrad.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Patrol" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.08.08",
+			"location" : "49.67,42.23",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Sweeping Southward III",
+			"week_description" : "We continue our advance along the Don river toward Stalingrad.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Patrol" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.08.15",
+			"location" : "49.46,43.55",
+			"combat_chance" : 50,
+			"average_resistance" : 5,
+			"week_title" : "Approaching the Volga",
+			"week_description" : "As we approch the Volga river and Stalingrad, resistance grows steadily.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 40,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.08.22",
+			"end_date" : "1942.09.04",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.09.05",
+			"end_date" : "1942.09.05",
+			"location" : "48.76,44.44",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Stalingrad Counterattack",
+			"week_description" : "The Soviets have launched a massive counterattack from Stalingrad toward our positions on the outskirts of the city.",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.09.12",
+			"location" : "48.74,44.51",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Advancing Into Stalingrad",
+			"week_description" : "We now act in support of infantry divisions who are fighting street to street in the assault on Stalingrad.",
+			"mission_odds" : {
+				"Advance" : 25,
+				"Battle" : 25,
+				"Urban Assault" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"enemy_class_odds_modifier" : {
+				"Support Weapon Team" : "100"
+			}
+		},
+		{
+			"start_date" : "1942.09.19",
+			"location" : "48.76,44.44",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Rattenkrieg",
+			"week_description" : "The battle to take Stalingrad has become Rattenkrieg - Rat Warfare, as every building and street corner becomes a battleground.",
+			"mission_odds" : {
+				"Urban Assault" : 80,
+				"Urban Defense" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.09.26",
+			"location" : "48.76,44.44",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Taking the Northern District",
+			"week_description" : "This week we push into the northern, industrial district of Stalingrad.",
+			"mission_odds" : {
+				"Urban Assault" : 90,
+				"Urban Defense" : 10
+			},
+			"terrain_odds_modifier": {
+				"Factories" : 40,
+				"Storage Tanks" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.10.03",
+			"location" : "48.76,44.44",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Mired in the Northern District",
+			"week_description" : "Stubborn defenders continue to hold on to the massive factories in the northern district of Stalingrad.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"terrain_odds_modifier": {
+				"Factories" : 50,
+				"Storage Tanks" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.10.10",
+			"end_date" : "1942.11.18",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.11.19",
+			"end_date" : "1942.11.23",
+			"location" : "48.96,44.01",
+			"combat_chance" : 50,
+			"average_resistance" : 6,
+			"week_title" : "Operation Uranus",
+			"week_description" : "A massive Soviet operation seeks to surround our forces assaulting Stalingrad. We must disrupt them and hold them back.",
+			"mission_odds" : {
+				"Battle" : 25,
+				"Hold the Line" : 50,
+				"Counterattack" : 25
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 50.0,
+			"enemy_class_odds_modifier" : {
+				"Support Weapon Team" : "75"
+			}
+		},
+		{
+			"start_date" : "1942.12.12",
+			"location" : "48.93,42.53",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Operation Winter Storm",
+			"week_description" : "With our 6th Army surrounded by the enemy, we must break through the Soviet lines so that we may deliver badly needed supplies.",
+			"mission_odds" : {
+				"Battle" : 20,
+				"Spearhead" : 80
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.12.19",
+			"end_date" : "1942.12.23",
+			"location" : "48.93,42.53",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Operation Winter Storm",
+			"week_description" : "We continue our efforts to break through to the 6th Army, in spite of ever-worsening weather conditions.",
+			"mission_odds" : {
+				"Battle" : 60,
+				"Spearhead" : 40
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0
+		}
+	]
+}

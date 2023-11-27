@@ -1,0 +1,97 @@
+{
+	"name" : "Operation Jubilee",
+	"creator" : "Standard Campaign",
+	"difficulty" : "10",
+	"start_date" : "1942.08.19",
+	"end_date" : "1942.08.19",
+	"player_nation" : "Canada",
+	"enemy_nations" : ["Germany"],
+	"region" : "Northwestern Europe",
+	"desc" : "Join the Allied raid on the German-occupied port of Dieppe on France's north coast.",
+	"epilogue_text" : "The historical Dieppe Raid was a disaster, with thousands of Allied soldiers killed, wounded, or captured. The lessons learned, however, would be used to better plan and execute amphibious landings in Italy and Normandy later in the war.",
+	"final_evacuation" : "TRUE",
+	"player_unit_list" : [
+		"Churchill I", "Churchill II", "Churchill II Special", "Churchill III",
+		"Daimler Scout Car"
+	],
+	"tank_vp_modifiers" : {
+		"Churchill II Special" : 0.9,
+		"Churchill III" : 0.7,
+		"Daimler Scout Car" : 1.5
+	},
+	"campaign_skills" : [
+		"To Victory!"
+	],
+	"player_air_support": [
+		"Spitfire Mk V", "Spitfire Mk IX", "Hurricane Mk IIC", "P-51 Mustang (CAS)"
+	],
+	"player_arty_support": [
+		"Destroyer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "Combat Engineer Team"],
+		"Anti-Infantry" : ["HMG Team", "SMG Squad", "Bren Gun Carrier"],
+		"Recon" : ["Daimler Scout Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team"]
+	},
+	"friendly_transported_units" : {
+		"Bren Gun Carrier" : {
+			"SMG Squad" : 30,
+			"HMG Team" : 30,
+			"Light Mortar Team" : 30,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Germany" : [
+			"Fw 190"
+		]
+	},
+	"enemy_arty_support": {
+		"Germany" : [
+			"7.5cm leIG 18"
+		]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"PaK 35/36", "7.5cm leIG 18",
+			"Riflemen", "SMG Squad", "HMG Team", "Medium Mortar Team",
+			"AT Rifle Team", "Flame Thrower Team", "Combat Engineer Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Anti-Tank Gun" : 45,
+		"Artillery Gun" : 65,
+		"Infantry Squad" : 80,
+		"Support Weapon Team" : 25
+	},
+	"combat_days" : 1,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.08.19",
+			"end_date" : "1942.08.19",
+			"location" : "49.93,1.07",
+			"combat_chance" : 100,
+			"average_resistance" : 10,
+			"enemy_fortifications" : "TRUE",
+			"week_title" : "Raid on Dieppe",
+			"week_description" : "At dawn on August 19th 1942, Allied forces land at the port of Dieppe, aiming to cause damage to German defenses and to take prisoners before withdrawing back to England.",
+			"mission_days" : {
+				"1942.08.19" : "Amphibious Assault"
+			},
+			"early_day_end" : {
+				"1942.08.19" : "13:00"
+			},
+			"day_end_text" : {
+				"1942.08.19" : "The attempted raid on Dieppe has been a disaster. About half of the men landed on the beach have been killed, wounded, or taken prisoner. Over 100 of our aircraft have been lost as well as all the landed vehicles."
+			},
+			"mission_odds" : {
+				"Amphibious Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 20.0
+		}
+	]
+}

@@ -1,0 +1,339 @@
+{
+	"name" : "Baytown to the Winter Line (Canada)",
+	"creator" : "Standard Campaign",
+	"difficulty" : "6",
+	"start_date" : "1943.09.03",
+	"end_date" : "1943.12.28",
+	"player_nation" : "Canada",
+	"enemy_nations" : ["Germany"],
+	"region" : "Italy",
+	"desc" : "Join the 1st Canadian Tank Brigade as it arrives in Italy to open up a new front in the war on the Axis powers.",
+	"player_unit_list" : [
+		"Humber IV", "Otter", "M3A1 Scout Car", "Sexton",
+		"Sherman II", "Sherman V", "Stuart III"
+	],
+	"tank_vp_modifiers" : {
+		"Humber IV" : 1.5,
+		"Otter" : 1.7,
+		"M3A1 Scout Car" : 1.8,
+		"Sexton" : 1.5,
+		"Sherman V" : 1.1,
+		"Stuart III" : 1.2
+	},
+	"player_squad_list" : {
+		"Sherman II" : ["Sherman II", "Sherman V"],
+		"Sherman V" : ["Sherman II", "Sherman V"]
+	},
+	"campaign_skills" : [
+		"To Victory!"
+	],
+	"player_air_support": [
+		"Hurricane Mk IIC"
+	],
+	"player_arty_support": [
+		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["PIAT Team", "6 Pdr Portee", "OQF 6-Pounder"],
+		"Anti-Infantry" : ["M3A1 half-track", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "PIAT Team", "HMG Team"],
+		"Recon" : ["M3A1 Scout Car", "Humber IV", "Otter", "Bren Gun Carrier"],
+		"Artillery" : ["Light Mortar Team", "OQF 18-Pounder", "OQF 25-Pounder", "Sexton"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 half-track" : {
+			"Riflemen" : 80,
+			"HMG Team" : 40,
+			"PIAT Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Germany": ["Ju 87D Stuka", "Ju 87G Stuka", "Hs 129", "Bf 109"]
+	},
+	"enemy_arty_support": {
+		"Germany": ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "Hummel", "Wespe"]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Panzer III L", "Panzer III N", "Panzer III M", "Flammpanzer III M",
+			"Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H",
+			"Panzer M15/42 738",
+			"Panzer VIe",
+			"StuG III E", "StuG III G", "StuH 42", "Hummel", "Wespe",
+			"StuG III Flammpanzer",
+			"Grille Ausf. H", "Grille Ausf. K",
+			"Marder II", "Marder III", "Marder III H",
+			"Sd. Kfz. 10/4",
+			"SPW 250/10", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 234/2",
+			"SPW 251/1", "SPW 251/2", "SPW 251/22",
+			"PaK 35/36", "PaK 38", "PaK 40",
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm Nebelwerfer 41",
+			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
+			"Opel Blitz 3-ton", "Kfz 1",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "Panzerschreck Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Medium Tank" : 25,
+		"Heavy Tank" : 1,
+		"Assault Gun" : 40,
+		"Tank Destroyer" : 30,
+		"Self-Propelled AA Gun" : 15,
+		"Armoured Car" : 80,
+		"APC" : 70,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 20,
+		"Anti-Aircraft Gun" : 10,
+		"Truck" : 50,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			}
+		}
+	},
+	"combat_days" : 40,
+	"calendar_weeks": [
+		{
+			"start_date" : "1943.09.03",
+			"location" : "38.10,15.66",
+			"combat_chance" : 70,
+			"average_resistance" : 3,
+			"week_title" : "Operation Baytown - Reggio Calabria",
+			"week_description" : "Now that the island of Sicily has been captured, this week Allied forces begin landing on continental Italy, facing determined German defenders.",
+			"coastal_chance" : 90,
+			"mission_odds" : {
+				"Advance" : 80,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.09.10",
+			"location" : "38.90,16.59",
+			"combat_chance" : 70,
+			"average_resistance" : 3,
+			"week_title" : "Catanzaro",
+			"week_description" : "We have advanced some 75 miles inland from our landing point and continue to meet with little resistance.",
+			"coastal_chance" : 90,
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 40,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.09.17",
+			"end_date" : "1943.09.20",
+			"location" : "40.64,15.81",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Potenza",
+			"week_description" : "We have been ordered to attack the rear of the German lines at the crossroads village of Potenza, to help our American allies break out of their position in Salerno.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.09.21",
+			"location" : "41.02,15.60",
+			"combat_chance" : 60,
+			"average_resistance" : 4,
+			"week_title" : "Driving Northward",
+			"week_description" : "We now head northward through Taranto to help secure southern Italy for the allies.",
+			"mission_odds" : {
+				"Advance" : 80,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.10.01",
+			"location" : "40.64,15.81",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"week_title" : "Motta",
+			"week_description" : "Having siezed Foggia, we continue our drive north through the central mountain range of Italy.",
+			"mission_odds" : {
+				"Spearhead" : 50,
+				"Advance" : 20,
+				"Battle" : 20,
+				"Patrol" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.10.08",
+			"end_date" : "1943.10.13",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1943.10.14",
+			"location" : "41.56,14.67",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"week_title" : "Campobasso, Vinchiaturo, and the Biferno River",
+			"week_description" : "We continue our drive northward, now in the province of Campobasso.",
+			"mission_odds" : {
+				"Spearhead" : 40,
+				"Battle" : 40,
+				"Advance" : 10,
+				"Patrol" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.10.22",
+			"end_date" : "1943.10.26",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1943.10.27",
+			"end_date" : "1943.11.04",
+			"location" : "42.23,14.54",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Battle of the Trigno",
+			"week_description" : "We have advanced to the Adriatic coast, and must assault heavily-defended positions on the Trigno river to the north.",
+			"mission_odds" : {
+				"Battle" : 50,
+				"Counterattack" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.11.05",
+			"end_date" : "1943.11.19",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1943.11.20",
+			"location" : "42.23,14.54",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Battle of the Sangro",
+			"week_description" : "We continue our advance up the Adriatic coast, now faced with heavily-defended positions on the Sangro river.",
+			"mission_odds" : {
+				"Battle" : 50,
+				"Counterattack" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.11.27",
+			"location" : "42.23,14.54",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Battle of the Sangro II",
+			"week_description" : "We continue to attack heavily-defended German positions along the Sangro river.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.12.04",
+			"location" : "42.30,14.39",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Battle of the Moro",
+			"week_description" : "Having broken through the German defensive line on the Sangro River, we have pushed them up the coast to the Moro River.",
+			"mission_odds" : {
+				"Spearhead" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.12.11",
+			"location" : "42.30,14.39",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "Battle of the Moro II",
+			"week_description" : "We continue to attack German positions around the Moro River.",
+			"mission_odds" : {
+				"Spearhead" : 70,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.12.20",
+			"location" : "42.35,14.40",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Battle of Ortona",
+			"week_description" : "Our advance up the Adriatic coast continues, and the port town of Ortona is our next objective.",
+			"coastal_chance" : 100,
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 70.0
+		}
+	]
+}

@@ -1,13 +1,16 @@
 {
 	"name" : "Battle of France (UK)",
 	"creator" : "Standard Campaign",
+	"difficulty" : "6",
 	"start_date" : "1940.05.10",
 	"end_date" : "1940.06.20",
 	"player_nation" : "United Kingdom",
 	"enemy_nations" : ["Germany"],
 	"region" : "Northwestern Europe",
+	"final_evacuation" : "TRUE",
 	"desc" : "After months of a 'Phoney War', Germany has attacked through the Low Countries. Help defend France from this attempted invasion.",
 	"player_unit_list" : [
+		"Morris CS9 (MG)", "Daimler Scout Car",
 		"Mk VI C", "A9 Cruiser Mk I", "A10 Mk IA", "A13 Mk I", "A13 Mk II",
 		"Matilda", "Matilda II"
 	],
@@ -18,12 +21,17 @@
 		"Matilda II" : ["Mk VI C", "Matilda", "Matilda II"]
 	},
 	"tank_vp_modifiers" : {
+		"Morris CS9 (MG)" : 1.8,
+		"Daimler Scout Car" : 1.5,
 		"Mk VI C" : 1.2,
 		"A13 Mk I" : 1.1,
 		"Matilda II" : 0.8
 	},
 	"campaign_skills" : [
 		"Combined Bombardment"
+	],
+	"player_air_support": [
+		"Hurricane Mk I"
 	],
 	"player_arty_support": [
 		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
@@ -42,25 +50,27 @@
 		}
 	},
 	"enemy_air_support": {
-		"Germany" : ["Ju 87B Stuka"]
+		"Germany" : ["Hs 123", "Ju 87B Stuka", "Ju 87D Stuka", "Bf 109", "Bf 109 (fighter)", "Bf 110 (fighter)"]
 	},
 	"enemy_arty_support": {
 		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"]
 	},
 	"enemy_unit_list" : {
 		"Germany" : [
-			"Panzer I B", "Panzer II A", "Panzer II F", "Panzer 35(t)", "Panzer 38(t) A", 
+			"Panzer I A", "Panzer I B", "Panzer II A", "Panzer II D/E", "Panzer II A (late)",
+			"Panzer 35(t)", "Panzer 38(t) A", 
 			"Panzer III D", "Panzer III F", "Panzer IV A", "Panzer IV C", "Panzer IV D",
 			"StuG III B", "Panzerjager I", "SPW 251/10",
 			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)",
-			"PSW 231 (8 rad)", "PaK 35/36", "Opel Blitz 3-ton",
+			"PSW 231 (8 rad)", "PaK 35/36", "Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"PaK 35/36",
 			"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33",
 			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
 			"Sd. Kfz. 7/1",
 			"SPW 251/1", "SPW 251/2",
 			"Riflemen",
 			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team",
-			"Heavy Mortar Team", "Flame Thrower Team",
+			"Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
 	},
@@ -78,11 +88,18 @@
 		"Truck" : 80,
 		"Infantry Squad" : 100,
 		"Support Weapon Team" : 75,
-		"Motorcycle Team" : 85
+		"Motorcycle Team" : 55
 	},
 	"enemy_transported_units" : {
 		"Germany" : {
 			"Opel Blitz 3-ton" : {
+				"Riflemen" : 50,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Flame Thrower Team" : 20
+			},
+			"Buessing-NAG 4500 Truck" : {
 				"Riflemen" : 50,
 				"HMG Team" : 30,
 				"AT Rifle Team" : 20,
@@ -98,12 +115,6 @@
 			}
 		}
 	},
-	"decorations_list" : {
-		"600" : "Military Medal",
-		"800" : "Military Cross",
-		"1000" : "Distinguished Service Order",
-		"1200" : "Victoria Cross"
-	},
 	"combat_days" : 20,
 	"calendar_weeks": [
 		{
@@ -114,9 +125,10 @@
 			"week_title" : "Fall Gelb",
 			"week_description" : "The Germans have launched 'Case Yellow' and have invaded Belgium, launching a new war on the same battlefields as decades earlier.",
 			"mission_odds" : {
+				"Hold the Line" : 50,
 				"Battle" : 20,
-				"Counterattack" : 50,
-				"Fighting Withdrawal" : 30
+				"Counterattack" : 20,
+				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 80.0,
@@ -133,9 +145,9 @@
 			"week_title" : "Fallback to France",
 			"week_description" : "German advances so far have only been slowed, we must withdraw further into France and keep pressure on their lines.",
 			"mission_odds" : {
+				"Fighting Withdrawal" : 50,
 				"Battle" : 30,
-				"Counterattack" : 20,
-				"Fighting Withdrawal" : 50
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 40.0,
@@ -164,9 +176,9 @@
 			"week_title" : "Second Offensive",
 			"week_description" : "Germany has launched a second offensive, south toward Paris.",
 			"mission_odds" : {
-				"Battle" : 20,
-				"Counterattack" : 30,
-				"Fighting Withdrawal" : 50
+				"Hold the Line" : 50,
+				"Fighting Withdrawal" : 30,
+				"Battle" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 80.0,
@@ -180,8 +192,8 @@
 			"week_title" : "Final Resistance",
 			"week_description" : "Paris has fallen, and remaining British forces are being withdrawn through Cherbourg. We must hold off the German advance for as long as possible.",
 			"mission_odds" : {
-				"Battle" : 70,
-				"Counterattack" : 30
+				"Hold the Line" : 80,
+				"Battle" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 40.0,

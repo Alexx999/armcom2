@@ -1,0 +1,357 @@
+{
+	"name" : "Up The Irrawaddy",
+	"difficulty" : "7",
+	"start_date" : "1942.02.24",
+	"end_date" : "1942.05.05",
+	"player_nation" : "Empire of Japan",
+	"enemy_nations" : ["United Kingdom", "Republic of China"],
+	"enemy_nation_odds" : {
+		"United Kingdom" : "100",
+		"Republic of China" : "0"
+	},
+	"region" : "Southeast Asia",
+	"desc" : "Join the Japanese XVth Army as it invades British-controlled Burma and helps to secure its rich natural resources for the Japanese war machine.",
+	"player_unit_list" : [
+		"Type 94 Te-Ke", "Type 95 Ha-Go", "Stuart I (JP)",
+		"Type 91 Armoured Car", "Type 93 Armoured Car"
+	],
+	"player_squad_list" : {
+		"Type 91 Armoured Car" : ["Type 91 Armoured Car", "Type 93 Armoured Car"],
+		"Type 93 Armoured Car" : ["Type 91 Armoured Car", "Type 93 Armoured Car"]
+	},
+	"tank_vp_modifiers" : {
+		"Type 94 Te-Ke" : 1.3,
+		"Type 91 Armoured Car" : 1.4,
+		"Type 93 Armoured Car" : 1.4
+	},
+	"campaign_skills" : [
+		"Total Sacrifice"
+	],
+	"player_air_support": [
+		"Kawasaki Ki-32"
+	],
+	"player_arty_support": [
+		"Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "Nikuhaku Team", "Type 94 37mm AT Gun", "Type 41 75mm Mountain Gun"],
+		"Anti-Infantry" : ["Type 94 Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["Type 91 Armoured Car", "Type 93 Armoured Car", "Type 95 Scout Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun"]
+	},
+	"friendly_transported_units" : {
+		"Type 94 Truck" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"United Kingdom" : ["Hurricane Mk I", "Hurricane Mk IIB", "Hurricane Mk IIC"],
+		"United States of America" : ["P-40 Warhawk"]
+	},
+	"enemy_arty_support": {
+		"United Kingdom" : ["OQF 25-Pounder", "Heavy Mortar Team"]
+	},
+	"enemy_unit_list" : {
+		"United Kingdom" : [
+			"Stuart I", "M2A4 Light Tank (UK)",
+			"Daimler Scout Car", "Daimler Armoured Car", "Humber II",
+			"OQF 25-Pounder",
+			"Bren Gun Carrier",
+			"40mm AA Gun",
+			"Morris 15 cwt",
+			"Riflemen",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Combat Engineer Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
+		],
+		"Republic of China" : [
+			"T-26 M33 (ROC)",
+			"7.5cm leIG 18 (ROC)", "7.5cm Krupp M08 (ROC)",
+			"Bren Gun Carrier (ROC)",
+			"Oerlikon 20mm AA Gun",
+			"Henschel 33 Truck (ROC)", "2.5 Ton Truck (ROC)", "Willys MB (ROC)",
+			"Riflemen", "HMG Team", "Light Mortar Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 30,
+		"Armoured Car" : 40,
+		"Artillery Gun" : 20,
+		"Anti-Aircraft Gun" : 25,
+		"APC" : 20,
+		"Truck" : 60,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 40,
+		"Motorcycle Team" : 10
+	},
+	"enemy_transported_units" : {
+		"United Kingdom": {
+			"Bren Gun Carrier" : {
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"Morris 15 cwt" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		},
+		"Republic of China" : {
+			"Bren Gun Carrier (ROC)" : {
+				"HMG Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 28,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.02.24",
+			"end_date" : "1942.02.28",
+			"location" : "17.48,96.72",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"week_title" : "Attacks Near Waw Village",
+			"week_description" : "Our XVth Army has advanced into Burma from Siam, and has taken a key crossing on the Sittang River. We now move northward, toward the British defensive lines.",
+			"mission_odds" : {
+				"Patrol" : 20,
+				"Spearhead" : 50,
+				"Advance" : 30
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.03.02",
+			"end_date" : "1942.03.02",
+			"location" : "17.48,96.72",
+			"combat_chance" : 90,
+			"average_resistance" : 6,
+			"week_title" : "Defending Waw Village",
+			"week_description" : "We have taken Waw village, an important crossroad in the region, but now British forces are mounting a counterattack to try and retake it.",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},		
+		{
+			"start_date" : "1942.03.04",
+			"end_date" : "1942.03.04",
+			"location" : "17.48,96.72",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Counterattack",
+			"week_description" : "Although we failed to retake Waw village, we have launched a massive counterattack on the British lines.",
+			"mission_odds" : {
+				"Battle" : 20,
+				"Advance" : 80
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.03.05",
+			"end_date" : "1942.03.05",
+			"location" : "17.16,96.33",
+			"combat_chance" : 100,
+			"average_resistance" : 10,
+			"week_title" : "Holding the Roadblock",
+			"week_description" : "We have fortified the main road leading to the capital of Rangoon. We must hold off British attacks while our allies take the city.",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.03.06",
+			"end_date" : "1942.03.12",
+			"location" : "17.21,96.96",
+			"combat_chance" : 50,
+			"average_resistance" : 6,
+			"week_title" : "Pursuit Along the Irrawaddy",
+			"week_description" : "We were pulled off the roadblock and British forces slipped past. Pursue them as they retreat northward along the Irrawaddy river.",
+			"mission_odds" : {
+				"Patrol" : 40,
+				"Advance" : 60
+			},
+			"enemy_nations" : ["United Kingdom"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1942.03.13",
+			"end_date" : "1942.03.19",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.03.20",
+			"end_date" : "1942.03.22",
+			"location" : "18.49,95.51",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Chinese Counterattack",
+			"week_description" : "We now control the road leading through Burma toward China, but Chinese forces have launched a counterattack to try and retake the road.",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Republic of China"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.03.28",
+			"end_date" : "1942.03.30",
+			"location" : "18.49,95.51",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Defending Paungde",
+			"week_description" : "We have maintained control of the Burma Road, but British and Chinese rearguard forces are now counterattacking toward the town of Paungde.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["United Kingdom", "Republic of China"],
+			"enemy_nation_odds" : {
+				"United Kingdom" : "80",
+				"Republic of China" : "20"
+			},
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.04.02",
+			"end_date" : "1942.04.09",
+			"location" : "19.78,95.20",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"week_title" : "Advance Toward Dayindabo",
+			"week_description" : "Our assault continues, our goal is now the rich oil fields of Yenangyaung. Keep up the pressure on the British and Chinese rearguard as we advance toward Dayindabo.",
+			"mission_odds" : {
+				"Patrol" : 20,
+				"Advance" : 80
+			},
+			"enemy_nations" : ["United Kingdom", "Republic of China"],
+			"enemy_nation_odds" : {
+				"United Kingdom" : "60",
+				"Republic of China" : "40"
+			},
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.04.12",
+			"end_date" : "1942.04.15",
+			"location" : "19.78,95.20",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Battle of Yenaungyaung",
+			"week_description" : "We have arrived at the British and Chinese lines. They will put up a stubborn defense and may launch counterattacks on our lines.",
+			"mission_odds" : {
+				"Battle" : 60,
+				"Counterattack" : 30,
+				"Spearhead" : 10
+			},
+			"enemy_nations" : ["United Kingdom", "Republic of China"],
+			"enemy_nation_odds" : {
+				"United Kingdom" : "50",
+				"Republic of China" : "50"
+			},
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.04.16",
+			"end_date" : "1942.04.18",
+			"location" : "19.78,95.20",
+			"combat_chance" : 90,
+			"average_resistance" : 6,
+			"week_title" : "Allied Counterattacks",
+			"week_description" : "The British have chosen to destroy the oil fields rather than allow us to take them. Defend against their counterattacks on our lines.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Battle" : 20,
+				"Counterattack" : 30
+			},
+			"enemy_nations" : ["United Kingdom", "Republic of China"],
+			"enemy_nation_odds" : {
+				"United Kingdom" : "20",
+				"Republic of China" : "80"
+			},
+			"air_support_level" : 80.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.04.23",
+			"end_date" : "1942.04.30",
+			"location" : "20.88,95.86",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"week_title" : "Pursuit Up the Burma Road",
+			"week_description" : "British and Chinese forces have abandoned their positions and are retreating up the Burma Road toward India. Hunt them down.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Spearhead" : 70
+			},
+			"enemy_nations" : ["United Kingdom", "Republic of China"],
+			"enemy_nation_odds" : {
+				"United Kingdom" : "50",
+				"Republic of China" : "50"
+			},
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.05.01",
+			"end_date" : "1942.05.05",
+			"location" : "22.39,95.15",
+			"combat_chance" : 60,
+			"average_resistance" : 4,
+			"week_title" : "Toward India",
+			"week_description" : "A massive convoy of exhausted and injured troops continues to move toward the Indian border. Destroy as many as you can and secure our control over Burma.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 30,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["United Kingdom", "Republic of China"],
+			"enemy_nation_odds" : {
+				"United Kingdom" : "20",
+				"Republic of China" : "80"
+			},
+			"air_support_level" : 80.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		}
+	]
+}

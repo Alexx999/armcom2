@@ -1,21 +1,24 @@
 {
 	"name" : "Desert Rats",
 	"creator" : "Standard Campaign",
+	"difficulty" : "9",
 	"start_date" : "1940.09.13",
 	"end_date" : "1941.12.15",
 	"player_nation" : "United Kingdom",
 	"enemy_nations" : ["Italy", "Germany"],
+	"enemy_nation_odds" : {
+		"Germany" : "70",
+		"Italy" : "30"
+	},
 	"region" : "North Africa",
 	"desc" : "Join the British and Commonwealth forces in North Africa as they battle Italian, and later German, foes.",
 	"player_unit_list" : [
+		"Morris CS9 (MG)", "Daimler Scout Car", "Daimler Armoured Car", "Rolls Royce AC",
+		"Marmon-Herrington II", "Marmon-Herrington III", "Humber II",
 		"Mk VI B", "Mk VI C", "A9 Cruiser Mk I", "A9 Cruiser Mk I CS", "A10 Mk IA",
 		"A10 Mk IA CS", "A13 Mk II", "Crusader I", "Crusader I CS", "Matilda II",
-		"Matilda II CS", "Valentine II", "Stuart I", "M11/39", "M13/40"
+		"Matilda II CS", "Valentine II", "Stuart I", "M11/39 (UK)", "M13/40 (UK)"
 	],
-	"player_unit_dates" : {
-		"M11/39" : "1940.12.09",
-		"M13/40" : "1941.01.01"
-	},
 	"player_squad_list" : {
 		"Mk VI B" : ["Mk VI B", "Mk VI C"],
 		"Mk VI C" : ["Mk VI B", "Mk VI C"],
@@ -29,15 +32,27 @@
 		"Matilda II CS" : ["Matilda II", "Matilda II CS"]
 	},
 	"tank_vp_modifiers" : {
+		"Morris CS9 (MG)" : 1.9,
+		"Daimler Scout Car" : 1.6,
+		"Daimler Armoured Car" : 1.2,
+		"Rolls Royce AC" : 1.8,
+		"Marmon-Herrington II" : 1.6,
+		"Marmon-Herrington III" : 1.5,
+		"Humber II" : 1.3,
 		"Mk VI B" : 1.3,
 		"Mk VI C" : 1.2,
-		"A13 Mk I" : 1.1,
+		"A13 Mk II" : 1.1,
 		"Matilda II" : 0.8,
 		"Matilda II CS" : 0.9,
-		"Stuart I" : 0.9
+		"Stuart I" : 0.9,
+		"M11/39 (UK)" : 1.5,
+		"M13/40 (UK)" : 1.3
 	},
 	"campaign_skills" : [
 		"Ad Hoc"
+	],
+	"player_air_support": [
+		"Hurricane Mk I", "Hurricane Mk IIB", "Hurricane Mk IIC", "Spitfire Mk I/II", "Spitfire Mk V"
 	],
 	"player_arty_support": [
 		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
@@ -65,54 +80,50 @@
 	},
 	"enemy_arty_support": {
 		"Italy" : ["65/17", "75/27", "100/17", "105/28"],
-		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18"]
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm Nebelwerfer 41"]
 	},
 	"enemy_air_support": {
-		"Italy" : ["Fiat CR.42 Falco", "Ju 87 Picchiatello"],
-		"Germany" : ["Ju 87B Stuka"]
+		"Italy" : ["Fiat CR.32", "Fiat CR.42 Falco", "Ju 87 Picchiatello", "Breda Ba.65", "Fiat G.50", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"],
+		"Germany" : ["Ju 87B Stuka", "Ju 87D Stuka", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"]
 	},
 	"enemy_unit_list" : {
 		"Italy" : [
-			"L3/35", "L3 cc", "L6/40", "M11/39", "M13/40",
-			"47/32",
-			"AB 40", "AB 41",
-			"37/45",
+			"L3/35", "L3 cc", "L3 Lf", "L3 Lf (Trailer)",
+			"L5/30 (Fiat 3000)", "L6/40", 
+			"M11/39", "M13/40",
+			"AB 40", "AB 41", "AB Lancia 1Z",
+			"37/45", "47/32",
 			"65/17", "75/27", "100/17", "105/28",
 			"20/65",
 			"Autocannone da 20/65",
 			"Fiat 626",
-			"Riflemen", "SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team",
+			"Riflemen", "SMG Squad", 
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Germany" : [
-			"Panzer I B", "Panzer II F", "Panzer III G", "Panzer III H", "Panzer IV D",
-			"Panzer IV E", "Stuart I", "Crusader I", "Matilda II", "Valentine II",
+			"Panzer I B", "Panzer II F", 
+			"Panzer III G", "Panzer III H", "Panzer IV D", "Panzer IV E", "Panzer IV F1", 
+			"Panzer M3 740", "Kreuzer Panzer Mk VI 746", "Panzer Mark II 748", "Panzer Mk III 749",
+			"SPW 251/2", "SPW 250/7", "SPW 250/8",
 			"Panzerjager I",
-			"PSW 221", "PSW 222", "PSW 231 (8 rad)",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
 			"PaK 35/36", "PaK 38",
-			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", 
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm Nebelwerfer 41",
 			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
-			"Sd. Kfz. 7/1",
-			"Opel Blitz 3-ton",
-			"SPW 251/1", "SPW 251/2",
-			"Riflemen", "SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team",
-			"Medium Mortar Team", "Heavy Mortar Team",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"SPW 250/1", "SPW 251/1",
+			"Riflemen", "SMG Squad", 
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
-	},
-	"enemy_captured_units" : [
-		"Stuart I", "Crusader I", "Matilda II", "Valentine II"
-	],
-	"enemy_unit_dates" : {
-		"Stuart I" : "1942.01.01",
-		"Crusader I" : "1941.06.15",
-		"Matilda II" : "1940.10.01",
-		"Valentine II" : "1941.11.15"
 	},
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 80,
 		"Medium Tank" : 60,
 		"Heavy Tank" : 40,
+		"Assault Gun" : 20,
 		"Tank Destroyer" : 40,
 		"Armoured Car" : 80,
 		"Anti-Tank Gun" : 60,
@@ -142,6 +153,20 @@
 				"Light Mortar Team" : 30,
 				"Medium Mortar Team" : 20
 			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 50,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 50,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20
+			},
 			"SPW 251/1" : {
 				"Riflemen" : 50,
 				"HMG Team" : 30,
@@ -150,12 +175,6 @@
 				"Medium Mortar Team" : 20
 			}
 		}
-	},
-	"decorations_list" : {
-		"800" : "Military Medal",
-		"1000" : "Military Cross",
-		"1200" : "Distinguished Service Order",
-		"1300" : "Victoria Cross"
 	},
 	"combat_days" : 60,
 	"calendar_weeks": [
@@ -168,10 +187,11 @@
 			"coastal_chance" : 80,
 			"landmines_chance" : 20,
 			"week_title" : "Operazione E",
-			"week_description" : "After months of skirmishes on the border, Italian forces have launched an attack from Libya into Egypt.",
+			"week_description" : "After months of small skirmishes on the border, this week Italian forces have launched an attack from Libya into Egypt.",
 			"mission_odds" : {
-				"Counterattack" : 50,
-				"Battle" : 50
+				"Hold the Line" : 50,
+				"Counterattack" : 30,
+				"Battle" : 20
 			},
 			"enemy_nations" : ["Italy"],
 			"arty_support_level" : 80.0,
@@ -284,13 +304,14 @@
 			"coastal_chance" : 80,
 			"landmines_chance" : 20,
 			"week_title" : "Mersa El Brega",
-			"week_description" : "German reinforcements under Edwin Rommel have attacked our lines, seeking to take Tobruk on the coast.",
+			"week_description" : "German reinforcements under Erwin Rommel have attacked our lines, seeking to take Tobruk on the coast.",
 			"mission_odds" : {
-				"Counterattack" : 60,
-				"Fighting Withdrawal" : 35,
+				"Hold the Line" : 40,
+				"Counterattack" : 40,
+				"Fighting Withdrawal" : 15,
 				"Battle" : 5
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 90.0,
 			"unit_support_level" : 80.0
 		},
@@ -304,10 +325,11 @@
 			"week_title" : "Drive Toward Tobruk",
 			"week_description" : "The German Afrika Korps continues to drive toward Tobruk, we must prevent them from reaching this key port.",
 			"mission_odds" : {
-				"Fighting Withdrawal" : 60,
-				"Battle" : 40
+				"Hold the Line" : 50,
+				"Fighting Withdrawal" : 30,
+				"Battle" : 20
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 50.0,
 			"unit_support_level" : 60.0
 		},
@@ -325,11 +347,11 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 15,
 			"week_title" : "Operation Brevity",
-			"week_description" : "Tobruk has been under siege since early April, and this operation will seek to break their lines so that we can reach the port by land.",
+			"week_description" : "Tobruk has been under siege since early April, and this operation will seek to break the enemy lines so that we can reach the port by land.",
 			"mission_odds" : {
 				"Battle" : 100
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 80.0,
 			"unit_support_level" : 90.0
 		},
@@ -351,7 +373,7 @@
 			"mission_odds" : {
 				"Battle" : 100
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 80.0,
 			"unit_support_level" : 60.0
 		},
@@ -368,12 +390,12 @@
 			"coastal_chance" : 90,
 			"landmines_chance" : 15,
 			"week_title" : "Operation Crusader",
-			"week_description" : "After a period of refitting and reorganization, the new Eight Army has launched Operation Crusader, seeking to reach Tobruk.",
+			"week_description" : "After a period of refitting and reorganization, the new Eighth Army has launched Operation Crusader, seeking to reach Tobruk.",
 			"mission_odds" : {
 				"Spearhead" : 20,
 				"Battle" : 80
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 80.0,
 			"unit_support_level" : 80.0
 		},
@@ -392,7 +414,7 @@
 				"Battle" : 50,
 				"Counterattack" : 20
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 70.0,
 			"unit_support_level" : 70.0
 		},
@@ -415,7 +437,7 @@
 				"Advance" : 80,
 				"Battle" : 20
 			},
-			"enemy_nations" : ["Germany"],
+			"enemy_nations" : ["Germany", "Italy"],
 			"arty_support_level" : 60.0,
 			"unit_support_level" : 50.0
 		}

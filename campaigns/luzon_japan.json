@@ -1,0 +1,217 @@
+{
+	"name" : "Battle of Luzon (Japan)",
+	"creator" : "Standard Campaign",
+	"difficulty" : "10",
+	"start_date" : "1945.01.10",
+	"end_date" : "1945.01.29",
+	"player_nation" : "Empire of Japan",
+	"enemy_nations" : ["United States of America"],
+	"region" : "South Pacific",
+	"desc" : "Join the Fourteenth Area Army as it fights to defend the main Philippine island of Luzon from invading American forces.",
+	"player_fanatic" : "TRUE",
+	"final_evacuation" : "TRUE",
+	"player_unit_list" : [
+		"Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)",
+		"Type 95 Ha-Go", "Type 97 Chi-Ha", "Type 97 Chi-Ha (late)",
+		"Type 1 Ho-Ni I", "Type 4 Ho-Ro", "Type 91 Armoured Car"
+	],
+	"tank_vp_modifiers" : {
+		"Type 94 Te-Ke" : 1.5,
+		"Type 97 Te-Ke (MG)" : 1.4,
+		"Type 97 Te-Ke (37mm)" : 1.2,
+		"Type 97 Chi-Ha" : 1.1,
+		"Type 1 Ho-Ni I" : 0.9,
+		"Type 4 Ho-Ro" : 0.8,
+		"Type 91 Armoured Car" : 1.5
+	},
+	"campaign_skills" : [
+		"Total Sacrifice"
+	],
+	"player_arty_support": [
+		"Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun",
+		"Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer",
+		"Type 92 10cm Cannon", "Year-38 12cm Howitzer", "Type 4 15cm Howitzer",
+		"Type 96 15cm Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["Type 1 47mm AT Gun", "Type 94 37mm AT Gun", "Nikuhaku Team"],
+		"Anti-Infantry" : ["Type 1 Ho-Ki", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Recon" : ["Type 91 Armoured Car", "Type 95 Scout Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun"]
+	},
+	"friendly_transported_units" : {
+		"Type 1 Ho-Ki" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 40
+		},
+		"Type 95 Scout Car" : {
+			"SMG Squad" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 40
+		}
+	},
+	"enemy_arty_support": {
+		"United States of America" : [
+			"Destroyer", "Cruiser", "Battleship", "M8 HMC", "M2A1 105mm Howitzer", "M1 155mm Howitzer"
+		]
+	},
+	"enemy_air_support": {
+		"United States of America" : [
+			"P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt",
+			"P-51 Mustang (CAS)", "P-51 Mustang"
+		]
+	},
+	"enemy_unit_list" : {
+		"United States of America" : [
+			"M5A1 Stuart", "M8 HMC",
+			"M4A3 Sherman", "M4(105) Sherman",
+			"M8 Greyhound", "M20 Utility Car",
+			"M1 57mm AT Gun", "M5 3-inch AT Gun",
+			"M2A1 105mm Howitzer", "M1 155mm Howitzer", 
+			"40mm AA Gun", "M1A1 90mm Gun",
+			"M29 Weasel", "M3 half-track", "M3A1 half-track", 
+			"Willys MB", "GMC CCKW 2.5 ton truck",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "Bazooka Team", "Light Mortar Team",
+			"Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Combat Engineer Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 60,
+		"Medium Tank" : 30,
+		"Armoured Car" : 50,
+		"Anti-Tank Gun" : 20,
+		"Artillery Gun" : 10,
+		"Anti-Aircraft Gun" : 5,
+		"APC" : 50,
+		"Truck" : 70,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75
+	},
+	"enemy_transported_units" : {
+		"United States of America" : {
+			"M3 half-track" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Bazooka Team" : 10,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"M3A1 half-track" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Bazooka Team" : 10,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"M29 Weasel" : {
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Bazooka Team" : 10,
+				"Light Mortar Team" : 30,
+				"Flame Thrower Team" : 10
+			},
+			"Willys MB" : {
+				"HMG Team" : 40,
+				"Bazooka Team" : 10,
+				"Light Mortar Team" : 30,
+				"Flame Thrower Team" : 10
+			},
+			"GMC CCKW 2.5 ton truck" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Bazooka Team" : 10,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 20,
+	"calendar_weeks": [
+		{
+			"start_date" : "1945.01.10",
+			"end_date" : "1945.01.14",
+			"location" : "16.28,120.2",
+			"coastal_chance" : 100,
+			"combat_chance" : 90,
+			"landmines_chance" : 15,
+			"average_resistance" : 9,
+			"week_title" : "Defending Lingayen Gulf",
+			"week_description" : "The Americans are trying to land forces at Lingayen Gulf. We must use our armoured forces to stop them on the beaches so that their attack cannot continue.",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["United States of America"],
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.01.15",
+			"end_date" : "1945.01.18",
+			"location" : "16.05,120.59",
+			"combat_chance" : 90,
+			"landmines_chance" : 15,
+			"average_resistance" : 7,
+			"week_title" : "Drive Toward Binalonan",
+			"week_description" : "The Americans have advanced a few miles from the beach, but we now have a chance to retake the initiative with a series of armoured counterattacks.",
+			"mission_odds" : {
+				"Spearhead" : 60,
+				"Battle" : 40
+			},
+			"enemy_nations" : ["United States of America"],
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 40.0
+		},
+		{
+			"start_date" : "1945.01.19",
+			"location" : "16.06,120.66",
+			"combat_chance" : 90,
+			"landmines_chance" : 5,
+			"average_resistance" : 7,
+			"week_title" : "Defending San Manuel",
+			"week_description" : "American forces continue to push southward. We are making a stand at San Manuel where our forces are well dug-in.",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["United States of America"],
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 70.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 30
+			}
+			
+		},
+		{
+			"start_date" : "1945.01.26",
+			"end_date" : "1945.01.29",
+			"location" : "16.06,120.66",
+			"combat_chance" : 95,
+			"landmines_chance" : 5,
+			"average_resistance" : 10,
+			"week_title" : "Last Stand at San Manuel",
+			"week_description" : "Our forces continue to hold San Manuel although we have suffered many casualties. Hold the town at all costs, your country demands total sacrifice.",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["United States of America"],
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 30.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 60
+			}
+		}
+	]
+}

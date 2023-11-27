@@ -1,0 +1,454 @@
+{
+	"name" : "Between Kursk and Bagration (Germany)",
+	"creator" : "flori2412",
+	"difficulty" : "7",
+	"start_date" : "1944.02.04",
+	"end_date" : "1944.04.05",
+	"player_nation" : "Germany",
+	"enemy_nations" : ["Soviet Union"],
+	"region" : "Western USSR",
+	"desc" : "Join the armoured forces of Army Group South as it struggles to defend Ukraine against the Red Army after the failure of Operation Citadel and the loss of Kiev.",
+	"player_unit_list" : [
+		"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 233", "PSW 234/2", "SPW 250/9", "SPW 250/10",
+		"Panzer II L", "Panzer T-70",
+		"Panzer III L", "Panzer III M", "Panzer III N", "Flammpanzer III M", "Panzer IV H", "Panzer VG", "Panzer M15/42 738", 
+		"Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer T-34 747 M43",
+		"Panzer VIe", "Panzer VIe (Late)",
+		"StuG III E", "StuG III F (late)", "StuG III G", "StuG IV", "StuH 42", "Sturmpanzer IV", "Panzerjager Tiger (Late)",
+		"Wespe", "Hummel", "Grille Ausf. H", "Grille Ausf. K", "SPW 250/8", "SPW 251/9", "Panzerwerfer 42",
+		"Marder II", "Marder III H", "Marder III M", "Nashorn", "Panzerjager SU-85 748"
+	],
+	"player_squad_list" : {
+		"Panzer III L" : ["Panzer III L", "Panzer III N", "Panzer III M"],
+		"Panzer III M" : ["Panzer III L", "Panzer III N", "Panzer III M"],
+		"Panzer III N" : ["Panzer III L", "Panzer III N", "Panzer III M"],
+		
+		"Panzer VG" : ["Panzer VG", "Panzer IV H"],
+		"Panzer VIe" : ["Panzer VIe", "Panzer VG", "Panzer IV H"],
+		"Panzer VIe (Late)" : ["Panzer VIe (Late)", "Panzer VIe", "Panzer VG", "Panzer IV H"],
+		
+		"StuG III E" : ["StuG III E", "StuG III F (late)", "StuG III G"],
+		"StuG III F (late)" : ["StuG III E", "StuG III F (late)", "StuG III G"],
+		"StuG III G" : ["StuG III E", "StuG III F (late)", "StuG III G"],
+		
+		"Marder III" : ["Marder III", "Marder III H", "Marder III M"],
+		"Marder III H" : ["Marder III", "Marder III H", "Marder III M"],
+		"Marder III M" : ["Marder III", "Marder III H", "Marder III M"],
+		
+		"Panzer T-34 747 M41" : ["Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer T-34 747 M43"],
+		"Panzer T-34 747 M42" : ["Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer T-34 747 M43"],
+		"Panzer T-34 747 M43" : ["Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer T-34 747 M43"],
+		
+		"PSW 231 (8 rad)" : ["PSW 231 (8 rad)", "PSW 233"],
+		"PSW 233" : ["PSW 231 (8 rad)", "PSW 233"],
+		"SPW 250/10" : ["SPW 250/9", "SPW 250/10"]
+	},
+	"tank_vp_modifiers" : {
+		"Sd. Kfz. 13" : 2.2,
+		"PSW 221" : 1.9,
+		"PSW 222" : 1.8,
+		"PSW 231 (6 rad)" : 2.0,
+		"PSW 231 (8 rad)" : 1.9,
+		"PSW 233" : 1.6,
+		"PSW 234/2" : 1.5,
+		"SPW 250/9" : 1.9,
+		"SPW 250/10" : 1.7,
+		"Panzer II L" : 1.7,
+		"Panzer T-70" : 1.4,
+		"Panzer III L" : 1.1,
+		"Panzer III M" : 1.1,
+		"Panzer III N" : 1.1,
+		"Flammpanzer III M" : 1.1,
+		"Panzer VG" : 0.8,
+		"Panzer M15/42 738" : 1.5,
+		"Panzer VIe" : 0.9,
+		"Panzer VIe (Late)" : 0.9,
+		"StuG III E" : 1.1,
+		"Wespe" : 1.6,
+		"Hummel" : 1.5,
+		"Grille Ausf. H" : 1.5,
+		"Grille Ausf. K" : 1.5,
+		"SPW 251/9" : 1.6,
+		"SPW 250/8" : 1.6,
+		"Panzerwerfer 42" : 1.4,
+		"Marder II" : 1.2,
+		"Marder III H": 1.2,
+		"Marder III M": 1.2,
+		"SPW 250/10" : 1.7
+	},
+	"campaign_skills" : [
+		"Combined Operations"
+	],
+	"player_air_support": [
+		"Ju 87D Stuka", "Ju 87G Stuka", "Hs 129", "Bf 109", "Bf 109 (fighter)", "Bf 110 (fighter)", "Bf 110 (fighter-bomber)", "Fw 190", "Fw 190 (fighter)"
+	],
+	"player_arty_support": [
+		"7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "15cm sFH 18", "15cm sIG 33", "StuH 42", "Sturmpanzer IV", "Wespe", "Hummel", "Panzerwerfer 42", "15cm Nebelwerfer 41"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["8.8 cm Raketenwerfer 43", "PaK 38", "PaK 40", "PaK 43", "8.8cm FlaK 18 o. 36", "Marder II", "Marder III H", "Marder III M", "Nashorn"],
+		"Anti-Infantry" : ["SPW 250/1", "SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "Heavy Mortar Team", "StuH 42", "Sturmpanzer IV"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 233", "PSW 234/2", "SPW 250/9", "SPW 250/10"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "SPW 250/7", "SPW 251/2", "7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "Wespe", "Hummel"]
+	},
+	"friendly_transported_units" : {
+		"SPW 250/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"SPW 251/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Soviet Union" : ["Il-2 Sturmovik", "Il-2 Sturmovik Type 2M", "Il-2 Sturmovik Type 3M", "Petlyakov Pe-2", "P-39Q Airacobra", "Hurricane Mk IIB", "Hurricane Mk IIC", "Spitfire Mk V", "Spitfire Mk IX", "La-5", "La-7", "Yak-1", "Yak-3", "Yak-9", "Yak-9T"]
+	},
+	"enemy_arty_support": {
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37", "152mm G obr. 38",
+			"152mm GP obr. 37", "BM-13", "SU-122", "SU-152", "ISU-152"
+		]
+	},
+	"enemy_unit_list" : {
+		"Soviet Union" : [
+			"BT-5 M34", "BT-7 M37", "T-70",
+			"T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)", "T-34-85 (early)", "M4", "T-V", 
+			"Mark III", "Mark III (late)", "KV-1S", "IS-1", "IS-2 (early)",
+			"OT-34 M41", "OT-34 M42", "OT-34 M43 (early)", "OT-34 M43 (late)",
+			"SU-57", "SU-85",
+			"SU-75", "SU-76M", "SU-76i", "SU-122", "SU-152", "SU-152 (Late)", "ISU-152", "BM-13",
+			"BA-64B",
+			"45mm obr. 1932", "45mm obr. 1942", "57mm obr. 1943",
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA", "M17 MGMC",
+			"MG Carrier", "M5 half-track",
+			"ZIS-5 Truck", "Dodge 3/4-ton Truck", "GAZ-67", "M3A1 Scout Car",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Motorcycle MG Team", "Bazooka Team (USSR)",
+			"Rifle Cavalry"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 60,
+		"Medium Tank" : 70,
+		"Heavy Tank" : 20,
+		"Tank Destroyer" : 30,
+		"Assault Gun" : 40,
+		"Armoured Car" : 40,
+		"Anti-Tank Gun" : 30,
+		"Artillery Gun" : 20,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
+		"APC" : 30,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 30,
+		"Cavalry Squad" : 20
+	},
+	"enemy_transported_units" : {
+		"Soviet Union" : {
+			"ZIS-5 Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"Dodge 3/4-ton Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"MG Carrier" : {
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"M5 half-track" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"GAZ-67" : {
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Flame Thrower Team" : 20
+			}
+		}
+	},
+	"combat_days" : 35,
+	"calendar_weeks": [
+		{
+			"start_date" : "1944.02.04",
+			"end_date" : "1944.02.07",
+			"location" : "49.44,30.68",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"landmines_chance" : 5,
+			"week_title" : "The Battle of the Korsun-Cherkassy Pocket",
+			"week_description" : "The Russian 1st and 2nd Ukrainian Fronts have encircled almost 60,000 German soldiers around the town of Korsun. Our orders are to attempt a counter-encirclement by attacking the Soviets from multiple sides. Our unit will engage the enemy from the west.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 40,
+				"Counterattack" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1944.02.08",
+			"end_date" : "1944.02.10",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.02.11",
+			"end_date" : "1944.02.11",
+			"location" : "49.28,30.80",
+			"combat_chance" : 100,
+			"average_resistance" : 8,
+			"landmines_chance" : 5,
+			"week_title" : "Relief Attack",
+			"week_description" : "It has become evident that a counter-encirclement of the Soviet troops will not be possible. Instead, we are going to try to break through the enemy lines so that our soldiers inside the pocket may escape. Our unit has been repositioned south of Boyarka and will push east, towards Lysianka.",
+			"mission_odds" : {
+				"Spearhead" : 30,
+				"Advance" : 40,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.02.12",
+			"end_date" : "1944.02.13",
+			"location" : "49.28,30.68",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Defending the Bridgehead",
+			"week_description" : "We managed to establish a small bridgehead on the eastern bank of the River Gniloy Tikich, but failed to advance any further. The Soviets are responding to our advance with strong counterattacks, forcing us into defensive positions for now.",
+			"mission_odds" : {
+				"Hold the Line" : 70,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.02.14",
+			"end_date" : "1944.02.15",
+			"location" : "49.27,30.79",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"landmines_chance" : 5,
+			"week_title" : "Attack on Lysianka",
+			"week_description" : "We were able to expand the Bridgehead on the eastern bank of the River Gniloy Tikich, but the situation of our troops inside the Korsun-Cherkassy Pocket keeps getting worse. Our next move is to make another attempt at taking the town of Lysianka to the east of our current position.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.02.16",
+			"end_date" : "1944.02.17",
+			"location" : "49.27,30.79",
+			"combat_chance" : 90,
+			"average_resistance" : 9,
+			"week_title" : "Covering the Breakout",
+			"week_description" : "Our brothers-in-arms inside the Korsun-Cherkassy Pocket are going to break through the enemy lines close to our position at Lysianka. They will need to cross the River Gniloy Tikich under heavy fire. We must hold our positions against heavy Russian counterattacks so that they may escape.",
+			"mission_odds" : {
+				"Hold the Line" : 70,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1944.02.18",
+			"end_date" : "1944.03.03",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.03.04",
+			"end_date" : "1944.03.06",
+			"location" : "49.87,26.78",
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"landmines_chance" : 5,
+			"week_title" : "The Proskurov-Chernovtsy Offensive",
+			"week_description" : "After a period of preparation and repositioning, the Soviets have launched a large-scale offensive from the north. We are trying to slow down the enemy advance south of Shepetovka, but we are hopelessly outnumbered.",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 50,
+				"Hold the Line" : 30,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1944.03.07",
+			"end_date" : "1944.03.10",
+			"location" : "49.54,26.24",
+			"combat_chance" : 70,
+			"average_resistance" : 9,
+			"landmines_chance" : 5,
+			"week_title" : "German Counterattacks",
+			"week_description" : "Nine Panzer and three German infantry divisions have been assembled on the frontline between Tarnopol in the west and Proskurov in the east. We are going to launch relentless counterattacks to push the Russians back to the north. Our unit is currently fighting to hold the city of Volochysk.",
+			"mission_odds" : {
+				"Battle" : 40,
+				"Counterattack" : 30,
+				"Urban Defense" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1944.03.11",
+			"end_date" : "1944.03.15",
+			"location" : "49.54,26.24",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"landmines_chance" : 5,
+			"week_title" : "Stopping the Soviet Advance",
+			"week_description" : "The enemy advance has been stopped between Tarnopol and Proskurov, but the situation has turned into a ferocious battle with an endless number of reinforcements being sent in by both sides. Hold the line and push back the enemy whenever possible!",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.03.16",
+			"end_date" : "1944.03.20",
+			"location" : "49.54,26.24",
+			"combat_chance" : 70,
+			"average_resistance" : 7,
+			"landmines_chance" : 5,
+			"week_title" : "A Battle of Attrition",
+			"week_description" : "Both sides are suffering heavy casualties, but neither the Soviet nor German forces have managed to gain the upper hand so far.",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1944.03.21",
+			"end_date" : "1944.03.23",
+			"location" : "49.11,26.34",
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"week_title" : "Retreat to Kamenets-Podolsky",
+			"week_description" : "Having received even more reinforcements, the Soviet troops in front of us are renewing their attack while other enemy forces are breaking through our lines further south, threatening to encircle us. We must fall back to the city of Kamenets-Podolsky and help defend it.",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1944.03.24",
+			"end_date" : "1944.03.26",
+			"location" : "48.69,26.58",
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"week_title" : "Kamenets-Podolsky",
+			"week_description" : "Advancing from the east, enemy forces are mounting an assault on the city of Kamenets-Podolsky. We must stop their advance before they manage to cut off our lines of retreat to the west.",
+			"mission_odds" : {
+				"Urban Defense" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1944.03.27",
+			"end_date" : "1944.03.29",
+			"location" : "48.89,26.15",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Losing Ground",
+			"week_description" : "Having lost control of Kamenets-Podolsky in the east, Tarnopol in the north-west and the areas around the River Dniester in the south, we are about to be encircled by the enemy. We need to fall back to the west while slowing down the Russian advance whenever we can.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Fighting Withdrawal" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 40.0
+		},
+		{
+			"start_date" : "1944.03.30",
+			"end_date" : "1944.04.05",
+			"location" : "49.03,25.73",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"week_title" : "Breakout to the West",
+			"week_description" : "The entire First Panzer Army is now encircled. Our only chance of escape is to break through the enemy lines to the west, which have been weakened by constant fighting. Our objective is to re-establish contact with friendly forces at the Ukrainian town of Buczacz.",
+			"mission_odds" : {
+				"Spearhead" : 50,
+				"Fighting Withdrawal" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 60.0
+		}
+	]
+}

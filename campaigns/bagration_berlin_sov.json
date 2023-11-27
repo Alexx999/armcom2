@@ -1,0 +1,587 @@
+{
+	"name" : "Bagration to Berlin (USSR)",
+	"creator" : "flori2412",
+	"difficulty" : "7",
+	"start_date" : "1944.07.13",
+	"end_date" : "1945.05.01",
+	"player_nation" : "Soviet Union",
+	"enemy_nations" : ["Germany"],
+	"region" : "Northeastern Europe",
+	"desc" : "Join the armoured forces of the First Ukrainian Front for the final Soviet offensives on the Western Front. Lead your tank crew into Poland and Germany and take part in the assault on Berlin.",
+	"player_unit_list" : [                               
+		"BA-64B", "M3A1 Scout Car",
+		"BT-5 M34", "BT-7 M37", "T-70",
+		"T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)", "T-34-85 (early)",
+		"T-34-85 (late)", "M4", "M4(76)", "T-V", 
+		"Mark III", "Mark III (late)", "KV-1S", "IS-1", "IS-2 (early)", "IS-2 (late)", "T-VI",
+		"SU-75", "SU-76M", "SU-76i", "SU-85", "SU-85M", "SU-100", "SU-122", "ISU-122",
+		"ISU-122S", "SU-152", "SU-152 (Late)", "ISU-152",
+		"OT-34 M41", "OT-34 M42", "OT-34 M43 (early)", "OT-34 M43 (late)", "OT-34-85 (early)", "OT-34-85 (late)"
+	],
+	"player_squad_list" : {
+		"BT-7 M37" : ["BT-5 M34", "BT-7 M37"],
+		"T-34 M42" : ["T-34 M41", "T-34 M42"],
+		"T-34 M43 (early)" : ["T-34 M41", "T-34 M42", "T-34 M43 (early)"],
+		"T-34 M43 (late)" : ["T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)"],
+		"T-34-85 (late)" : ["T-34-85 (early)", "T-34-85 (late)"],
+		"M4(76)" : ["M4", "M4(76)"],
+		"SU-76i" : ["SU-76M", "SU-76i"],
+		"SU-85M" : ["SU-85", "SU-85M"],
+		"ISU-122S" : ["ISU-122", "ISU-122S"],
+		"ISU-152" : ["SU-152", "ISU-152"]
+	},
+	"tank_vp_modifiers" : {
+		"BA-64B" : 2.1,
+		"M3A1 Scout Car" : 1.9,
+		"BT-5 M34" : 1.5,
+		"BT-7 M37" : 1.5,
+		"T-70" : 1.3,
+		"T-V" : 0.8,
+		"Mark III" : 1.4,
+		"Mark III (late)" : 1.2,
+		"IS-1" : 0.8,
+		"IS-2 (early)" : 0.8,
+		"IS-2 (late)" : 0.8,
+		"T-VI": 0.9,
+		"SU-76M" : 1.5,
+		"SU-76i" : 1.3,
+		"ISU-122S" : 0.9,
+		"ISU-152" : 0.9
+	},
+	"campaign_skills" : [
+		"Centralized Fire"
+	],
+	"player_air_support": [
+		"Il-2 Sturmovik", "Il-2 Sturmovik Type 2M", "Il-2 Sturmovik Type 3M", "Petlyakov Pe-2", "P-39Q Airacobra", "Hurricane Mk IIB", "Hurricane Mk IIC", "Spitfire Mk V", "Spitfire Mk IX", "La-5", "La-7", "Yak-1", "Yak-3", "Yak-9", "Yak-9T", "Yak-9K"
+	],
+	"player_arty_support": [
+		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42",
+		"76.2mm obr. 00/02P", "107mm obr. 10/30", "122mm G obr. 10/30",
+		"122mm G obr. 38", "122mm obr. 31/37", "152mm G obr. 38", "152mm GP obr. 37",
+		"SU-122", "ISU-122", "ISU-122S", "SU-152", "ISU-152", "BM-13"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "45mm obr. 1942", "57mm obr. 1943", "100mm obr. 1944", "SU-57", "SU-76M", "SU-76i", "SU-85", "SU-85M", "SU-100"],
+		"Anti-Infantry" : ["MG Carrier", "M5 half-track", "M3A1 Scout Car", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "Heavy Mortar Team", "SU-122", "ISU-122", "ISU-122S", "SU-152", "ISU-152"],
+		"Recon" : ["Motorcycle MG Team", "BA-64B", "T-70"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42", "76.2mm obr. 00/02P", "SU-122", "ISU-122", "ISU-122S", "SU-152", "ISU-152", "BM-13"]
+	},
+	"friendly_transported_units" : {
+		"MG Carrier" : {
+			"Riflemen" : 30,
+			"HMG Team" : 40,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"M5 half-track" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 30,
+			"AT Rifle Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 20
+		}
+	},
+	"enemy_air_support": {
+		"Germany" : ["Ju 87D Stuka", "Ju 87G Stuka", "Hs 129", "Bf 109", "Bf 109 (fighter)", "Bf 110 (fighter-bomber)", "Bf 110 (fighter)", "Fw 190", "Fw 190 (fighter)", "Me 262", "Me 262 A-2a"]
+	},
+	"enemy_arty_support": {
+		"Germany" : ["7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "15cm sFH 18", "15cm sIG 33", "StuH 42", "Sturmpanzer IV", "Wespe", "Hummel", "Panzerwerfer 42", "15cm Nebelwerfer 41"]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Panzer II L", "Panzer T-70",
+			"Panzer III L", "Panzer III M", "Panzer III N", "Flammpanzer III M", "Panzer IV H", "Panzer IV J", "Panzer VG", 
+			"Panzer M15/42 738", "Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer T-34 747 M43",
+			"Panzer VIe (Late)", "Panzer VIb",
+			"StuG III E", "StuG III F (late)", "StuG III G", "StuG III G (late)", "StuG IV", "StuG IV (late)", "StuH 42",
+			"Sturmpanzer IV", "Sturmpanzer IV (late)", "Panzerjager Tiger (Late)", "Sturmmoerserwagen 606/4",
+			"Wespe", "Hummel", "Panzerwerfer 42", "SPW 250/7", "SPW 250/8", "SPW 251/2", "SPW 251/9",
+			"Marder II", "Marder III H", "Marder III M", "Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer IV/70",
+			"Jagdpanzer IV/70 (A)", "Jagdpanzer 38(t)", 
+			"Jagdpanzer V", "Jagdpanzer VI", "Nashorn", "Panzerjager SU-85 748", "SPW 251/10", "SPW 251/22",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 233", "PSW 234/2",
+			"SPW 250/9", "SPW 250/10",
+			"PaK 38", "PaK 40", "PaK 43", "PaK 43/41", "8.8 cm Raketenwerfer 43",
+			"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41",
+			"2cm FlaK 38", "3.7cm FlaK 43", "8.8cm FlaK 18 o. 36",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1", "Flakpanzer 38(t)", "Flakpanzer IV Wirbelwind", "Flakpanzer IV Mobelwagen",
+			"SPW 250/1", "SPW 251/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team",
+			"Flame Thrower Team", "Panzerschreck Team", "Combat Engineer Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 5,
+		"Medium Tank" : 25,
+		"Heavy Tank" : 5,
+		"Assault Gun" : 80,
+		"Tank Destroyer" : 50,
+		"Armoured Car" : 90,
+		"Anti-Tank Gun" : 40,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Self-Propelled AA Gun" : 5,
+		"APC" : 70,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			}
+		}
+	},
+	"combat_days" : 50,
+	"calendar_weeks": [
+		{
+			"start_date" : "1944.07.13",
+			"end_date" : "1944.07.14",
+			"location" : "50.49,24.76",
+			"combat_chance" : 100,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Operation Bagration",
+			"week_description" : "Three weeks ago, our comrades in the north launched an offensive in Byelorussia. They recaptured Minsk and are about to destroy the German Army Group Centre. The time has come to take back the rest of Ukraine. We will attack the German troops around Lviv. Our first target is the town of Horokhiv.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 20,
+				"Battle" : 30,
+				"Urban Assault" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1944.07.15",
+			"end_date" : "1944.07.15",
+			"location" : "50.49,24.76",
+			"combat_chance" : 100,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "German Counterattacks at Horokhiv",
+			"week_description" : "The Germans are sending in reinforcements, trying to stop our advance at Horokhiv, but they are severely outnumbered.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Counterattack" : 40,
+				"Urban Defense" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1944.07.16",
+			"end_date" : "1944.07.18",
+			"location" : "50.25,24.58",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Taking Kamionka Strumilowa",
+			"week_description" : "We have repelled the German counterattacks at Horokhiv and are continuing our advance towards Lviv. Our next objective is to cross the Southern Bug River and to take the town of Kamionka Strumilowa on the other side.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 30,
+				"Battle" : 20,
+				"Urban Assault" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.07.19",
+			"end_date" : "1944.07.19",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.07.20",
+			"end_date" : "1944.07.22",
+			"location" : "50.09,24.79",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Encirclement at Brody",
+			"week_description" : "The swift advance of the First Ukrainian Front resulted in the encirclement of 45,000 German soldiers around Brody, to the east of our position. Our unit will join the attack on these trapped enemy troops.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 50,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1944.07.23",
+			"end_date" : "1944.07.26",
+			"location" : "49.86,24.07",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Capturing Lviv",
+			"week_description" : "The enemy forces in the pocket around Brody have been destroyed. Our next objective is to capture the city of Lviv, west of our current position.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 30,
+				"Urban Assault" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.07.27",
+			"end_date" : "1944.07.28",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.07.29",
+			"end_date" : "1944.08.01",
+			"location" : "50.12,22.20",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Across the Vistula River",
+			"week_description" : "Having taken Lviv and the surrounding area, the Polish city of Sandomierz will be our next objective. We are crossing the border into Poland and heading towards the Vistula River.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 40,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.08.02",
+			"end_date" : "1944.08.06",
+			"location" : "50.52,21.54",
+			"combat_chance" : 70,
+			"average_resistance" : 9,
+			"week_title" : "Defending the Bridgehead",
+			"week_description" : "We managed to cross the Vistula River and established a bridgehead north of the small town of Baranów Sandomierski, 25 km south-west of Sandomierz. The Germans are mobilising all available forces to push us back across the river. We have to hold the bridgehead at all cost.",
+			"mission_odds" : {
+				"Hold the Line" : 60,
+				"Battle" : 20,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.08.07",
+			"end_date" : "1944.08.11",
+			"location" : "50.52,21.54",
+			"combat_chance" : 70,
+			"average_resistance" : 10,
+			"week_title" : "Heavy German Armour",
+			"week_description" : "The Germans are still attacking our bridgehead north of Baranów Sandomierski. They are now sending in a large number of heavily armoured tanks. We must not let them break through!",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Battle" : 10,
+				"Patrol" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0,
+			"enemy_class_odds_modifier" : {
+				"Medium Tank" : 60,
+				"Heavy Tank" : 30,
+				"Assault Gun" : 100,
+				"Tank Destroyer" : 70
+			}
+		},
+		{
+			"start_date" : "1944.08.12",
+			"end_date" : "1944.08.16",
+			"location" : "50.52,21.54",
+			"combat_chance" : 70,
+			"average_resistance" : 9,
+			"week_title" : "Heavy Casualties",
+			"week_description" : "We have knocked out most of the attacking German tanks, but the enemy troops are still mounting assaults on our bridgehead across the Vistula River. We have lost a lot of our tanks and support units in this battle, and yet we are not going to retreat. Hold your position, commander!",
+			"mission_odds" : {
+				"Hold the Line" : 80,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 40.0,
+			"enemy_class_odds_modifier" : {
+				"Medium Tank" : 25,
+				"Heavy Tank" : 5,
+				"Assault Gun" : 80,
+				"Tank Destroyer" : 50
+			}
+		},
+		{
+			"start_date" : "1944.08.17",
+			"end_date" : "1944.08.20",
+			"location" : "50.52,21.54",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"landmines_chance" : 5,
+			"week_title" : "Taking Sandomierz",
+			"week_description" : "The German counterattacks have finally stopped. Having reinforced our battered units, we are now assaulting the Polish city of Sandomierz, 25 km to the north-east of our bridgehead.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 30,
+				"Urban Assault" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1944.08.21",
+			"end_date" : "1945.01.11",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.01.12",
+			"end_date" : "1945.01.16",
+			"location" : "50.88,20.62",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"landmines_chance" : 10,
+			"week_title" : "The Vistula-Oder Offensive",
+			"week_description" : "Over the last months, the Red Army assembled an overwhelming number of soldiers, vehicles and artillery pieces for a large-scale offensive into Poland. Following a massive, several-hours long artillery barrage, our unit will join the advance from Sandomierz towards the Warthe River.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 40,
+				"Urban Assault" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1945.01.17",
+			"end_date" : "1945.01.19",
+			"location" : "50.21,20.03",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Capture of Kraków",
+			"week_description" : "We are swinging south in order to take Kraków. Our plan is to force the German troops inside the city to withdraw by threatening to encircle them. If it works out, we can capture Kraków undamaged.",
+			"mission_odds" : {
+				"Advance" : 45,
+				"Spearhead" : 45,
+				"Battle" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1945.01.20",
+			"end_date" : "1945.01.20",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.01.21",
+			"end_date" : "1945.01.26",
+			"location" : "50.14,19.46",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Securing Upper Silesia",
+			"week_description" : "Kraków is under our control. Our next objective is to advance west and secure Upper Silesia, which is defended by the German 17th Army.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 30,
+				"Patrol" : 20,
+				"Urban Assault" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1945.01.27",
+			"end_date" : "1945.01.31",
+			"location" : "50.57,18.25",
+			"combat_chance" : 70,
+			"average_resistance" : 3,
+			"week_title" : "Towards the Oder River",
+			"week_description" : "The German 17th Army has retreated from Upper Silesia. Our unit is advancing eastwards, heading towards the Oder River.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.02.01",
+			"end_date" : "1945.04.15",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.04.16",
+			"end_date" : "1945.04.18",
+			"location" : "51.71,14.61",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Forst, Simmersdorf and Cottbus",
+			"week_description" : "After a delay of several months, the Red Army is finally ready to advance on Berlin. While our comrades further north are assaulting the Seelow Heights, the First Ukrainian Front will support the operation by securing the area around the city of Cottbus.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 20,
+				"Battle" : 30,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1945.04.19",
+			"end_date" : "1945.04.22",
+			"location" : "52.01,13.73",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Approaching Berlin",
+			"week_description" : "Having managed to break through the German defenses, our armoured forces have received permission to take part in the assault on the German capital. While allied units will stay behind to secure Cottbus and the surrounding area, we will approach Berlin from the south.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Spearhead" : 50,
+				"Urban Assault" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0,
+			"enemy_class_odds_modifier" : {
+				"Medium Tank" : 10,
+				"Assault Gun" : 20,
+				"Tank Destroyer" : 20,
+				"Armoured Car" : 40,
+				"Anti-Tank Gun" : 50,
+				"Anti-Aircraft Gun" : 20,
+				"APC" : 40,
+				"Truck" : 50,
+				"Support Weapon Team" : 100,
+				"Motorcycle Team" : 30
+			}
+		},
+		{
+			"start_date" : "1945.04.23",
+			"end_date" : "1945.04.23",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.04.24",
+			"end_date" : "1945.04.27",
+			"location" : "52.49,13.40",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Berlin",
+			"week_description" : "We had to halt our advance on the 23rd of April to allow our support units to catch up with us. Now we are finally advancing into the heart of the German capital, securing the southern and western parts of the city.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.04.28",
+			"end_date" : "1945.04.30",
+			"location" : "52.49,13.40",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Assault on the City Centre",
+			"week_description" : "Having secured some of the southern and western parts of Berlin, we are now moving into the city centre. Allied forces have already cleared out some of the buildings in this area and are about to capture the Reichstag.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.05.01",
+			"end_date" : "1945.05.01",
+			"location" : "52.49,13.40",
+			"combat_chance" : 100,
+			"average_resistance" : 5,
+			"week_title" : "The End",
+			"week_description" : "Hitler is dead, the Reichstag has been captured and enemy resistance is faltering all across the German capital. We have almost made it through this.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		}
+	]
+}

@@ -1,13 +1,15 @@
 {
 	"name" : "Operation Torch (USA)",
 	"creator" : "flori2412",
+	"difficulty" : "7",
 	"start_date" : "1942.11.08",
 	"end_date" : "1943.05.07",
 	"player_nation" : "United States of America",
 	"enemy_nations" : ["France", "Italy", "Germany"],
 	"region" : "North Africa",
-	"desc" : "Join the American forces in their first deployment in Europe, as they help their British, Commonwealth and Free French allies in an invasion of Axis-occupied North Africa.",
+	"desc" : "Join the American forces as they help their British, Commonwealth, and Free French allies in an invasion of Axis-occupied North Africa.",
 	"player_unit_list" : [
+		"M3A1 Scout Car", "M3 GMC", "M7 Priest",
 		"M3A1 Stuart", "M3A3 Stuart", "M5A1 Stuart",
 		"M3 Lee", "M3A1 Lee", "M3A3 Lee", "M3A4 Lee", "M3A5 Lee",
 		"M4 Sherman", "M4A1 Sherman", "M10 Wolverine"
@@ -22,6 +24,9 @@
 		"M3A5 Lee" : ["M3 Lee", "M3A5 Lee"]
 	},
 	"tank_vp_modifiers" : {
+		"M3A1 Scout Car" : 1.6,
+		"M3 GMC" : 1.4,
+		"M7 Priest" : 1.3,
 		"M3A1 Stuart" : 1.2,
 		"M3A3 Stuart" : 1.2,
 		"M5A1 Stuart" : 1.2
@@ -29,22 +34,16 @@
 	"campaign_skills" : [
 		"Baptism of Fire"
 	],
-	"player_arty_support": [
-		"M2A1 105mm Howitzer", "M1 155mm Howitzer"
-	],
-	"enemy_arty_support": [
-		"7.5cm leIG 18", "105/28", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18"
-	],
 	"player_air_support": [
-		"P-40 Warhawk"
+		"P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-40 Warhawk"
 	],
-	"enemy_air_support": [
-		"Fiat CR.42 Falco", "Ju 87 Picchiatello", "Ju 87B Stuka"
+	"player_arty_support": [
+		"M2A1 105mm Howitzer", "M1 155mm Howitzer", "M7 Priest"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["Bazooka Team", "M3 GMC", "M6 GMC Fargo", "M10 Wolverine"],
 		"Anti-Infantry" : ["M3 half-track", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
-		"Recon" : ["Willys MB", "M3A1 Stuart", "M5A1 Stuart"],
+		"Recon" : ["Willys MB", "M3A1 Scout Car", "M3A1 Stuart", "M5A1 Stuart"],
 		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M2A1 105mm Howitzer", "M7 Priest"]
 	},
 	"friendly_transported_units" : {
@@ -56,26 +55,44 @@
 			"Light Mortar Team" : 30,
 			"Medium Mortar Team" : 20,
 			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"Bazooka Team" : 40,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
 		}
+	},
+	"enemy_arty_support": {
+		"France" : ["75mm mle 1897", "75mm mle 1928", "105mm C mle 1935", "105mm L mle 1913", "155mm C mle 1917"],
+		"Italy" : ["65/17", "75/27", "100/17", "105/28"],
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41"]
+	},
+	"enemy_air_support": {
+		"France" : ["MS.410"],
+		"Italy" : ["Fiat CR.42 Falco", "Ju 87 Picchiatello", "Fiat G.50", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"],
+		"Germany" : ["Ju 87B Stuka", "Ju 87D Stuka", "Hs 129", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"]
 	},
 	"enemy_unit_list" : {
 		"France" : [
 			"Renault FT", "Renault FT (MG)",
-			"H35", "H35 (Late)", "R35 (Late)", "AMC 29",
-			"SOMUA S35", "H39 (Late)",
+			"H35", "H35 (Late)", "H39 (Late)", "R35", "R35 (Late)", "R40", "AMC 29",
+			"SOMUA S35", "AMC 35", "FCM 36", "Char D1", "Char D2", "Char D2 (Late)",
 			"Char B-1 Bis",
 			"AMD 35",
-			"SA-L 34",
+			"SA-L 34", "SA 37 APX",
 			"75mm mle 1897", "75mm mle 1928", "105mm C mle 1935", "105mm L mle 1913", "155mm C mle 1917",
 			"20mm mle 1939 AA Gun", "25mm mle 1938 AA Gun",
 			"Autocanon de 75mm",
-			"Laffly S20TL", "Lorraine 38L", "Citroen 23",
+			"Lorraine 38L",
+			"Laffly S20TL", "Citroen 23",
 			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Italy" : [
-			"L3/35", "L3 cc", "L6/40", "M11/39", "M13/40", "M14/41",
+			"L6/40", "M13/40", "M14/41", "R35 (ITA)", "L3 Lf", "L3 Lf (Trailer)",
 			"Semovente da 47/32", "Semovente da 75/18",
 			"47/32",
 			"AB 41", "AS 42 - MG AA", "AS 42 - AA", "AS 42 - MG", "AS 42 - AT",
@@ -83,24 +100,28 @@
 			"20/65",
 			"Autocannone da 20/65",
 			"Fiat 626",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Germany" : [
-			"Panzer II F", "Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M",
-			"Panzer III N", "Panzer IV D", "Panzer IV E", "Panzer IV F1", "Panzer IV F2", 
+			"Panzer II F", "Panzer III H", "Panzer III L", "Panzer III M", "Panzer III N",
+			"Panzer III J", "Panzer IV D", "Panzer IV E", "Panzer IV F1", "Panzer IV F2", 
 			"Panzer IV G", "Panzer IV H", "Panzer VIe",
-			"Panzerjager I", "Marder II", "Marder III",
-			"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
-			"PaK 38", "PaK 40",
+			"Panzer M3 740", "Kreuzer Panzer Mk VI 746", "Panzer Mark II 748",
+			"Panzer M3 740 (Late)",
+			"Panzer Mk VI 746 (III)", "Panzer Mk III 749", "Panzer Mk III 749 (Late)",
+			"SPW 250/7", "SPW 251/2", "SPW 250/8", "SPW 251/9",
+			"Panzerjager I", "Marder II", "Marder III", "SPW 251/10",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
+			"PaK 35/36", "PaK 38", "PaK 40", "8.8 cm Raketenwerfer 43",
 			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", 
 			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
-			"Sd. Kfz. 7/1",
-			"Opel Blitz 3-ton", "Kfz 1",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
 			"SPW 251/1", "SPW 251/2",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
 	},
@@ -108,6 +129,7 @@
 		"Light Tank" : 30,
 		"Medium Tank" : 70,
 		"Heavy Tank" : 50,
+		"Assault Gun" : 20,
 		"Tank Destroyer" : 40,
 		"Armoured Car" : 80,
 		"Anti-Tank Gun" : 60,
@@ -158,6 +180,22 @@
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
 			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
 			"SPW 251/1" : {
 				"Riflemen" : 60,
 				"HMG Team" : 10,
@@ -167,12 +205,6 @@
 				"Flame Thrower Team" : 10
 			}
 		}
-	},
-	"decorations_list" : {
-		"4000" : "Bronze Star",
-		"4200" : "Silver Star",
-		"4400" : "Distinguished Service Cross",
-		"4700" : "Congressional Medal of Honor"
 	},
 	"combat_days" : 57,
 	"calendar_weeks": [
@@ -268,7 +300,8 @@
 			"week_description" : "The 10th Panzer Division has arrived and launched an overwhelming counterattack on our forces. A push towards Djedeida is no longer possible.",
 			"mission_odds" : {
 				"Counterattack" : 50,
-				"Fighting Withdrawal" : 50
+				"Hold the Line" : 30,
+				"Fighting Withdrawal" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 50.0,
@@ -290,8 +323,9 @@
 			"week_title" : "Bou Aoukaz",
 			"week_description" : "Having withdrawn to Bou Aoukaz, we are forced to fight off another Axis counterattack. However, we are in a much better position this time.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany", "Italy"],
 			"air_support_level" : 30.0,
@@ -382,7 +416,7 @@
 			"week_title" : "Battle of Kasserine Pass",
 			"week_description" : "Sidi Bou Zid has been lost and we have taken up defensive positions at Kasserine Pass further west. Supported by Italian units, the Germans continue to press their advantage.",
 			"mission_odds" : {
-				"Counterattack" : 60,
+				"Hold the Line" : 60,
 				"Fighting Withdrawal" : 40
 			},
 			"enemy_nations" : ["Germany", "Italy"],
@@ -398,7 +432,7 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 20,
 			"week_title" : "Gaining the Upper Hand",
-			"week_description" : "Our forces suffered devastating casualties, but they held the pass. Now we are ready to launch a counterattack with reinforcements, air and artillery support. Hit the Germans and Italians as hard as you can and drive them all the way back to Sidi Bou Zid!",
+			"week_description" : "Our forces suffered devastating casualties and failed to hold the pass. However, now we are ready to launch a counterattack with reinforcements, air and artillery support. Hit the Germans and Italians as hard as you can and drive them all the way back to Sidi Bou Zid!",
 			"mission_odds" : {
 				"Advance" : 50,
 				"Battle" : 50
@@ -439,7 +473,7 @@
 			"average_resistance" : 3,
 			"coastal_chance" : 0,
 			"landmines_chance" : 15,
-			"week_title" : "Calm before the Storm",
+			"week_title" : "Calm Before the Storm",
 			"week_description" : "Gafsa and El Guettar have been secured. Patrol the surrounding area and mop up any Italian forces you may encounter.",
 			"mission_odds" : {
 				"Patrol" : 100
@@ -458,8 +492,9 @@
 			"week_title" : "The Battle of El Guettar",
 			"week_description" : "The 10th Panzer Division is attacking our forces in the El Guettar valley, coming from the east. Fortunately, we have been able to lay some minefields which should help slow down the Germans. Hold the line!",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"arty_support_level" : 80.0,

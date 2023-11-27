@@ -1,6 +1,7 @@
 {
 	"name" : "Ariete on the Advance",
 	"creator" : "flori2412",
+	"difficulty" : "8",
 	"start_date" : "1942.01.21",
 	"end_date" : "1942.11.03",
 	"player_nation" : "Italy",
@@ -8,9 +9,10 @@
 	"region" : "North Africa",
 	"desc" : "Join the famous Ariete Division as the Italian and German forces in North Africa go back on the offensive and advance into Libya and Egypt.",
 	"player_unit_list" : [
-		"L6/40", "M13/40", "M14/41", "Semovente da 47/32", "Semovente da 75/18"
+		"AB 41", "L6/40", "M13/40", "M14/41", "Semovente da 47/32", "Semovente da 75/18", "R35 (ITA)"
 	],
 	"tank_vp_modifiers" : {
+		"AB 41" : 1.5,
 		"L6/40" : 1.4,
 		"M13/40" : 1.2,
 		"M14/41" : 1.1,
@@ -20,13 +22,13 @@
 		"Audacia"
 	],
 	"player_air_support": [
-		"Fiat CR.42 Falco", "Ju 87 Picchiatello"
+		"Fiat CR.42 Falco", "Ju 87 Picchiatello", "Fiat G.50", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"
 	],
 	"player_arty_support": [
 		"65/17", "75/27", "100/17", "105/28"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["AT Rifle Team", "47/32", "Semovente da 47/32", "Semovente da 75/18"],
+		"Anti-Armour" : ["AT Rifle Team", "47/32", "Semovente da 47/32", "Semovente da 75/18", "Semovente da 90/53"],
 		"Anti-Infantry" : ["Fiat 626", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
 		"Recon" : ["AB 41", "L6/40", "Motorcycle MG Team"],
 		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "65/17", "75/27", "100/17", "105/28"]
@@ -42,34 +44,34 @@
 		}
 	},
 	"enemy_arty_support": {
-		"United Kingdom" : ["OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"]
+		"United Kingdom" : ["OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", "Bishop", "M7 Priest"]
 	},
 	"enemy_air_support": {
-		"United Kingdom" : ["P-40 Warhawk"]
+		"United Kingdom" : ["P-40 Warhawk", "Hurricane Mk IIB", "Hurricane Mk IIC", "Hurricane Mk IID", "Spitfire Mk V", "Spitfire Mk IX"]
 	},
 	"enemy_unit_list" : {
 		"United Kingdom" : [
 			"Stuart I", "Stuart III", 
 			"Crusader I", "Crusader I CS", "Crusader II", "Crusader II CS", "Crusader III", 
-			"Grant I", "Lee II", "Lee V", "Lee VI", "Grant II", "Sherman I", "Sherman II", "M13/40", "M14/41",
-			"Matilda II", "Matilda II CS", "Valentine II", "Valentine III", "Valentine IV", "Valentine V", "Churchill IV",
+			"Grant I", "Lee II", "Lee V", "Lee VI", "Grant II", "Sherman I", "Sherman II",
+			"M13/40 (UK)", "M14/41 (UK)",
+			"Matilda II", "Matilda II CS", "Valentine II", "Valentine III", "Valentine IV", "Valentine V",
+			"Churchill I", "Churchill II", "Churchill IV",
 			"Bishop", "M7 Priest",
 			"2 Pdr Portee", "6 Pdr Portee",
 			"Daimler Scout Car", "Marmon-Herrington III", "Humber II", "AEC I", "Daimler Armoured Car",
-			"OQF 2-Pounder", "OQF 6-Pounder", "47/32",
+			"M3A1 Scout Car",
+			"OQF 2-Pounder", "OQF 6-Pounder", "47/32 (UK)",
 			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer",
-			"20/65", "40mm AA Gun",
-			"Autocannone da 20/65",
+			"20/65 (UK)", "40mm AA Gun", "OQF 3.7\" AA Gun",
+			"Autocannone da 20/65 (UK)",
 			"Bren Gun Carrier", "AT Rifle Carrier",
 			"Morris 15 cwt",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
 	},
-	"enemy_captured_units" : [
-		"M13/40", "M14/41", "Autocannone da 20/65", "20/65", "47/32"
-	],
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 60,
 		"Medium Tank" : 80,
@@ -105,13 +107,15 @@
 				"Light Mortar Team" : 30,
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"AT Rifle Team" : 40,
+				"Light Mortar Team" : 40,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		}
-	},
-	"decorations_list" : {
-		"3400" : "Colonial Order of the Star of Italy",
-		"3600" : "War Cross of Military Valor",
-		"3800" : "Ordine Militare di Savoia"
 	},
 	"combat_days" : 50,
 	"calendar_weeks": [
@@ -203,8 +207,8 @@
 			"average_resistance" : 8,
 			"coastal_chance" : 0,
 			"landmines_chance" : 40,
-			"week_title" : "The siege of Bir Hakeim",
-			"week_description" : "Free French forces supported by the British continue to hold the fortress of Bir Hakeim. We are going to wear down their resistance with concentrated air and artillery strikes.",
+			"week_title" : "The Siege of Bir Hakeim",
+			"week_description" : "French forces supported by the British continue to hold the fortress of Bir Hakeim. We are going to wear down their resistance with concentrated air and artillery strikes.",
 			"mission_odds" : {
 				"Battle" : 100
 			},
@@ -225,7 +229,7 @@
 			"average_resistance" : 6,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "The fall of the Gazala Line",
+			"week_title" : "The Fall of the Gazala Line",
 			"week_description" : "The French resistance at Bir Hakeim has finally been broken. The Ariete Division is going to press the advantage together with our German allies.",
 			"mission_odds" : {
 				"Advance" : 30,
@@ -295,7 +299,7 @@
 			"average_resistance" : 7,
 			"coastal_chance" : 0,
 			"landmines_chance" : 20,
-			"week_title" : "Heavy casualties",
+			"week_title" : "Heavy Casualties",
 			"week_description" : "Yesterday, we lost most of our tanks and many of our support units. The Ariete Division has no choice but to withdraw from this battle.",
 			"mission_odds" : {
 				"Fighting Withdrawal" : 100
@@ -342,7 +346,7 @@
 			"average_resistance" : 9,
 			"coastal_chance" : 0,
 			"landmines_chance" : 20,
-			"week_title" : "Falling back",
+			"week_title" : "Falling Back",
 			"week_description" : "Somehow Montgomery knew about our plans: The ridge of Alam el Halfa was well-defended by entrenched anti-tank guns. Enemy aircraft are hitting our supply lines and shooting down our bombers, and now the Desert Rats are attacking us with their tanks. Fall back!",
 			"mission_odds" : {
 				"Counterattack" : 30,
@@ -372,10 +376,10 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 40,
 			"week_title" : "The Second Battle of El Alamein",
-			"week_description" : "Montgomery has launched a large-scale attack across the whole frontline reaching from El Alamein to the Quattara Depression. Ariete has been posted in the south, opposite the British 7th Armoured Division. We are lacking the fuel to withdraw all of our forces, so we must hold our ground!",
+			"week_description" : "Montgomery has launched a large-scale attack across the whole frontline reaching from El Alamein to the Quattara Depression. Ariete has been posted in the south, opposite the British 7th Armoured Division. We are lacking the fuel to withdraw, so we must hold our ground!",
 			"mission_odds" : {
-				"Battle" : 30,
-				"Counterattack" : 70
+				"Hold the Line" : 70,
+				"Battle" : 30
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 20.0,
@@ -395,7 +399,7 @@
 			"average_resistance" : 9,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "Counterattacks in the north",
+			"week_title" : "Counterattacks in the North",
 			"week_description" : "The enemy forces have stopped their attacks further south, but the battle is still raging in the north. We are concentrating our armoured forces - including Ariete - in a series of counterattacks in the north, hoping to decide the battle before the enemy can gain the upper hand.",
 			"mission_odds" : {
 				"Battle" : 100
@@ -413,11 +417,11 @@
 			"average_resistance" : 9,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "A battle of attrition",
+			"week_title" : "A Battle of Attrition",
 			"week_description" : "The situation is getting desperate. Our counterattacks have failed and Montgomery's troops are keeping us under pressure. Hold your ground and wait for another opportunity to break through the enemy lines.",
 			"mission_odds" : {
-				"Battle" : 20,
-				"Counterattack" : 80
+				"Hold the Line" : 80,
+				"Battle" : 20
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 20.0,
@@ -432,8 +436,8 @@
 			"average_resistance" : 10,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "The sacrifice of Ariete",
-			"week_description" : "The battle is lost. Our German allies have used the remaining fuel reserves to retreat from the battlefield. The Italian forces will fight to the last man to delay the enemy pursuit. If you somehow survive this mess, you might be able to escape and rejoin allied units further west. Good luck!",
+			"week_title" : "The Sacrifice of Ariete",
+			"week_description" : "The battle is lost. The Germans have used the remaining fuel reserves to retreat from the battlefield. The Italians will fight to the last man to delay the enemy pursuit. If you somehow survive this mess, you might be able to escape and rejoin allied units further west. Good luck!",
 			"mission_odds" : {
 				"Counterattack" : 100
 			},

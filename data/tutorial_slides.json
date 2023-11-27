@@ -1,0 +1,479 @@
+{
+	"intro": {
+		"title" : "Tutorial",
+		"text" : [
+			"Welcome to Armoured Commander II! This tutorial will introduce you to the basics of the game. You will play through a few days of a training campaign, and throughout the campaign pop-up windows such as this will explain aspects of the game. You can review these tutorial slides later on via the F4 menu.",
+			"You can use keyboard and mouse or a controller in this game. The mouse can be hovered over map hexes to view information about that area of the map, and in the Scenario layer you can use the mousewheel to cycle through a units stack, and right click on a unit to see more info about them.",
+			"Once the campaign has started, be sure to open the Glossary, which defines important in-game terms.",
+			"Press the key or button displayed below to dismiss this window and continue."
+		]
+	},
+	"controller": {
+		"title" : "Controller Input",
+		"text" : [
+			"It looks like you have a compatible controller plugged in. Use the direction pad to select menu items, [A] to select or confirm, [B] to decline or cancel. ",
+			"LB and RB can be used to scroll through menu tabs. Use the left stick to select a direction on the Campaign Day map, and press [X] to advance through Scenario phases.",
+			"Press the button displayed below to close this window and continue."
+		]
+	},
+	"game_menu_0": {
+		"title" : "Game Menu",
+		"text" : [
+			"This is the in-game menu. From here you can save your game, vierw the unit gallery, and quit to the main menu.",
+			"Note that you can only have one in-progress saved campaign of any one type - if you start a new tutorial, its save will replace this one, for example.",
+			"The menu tabs can also be directly accessed from most in-game layers if you are using a keyboard, or you can switch to them from this menu.",
+			"The text at the bottom of this menu is an excerpt from the poem 'In Flanders Fields' by Lieutenant-Colonel John McCrae, a Canadian physician and gunner who served in the Great War. He died a few months after writing it."
+		]
+	},
+	"game_menu_1": {
+		"title" : "Game Menu Tab - Glossary",
+		"text" : [
+			"This is the in-game glossary, explaining some commonly used terms. If you are using a keyboard, pressing an alphabetical key from A to Z will skip to the first entry for that letter or the next alphabetical entry.",
+			"Pressing Tab or LB/RB here will cycle between different glossary languages, if available."
+		]
+	},
+	"game_menu_2": {
+		"title" : "Game Menu Tab - Message Log",
+		"text" : [
+			"This is the in-game message log. Any pop-up messages during the game will also be recorded here, so if something happens too quickly for you to understand, you can open this menu and review recent messages."
+		]
+	},
+	"game_menu_3": {
+		"title" : "Game Menu Tab - Campaign Info",
+		"text" : [
+			"This menu displays information about the current campaign, including the active campaign options and the total Victory Point modifiers from these options. For the tutorial these were selected automatically, but in a real campaign you can tune the difficulty to your liking."
+		]
+	},
+	"game_menu_4": {
+		"title" : "Game Menu Tab - Settings",
+		"text" : [
+			"In this menu tab you can change different game settings. This is the same interface as that accessible from the main game menu."
+		]
+	},
+	"end_of_campaign": {
+		"title" : "End of Campaign",
+		"text" : [
+			"The tutorial campaign has finished! Real campaigns are usually much longer, and at the end you will have an option of continuing on to any available subsequent campaign for this nation with your surviving crew if any.",
+			"Hopefully you enjoyed this introduction to the game. There's much more to learn, so please do consult the in-game glossary and the Steam Guide for more information.",
+			"Happy tanking!",
+			"Gregory Scott"
+		]
+	},
+	
+	
+	"campaign_calendar_base": {
+		"title" : "Campaign Calendar Layer",
+		"text" : [
+			"The first layer of the game is the Campaign Calendar, where each combat day begins and ends. From here you can see what type of mission you will be assigned for the day, examine your crew and vehicle, review the combat journal, and view the Field Hospital.",
+			"Combat days will start and end at different times depending on the day of the year and your location in the world. You don't have any yet, but Victory Points (VP) are the main measure of success for a given campaign.",
+			"Press numbers 1-4 or use the LB/RB buttons to open different menu tabs in the command console in the lower left of the screen.",
+			"If you are using a controller, the input buttons will be displayed. Any keyboard key that appears in the game in a light blue colour means that it can be used for input. Note that the 1-4 numbers in the command menu are highlighted in this light blue colour.",
+			"When you are ready to start your combat day, press LB or 1 to open the Proceed menu tab, and then [A] or Tab to start your day."
+		]
+	},
+	"campaign_calendar_crew_menu" : {
+		"title" : "Campaign Calendar - Crew and Tank Menu Tab",
+		"text" : [
+			"The second menu tab shows you your current crew and tank. Here you can see important information about your tank. Consult the Steam Guide for a detailed explanation.",
+			"From this tab you can move crewmen to different positions in the tank, and you can view their details. Your commander's name is highlighed, which means that they represent you. If your Commander is killed, your campaign ends.",
+			"For now, keep your crewmen in their current positions. You can view any crewman's details from here. A number followed by ADV means that crewman has one or more Advance Points to spend in the crewman menu."
+		]
+	},
+	"campaign_calendar_journal_menu" : {
+		"title" : "Campaign Calendar - Combat Journal Tab",
+		"text" : [
+			"Important events in the combat day will be recorded here. If your day has not yet started, there won't be much here yet, but after your day is over you can return here to review what happened.",
+			"You can view different combat days by scrolling through the journal."
+		]
+	},
+	"campaign_calendar_hospital_menu" : {
+		"title" : "Campaign Calendar - Field Hospital Tab",
+		"text" : [
+			"Any time one of your crewmen sustains a Heavy or worse injury, there's a chance that the injury is bad enough that they must be sent to the Field Hospital to recover for a time. Once they recover they'll be available for action again and can return to your tank.",
+			"If your Player Commander is sent to the Field Hospital, you skip the intervening days and then return to duty. In the meantime, your tank and the rest of your crew may have survived, they may have lost some crewmen, or they might have all been killed in action, in which case you'll be assigned a new tank and crew.",
+			"If you stay in the Field Hospital beyond the end of a campaign, your campaign is over."
+		]
+	},
+	"campaign_calendar_return" : {
+		"title" : "Campaign Calendar - Returned after Combat Day",
+		"text" : [
+			"You have now returned to the Campaign Calendar layer. You may now review your crew, spend any Advance Points that they earned, and then proceed to the next combat day."
+		]
+	},
+	
+	"crewman_menu" : {
+		"title" : "Crewman Menu",
+		"text" : [
+			"Here you can view details about a crewman, change their name or nickname, and spend any Advance Points that they may have. Details on the different stats are available in the Steam Guide.",
+			"For now, each you spend Advance Points to increase any of the crewman's four stats. Also important are the crewman's Skills. You can scroll through their current skills, and can scroll to the bottom of the list to see a list of new skills that can be added by spending one Advance Point."
+		]
+	},
+	"add_skill_menu" : {
+		"title" : "Add Skill Menu",
+		"text" : [
+			"Here you can see a full list of all the crew skills that this crewman can add. Most of them will likely now be greyed out, since they require a minimum Stat level in order to be purchased.",
+			"You can scroll through this list to see the requirements and effects of the skills. Note that some skills can only be gained automatically through participating in a campaign, and can't be added with Advance Points."
+		]
+	},
+	
+	"ammo_loading" : {
+		"title" : "Ammo Loading",
+		"text" : [
+			"At the start of each day, and whenever you are able to Resupply, you can load your guns with ammo. Different ammo types have different effects and are suited for different types of targets. Not every gun has access to all ammo types.",
+			"High Explosive (HE) is good for infantry, gun, and other unarmoured targets such as trucks. Armour Penetrating (AP) is only effective against armoured targets such as tanks. Smoke can be used to blind a target or give cover to an allied unit.",
+			"The Ram Mark II has both AP and HE ammo, so be sure to load some of each. Press x or [X] to autofill your gun with a balance of each type in General Stores and the Ready Rack. The Ready Rack is nearby the gun and reloading from there gives you a higher chance of firing two or more rounds in the same turn.",
+			"When you've loaded your ammo, press Tab to continue."
+		]
+	},
+	
+	"campaign_day_base": {
+		"title" : "Campaign Day Layer",
+		"text" : [
+			"The second layer of the game is the Campaign Day map. This is where you lead your battlegroup across a terrain map. On the bottom left is the Command Menu with 4 menu tabs. The current tab, Travel, allows you to plan travel to another zone on the map, and to toggle advancing fire and support options.",
+			"Air, Artillery, and/or Unit support may be given to you at the start of the day. Air Support cannot be called in overcast or foggy conditions. These will trigger if you move into a new zone and encounter enemy resistance, and Unit Support will trigger if you are attacked in your own zone.",
+			"In the middle of the screen is the Campaign Day map. If you are using a mouse, you can mouseover each zone to view information about it. Zones marked with yellow pips are objectives, and will reward bonus VP for completing them.",
+			"For now, scroll through the other menu tabs, then return to this tab, select a direction, and proceed into any enemy-held zone."
+		]
+	},
+	"campaign_day_supply": {
+		"title" : "Campaign Day - Supply Menu Tab",
+		"text" : [
+			"In the supply menu tab you can see your current ammo load. You can also Request Resupply from here, which will take some time but if successful will allow you to replenish your ammo stores."
+		]
+	},
+	"campaign_day_crew": {
+		"title" : "Campaign Day - Crew Menu Tab",
+		"text" : [
+			"In the crew menu tab you can view your crewmen, change their current position, and toggle their hatch (if any).",
+			"Being Buttoned Up (BU) gives crewmen protection against incoming attacks that don't penetrate the tank, but offers less visibilty. Being Crew Exposed (CE) gives your crewman more visibility at the cost of more risk.",
+			"During extreme hot and cold conditions, being CE or BU respectively will give some protection to your crew from Fatigue, which decreases their effectiveness in battle. Fatigue will be indicated by a negative red percentage number for each crewman so affected.",
+			"Keep all your crew buttoned up for now."
+		]
+	},
+	"campaign_day_battlegroup": {
+		"title" : "Campaign Day - Battlegroup Menu Tab",
+		"text" : [
+			"In the battlegroup menu tab you can view your squadmates, other vehicles that move and fight with you as a team. You can also set their default command for when a battle begins."
+		]
+	},
+	
+	"campaign_day_clear_command": {
+		"title" : "Campaign Day - Clear Default Command",
+		"text" : [
+			"Once you start a scenario you can set a default command and hatch status for each crewman, and this will automatically be set at the start of every battle.",
+			"With this command you can clear any default that you had set earlier."
+		]
+	},
+	"campaign_day_return_to_base": {
+		"title" : "Campaign Day - Return to Base",
+		"text" : [
+			"With this command you can choose to end your combat day early, but you will have to forfeit half of your VP so far."
+		]
+	},
+	"campaign_day_recon": {
+		"title" : "Campaign Day - Reconnaissance",
+		"text" : [
+			"Getting reconnaissance information from an enemy-held zone takes some time, but will give you an idea as to how strong the enemy presence in this zone is, and what types of enemies you can expect to encounter.",
+			"These recon reports are not always accurate, but based on them you can choose what types of support to call when you move in to the zone, or whether to avoid the zone altogether."
+		]
+	},
+	"campaign_day_wait": {
+		"title" : "Campaign Day - Waiting in Place",
+		"text" : [
+			"Waiting in Place will advance the day clock and you won't move, but unless you are attacked in your own zone by enemy forces, your crew will get a chance to rest and may lose Fatigue points.",
+			"Waiting in place is a good option during defensive missions, or when your crew are very fatigued. You can call in Unit Support, which may arrive if you are attacked in this zone."
+		]
+	},
+	"campaign_day_unit_support": {
+		"title" : "Campaign Day - Unit Support",
+		"text" : [
+			"If Unit Support is active and you move into a zone and encounter enemy resistance, or you are attacked in your own zone, there's a chance that friendly units will be spawned to help you out in the battle that follows.",
+			"Before you move or wait in place you can choose which category of support to request, but the actual number and types of units that arrive are determined randomly.",
+			"If you are granted Unit Support, whether or not a battle occurs, you lose some of your Unit Support level, meaning later requests are more likely to fail."
+		]
+	},
+	"campaign_day_advancing_fire": {
+		"title" : "Campaign Day - Advancing Fire",
+		"text" : [
+			"If Advancing Fire is active, you will fire HE (if available) and MG weapons when moving into an enemy-held zone.",
+			"If you then encounter enemy resistance, enemy units may start the scenario already Pinned down and will thus be less of an initial threat to you."
+		]
+	},
+	"campaign_day_air_support": {
+		"title" : "Campaign Day - Air Support",
+		"text" : [
+			"If Air Support is active and you move into a zone and encounter enemy resistance, friendly air units may arrive before the battle begins and do an attack run on enemy units.",
+			"Air Support cannot be called during overcast or foggy conditions.",
+			"If you are granted Air Support, whether or not a battle occurs, you lose some of your Air Support level, meaning later requests are more likely to fail."
+		]
+	},
+	"campaign_day_arty_support": {
+		"title" : "Campaign Day - Artillery Support",
+		"text" : [
+			"If Artillery Support is active and you move into a zone and encounter enemy resistance, friendly artillery units may fire a bombardment on enemy units before the battle begins.",
+			"If you are granted Artillery Support, whether or not a battle occurs, you lose some of your Artillery Support level, meaning later requests are more likely to fail."
+		]
+	},
+	"campaign_day_unit_support_menu": {
+		"title" : "Campaign Day - Unit Support Choice",
+		"text" : [
+			"Here you can select the category of unit support that you would like to request. If you already have a recon report, the expected enemy units will be displayed here.",
+			"Try to choose units that will be effective against the type of resistance that you expect to encounter."
+		]
+	},
+	
+	"campaign_day_rivers": {
+		"title" : "Campaign Day - Crossing Rivers",
+		"text" : [
+			"Rivers with bridges can be crossed without penalty. If there's no crossing, it will take some extra time to find a safe place to ford the river and cross to the other side."
+		]
+	},
+	"campaign_day_resistance": {
+		"title" : "Campaign Day - Enemy Resistance!",
+		"text" : [
+			"The higher the enemy strength level in a zone, the more chance that when you move into it you will encounter one or more enemy units. Now you will move into the Scenario layer of the game, where battles within a zone take place."
+		]
+	},
+	"campaign_day_no_resistance": {
+		"title" : "Campaign Day - No Enemy Resistance",
+		"text" : [
+			"Even if a zone is occupied by the enemy, when you move into it sometimes you will find that all enemy units have relocated elsewhere. You capture the zone without any combat.",
+			"The more often you find no enemy resistance, however, the more likely it is that you will find resistance in a future move across the Campaign Day map."
+		]
+	},
+	"campaign_day_zone_capture": {
+		"title" : "Campaign Day - Allied and Enemy Zone Capture",
+		"text" : [
+			"You are not the only fighting units in combat today - there are enemy and allied units across the Campaign Day map. Between your actions, there's a chance that zone control will change hands as a result of enemy or allied action.",
+			"Although you have no direct control over these battles, you can take advantage of allied-captured zones, and the zones you capture will help your side capture further zones beyond the front lines."
+		]
+	},
+	"campaign_day_attacked_in_zone": {
+		"title" : "Campaign Day - Attacked in Own Zone",
+		"text" : [
+			"If the enemy tries to capture the zone that you currently occupy, it will trigger a Scenario instead, and you will fight a battle against incoming enemy units."
+		]
+	},
+	"campaign_day_completed_objective": {
+		"title" : "Campaign Day - Completing An Objective",
+		"text" : [
+			"Objectives are marked in gold on the Campaign Day map. Completing the requirements listed in the objective will award you bonus Victory Points."
+		]
+	},
+	"campaign_day_end": {
+		"title" : "Campaign Day - End of Day",
+		"text" : [
+			"Night has fallen and the combat day is over. You will now see a summary of the day's combat, and will then return to base."
+		]
+	},
+	
+	"scenario_base": {
+		"title" : "Scenario Layer",
+		"text" : [
+			"The final layer of the game is the Scenario layer, where combat takes place. Here the focus is an abstract map centered on your tank and your squad (facing upward), with enemy and allied units moving around you. If you are using a mouse, you can mouseover map hexes to see info about any units there.",
+			"Each Scenario turn represents 2 minutes of time, and is divided into phases. First you get a chance to move and fight with your tank and your crew, then your squad acts, then other friendly units, then enemy units. A Scenario ends when you are knocked out, you withdraw from the battle, or when there are no enemy units remaining on the map.",
+			"If you made any support requests before the battle began, they will be resolved next. Support may or may not actually arrive, but any air or artillery attacks will automatically be resolved, followed by any unit support."
+		]
+	},
+	"scenario_all_dead": {
+		"title" : "Scenario - Support Attacks Destroyed All Enemies",
+		"text" : [
+			"Your support has been very effective - there's no enemies left to fight, and you automatically win the scenario!"  
+		]
+	},
+	"scenario_command_phase": {
+		"title" : "Scenario - Command Phase",
+		"text" : [
+			"The first phase of the turn is the Command Phase, when you can assign a command to each of your crew that is not dead or unconscious. They can only use one command per turn, and most actions in the game, including moving around the map and firing weapons, require crewmen to be on the correct command.",
+			"The default command is Spot, which tells your crewman to scan the battlefield and try to spot and identiy any unspotted enemy units. Their field of vision, indicated by the yellow highlighted hexes on the map, may change depending on their hatch status and their current command. Some commands are only possible if your crewman is CE or BU.",
+			"For now, keep your hatches closed, and command your Gunner to operate the gun or the MG, and command your Driver to Drive."  
+		]
+	},
+	"scenario_crewman_spotted": {
+		"title" : "Scenario - Crewman Spotted Enemy Unit",
+		"text" : [
+			"Your crewmen may spot enemy units on the battlefield and identify them for you. Spotted units are much easier to hit with attacks.",
+			"If you are using a mouse, you can now right-click on a unit to see its info. Use the mousewheel to cycle the order of units if they are stacked together in a hex."  
+		]
+	},
+	"scenario_ally_spotted": {
+		"title" : "Scenario - Ally Spotted Enemy Unit",
+		"text" : [
+			"Sometimes your squadmates or support units may spot enemy units, and will relay their identity to you.",
+			"If you are using a mouse, you can now right-click on a unit to see its info. Use the mousewheel to cycle the order of units if they are stacked together in a hex."
+		]
+	},
+	"scenario_los_blocked": {
+		"title" : "Scenario - Line of Sight Blocked",
+		"text" : [
+			"The battlefield is filled with hills, trees, buildings, and other features that can totally block the Line of Sight (LoS) between yourself and another unit on the map. If LoS to a unit is blocked, it will be displayed with a black background.",
+			"Only ballistic attacks such as artillery strikes or mortars can attack units outside of their Line of Sight. No direct attacks are possible if there is no LoS."
+		]
+	},
+	"scenario_spotting_phase": {
+		"title" : "Scenario - Spotting Phase",
+		"text" : [
+			"During this phase of the turn, your crewmen will automatically attempt to spot any unspotted enemy units that they can see.",
+			"If they are currently on a command other than Spot, they may not be able to spot this turn.",
+			"Your allies such as your squadmates will also automatically attempt to spot unspotted enemy units in this phase."
+		]
+	},
+	
+	"scenario_tank_spotted": {
+		"title" : "Scenario - Enemy Tank Spotted",
+		"text" : [
+			"Tanks are armoured vehicles normally armed with either a MG or a Gun. They are fast and deadly, and their main gun is likely a threat to you.",
+			"The facing of a tank is often important, as most have lighter armour on their sides and rear. If you are using a mouse, hover the cursor over them to view their hull and turret facing directions.",
+			"You will need to use your main gun, loaded with AP, to destroy them. Try to hit their side or rear if their armour is weaker there."
+		]
+	},
+	"scenario_riflemen_spotted": {
+		"title" : "Scenario - Enemy Riflemen Spotted",
+		"text" : [
+			"Riflemen are armed with light weapons, potentially an LMG or MMG, and potentially close combat anti-tank weapons as well.",
+			"Keep them at medium or long range if you can, since they can launch an assault on your tank from close range. You will need to use one of your machine guns to attack them effectively."
+		]
+	},
+	"scenario_ac_spotted": {
+		"title" : "Scenario - Enemy Armoured Car Spotted",
+		"text" : [
+			"Armoured Cars run on wheels and have light armour to protect them from attacks. They are normally armed with either a MG or a light Gun.",
+			"Your main gun, loaded with AP, will destroy them, but MG attacks may have a small chance of penetrating their armour as well."
+		]
+	},
+	"scenario_at_gun_spotted": {
+		"title" : "Scenario - Enemy Anti-Tank Gun Spotted",
+		"text" : [
+			"Anti-Tank guns are designed for destroying tanks and other armoured vehicles. They can't move around the map very quickly, but can occupy entrenched or fortified positions, making them very difficult to destroy.",
+			"You will need to use one of your machine guns to attack it effectively."
+		]
+	},
+	"scenario_art_gun_spotted": {
+		"title" : "Scenario - Enemy Artillery Gun Spotted",
+		"text" : [
+			"Artillery Guns are intended to fire their attacks from behind the frontlines, but sometimes they will get caught up in the fighting. They are not as good at hitting tanks as AT Guns, but their large calibres can punch through armour.",
+			"You will need to use one of your machine guns to attack it effectively."
+		]
+	},
+	"scenario_team_spotted": {
+		"title" : "Scenario - Enemy Support Weapon Team Spotted",
+		"text" : [
+			"Support weapon teams are made up of two or three soldiers operating one weapon. AT Rifles are portable anti-armour weapons, capable of penetrating light armour.",
+			"You will need to use one of your machine guns to attack it effectively."
+		]
+	},
+	
+	"scenario_action_phase": {
+		"title" : "Scenario - Crew Action Phase",
+		"text" : [
+			"If any of your crewmen are set to a command that requires input from you, such as managing the Ready Rack, you can control that in this phase.",
+			"Any automatic actions, such as throwing a smoke grenade, will also occur in this phase."
+		]
+	},
+	"scenario_movement_phase": {
+		"title" : "Scenario - Movement Phase",
+		"text" : [
+			"In this phase, if your Driver is set to a movement command, you can move your tank around the map. Note that the map remains centered on you, so if you pivot your hull, units will rotate around you, and if you succeed in moving, units will shift up or down on the map accordingly.",
+			"Movement is important because although the map appears flat, there's actually different types of terrain around you. You can try to reposition into a particular type of terrain to get better cover, or can try to move into a Hull Down (HD) position where your hull is protected from one direction.",
+			"Moving forward or backward will not always succeed; you may encounter difficult terrain and can't move very far, ending up essentially in the same map hex. You get a bonus to any subsequent move attempt in that same direction, however.",
+			"Note that you can never move into the same hex as one occupied by one or more enemy units. You can Overrun an enemy unit directly in front of you, which means moving in to point blank range."
+		]
+	},
+	"scenario_shooting_phase": {
+		"title" : "Scenario - Shooting Phase",
+		"text" : [
+			"In this phase you can attack with any weapon that is being operated by a crewman and has a valid target in its field of vision. Note that enemy units with blocked Line or Sight cannot be attacked until one or either of you moves into Line of Sight.",
+			"If there are any armoured targets spotted, such as a tank or armoured car, try firing your main gun at them. AP is best suited for armoured targets.",
+			"Otherwise, any infantry or unarmoured targets should be attacked with the CMG or TMG. You may need to change your Gunner's command to use a different weapon next turn.",
+			"Each weapon may only attack once per turn, but many weapons may maintain Rate of Fire and can thus do multiple shots against the same target. Each weapon also has its own selected target.",
+			"The outcome of any attacks is only resolved at the end of your shooting phase or, for firepower attacks, at the end of the Allied Acation phase."
+		]
+	},
+	"scenario_player_attack": {
+		"title" : "Scenario - Attacking",
+		"text" : [
+			"All attacks are influenced by a number of different factors. In the left column you can see information about the attack you are about to make.",
+			"Different factors modifying the attack's chance of success are listed here, and the final chance of success is displayed. If the attack is unlikely to succeed, you can cancel the attack now, or you can choose to proceed with the attack."
+		]
+	},
+	"scenario_player_attempt_immobilize": {
+		"title" : "Scenario - Attempting to Immobilize a Target",
+		"text" : [
+			"Some heavily-armoured targets may be difficult to take out, especially with a frontal attack. With this command you can attempt to immobilize an armoured target.",
+			"If the attack succeeds, the only possible result is that the target is immobilize."
+		]
+	},	
+	"scenario_player_rof": {
+		"title" : "Scenario - Maintained Rate of Fire",
+		"text" : [
+			"Many weapons fire quickly enough that you can maintain Rate of Fire (RoF), meaning that you now have the option of firing again at the same target if you wish. You won't be able to see the effects of your attacks until you finish this phase, however.",
+			"Reloading a gun by a dedicated loader, and using the Ready Rack, both increase the chances of maintaining RoF."
+		]
+	},
+	"scenario_player_attacked": {
+		"title" : "Scenario - Being Attacked",
+		"text" : [
+			"An enemy unit is attacking you - you have a chance to view information about the attack. If you have any Fate Points remaining, you can spend one to ensure that this attack has no effect, otherwise you must proceed to resolve the effect of the attack."
+		]
+	},
+	"scenario_allied_phase": {
+		"title" : "Scenario - Allied Action Phase",
+		"text" : [
+			"In this phase your allies, including squadmates and any support units, will automatically attack enemy units. Note that your squadmates are likely the same model of tank as you, and always move and fight alongside you."
+		]
+	},
+	"scenario_enemy_phase": {
+		"title" : "Scenario - Enemy Action Phase",
+		"text" : [
+			"In this phase your enemies have a chance to move and attack. Although these enemies are only targets, we may simulate attacks on you and/or on your allies."
+		]
+	},
+	"scenario_new_player_turn": {
+		"title" : "Scenario - New Turn",
+		"text" : [
+			"Now begins a new turn, starting with your command phase again. The Scenario will continue until you are knocked out, you withdraw, or there are no more enemy units on the map."
+		]
+	},
+	"scenario_player_ap_hit": {
+		"title" : "Scenario - AP Resolution on Enemy",
+		"text" : [
+			"The hit you scored on this enemy unit will now be resolved. The round might penetrate the target's armour and destroy it, or it may bounce harmlessly off."
+		]
+	},
+	"scenario_player_ap_was_hit": {
+		"title" : "Scenario - AP Resolution on Player",
+		"text" : [
+			"The hit on you will now be resolved. The round might penetrate your armour and may cause damage or knock out your tank, or it may bounce harmlessly off."
+		]
+	},
+	"scenario_enemy_fp": {
+		"title" : "Scenario - FP Resolution on Enemy",
+		"text" : [
+			"All of the combined firepower attacks on this enemy unit will now be resolved. You can add up multiple attacks on a single unit to have a greater chance of destroying them."
+		]
+	},
+	"scenario_player_fp": {
+		"title" : "Scenario - FP Resolution on Player",
+		"text" : [
+			"Your tank has been hit by MG or small arms weapons. These attacks will only penetrate very light armour. Otherwise you are only in danger if you have one or more crewmen CE."
+		]
+	},
+	"scenario_crewman_hit_by_fp": {
+		"title" : "Scenario - Crewman Hit by FP",
+		"text" : [
+			"One of your crewmen has been hit by a firepower attack. They may be injured or dead. Make sure to keep them protected by keeping their hatch closed (BU - Buttoned Up) unless otherwise necessary."
+		]
+	},
+	"scenario_player_ko": {
+		"title" : "Scenario - Player Knocked Out",
+		"text" : [
+			"Your tank has been knocked out! Your surviving crew must now bail out of the destroyed tank and move to a safe location."
+		]
+	},
+	"scenario_all_enemies_kia": {
+		"title" : "Scenario - No Enemy Units Remain",
+		"text" : [
+			"Congratulations! All enemies are destroyed or have left the battle. You will shortly return to the Campaign Day layer. If this zone was held by the enemy, you have captured it. If you were attacked in your own zone, you have defended it."
+		]
+	}
+}

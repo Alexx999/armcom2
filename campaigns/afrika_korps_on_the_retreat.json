@@ -1,30 +1,30 @@
 {
 	"name" : "Afrika Korps on the Retreat",
 	"creator" : "flori2412",
+	"difficulty" : "7",
 	"start_date" : "1942.12.11",
 	"end_date" : "1943.05.12",
 	"player_nation" : "Germany",
+	"final_evacuation" : "TRUE",
 	"enemy_nations" : ["United Kingdom", "United States of America"],
 	"region" : "North Africa",
 	"desc" : "Join the German expeditionary forces in North Africa as they retreat from El Alamein into Libya and Tunisia and struggle to contain the advance of the Desert Rats and their allies.",
 	"player_unit_list" : [
+		"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "SPW 250/8", "SPW 251/9",
 		"Panzer II F", "Panzer III H", "Panzer III J", "Panzer III L", "Panzer III M", "Panzer III N",
 		"Panzer IV D", "Panzer IV E", "Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H", "Panzer VIe",
 		"Panzerjager I", "Marder II", "Marder III",
-		"Stuart I", "Stuart III", "Crusader I", "Crusader II", "Crusader III", 
-		"Matilda II", "Valentine II", "Valentine III"
+		"Panzer M3 740", "Panzer M3 740 (Late)", "Kreuzer Panzer Mk VI 746", "Panzer Mark II 748",
+		"Panzer Mk VI 746 (Late)",
+		"Panzer Mk VI 746 (III)", "Panzer Mk III 749", "Panzer Mk III 749 (Late)"
 	],
-	"player_unit_dates" : {
-		"Stuart I" : "1942.12.01",
-		"Stuart III" : "1942.12.01",
-		"Crusader I" : "1942.12.01",
-		"Crusader II" : "1942.12.01",
-		"Crusader III" : "1942.12.01",
-		"Matilda II" : "1942.12.01",
-		"Valentine II" : "1942.12.01",
-		"Valentine III" : "1942.12.01"
-	},
 	"tank_vp_modifiers" : {
+		"PSW 221" : 1.8,
+		"PSW 222" : 1.7,
+		"PSW 231 (6 rad)" : 1.7,
+		"PSW 231 (8 rad)" : 1.6,
+		"SPW 250/8" : 1.4,
+		"SPW 251/9" : 1.4,
 		"Panzer II F" : 1.4,
 		"Panzer III H" : 1.2,
 		"Panzer IV D" : 1.3,
@@ -34,34 +34,45 @@
 		"Panzerjager I" : 1.4,
 		"Marder II" : 1.2,
 		"Marder III" : 1.2,
-		"Stuart I" : 1.3,
-		"Stuart III" : 1.2,
-		"Crusader I" : 1.3,
-		"Crusader II" : 1.3,
-		"Crusader III" : 1.2,
-		"Valentine II" : 1.3,
-		"Valentine III" : 1.2
+		"Panzer M3 740" : 1.3,
+		"Panzer M3 740 (Late)" : 1.2,
+		"Kreuzer Panzer Mk VI 746" : 1.3,
+		"Panzer Mk VI 746 (Late)" : 1.3,
+		"Panzer Mk VI 746 (III)" : 1.2,
+		"Panzer Mk III 749" : 1.3,
+		"Panzer Mk III 749 (Late)" : 1.2
 	},
 	"campaign_skills" : [
 		"Unique Opportunities"
 	],
 	"player_air_support": [
-		"Ju 87B Stuka"
+		"Ju 87B Stuka", "Ju 87D Stuka", "Hs 129", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"
 	],
 	"player_arty_support": [
-		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"
+		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "PaK 38", "PaK 40", "8.8cm FlaK 18 o. 36", "Panzerjager I", "Marder II", "Marder III"],
-		"Anti-Infantry" : ["SPW 251/1", "HMG Team", "Riflemen", "SMG Squad", "Flame Thrower Team"],
-		"Recon" : ["PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)"],
-		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "SPW 251/2", "7.5cm leIG 18", "10cm sK 18"]
+		"Anti-Infantry" : ["SPW 250/1", "SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "7.5cm leIG 18", "10cm sK 18", "SPW 250/7", "SPW 251/2"]
 	},
 	"friendly_transported_units" : {
+		"SPW 250/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		},
 		"SPW 251/1" : {
 			"Riflemen" : 60,
+			"HMG Team" : 10,
 			"SMG Squad" : 20,
-			"HMG Team" : 20
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
 		}
 	},
 	"enemy_arty_support": {
@@ -69,8 +80,8 @@
 		"United Kingdom" : ["OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", "Bishop", "M7 Priest"]
 	},
 	"enemy_air_support": {
-		"United States of America" : ["P-40 Warhawk"],
-		"United Kingdom" : ["P-40 Warhawk"]
+		"United States of America" : ["P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-40 Warhawk"],
+		"United Kingdom" : ["P-40 Warhawk", "Hurricane Mk IIB", "Hurricane Mk IIC", "Hurricane Mk IID", "Spitfire Mk V", "Spitfire Mk IX"]
 	},
 	"enemy_unit_list" : {
 		"United States of America" : [
@@ -79,38 +90,42 @@
 			"M4 Sherman", "M4A1 Sherman",
 			"M7 Priest",			
 			"M3 GMC", "M6 GMC Fargo", "M10 Wolverine",
+			"M3A1 Scout Car",
 			"M3 37mm AT Gun", "PaK 38", "PaK 40",
 			"M2A1 105mm Howitzer", "M1 155mm Howitzer",
 			"M1A1 90mm Gun", "40mm AA Gun", "8.8cm FlaK 18 o. 36",
 			"M3 half-track",
 			"Willys MB", "GMC CCKW 2.5 ton truck",
 			"Riflemen", "SMG Squad",
-			"HMG Team", "Bazooka Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"HMG Team", "Bazooka Team", "Light Mortar Team", "Medium Mortar Team",
+			"Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"United Kingdom" : [
 			"Stuart I", "Stuart III", 
 			"Crusader I", "Crusader I CS", "Crusader II", "Crusader II CS", "Crusader III", 
-			"Grant I", "Lee II", "Lee V", "Lee VI", "Grant II", "Sherman I", "Sherman II", "M13/40", "M14/41",
-			"Matilda II", "Matilda II CS", "Valentine II", "Valentine III", "Valentine IV", "Valentine V", 
-			"Valentine VIII", "Valentine IX", "Churchill IV", "Churchill IV NA(75)",
+			"Grant I", "Lee II", "Lee V", "Lee VI", "Grant II", "Sherman I", "Sherman II",
+			"M13/40 (UK)", "M14/41 (UK)",
+			"Matilda II", "Matilda II CS", "Valentine II", "Valentine III",
+			"Valentine IV", "Valentine V", 
+			"Valentine VIII", "Valentine IX", "Churchill I", "Churchill II",
+			"Churchill IV", "Churchill IV NA(75)",
 			"Bishop", "M7 Priest",
 			"2 Pdr Portee", "6 Pdr Portee",
-			"Daimler Scout Car", "Daimler Armoured Car", "Marmon-Herrington III", "Humber II", "AEC I",
-			"OQF 2-Pounder", "OQF 6-Pounder", "OQF 17-Pounder", "47/32", "PaK 38", "PaK 40",
+			"Daimler Scout Car", "Daimler Armoured Car", "Marmon-Herrington III",
+			"Humber II", "AEC I", "M3A1 Scout Car",
+			"OQF 2-Pounder", "OQF 6-Pounder", "OQF 17-Pounder", "47/32 (UK)", "PaK 38 (UK)", "PaK 40 (UK)",
 			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer",
-			"20/65", "40mm AA Gun", "8.8cm FlaK 18 o. 36", "OQF 3.7\" AA Gun",
-			"Autocannone da 20/65",
+			"20/65 (UK)", "40mm AA Gun", "8.8cm FlaK 18 o. 36 (UK)", "OQF 3.7\" AA Gun",
+			"Autocannone da 20/65 (UK)",
 			"Bren Gun Carrier", "AT Rifle Carrier",
 			"Morris 15 cwt",
 			"Riflemen", "SMG Squad",
-			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team",
+			"Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
 	},
-	"enemy_captured_units" : [
-		"M13/40", "M14/41", "Autocannone da 20/65", "20/65", "47/32", "PaK 38", "PaK 40", "8.8cm FlaK 18 o. 36"
-	],
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 60,
 		"Medium Tank" : 80,
@@ -154,6 +169,13 @@
 				"Light Mortar Team" : 30,
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"Bazooka Team" : 40,
+				"Light Mortar Team" : 40,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		},
 		"United Kingdom" : {
@@ -173,14 +195,15 @@
 				"Light Mortar Team" : 30,
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"AT Rifle Team" : 40,
+				"Light Mortar Team" : 40,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		}
-	},
-	"decorations_list" : {
-		"2900" : "Iron Cross Second Class",
-		"3100" : "Iron Cross First Class",
-		"3300" : "Knight's Cross",
-		"3600" : "Knight's Cross with Oak Leaves"
 	},
 	"combat_days" : 45,
 	"calendar_weeks": [
@@ -195,7 +218,7 @@
 			"week_title" : "The Battle of El Agheila",
 			"week_description" : "After the defeat at El Alamein, British aircraft and tanks inflicted further casualties on our armoured forces, but most of them managed to withdraw. We have established a temporary defensive line at El Agheila. Hold off the enemy until we can continue our retreat in good order!",
 			"mission_odds" : {
-				"Counterattack" : 100
+				"Hold the Line" : 100
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 20.0,
@@ -235,7 +258,8 @@
 			"week_title" : "Defending Buerat",
 			"week_description" : "Montgomery stopped the pursuit in front of the port of Buerat and spent almost an entire month reinforcing his troops. Now the British and their allies are launching an assault with overwhelming strength and strong air cover. Hold them off as long as you can, but be ready to fall back!",
 			"mission_odds" : {
-				"Counterattack" : 100
+				"Hold the Line" : 80,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"arty_support_level" : 50.0,
@@ -269,7 +293,7 @@
 			"week_title" : "The Defense of Tripolis",
 			"week_description" : "We are trying to delay the enemy advance at Tripolis until we can concentrate our forces at the fortified Mareth Line in the south of Tunisia.",
 			"mission_odds" : {
-				"Counterattack" : 100
+				"Hold the Line" : 100
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 20.0,
@@ -315,8 +339,9 @@
 			"week_title" : "Defending the Mareth Line",
 			"week_description" : "Our spoiling attack at Medenine was not successful. Montgomery has concentrated his troops south of Mareth and started the assault. We need to help our infantry repel the attackers.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 50,
+				"Battle" : 40,
+				"Counterattack" : 10
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 40.0,
@@ -353,8 +378,8 @@
 			"week_title" : "The Left Hook",
 			"week_description" : "More and more enemy troops are advancing through the Tebaga Gap, heading towards Gabès. We need to hold them off until our remaining forces can retreat from the Mareth Line in good order.",
 			"mission_odds" : {
-				"Battle" : 20,
-				"Counterattack" : 80
+				"Hold the Line" : 80,
+				"Battle" : 20
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 40.0,
@@ -395,8 +420,9 @@
 			"week_title" : "The Battle of Wadi Akarit",
 			"week_description" : "Relying on superior numbers, Montgomery's troops are launching a frontal assault on the Gabès Gap. We must not let them break through!",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 60,
+				"Battle" : 20,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"air_support_level" : 40.0,
@@ -455,8 +481,8 @@
 			"week_title" : "Holding Enfidaville",
 			"week_description" : "The British assault on Enfidaville has begun. Hold your ground and launch counterattacks if possible!",
 			"mission_odds" : {
-				"Battle": 30,
-				"Counterattack" : 70
+				"Hold the Line" : 80,
+				"Battle": 20
 			},
 			"enemy_nations" : ["United Kingdom"],
 			"arty_support_level" : 90.0,

@@ -1,6 +1,7 @@
 {
 	"name" : "The Winter War (Finland)",
 	"creator" : "Standard Campaign",
+	"difficulty" : "8",
 	"start_date" : "1939.11.30",
 	"end_date" : "1940.03.12",
 	"player_nation" : "Finland",
@@ -8,31 +9,25 @@
 	"region" : "Nordic",
 	"desc" : "Command one of the few tanks in the Finnish armed forces, and help defend your homeland against the Soviet invaders.",
 	"player_unit_list" : [
-		"Vickers 6-Ton Mark E", "T-26 M33", "BT-5 M34", "BT-7 M37", "T-28 M34"
+		"Renault FT (MG, FIN)", "Renault FT (FIN)", "Vickers 6-Ton Mark F", "T-26 M33 (FIN)", "T-26 M37/39 (FIN)",
+		"BT-5 M34 (FIN)", "BT-7 M37 (FIN)", "T-28E M40 (FIN)", "T-37A (FIN)", "OT-133 (FIN)"
 	],
-	"player_unit_dates" : {
-		"T-26 M33" : "1940.12.21",
-		"BT-5 M34" : "1939.12.28",
-		"BT-7 M37" : "1939.12.28",
-		"T-28 M34" : "1939.12.28"
-	},
 	"player_squad_list" : {
-		"Vickers 6-Ton Mark E" : ["Vickers 6-Ton Mark E"],
-		"T-26 M33" : ["T-26 M33"],
-		"BT-5 M34" : ["BT-5 M34", "BT-7 M37"],
-		"BT-7 M37" : ["BT-5 M34", "BT-7 M37"],
-		"T-28 M34" : ["T-28 M34"]
+		"BT-5 M34 (FIN)" : ["BT-5 M34 (FIN)", "BT-7 M37 (FIN)"],
+		"BT-7 M37 (FIN)" : ["BT-5 M34 (FIN)", "BT-7 M37 (FIN)"]
 	},
 	"tank_vp_modifiers" : {
-		"Vickers 6-Ton Mark E" : 1.1,
-		"BT-5 M34" : 1.1,
-		"T-28 M34" : 0.8
+		"Renault FT (MG, FIN)" : 1.3,
+		"Renault FT (FIN)" : 1.2,
+		"BT-5 M34 (FIN)" : 1.1,
+		"T-28E M40 (FIN)" : 0.8,
+		"T-37A (FIN)" : 1.1
 	},
 	"campaign_skills" : [
-		"Motti"
+		"Motti", "Acclimatized", "Acclimatized (Nordic)"
 	],
 	"player_air_support": [
-		"Fokker CX"
+		"Fokker C.X", "Fiat G.50 (FIN)", "MS.406 (FIN)", "MS.410 (FIN)"
 	],
 	"player_arty_support": [
 		"105 K/13", "76 K/02"
@@ -52,25 +47,34 @@
 		}
 	},
 	"enemy_air_support": {
-		"Soviet Union" : ["I-153 Chaika"]
+		"Soviet Union" : ["I-16", "I-153 Chaika"]
 	},
 	"enemy_arty_support": {
-		"Soviet Union" : ["76.2mm obr. 36", "76.2mm obr. 00/02P"]
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37"
+		]
 	},
 	"enemy_unit_list" : {
 		"Soviet Union" : [
-			"T-26 M33", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "T-28E M40",
+			"T-37A", "T-38",
+			"T-26 M33", "T-26 M37/39", "BT-2", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34", "T-28E M40",
+			"OT-130", "OT-133",
 			"BA-20", "BA-6", "BA-10", "SU-12",
 			"45mm obr. 1932", "76.2mm obr. 36", "76.2mm obr. 00/02P",
 			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37",
 			"GAZ-4M-AA", "ZIS-42-AA",
 			"ZIS-5 Truck",
 			"Riflemen",
-			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Flame Thrower Team",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Rifle Cavalry"
 		]
 	},
 	"enemy_unit_class_odds" : {
+		"Tankette" : 15,
 		"Light Tank" : 25,
 		"Medium Tank" : 10,
 		"Assault Gun" : 50,
@@ -95,10 +99,6 @@
 			}
 		}
 	},
-	"decorations_list" : {
-		"1100" : "Order of the White Rose of Finland",
-		"1500" : "Order of the Cross of Liberty"
-	},
 	"combat_days" : 40,
 	"calendar_weeks": [
 		{
@@ -110,7 +110,8 @@
 			"week_description" : "Days after a border skirmish, Soviet forces have launched an invasion of Finnish territory. Although we are outnumbered, we know the territory and must hold back the advance.",
 			"mission_odds" : {
 				"Counterattack" : 20,
-				"Fighting Withdrawal" : 80
+				"Hold the Line" : 20,
+				"Fighting Withdrawal" : 60
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
@@ -124,8 +125,8 @@
 			"week_title" : "Mannerheim Line",
 			"week_description" : "We have withdrawn to a defensive line where we have strong artillery support, and must hold this line for as long as possible.",
 			"mission_odds" : {
-				"Advance" : 10,
-				"Counterattack" : 80,
+				"Hold the Line" : 70,
+				"Battle" : 20,
 				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
@@ -140,9 +141,8 @@
 			"week_title" : "Holding the Line",
 			"week_description" : "In spite of heavy losses, the Soviet invaders continue to assault our defensive lines.",
 			"mission_odds" : {
-				"Advance" : 10,
-				"Counterattack" : 30,
-				"Fighting Withdrawal" : 60
+				"Hold the Line" : 90,
+				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,
@@ -199,7 +199,8 @@
 			"week_title" : "Soviet Offensive",
 			"week_description" : "After weeks of gathering reinforcements, nearly half a million Soviet troops are breaking through our strongholds one by one.",
 			"mission_odds" : {
-				"Fighting Withdrawal" : 100
+				"Hold the Line" : 20,
+				"Fighting Withdrawal" : 80
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 10.0,
@@ -246,8 +247,8 @@
 			"start_date" : "1940.03.07",
 			"combat_chance" : 20,
 			"average_resistance" : 6,
-			"week_title" : "Desparation",
-			"week_description" : "Exhausted and nearly out of supply, our forces can only hope to hold on until an armastice is signed with the Societ Union.",
+			"week_title" : "Desperation",
+			"week_description" : "Exhausted and nearly out of supply, our forces can only hope to hold on until an armistice is signed with the Soviet Union.",
 			"mission_odds" : {
 				"Advance" : 10,
 				"Battle" : 20,

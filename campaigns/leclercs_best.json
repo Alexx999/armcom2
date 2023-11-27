@@ -1,0 +1,678 @@
+{
+	"name" : "Leclerc's Best",
+	"creator" : "Standard Campaign",
+	"difficulty" : "5",
+	"start_date" : "1944.07.27",
+	"end_date" : "1945.04.18",
+	"player_nation" : "Free France",
+	"enemy_nations" : ["Germany"],
+	"region" : "Northwestern Europe",
+	"desc" : "Join the 2nd French Armoured Division as it participates in the liberation of France and invasion of Germany.",
+	"player_unit_list" : [
+		"M3A1 Scout Car", "Daimler Scout Car", "M8 Greyhound",
+		"M3A3 Stuart", "M5A1 Stuart",
+		"M4 Sherman", "M4A1 Sherman", "M4A2 Sherman", "M4A3(75)W Sherman", "M4A3(76)W Sherman",
+		"M4A3(105) Sherman", "M10 Wolverine", "M8 HMC"
+	],
+	"tank_vp_modifiers" : {
+		"M3A1 Scout Car" : 1.8,
+		"Daimler Scout Car" : 2.1,
+		"M8 Greyhound" : 1.6,
+		"M3A3 Stuart" : 1.5,
+		"M5A1 Stuart" : 1.4,
+		"M4 Sherman" : 1.2,
+		"M8 HMC" : 1.5
+	},
+	"campaign_skills" : [
+		"Prepared Positions"
+	],
+	"player_air_support": [
+		"P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt",
+		"P-51 Mustang (CAS)", "P-51 Mustang"
+	],
+	"player_arty_support": [
+		"M7 Priest", "M8 HMC", "M2A1 105mm Howitzer", "M1 155mm Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["Bazooka Team", "M10 Wolverine"],
+		"Anti-Infantry" : ["M3A1 half-track", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Recon" : ["M3A1 Scout Car", "Daimler Scout Car", "M8 Greyhound"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M2A1 105mm Howitzer", "M8 HMC", "M7 Priest"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 half-track" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Bazooka Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"Bazooka Team" : 40,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Germany" : [
+			"Ju 87D Stuka", "Bf 109", "Bf 109 (fighter)", "Bf 110 (fighter-bomber)", 
+			"Bf 110 (fighter)", "Fw 190", "Fw 190 (fighter)", "Me 262", "Me 262 A-2a"
+		]
+	},
+	"enemy_arty_support": {
+		"Germany" : [
+			"7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "15cm sFH 18", "15cm sIG 33", "StuH 42", "Sturmpanzer IV", 
+			"Wespe", "Hummel", "Grille Ausf. H", "Grille Ausf. K", "Panzerwerfer 42", "15cm Nebelwerfer 41"
+		]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Panzer II L",
+			"Panzer III L", "Panzer III N", "Panzer III M", "Flammpanzer III M",
+			"Panzer IV H", "Panzer IV J", "Panzer VG",
+			"Panzer VIe (Late)", "Panzer VIb",
+			"StuG III G", "StuG III G (late)", "StuG IV", "StuG IV (late)", "StuH 42", "Sturmpanzer IV", "Sturmpanzer IV (late)", "Hummel", "Wespe", "Grille Ausf. H", "Grille Ausf. K", 
+			"Panzerwerfer 42", "SPW 250/7", "SPW 250/8", "SPW 251/2", "SPW 251/9",
+			"Marder II", "Marder III H", "Marder III M", "Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)", 
+			"Jagdpanzer 38(t)", "Jagdpanzer V", "Jagdpanzer VI", "Sturmmoerserwagen 606/4", "Nashorn", "SPW 251/10", "SPW 251/22",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 233", "PSW 234/2", "SPW 250/9", "SPW 250/10",
+			"PaK 35/36", "PaK 38", "PaK 40", "PaK 43", "PaK 43/41", "8.8 cm Raketenwerfer 43",
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm Nebelwerfer 41",
+			"2cm FlaK 38", "3.7cm FlaK 43", "8.8cm FlaK 18 o. 36",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1", "Flakpanzer 38(t)", "Flakpanzer IV Wirbelwind", "Flakpanzer IV Mobelwagen",
+			"SPW 250/1", "SPW 251/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "Panzerschreck Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", 
+			"Flame Thrower Team", "Combat Engineer Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 5,
+		"Assault Gun" : 80,
+		"Tank Destroyer" : 50,
+		"Medium Tank" : 15,
+		"Heavy Tank" : 5,
+		"Armoured Car" : 90,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Self-Propelled AA Gun" : 5,
+		"APC" : 70,
+		"Truck" : 50,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 20
+			}
+		}
+	},
+	"combat_days" : 92,
+	"calendar_weeks": [
+		{
+			"start_date" : "1944.07.27",
+			"location" : "49.05,-1.43",
+			"coastal_chance" : 70,
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Cobra Breakout - Coutances",
+			"week_description" : "Seven weeks after the D-Day landings, Allied forces have secured a beachhead in Normandy but have encountered tough German resistance. This week, we attack the village of Coutances, near the western coast of Normandy.",
+			"mission_odds" : {
+				"Advance" : 45,
+				"Battle" : 15,
+				"Counterattack" : 20,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1944.08.03",
+			"location" : "49.17,-0.72",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 15,
+			"week_title" : "Avranches and Into Brittany",
+			"week_description" : "We have broken out from the beachhead, and now drive south toward Avranches and Brittany.",
+			"mission_odds" : {
+				"Urban Assault" : 10,
+				"Advance" : 45,
+				"Battle" : 5,
+				"Spearhead" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.08.10",
+			"location" : "47.48,-1.60",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Liberating Nantes",
+			"week_description" : "This week we advance further into Brittany, as the German defensive lines begin to collapse. Nantes, on the river Loire, lies ahead of us.",
+			"mission_odds" : {
+				"Urban Assault" : 20,
+				"Advance" : 45,
+				"Battle" : 5,
+				"Counterattack" : 10,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.08.17",
+			"location" : "48.18,-0.79",
+			"combat_chance" : 60,
+			"average_resistance" : 7,
+			"week_title" : "Closing the Falaise Pocket",
+			"week_description" : "We have swung eastward along the Loire, moving to help encircle a concentration of German forces near the city of Falaise.",
+			"mission_odds" : {
+				"Patrol" : 50,
+				"Advance" : 30,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.08.24",
+			"location" : "49.37,2.12",
+			"combat_chance" : 60,
+			"average_resistance" : 4,
+			"week_title" : "Across Northern France",
+			"week_description" : "Paris is soon to fall to partisan and allied forces, so we continue to advance quickly across the north of France toward German positions in the northeast.",
+			"mission_odds" : {
+				"Patrol" : 60,
+				"Advance" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.08.31",
+			"end_date" : "1944.09.01",
+			"location" : "48.77,5.49",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Taking Commercy",
+			"week_description" : "We have swept across France and are now in the Lorraine region. German resistance is increasing, and the crossroads village of Commercy, on the Meuse river, is our next target.",
+			"mission_odds" : {
+				"Advance" : 65,
+				"Battle" : 25,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.09.02",
+			"end_date" : "1944.09.10",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.09.11",
+			"location" : "48.74,6.14",
+			"combat_chance" : 40,
+			"average_resistance" : 5,
+			"week_title" : "Moselle Crossing",
+			"week_description" : "This week we cross the Moselle River and move further east, past the city of Nancy.",
+			"mission_odds" : {
+				"Advance" : 35,
+				"Battle" : 25,
+				"Patrol" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.09.18",
+			"end_date" : "1944.09.22",
+			"location" : "48.72,6.43",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"landmines_chance" : 10,
+			"week_title" : "The Battle of Arracourt",
+			"week_description" : "We have reached positions east of Nancy, but German forces have launched a counterattack on our lines near Arracourt and Lunéville.",
+			"mission_odds" : {
+				"Hold the Line" : 60,
+				"Battle" : 25,
+				"Counterattack" : 15
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1944.09.25",
+			"location" : "48.72,6.43",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"landmines_chance" : 10,
+			"week_title" : "Hill 318",
+			"week_description" : "The Battle of Arracourt continues. German forces have taken the elevated position at Hill 318 on our southern flank, and we must assault them to re-capture this important position.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.10.02",
+			"location" : "48.72,6.43",
+			"combat_chance" : 50,
+			"average_resistance" : 4,
+			"week_title" : "Defensive Lines Near Arracourt",
+			"week_description" : "The Battle of Arracourt has been won, and we now take up defensive lines as we await our next orders.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Counterattack" : 30,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.10.09",
+			"end_date" : "1944.11.08",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.11.09",
+			"location" : "48.89,6.45",
+			"combat_chance" : 40,
+			"average_resistance" : 5,
+			"week_title" : "Viviers and Fonteny",
+			"week_description" : "After a brief rest we are on the move again, driving northwards toward the villages of Viviers and Fonteny.",
+			"mission_odds" : {
+				"Advance" : 35,
+				"Battle" : 25,
+				"Patrol" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.11.16",
+			"location" : "48.85,6.72",
+			"combat_chance" : 50,
+			"average_resistance" : 7,
+			"week_title" : "Dieuze and Rodalbe",
+			"week_description" : "This week our targets are two villages, Dieuze and Rodalbe, located within a large wooden region in Moselle.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 40,
+				"Battle" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 80
+			}
+		},
+		{
+			"start_date" : "1944.11.23",
+			"location" : "48.94,7.04",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Crossing the Saare River",
+			"week_description" : "We continue to drive east, this week reaching the Saar river in the Bas-Rhin region.",
+			"mission_odds" : {
+				"Advance" : 90,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1944.11.30",
+			"location" : "48.94,7.09",
+			"combat_chance" : 90,
+			"average_resistance" : 8,
+			"week_title" : "Attacking Saare-Union",
+			"week_description" : "Our target is the important riverside village of Saare-Union, a key for us establishing a beachhead on this bank of the Saare river.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1944.12.07",
+			"end_date" : "1944.12.17",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1944.12.18",
+			"location" : "49.83,5.74",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"week_title" : "Into Belgium and the Ardennes",
+			"week_description" : "The Germans have launched a massive offensive in the Belgian Ardennes Forest; we are racing through Belgium to help shore up defensive lines.",
+			"mission_odds" : {
+				"Spearhead" : 60,
+				"Advance" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 60
+			}
+		},
+		{
+			"start_date" : "1944.12.25",
+			"location" : "49.97,5.76",
+			"combat_chance" : 90,
+			"average_resistance" : 8,
+			"week_title" : "Breaking Open the Bastogne Corridor",
+			"week_description" : "This week we advance to relieve the American 101st Airborne Division, which has been besieged in the woods of Bastogne for the past few days, under nearly constant fire.",
+			"mission_odds" : {
+				"Spearhead" : 80,
+				"Advance" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 90
+			}
+		},
+		{
+			"start_date" : "1945.01.01",
+			"end_date" : "1945.01.08",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.01.09",
+			"location" : "49.97,5.76",
+			"combat_chance" : 30,
+			"average_resistance" : 4,
+			"week_title" : "Defensive Positions",
+			"week_description" : "This week, we continue to hold defensive positions in the Bastogne forest.",
+			"mission_odds" : {
+				"Hold the Line" : 90,
+				"Fighting Withdrawal" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 90
+			}
+		},
+		{
+			"start_date" : "1945.01.16",
+			"location" : "49.97,5.76",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Defensive Positions",
+			"week_description" : "This week, we continue to hold defensive positions in the Bastogne forest.",
+			"mission_odds" : {
+				"Hold the Line" : 90,
+				"Fighting Withdrawal" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 90
+			}
+		},
+		{
+			"start_date" : "1945.01.23",
+			"location" : "49.97,5.76",
+			"combat_chance" : 10,
+			"average_resistance" : 3,
+			"week_title" : "Defensive Positions",
+			"week_description" : "This week, we continue to hold defensive positions in the Bastogne forest.",
+			"mission_odds" : {
+				"Hold the Line" : 90,
+				"Fighting Withdrawal" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 90
+			}
+		},
+		{
+			"start_date" : "1945.01.30",
+			"end_date" : "1945.02.02",
+			"location" : "49.97,5.76",
+			"combat_chance" : 10,
+			"average_resistance" : 2,
+			"week_title" : "Defensive Positions",
+			"week_description" : "This week, we continue to hold defensive positions in the Bastogne forest.",
+			"mission_odds" : {
+				"Hold the Line" : 60,
+				"Counterattack" : 30,
+				"Fighting Withdrawal" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Forest" : 90
+			}
+		},
+		{
+			"start_date" : "1945.02.03",
+			"end_date" : "1945.02.21",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.02.22",
+			"location" : "50.00,6.49",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Rittersdorf and Bitburg",
+			"week_description" : "This week we advance from Luxembourg City, into Germany, across the Moselle River, toward the villages of Rittersdorf and Bitburg.",
+			"mission_odds" : {
+				"Advance" : 15,
+				"Battle" : 80,
+				"Spearhead" : 5
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.03.01",
+			"end_date" : "1945.03.04",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.03.05",
+			"location" : "49.98,6.74",
+			"combat_chance" : 20,
+			"average_resistance" : 4,
+			"week_title" : "To the Rhine",
+			"week_description" : "We now race eastward deeper into Germany, toward the major river of the Rhine.",
+			"mission_odds" : {
+				"Advance" : 80,
+				"Battle" : 10,
+				"Spearhead" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.03.12",
+			"end_date" : "1945.03.13",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.03.14",
+			"location" : "49.84,7.87",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Bad Kreuznauch",
+			"week_description" : "The town of Bad Kreuznauch must be taken before we can advance further east toward the Rhine.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 30,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1945.03.21",
+			"end_date" : "1945.03.23",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.03.24",
+			"location" : "50.00,8.27",
+			"combat_chance" : 60,
+			"average_resistance" : 8,
+			"coastal_chance" : 70,
+			"week_title" : "Across the Rhine at Mainz",
+			"week_description" : "This week we seek to cross the Rhine river at the historic city of Mainz.",
+			"mission_odds" : {
+				"Urban Assault" : 40,
+				"Advance" : 30,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1945.03.31",
+			"location" : "50.00,8.27",
+			"combat_chance" : 60,
+			"average_resistance" : 6,
+			"week_title" : "Taking Creuzburg and Gotha",
+			"week_description" : "We are now across the Rhine and driving east into Thuringia.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 10,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1945.04.07",
+			"location" : "51.02,11.32",
+			"combat_chance" : 40,
+			"average_resistance" : 4,
+			"week_title" : "Toward the Saale River",
+			"week_description" : "Last week we liberated the Ohrdruf concentration camp. The evidence we saw of the brutal treatment of prisoners there has given us additional motivation to topple the Nazi regime once and for all.",
+			"mission_odds" : {
+				"Advance" : 60,
+				"Battle" : 10,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1945.04.14",
+			"location" : "50.90,12.67",
+			"combat_chance" : 20,
+			"average_resistance" : 2,
+			"week_title" : "Holding Wolkenburg",
+			"week_description" : "We have crossed the Saale and now hold the town of Wolkenburg, awaiting further orders.",
+			"mission_odds" : {
+				"Hold the Line" : 60,
+				"Counterattack" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
+		}
+	]
+}

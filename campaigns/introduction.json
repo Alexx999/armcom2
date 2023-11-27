@@ -1,0 +1,97 @@
+{
+	"name" : "Introduction Training",
+	"tutorial_campaign" : "TRUE",
+	"fixed_length" : "TRUE",
+	"creator" : "Standard Campaign",
+	"difficulty" : "0",
+	"start_date" : "1943.10.15",
+	"end_date" : "1943.10.31",
+	"player_nation" : "Canada",
+	"enemy_nations" : ["Germany"],
+	"region" : "Northwestern Europe",
+	"desc" : "Participate in armoured exercises on the Yorkshire moors as part of Canadian forces training in England.",
+	"player_unit_list" : [
+		"Ram Mk II (early)"
+	],
+	"player_air_support": [
+		"Hurricane Mk IIB"
+	],
+	"player_arty_support": [
+		"OQF 25-Pounder", "OQF 4.5\" Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["OQF 6-Pounder"],
+		"Anti-Infantry" : ["Bren Gun Carrier", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Recon" : ["AEC II", "AEC III"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "OQF 25-Pounder"]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Target Tank",
+			"Target Armoured Car",
+			"Target AT Gun",
+			"Target Artillery Gun",
+			"Target Riflemen",
+			"Target AT Rifle Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Medium Tank" : 45,
+		"Armoured Car" : 90,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 15,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 35
+	},
+	"combat_days" : 7,
+	"calendar_weeks": [
+		{
+			"start_date" : "1943.10.15",
+			"end_date" : "1943.10.15",
+			"location" : "54.35,-1.05",
+			"combat_chance" : 100,
+			"average_resistance" : 4,
+			"week_title" : "Armoured Exercises I: Advance",
+			"week_description" : "Day 1: Today, we will simulate an advance into enemy-held territory. Destroying enemy units and capturing zones both award you Victory Points (VP).",
+			"mission_odds" : {
+				"Advance" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1943.10.20",
+			"end_date" : "1943.10.20",
+			"location" : "54.35,-1.05",
+			"combat_chance" : 100,
+			"average_resistance" : 6,
+			"week_title" : "Armoured Exercises II: Hold the Line",
+			"week_description" : "Day 2: Today, we will simulate holding a defensive position. Destroying enemy units and holding objective zones both award you VP.",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1943.10.31",
+			"end_date" : "1943.10.31",
+			"location" : "54.35,-1.05",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Armoured Exercises III: Urban Assault",
+			"week_description" : "Day 3: On this final day of the exercise, we will simulate an assault on an urban area. This is a dangerous mission for tanks. Destroying enemy units and capturing zones both award you VP.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 100.0
+		}
+	]
+}

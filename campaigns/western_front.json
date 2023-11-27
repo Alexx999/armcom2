@@ -1,6 +1,7 @@
 {
 	"name" : "The Western Front",
 	"creator" : "flori2412",
+	"difficulty" : "6",
 	"start_date" : "1944.06.08",
 	"end_date" : "1945.03.08",
 	"player_nation" : "Germany",
@@ -8,146 +9,197 @@
 	"region" : "Northwestern Europe",
 	"desc" : "Fight in a desperate battle to stop the Allied invasion of Western Europe and Germany.",
 	"player_unit_list" : [
-		"Panzer III L", "Panzer III N", "Panzer III M",
-		"Panzer IV H", "Panzer IV J", "Sturmpanzer IV",
-		"StuG III G", "StuG IV", "StuH 42",
-		"Marder II", "Marder III M", "Jagdpanzer IV",
-		"Jagdpanzer 38(t)", "Jagdpanzer IV/70",
-		"Nashorn", "Jagdpanzer V", "Jagdpanzer VI", "Panzer VG",
-		"Panzer VIe (Late)", "Panzer VIb"
+		"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", 
+		"PSW 233", "PSW 234/2", "SPW 250/9", "SPW 250/10",
+		"Panzer II L", "Panzer III L", "Panzer III M", "Panzer III N", "Flammpanzer III M",
+		"Panzer IV H", "Panzer IV J",
+		"Sturmpanzer IV", "Sturmpanzer IV (late)", "StuG III G", "StuG III G (late)", "StuG IV", "StuG IV (late)", "StuH 42",
+		"Wespe", "Hummel", "Grille Ausf. H", "Grille Ausf. K", "SPW 250/8", "SPW 251/9", "Panzerwerfer 42",
+		"Marder II", "Marder III H", "Marder III M", "Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", 
+		"Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)", "Nashorn", "Jagdpanzer V", "Jagdpanzer VI",
+		"Panzer VG", "Panzer VIe (Late)", "Panzer VIb"
 	],
 	"player_squad_list" : {
+		"SPW 250/9" : ["SPW 250/9", "SPW 250/10"],
+		"SPW 250/10" : ["SPW 250/9", "SPW 250/10"],
 		"Panzer III L" : ["Panzer III L", "Panzer III N", "Panzer III M"],
 		"Panzer III M" : ["Panzer III L", "Panzer III N", "Panzer III M"],
 		"Panzer III N" : ["Panzer III L", "Panzer III N", "Panzer III M"],
 		"Panzer VG" : ["Panzer VG", "Panzer IV J", "Panzer IV H"],
 		"Panzer VIe (Late)" : ["Panzer VIe (Late)", "Panzer VG", "Panzer IV J", "Panzer IV H"],
 		"Panzer VIb" : ["Panzer VIb", "Panzer VIe (Late)", "Panzer VG", "Panzer IV J", "Panzer IV H"],
-		"Jagdpanzer IV" : ["Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
-		"Jagdpanzer 38(t)" : ["Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
-		"Jagdpanzer IV/70" : ["Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
-		"Nashorn" : ["Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
-		"Jagdpanzer V" : ["Jagdpanzer V", "Jagdpanzer IV", "Jagdpanzer 38(t)"],
-		"Jagdpanzer VI" : ["Jagdpanzer VI", "Jagdpanzer V", "Jagdpanzer IV", "Jagdpanzer 38(t)"]
+		"Sturmpanzer IV" : ["Sturmpanzer IV", "Sturmpanzer IV (late)"],
+		"Sturmpanzer IV (late)" : ["Sturmpanzer IV", "Sturmpanzer IV (late)"],
+		"StuG III G" : ["StuG III G", "StuG III G (late)"],
+		"StuG III G (late)" : ["StuG III G", "StuG III G (late)"],
+		"StuG IV" : ["StuG IV", "StuG IV (late)"],
+		"StuG IV (late)" : ["StuG IV", "StuG IV (late)"],
+		"Jagdpanzer IV (early)" : ["Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
+		"Jagdpanzer IV" : ["Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
+		"Jagdpanzer 38(t)" : ["Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)", "Nashorn"],
+		"Jagdpanzer IV/70" : ["Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)", "Nashorn"],
+		"Jagdpanzer IV/70 (A)" : ["Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Jagdpanzer IV/70 (A)", "Nashorn"], 
+		"Nashorn" : ["Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer 38(t)", "Jagdpanzer IV/70", "Nashorn"],
+		"Jagdpanzer V" : ["Jagdpanzer IV (early)", "Jagdpanzer V", "Jagdpanzer IV", "Jagdpanzer 38(t)"],
+		"Jagdpanzer VI" : ["Jagdpanzer IV (early)", "Jagdpanzer VI", "Jagdpanzer V", "Jagdpanzer IV", "Jagdpanzer 38(t)"]
 	},
 	"tank_vp_modifiers" : {
+		"Sd. Kfz. 13" : 2.2,
+		"PSW 221" : 1.9,
+		"PSW 222" : 1.8,
+		"PSW 231 (6 rad)" : 2.0,
+		"PSW 231 (8 rad)" : 1.9,
+		"PSW 233" : 1.6,
+		"PSW 234/2" : 1.5,
+		"SPW 250/9" : 1.9,
+		"SPW 250/10" : 1.7,
+		"Panzer II L" : 1.7, 
 		"Panzer III L" : 1.1,
 		"Panzer III M" : 1.1,
 		"Panzer III N" : 1.1,
-		"Marder II" : 1.2,
-		"Marder III M": 1.2,
-		"Panzer VIb" : 0.9,
+		"Wespe" : 1.6,
+		"Hummel" : 1.5,
+		"Grille Ausf. H" : 1.5,
+		"Grille Ausf. K" : 1.5,
+		"SPW 251/9" : 1.6,
+		"SPW 250/8" : 1.6,
+		"Panzerwerfer 42" : 1.4,
+		"Marder II" : 1.4,
+		"Marder III H": 1.4,
+		"Marder III M": 1.4,
+		"Panzer VG" : 0.9,
+		"Panzer VIe (Late)" : 0.9,
+		"Panzer VIb" : 0.8,
 		"Jagdpanzer V" : 0.9,
 		"Jagdpanzer VI" : 0.8
 	},
 	"campaign_skills" : [
 		"Prepared Positions"
 	],
+	"player_air_support": [
+		"Ju 87D Stuka", "Bf 109", "Bf 109 (fighter)", "Bf 110 (fighter-bomber)", 
+		"Bf 110 (fighter)", "Fw 190", "Fw 190 (fighter)", "Me 262", "Me 262 A-2a"
+	],
 	"player_arty_support": [
-		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18"
+		"7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "15cm sFH 18", "15cm sIG 33", "StuH 42", "Sturmpanzer IV", 
+		"Wespe", "Hummel", "Grille Ausf. H", "Grille Ausf. K", "Panzerwerfer 42", "15cm Nebelwerfer 41"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["Panzerschreck Team", "PaK 38", "PaK 40", "PaK 43", "8.8cm FlaK 18 o. 36", "Marder II", "Marder III M", "Nashorn", "SPW 251/22"],
-		"Anti-Infantry" : ["SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
-		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 234/2"],
-		"Artillery" : ["Light Mortar Team", "SPW 251/2", "7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "Wespe", "Hummel"]
+		"Anti-Armour" : ["Panzerschreck Team", "8.8 cm Raketenwerfer 43", "PaK 38", "PaK 40", "PaK 43", "PaK 43/41", "8.8cm FlaK 18 o. 36", "Marder II", "Marder III H", "Marder III M", "Nashorn", "SPW 251/22"],
+		"Anti-Infantry" : ["SPW 250/1", "SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "Heavy Mortar Team", "StuH 42", "Sturmpanzer IV", "Sturmmoerserwagen 606/4"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "PSW 233", "PSW 234/2", "SPW 250/9", "SPW 250/10"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "SPW 250/7", "SPW 251/2", "7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "Wespe", "Hummel", "Grille Ausf. H", "Grille Ausf. K"]
 	},
 	"friendly_transported_units" : {
-		"SPW 251/1" : {
+		"SPW 250/1" : {
 			"Riflemen" : 60,
-			"HMG Team" : 10,
+			"HMG Team" : 20,
 			"SMG Squad" : 20,
 			"Light Mortar Team" : 30,
 			"Medium Mortar Team" : 20,
-			"Flame Thrower Team" : 10,
-			"Panzerschreck Team" : 20
+			"Flame Thrower Team" : 10
+		},
+		"SPW 251/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 20,
+			"SMG Squad" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
 		}
 	},
 	"enemy_arty_support": {
-		"United States of America" : ["M2A1 105mm Howitzer", "M1 155mm Howitzer"],
+		"United States of America" : ["M7 Priest", "M7B1 Priest", "M8 HMC", "M2A1 105mm Howitzer", "M1 155mm Howitzer"],
 		"United Kingdom" : ["M7 Priest", "M7B1 Priest", "Sexton", "OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"],
 		"Canada" : ["M7 Priest", "M7B1 Priest", "Sexton", "OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"],
 		"Poland" : ["M7 Priest", "M7B1 Priest", "Sexton", "OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"],
-		"Free France" : ["M7 Priest", "M7B1 Priest", "Sexton", "OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"]
+		"Free France" : ["M7 Priest", "M7B1 Priest", "M8 HMC", "Sexton", "OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"]
 	},
 	"enemy_air_support": {
-		"United States of America" : ["P-47 Thunderbolt"],
-		"United Kingdom" : ["Typhoon"],
-		"Canada" : ["Typhoon"],
-		"Poland" : ["Typhoon"],
-		"Free France" : ["Typhoon"]
+		"United States of America" : ["P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt", "P-51 Mustang (CAS)", "P-51 Mustang"],
+		"United Kingdom" : ["Typhoon", "Tempest", "Hurricane Mk IIB", "Hurricane Mk IIC", "Spitfire Mk V", "Spitfire Mk IX"],
+		"Canada" : ["Typhoon", "Tempest", "Hurricane Mk IIB", "Hurricane Mk IIC", "Spitfire Mk V", "Spitfire Mk IX"],
+		"Poland" : ["Typhoon", "Tempest", "Hurricane Mk IIB", "Hurricane Mk IIC", "Spitfire Mk V", "Spitfire Mk IX"],
+		"Free France" : ["P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt", "P-51 Mustang (CAS)", "P-51 Mustang"]
 	},
 	"enemy_unit_list" : {
 		"United States of America" : [
-			"M5A1 Stuart", "M24 Chaffee", "M7 Priest", "M7B1 Priest", "M8 HMC",
+			"M5A1 Stuart", "M24 Chaffee", 
+			"M7 Priest", "M7B1 Priest", "M8 HMC",
 			"M10 Wolverine", "M18 Hellcat", "M36 Jackson",
 			"M4 Sherman", "M4A1 Sherman", "M4A3 Sherman", "M4A3(75)W Sherman",
 			"M4A3E2(75)W Sherman", "M4A3E2(76)W Sherman", "M4A1(76)W Sherman", 
 			"M4A3(76)W Sherman", "M4(105) Sherman", "M4A3(105) Sherman",
-			"M26 Pershing", "M8 Greyhound", "M20 Utility Car",
-			"M1 57mm AT Gun", "M5 3-inch AT Gun", "PaK 38", "PaK 40", "PaK 43", "M2A1 105mm Howitzer",
-			"M1 155mm Howitzer", "40mm AA Gun", "8.8cm FlaK 18 o. 36", "M1A1 90mm Gun",
-			"M29 Weasel", "M3 half-track", "M3A1 half-track", "Willys MB", "GMC CCKW 2.5 ton truck",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "Bazooka Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"M26 Pershing", 
+			"M8 Greyhound", "M20 Utility Car", "M3A1 Scout Car",
+			"M1 57mm AT Gun", "M5 3-inch AT Gun",
+			"M2A1 105mm Howitzer", "M1 155mm Howitzer", 
+			"40mm AA Gun", "M1A1 90mm Gun",
+			"M29 Weasel", "M3 half-track", "M3A1 half-track", 
+			"Willys MB", "GMC CCKW 2.5 ton truck",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "Bazooka Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"United Kingdom" : [
 			"Stuart VI", "M7 Priest", "M7B1 Priest", "Sexton", 
-			"Sherman II", "Sherman IIC", "Sherman V", "Sherman VC", "Cromwell I", "Cromwell IV",
-			"Cromwell VI", "Challenger", "Valentine XI", "Crusader III AA Mk I",
-			"Crusader III AA Mk II", "3in SPM M10", "Achilles",
+			"Sherman II", "Sherman IC Hybrid", "Sherman V", "M4 Crocodile", "Sherman VC", "Cromwell I", "Cromwell IV",
+			"Cromwell VI", "Challenger", "Comet", "Valentine XI", 
+			"3in SPM M10", "Achilles", "Archer",
 			"Churchill IV", "Churchill V", "Churchill VI",
-			"Churchill AVRE", "Churchill VII", "Churchill VIII",
-			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "Daimler Armoured Car",
-			"OQF 6-Pounder", "OQF 17-Pounder", "PaK 38", "PaK 40", "PaK 43",
-			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", "OQF 3.7\" AA Gun",
-			"40mm AA Gun", "8.8cm FlaK 18 o. 36", "Self-propelled 40mm Bofors AA Gun", 
-			"Bren Gun Carrier", "M29 Weasel", "M3 half-track", "M3A1 half-track", "Ram Kangaroo",
+			"Churchill AVRE", "Churchill VII", "Churchill VIII", "Churchill Crocodile",
+			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "Daimler Armoured Car", "M3A1 Scout Car",
+			"OQF 6-Pounder", "OQF 17-Pounder",
+			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", 
+			"OQF 3.7\" AA Gun", "40mm AA Gun",
+			"SP 40mm Bofors AA Gun", "Crusader III AA Mk I", "Crusader III AA Mk II",
+			"Bren Gun Carrier", "M29 Weasel", "M3 half-track", "M3A1 half-track", "M5 half-track", "Ram Kangaroo",
 			"Willys MB", "Morris 15 cwt",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "PIAT Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "PIAT Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team" 
 		],
 		"Canada" : [
-			"M7 Priest", "M7B1 Priest", "Sexton", "Sherman II", "Sherman V", "Sherman VC",
-			"3in SPM M10", "Achilles",
-			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Otter", "Staghound I",
-			"OQF 6-Pounder", "OQF 17-Pounder", "PaK 38", "PaK 40", "PaK 43",
-			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", "OQF 3.7\" AA Gun", 
-			"40mm AA Gun", "8.8cm FlaK 18 o. 36", "Self-propelled 40mm Bofors AA Gun", 
-			"Bren Gun Carrier", "M29 Weasel", "M3 half-track", "M3A1 half-track", "Ram Kangaroo",
+			"M7 Priest", "M7B1 Priest", "Sexton", 
+			"Sherman II", "Sherman V", "Sherman VC",
+			"3in SPM M10", "Achilles", "Archer",
+			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Otter", "Staghound I", "M3A1 Scout Car",
+			"OQF 6-Pounder", "OQF 17-Pounder",
+			"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", 
+			"OQF 3.7\" AA Gun", "40mm AA Gun",
+			"SP 40mm Bofors AA Gun", 
+			"Bren Gun Carrier", "M29 Weasel", "M3 half-track", "M3A1 half-track", "M5 half-track", "Ram Kangaroo",
 			"Willys MB", "Ford F15",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "PIAT Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "PIAT Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Poland" : [
-			"M7 Priest", "M7B1 Priest", "Sexton", "Sherman II", "Sherman V", "Sherman VC",
-			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "OQF 6-Pounder",
-			"M5 3-inch AT Gun", "OQF 17-Pounder", "PaK 38", "PaK 40", "PaK 43", 
-			"40mm AA Gun", "8.8cm FlaK 18 o. 36", "Self-propelled 40mm Bofors AA Gun",
+			"M7 Priest", "M7B1 Priest", "Sexton", 
+			"Sherman II", "Sherman V", "Sherman VC",
+			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "M3A1 Scout Car", 
+			"OQF 6-Pounder", "M5 3-inch AT Gun", "OQF 17-Pounder", 
+			"40mm AA Gun",
+			"SP 40mm Bofors AA Gun",
 			"Bren Gun Carrier", "M29 Weasel", "M3 half-track", "M3A1 half-track", 
 			"Willys MB", "GMC CCKW 2.5 ton truck", "Ford F15",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "PIAT Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "PIAT Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Free France" : [
-			"M7 Priest", "M7B1 Priest", "Sexton", "Sherman II", "Sherman V", "Sherman VC",
-			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "OQF 6-Pounder",
-			"M5 3-inch AT Gun", "OQF 17-Pounder", "PaK 38", "PaK 40", "PaK 43",
-			"40mm AA Gun", "8.8cm FlaK 18 o. 36", "Self-propelled 40mm Bofors AA Gun",
+			"M7 Priest", "M7B1 Priest", "Sexton", "Sherman II", "Sherman V", "Sherman VC", "M8 HMC",
+			"Daimler Scout Car", "Humber IV", "AEC II", "AEC III", "Staghound I", "M3A1 Scout Car", 
+			"OQF 6-Pounder", "M5 3-inch AT Gun", "OQF 17-Pounder",
+			"40mm AA Gun", "SP 40mm Bofors AA Gun",
 			"Bren Gun Carrier", "M29 Weasel", "M3 half-track", "M3A1 half-track", 
 			"Willys MB", "GMC CCKW 2.5 ton truck", "Ford F15",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
 	},
-	"enemy_captured_units" : [
-		"PaK 38", "PaK 40", "PaK 43", "8.8cm FlaK 18 o. 36"
-	],
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 40,
 		"Assault Gun" : 10,
@@ -158,7 +210,7 @@
 		"Anti-Tank Gun" : 40,
 		"Artillery Gun" : 10,
 		"Anti-Aircraft Gun" : 5,
-		"Self-Propelled AA Gun" : 3,
+		"Self-Propelled AA Gun" : 5,
 		"APC" : 70,
 		"Truck" : 90,
 		"Infantry Squad" : 100,
@@ -206,6 +258,13 @@
 				"Light Mortar Team" : 30,
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"Bazooka Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		},
 		"United Kingdom" : {
@@ -219,6 +278,15 @@
 				"PIAT Team" : 20
 			},
 			"M3A1 half-track" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"PIAT Team" : 20
+			},
+			"M5 half-track" : {
 				"Riflemen" : 80,
 				"SMG Squad" : 20,
 				"HMG Team" : 40,
@@ -262,6 +330,13 @@
 			"Ram Kangaroo" : {
 				"Riflemen" : 80,
 				"HMG Team" : 20
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"PIAT Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		},
 		"Canada" : {
@@ -275,6 +350,15 @@
 				"PIAT Team" : 20
 			},
 			"M3A1 half-track" : {
+				"Riflemen" : 80,
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10,
+				"PIAT Team" : 20
+			},
+			"M5 half-track" : {
 				"Riflemen" : 80,
 				"SMG Squad" : 20,
 				"HMG Team" : 40,
@@ -318,6 +402,13 @@
 			"Ram Kangaroo" : {
 				"Riflemen" : 80,
 				"HMG Team" : 20
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"PIAT Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		},
 		"Poland" : {
@@ -379,6 +470,13 @@
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10,
 				"PIAT Team" : 20
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"PIAT Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		},
 		"Free France" : {
@@ -440,14 +538,15 @@
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10,
 				"PIAT Team" : 20
+			},
+			"M3A1 Scout Car" : {
+				"HMG Team" : 60,
+				"PIAT Team" : 40,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
 			}
 		}
-	},
-	"decorations_list" : {
-		"3000" : "Iron Cross Second Class",
-		"3200" : "Iron Cross First Class",
-		"3300" : "Knight's Cross",
-		"3400" : "Knight's Cross with Oak Leaves"
 	},
 	"combat_days" : 80,
 	"calendar_weeks": [
@@ -476,8 +575,9 @@
 			"week_title" : "Hold the Line!",
 			"week_description" : "We are outnumbered because military command expected the invasion to take place at Calais. For the time being, we can only try to hold our positions around Caen until we receive reinforcements.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 60,
+				"Counterattack" : 20,
+				"Urban Defense" : 20
 			},
 			"enemy_nations" : ["United Kingdom", "Canada"],
 			"arty_support_level" : 50.0,
@@ -493,7 +593,8 @@
 			"week_description" : "A heavy storm is making it difficult for the enemy to bring in reinforcements across the Channel. Perhaps we can use this to our advantage. Push forward if you can!",
 			"mission_odds" : {
 				"Advance" : 20,
-				"Battle" : 80
+				"Battle" : 50,
+				"Urban Assault" : 30
 			},
 			"enemy_nations" : ["United Kingdom", "Canada"],
 			"arty_support_level" : 50.0,
@@ -508,8 +609,9 @@
 			"week_title" : "The Fall of Caen",
 			"week_description" : "Having reinforced their troops around Caen, the British and Canadians are now attacking us with overwhelming strength. We have no choice but to give up the city and fall back.",
 			"mission_odds" : {
-				"Counterattack" : 20,
-				"Fighting Withdrawal" : 80
+				"Counterattack" : 15,
+				"Urban Defense" : 15,
+				"Fighting Withdrawal" : 70
 			},
 			"enemy_nations" : ["United Kingdom", "Canada"],
 			"arty_support_level" : 30.0,
@@ -524,8 +626,8 @@
 			"week_title" : "Between Caen and Falaise",
 			"week_description" : "Caen has fallen, but we were able to establish another line of defense in the south-east, close to a small French town called Falaise. We must do our best to contain the enemy advance.",
 			"mission_odds" : {
-				"Battle" : 40,
-				"Counterattack" : 50,
+				"Hold the Line" : 50,
+				"Counterattack" : 40,
 				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["United Kingdom", "Canada"],
@@ -666,8 +768,8 @@
 			"average_resistance" : 6,
 			"week_title" : "Enemy Counterattack",
 			"week_description" : "We have gained a lot of ground and reached the River Meuse. However, our forces further south have failed to take Bastogne, and now enemy troops are trying to cut off some of our units.",
-			"mission_odds" : {	
-				"Battle" : 50,
+			"mission_odds" : {
+				"Hold the Line" : 50,
 				"Counterattack" : 40,
 				"Fighting Withdrawal" : 10
 			},
@@ -712,8 +814,7 @@
 			"week_title" : "Desperate Defense",
 			"week_description" : "You have made it back to St. Vith, but enemy forces are already approaching the town. We need to cover the retreat of our fellow soldiers. Hold your position as long as you can!",
 			"mission_odds" : {
-				"Battle" : 20,
-				"Counterattack" : 80
+				"Hold the Line" : 100
 			},
 			"enemy_nations" : ["United States of America", "United Kingdom"],
 			"arty_support_level" : 30.0,
@@ -748,8 +849,8 @@
 			"week_title" : "Cut Off",
 			"week_description" : "American soldiers captured the Ludendorff Bridge before you could cross it. You are on your own now. Keep fighting until your tank breaks down or runs out of fuel. Then it will be time for you to surrender.",
 			"mission_odds" : {
-				"Counterattack" : 50,
-				"Fighting Withdrawal" : 50
+				"Hold the Line" : 80,
+				"Fighting Withdrawal" : 20
 			},
 			"enemy_nations" : ["United States of America"],
 			"unit_support_level" : 10.0

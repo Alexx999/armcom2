@@ -1,0 +1,912 @@
+{
+	"Northeastern Europe" : {
+		"cd_terrain_odds" : {
+			"Flat" : 50,
+			"Forest" : 10,
+			"Hills" : 15,
+			"Fields" : 10,
+			"Marsh" : 5,
+			"Villages" : 10,
+			"Lake" : 2,
+			"Fortification" : 1
+		},
+		"dirt_road_odds" : 40.0,
+		"stone_road_odds" : 10.0,
+		"river_odds" : 50.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "03.31",
+				"ground_conditions" : {
+					"Dry" : 20.0, "Wet" : 0.0, "Muddy" : 5.0,
+					"Snow" : 60.0, "Deep Snow" : 15.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 30.0, "Cold" : 60.0,
+					"Mild" : 10.0, "Warm" : 0.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 35.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 5.0,
+					"Light Snow" : 10.0, "Snow" : 20.0,
+					"Blizzard" : 10.0
+				}
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 50.0, "Wet" : 20.0, "Muddy" : 25.0,
+					"Snow" : 5.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 10.0,
+					"Mild" : 70.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 30.0, "Mist" : 10.0,
+					"Rain" : 30.0, "Heavy Rain" : 20.0,
+					"Light Snow" : 10.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Summer" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 75.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 25.0, "Warm" : 60.0,
+					"Hot" : 10.0, "Extreme Hot" : 5.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 60.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}	
+			},
+			"Autumn" : {
+				"end_date" : "12.01",
+				"ground_conditions" : {
+					"Dry" : 65.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 10.0,
+					"Mild" : 70.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 50.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 3.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"Western USSR" : {
+		"cd_terrain_odds" : {
+			"Flat" : 45,
+			"Forest" : 5,
+			"Hills" : 10,
+			"Fields" : 15,
+			"Marsh" : 10,
+			"Villages" : 10,
+			"Lake" : 5,
+			"Fortification" : 1
+		},
+		"dirt_road_odds" : 10.0,
+		"stone_road_odds" : 0.0,
+		"poor_quality_roads" : "TRUE",
+		"river_odds" : 50.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "04.30",
+				"ground_conditions" : {
+					"Dry" : 5.0, "Wet" : 0.0, "Muddy" : 15.0,
+					"Snow" : 60.0, "Deep Snow" : 20.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 50.0, "Cold" : 30.0,
+					"Mild" : 10.0, "Warm" : 0.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 35.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 5.0,
+					"Light Snow" : 10.0, "Snow" : 20.0,
+					"Blizzard" : 10.0
+				}
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 25.0, "Wet" : 20.0, "Muddy" : 50.0,
+					"Snow" : 5.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 10.0,
+					"Mild" : 70.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 30.0, "Mist" : 10.0,
+					"Rain" : 30.0, "Heavy Rain" : 20.0,
+					"Light Snow" : 10.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Summer" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 75.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 25.0, "Warm" : 60.0,
+					"Hot" : 10.0, "Extreme Hot" : 5.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 60.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}	
+			},
+			"Autumn" : {
+				"end_date" : "11.01",
+				"ground_conditions" : {
+					"Dry" : 20.0, "Wet" : 25.0, "Muddy" : 45.0,
+					"Snow" : 10.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 20.0,
+					"Mild" : 60.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 50.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 10.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"Northwestern Europe" : {
+		"cd_terrain_odds" : {
+			"Flat" : 40,
+			"Forest" : 20,
+			"Hills" : 10,
+			"Fields" : 15,
+			"Marsh" : 5,
+			"Villages" : 10,
+			"Lake" : 2,
+			"Fortification" : 1
+		},
+		"dirt_road_odds" : 80.0,
+		"stone_road_odds" : 50.0,
+		"river_odds" : 20.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "03.31",
+				"ground_conditions" : {
+					"Dry" : 25.0, "Wet" : 0.0, "Muddy" : 5.0,
+					"Snow" : 60.0, "Deep Snow" : 10.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 30.0, "Cold" : 60.0,
+					"Mild" : 10.0, "Warm" : 0.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 35.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 5.0,
+					"Light Snow" : 15.0, "Snow" : 20.0,
+					"Blizzard" : 5.0
+				}
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 50.0, "Wet" : 20.0, "Muddy" : 25.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 10.0,
+					"Mild" : 70.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 30.0, "Mist" : 10.0,
+					"Rain" : 30.0, "Heavy Rain" : 20.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+				
+			},
+			"Summer" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 75.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 25.0, "Warm" : 60.0,
+					"Hot" : 10.0, "Extreme Hot" : 5.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 60.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+				
+			},
+			"Autumn" : {
+				"end_date" : "12.01",
+				"ground_conditions" : {
+					"Dry" : 65.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 10.0,
+					"Mild" : 70.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 50.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"Italy" : {
+		"cd_terrain_odds" : {
+			"Flat" : 20,
+			"Forest" : 10,
+			"Hills" : 40,
+			"Mountains" : 2,
+			"Mountain Pass" : 3,
+			"Fields" : 20,
+			"Scrub" : 10,
+			"Marsh" : 2,
+			"Villages" : 10,
+			"Lake" : 3,
+			"Fortification" : 2
+		},
+		"dirt_road_odds" : 80.0,
+		"stone_road_odds" : 70.0,
+		"river_odds" : 20.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "03.31",
+				"ground_conditions" : {
+					"Dry" : 50.0, "Wet" : 20.0, "Muddy" : 20.0,
+					"Snow" : 10.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 80.0,
+					"Mild" : 20.0, "Warm" : 0.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 25.0, "Mist" : 30.0,
+					"Rain" : 20.0, "Heavy Rain" : 20.0,
+					"Light Snow" : 5.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 50.0, "Wet" : 20.0, "Muddy" : 25.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 20.0, "Warm" : 60.0,
+					"Hot" : 20.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 30.0, "Mist" : 10.0,
+					"Rain" : 30.0, "Heavy Rain" : 20.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+				
+			},
+			"Summer" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 75.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 0.0, "Warm" : 20.0,
+					"Hot" : 65.0, "Extreme Hot" : 15.0
+				},
+				"cloud_cover" : {
+					"Clear" : 65.0, "Scattered" : 20.0,
+					"Heavy" : 10.0, "Overcast" : 5.0
+				},
+				"precipitation" : {
+					"None" : 80.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+				
+			},
+			"Autumn" : {
+				"end_date" : "12.01",
+				"ground_conditions" : {
+					"Dry" : 75.0, "Wet" : 20.0, "Muddy" : 5.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 40.0, "Warm" : 30.0,
+					"Hot" : 30.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 45.0, "Scattered" : 25.0,
+					"Heavy" : 20.0, "Overcast" : 10.0
+				},
+				"precipitation" : {
+					"None" : 50.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"Nordic" : {
+		"cd_terrain_odds" : {
+			"Flat" : 20,
+			"Forest" : 40,
+			"Hills" : 20,
+			"Fields" : 10,
+			"Marsh" : 5,
+			"Villages" : 5,
+			"Lake" : 5,
+			"Fortification" : 1
+		},
+		"dirt_road_odds" : 20.0,
+		"stone_road_odds" : 2.0,
+		"river_odds" : 30.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "03.31",
+				"ground_conditions" : {
+					"Dry" : 0.0, "Wet" : 0.0, "Muddy" : 0.0,
+					"Snow" : 70.0, "Deep Snow" : 30.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 60.0, "Cold" : 40.0,
+					"Mild" : 0.0, "Warm" : 0.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 20.0, "Scattered" : 10.0,
+					"Heavy" : 10.0, "Overcast" : 60.0
+				},
+				"precipitation" : {
+					"None" : 40.0, "Mist" : 0.0,
+					"Rain" : 0.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 25.0, "Snow" : 25.0,
+					"Blizzard" : 10.0
+				}
+				
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 55.0, "Wet" : 15.0, "Muddy" : 5.0,
+					"Snow" : 15.0, "Deep Snow" : 10.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 35.0,
+					"Mild" : 45.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 30.0, "Mist" : 15.0,
+					"Rain" : 10.0, "Heavy Rain" : 5.0,
+					"Light Snow" : 20.0, "Snow" : 15.0,
+					"Blizzard" : 5.0
+				}
+				
+			},
+			"Summer" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 75.0, "Wet" : 10.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 25.0, "Warm" : 60.0,
+					"Hot" : 10.0, "Extreme Hot" : 5.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 60.0, "Mist" : 10.0,
+					"Rain" : 20.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Autumn" : {
+				"end_date" : "12.01",
+				"ground_conditions" : {
+					"Dry" : 10.0, "Wet" : 20.0, "Muddy" : 20.0,
+					"Snow" : 40.0, "Deep Snow" : 10.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 10.0, "Cold" : 40.0,
+					"Mild" : 40.0, "Warm" : 10.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 20.0, "Scattered" : 10.0,
+					"Heavy" : 30.0, "Overcast" : 40.0
+				},
+				"precipitation" : {
+					"None" : 15.0, "Mist" : 10.0,
+					"Rain" : 15.0, "Heavy Rain" : 10.0,
+					"Light Snow" : 25.0, "Snow" : 20.0,
+					"Blizzard" : 5.0
+				}
+			}
+		}
+	},
+	
+	"North Africa" : {
+		"cd_terrain_odds" : {
+			"Flat" : 120,
+			"Scrub" : 5,
+			"Hamada" : 10,
+			"Sand" : 20,
+			"Hills" : 5,
+			"Oasis" : 1,
+			"Mountains" : 3,
+			"Mountain Pass" : 2,
+			"Fortress" : 3,
+			"Villages" : 7
+		},
+		"dirt_road_odds" : 40.0,
+		"stone_road_odds" : 0.0,
+		"river_odds" : 10.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "03.31",
+				"ground_conditions" : {
+					"Dry" : 85.0, "Wet" : 10.0, "Muddy" : 5.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 20.0,
+					"Mild" : 50.0, "Warm" : 30.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 5.0
+				},
+				"precipitation" : {
+					"None" : 94.0, "Mist" : 2.0,
+					"Sandstorm" : 1.0,
+					"Rain" : 3.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 50.0, "Wet" : 20.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 20.0, "Warm" : 40.0,
+					"Hot" : 20.0, "Extreme Hot" : 20.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 5.0
+				},
+				"precipitation" : {
+					"None" : 89.0, "Mist" : 5.0,
+					"Sandstorm" : 1.0,
+					"Rain" : 5.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Summer" : {
+				"end_date" : "11.15",
+				"ground_conditions" : {
+					"Dry" : 95.0, "Wet" : 5.0, "Muddy" : 0.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 0.0, "Warm" : 10.0,
+					"Hot" : 10.0, "Extreme Hot" : 80.0
+				},
+				"cloud_cover" : {
+					"Clear" : 90.0, "Scattered" : 10.0,
+					"Heavy" : 0.0, "Overcast" : 0.0
+				},
+				"precipitation" : {
+					"None" : 98.0, "Mist" : 0.0,
+					"Sandstorm" : 2.0,
+					"Rain" : 0.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}	
+			},
+			"Autumn" : {
+				"end_date" : "12.15",
+				"ground_conditions" : {
+					"Dry" : 50.0, "Wet" : 20.0, "Muddy" : 15.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 10.0, "Warm" : 40.0,
+					"Hot" : 20.0, "Extreme Hot" : 30.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 5.0
+				},
+				"precipitation" : {
+					"None" : 94.0, "Mist" : 3.0,
+					"Sandstorm" : 1.0,
+					"Rain" : 2.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"Asian Steppes" : {
+		"cd_terrain_odds" : {
+			"Flat" : 62,
+			"Forest" : 1,
+			"Hills" : 10,
+			"Fields" : 15,
+			"Marsh" : 0,
+			"Villages" : 10,
+			"Lake" : 2,
+			"Fortification" : 0
+		},
+		"dirt_road_odds" : 3.0,
+		"stone_road_odds" : 0.0,
+		"poor_quality_roads" : "TRUE",
+		"river_odds" : 20.0,
+		"season_weather_odds" : {
+			"Winter" : {
+				"end_date" : "04.31",
+				"ground_conditions" : {
+					"Dry" : 85.0, "Wet" : 0.0, "Muddy" : 10.0,
+					"Snow" : 5.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 50.0, "Cold" : 30.0,
+					"Mild" : 10.0, "Warm" : 0.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 95.0, "Mist" : 0.0,
+					"Rain" : 0.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 5.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Spring" : {
+				"end_date" : "06.14",
+				"ground_conditions" : {
+					"Dry" : 70.0, "Wet" : 10.0, "Muddy" : 20.0,
+					"Snow" : 2.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 10.0,
+					"Mild" : 70.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 72.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 5.0,
+					"Light Snow" : 3.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Summer" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 95.0, "Wet" : 5.0, "Muddy" : 0.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 25.0, "Warm" : 60.0,
+					"Hot" : 10.0, "Extreme Hot" : 5.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 90.0, "Mist" : 3.0,
+					"Rain" : 5.0, "Heavy Rain" : 2.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}	
+			},
+			"Autumn" : {
+				"end_date" : "11.01",
+				"ground_conditions" : {
+					"Dry" : 70.0, "Wet" : 10.0, "Muddy" : 20.0,
+					"Snow" : 2.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 20.0,
+					"Mild" : 60.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 50.0, "Scattered" : 15.0,
+					"Heavy" : 20.0, "Overcast" : 15.0
+				},
+				"precipitation" : {
+					"None" : 72.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 5.0,
+					"Light Snow" : 3.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"South Pacific" : {
+		"cd_terrain_odds" : {
+			"Jungle" : 20,
+			"Dense Jungle" : 10,
+			"Hills" : 10,
+			"Mountains" : 2,
+			"Bamboo Forest" : 5,
+			"Palm Trees" : 10,
+			"Hut Villages" : 3,
+			"Cogon Grass" : 20,
+			"Swamp" : 5,
+			"Rice Paddies" : 15,
+			"Volcanic Sand" : 3,
+			"Lake" : 10
+		},
+		"dirt_road_odds" : 20.0,
+		"stone_road_odds" : 0.0,
+		"river_odds" : 10.0,
+		"season_weather_odds" : {
+			"Wet Season" : {
+				"end_date" : "04.30",
+				"ground_conditions" : {
+					"Dry" : 10.0, "Wet" : 40.0, "Muddy" : 50.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 10.0, "Warm" : 60.0,
+					"Hot" : 20.0, "Extreme Hot" : 10.0
+				},
+				"cloud_cover" : {
+					"Clear" : 30.0, "Scattered" : 20.0,
+					"Heavy" : 30.0, "Overcast" : 50.0
+				},
+				"precipitation" : {
+					"None" : 10.0, "Mist" : 30.0,
+					"Rain" : 20.0, "Heavy Rain" : 40.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Dry Season" : {
+				"end_date" : "10.31",
+				"ground_conditions" : {
+					"Dry" : 80.0, "Wet" : 10.0, "Muddy" : 10.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 50.0, "Warm" : 30.0,
+					"Hot" : 20.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 80.0, "Scattered" : 10.0,
+					"Heavy" : 10.0, "Overcast" : 0.0
+				},
+				"precipitation" : {
+					"None" : 80.0, "Mist" : 10.0,
+					"Rain" : 10.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	},
+	
+	"Southeast Asia" : {
+		"cd_terrain_odds" : {
+			"Jungle" : 20,
+			"Dense Jungle" : 10,
+			"Hills" : 15,
+			"Mountains" : 1,
+			"Bamboo Forest" : 10,
+			"Hut Villages" : 5,
+			"Cogon Grass" : 10,
+			"Swamp" : 10,
+			"Rice Paddies" : 20,
+			"Lake" : 10
+		},
+		"dirt_road_odds" : 25.0,
+		"stone_road_odds" : 5.0,
+		"river_odds" : 40.0,
+		"season_weather_odds" : {
+			"Northeast Monsoon" : {
+				"end_date" : "02.14",
+				"ground_conditions" : {
+					"Dry" : 70.0, "Wet" : 20.0, "Muddy" : 10.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 80.0, "Warm" : 20.0,
+					"Hot" : 0.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 65.0, "Mist" : 20.0,
+					"Rain" : 15.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Intermonsoon" : {
+				"end_date" : "05.14",
+				"ground_conditions" : {
+					"Dry" : 100.0, "Wet" : 0.0, "Muddy" : 0.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 10.0, "Warm" : 40.0,
+					"Hot" : 50.0, "Extreme Hot" : 0.0
+				},
+				"cloud_cover" : {
+					"Clear" : 10.0, "Scattered" : 40.0,
+					"Heavy" : 20.0, "Overcast" : 30.0
+				},
+				"precipitation" : {
+					"None" : 90.0, "Mist" : 10.0,
+					"Rain" : 0.0, "Heavy Rain" : 0.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			},
+			"Southwest Monsoon" : {
+				"end_date" : "10.30",
+				"ground_conditions" : {
+					"Dry" : 0.0, "Wet" : 70.0, "Muddy" : 30.0,
+					"Snow" : 0.0, "Deep Snow" : 0.0
+				},
+				"temperature" : {
+					"Extreme Cold" : 0.0, "Cold" : 0.0,
+					"Mild" : 0.0, "Warm" : 0.0,
+					"Hot" : 70.0, "Extreme Hot" : 30.0
+				},
+				"cloud_cover" : {
+					"Clear" : 40.0, "Scattered" : 20.0,
+					"Heavy" : 20.0, "Overcast" : 20.0
+				},
+				"precipitation" : {
+					"None" : 0.0, "Mist" : 20.0,
+					"Rain" : 40.0, "Heavy Rain" : 40.0,
+					"Light Snow" : 0.0, "Snow" : 0.0,
+					"Blizzard" : 0.0
+				}
+			}
+		}
+	}
+}

@@ -10,106 +10,120 @@
 	},
 	
 	"Direct Movement" : {
-		"desc" : "Direct the movement of the vehicle, adding a bonus to successfully move into a new hex.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"desc" : "Direct the movement of the vehicle, adding a bonus to successfully move or go HD.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"spotting_allowed" : true
 	},
 	
 	"Direct Fire" : {
 		"desc" : "Direct fire against enemy targets, adding a bonus to hit or affect.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"spotting_allowed" : true
 	},
 	
 	"Smoke Grenade" : {
-		"desc" : "Throw a smoke-emitting grenade out of the tank, must have an open hatch.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"desc" : "Throw a smoke-emitting grenade out of the vehicle. Must be CE.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"spotting_allowed" : false
+	},
+	
+	"Command Battlegroup" : {
+		"desc" : "Issue a new command to your battlegroup. Will not change the default command for the combat day.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"spotting_allowed" : false
 	},
 	
 	"Operate Gun" : {
-		"desc" : "Operate any main gun from this position, also operate the turret.",
+		"desc" : "Operate any gun available to this position. Can also unjam a jammed gun.",
 		"spotting_allowed" : false,
 		"rst_ce_na" : true
 	},
 	
 	"Operate MG" : {
-		"desc" : "Operate any MG from this position.",
+		"desc" : "Operate any MG available to this position, other than AA MGs. Can also unjam a jammed MG.",
 		"spotting_allowed" : false,
 		"rst_ce_na" : true
 	},
 	
-	"Unjam Weapon" : {
-		"desc" : "Attempt to unjam any jammed weapons in this location.",
-		"spotting_allowed" : false,
-		"rst_ce_na" : true
+	"Operate AAMG" : {
+		"desc" : "Operate any AAMG from this position. Can also unjam a jammed AAMG.",
+		"spotting_allowed" : true
+	},
+	
+	"Operate Flame Thrower" : {
+		"desc" : "Operate any flame thrower from this position. Can also unjam a jammed weapon.",
+		"spotting_allowed" : true
+	},
+	
+	"Repair Radio" : {
+		"desc" : "Attempt to repair the radio.",
+		"spotting_allowed" : false
 	},
 	
 	"Reload" : {
 		"desc" : "Assist in reloading the main gun, increasing chance of maintaining Rate of Fire.",
-		"position_list" : ["Loader"],
-		"spotting_allowed" : false
+		"position_list" : ["Loader", "Commander/Loader", "Starboard Loader", "Port Loader"],
+		"spotting_allowed" : false,
+		"rst_ce_na" : true
 	},
 	
 	"Manage Ready Rack" : {
-		"desc" : "Add/remove ammo from the Ready Rack:",
+		"desc" : "Move ammo to/from the Ready Rack",
 		"spotting_allowed" : false,
 		"rst_ce_na" : true
 	},
 	
 	"Drive" : {
 		"desc" : "Move forward or backward, pivot hull, attempt to gain Hull Down, or reposition within the same hex.",
-		"position_list" : ["Driver"],
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
 		"spotting_allowed" : false
 	},
 		
 	"Drive Into Terrain" : {
 		"desc" : "Move forward or backward, pivot hull, attempt to gain Hull Down, or reposition within the same hex. For forward/backward moves, will prompt for a desired terrain type.",
-		"position_list" : ["Driver"],
-		"spotting_allowed" : false
-	},
-	
-	"Overrun" : {
-		"desc" : "Move slightly forward for a close range attack against enemy infantry or guns.",
-		"position_list" : ["Driver"],
-		"spotting_allowed" : false
-	},
-	
-	"Attempt Unbog" : {
-		"desc" : "Attempt to free the vehicle from being bogged down.",
-		"position_list" : ["Driver"],
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
 		"spotting_allowed" : false
 	},
 	
 	"Withdraw" : {
 		"desc" : "Attempt to withdraw from the battle, moving into an adjacent map hex on the Campaign Day map.",
-		"position_list" : ["Driver"],
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
 		"spotting_allowed" : true
 	},
 	
 	"Pass Ammo" : {
 		"desc" : "Pass ammo up to the Loader, increasing chance of RoF if the Ready Rack is not used.",
-		"position_list" : ["Assistant Driver"],
+		"position_list" : ["Assistant Driver", "Front Gunner", "MG Gunner", "Port MG Gunner", "Starboard MG Gunner"],
 		"spotting_allowed" : false
 	},
 	
-	"Abandon Tank" : {
-		"desc" : "All crew bail out of the tank and retreat to friendly lines.",
+	"Abandon Vehicle" : {
+		"desc" : "All crew bail out of the vehicle and retreat to friendly lines.",
 		"spotting_allowed" : false
 	},
 	
 	"First Aid" : {
-		"desc" : "Adds recovery bonus to any crewman that has a Critical wound.",
+		"desc" : "Patch up fresh injuries on oneself or other crewman, or stabilize a Critical injury.",
 		"spotting_allowed" : false
 	},
 	
 	"Swap Position" : {
-		"desc" : "Swap positions in the tank with another crewman, or take up a vacant position.",
+		"desc" : "Swap positions in the vehicle with another crewman, or take up a vacant position.",
 		"spotting_allowed" : false
 	},
 	
 	"Fire Smoke Mortar" : {
 		"desc" : "Fire the smoke mortar, creating concealing smoke in front of the turret.",
+		"spotting_allowed" : false
+	},
+	
+	"Fire Small Arms" : {
+		"desc" : "Fire small arms weapons at any spotted, non-vehicle targets within 1 hex.",
+		"spotting_allowed" : true
+	},
+	
+	"Hunker Down": {
+		"desc" : "Stay low and out of sight while CE. No effect if BU.",
 		"spotting_allowed" : false
 	}
 }

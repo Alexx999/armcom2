@@ -1,0 +1,251 @@
+{
+	"name" : "Battle of Guadalcanal",
+	"creator" : "Standard Campaign",
+	"difficulty" : "8",
+	"start_date" : "1942.08.12",
+	"end_date" : "1942.11.14",
+	"player_nation" : "United States of America",
+	"enemy_nations" : ["Empire of Japan"],
+	"enemy_fanatic" : "TRUE",
+	"region" : "South Pacific",
+	"desc" : "Join USMC forces in support of Operation Watchtower, and help seize the jungle island of Guadalcanal from Japanese forces.",
+	"player_unit_list" : [
+		"M2A4 Light Tank", "M3A1 Stuart"
+	],
+	"tank_vp_modifiers" : {
+		"M2A4 Light Tank" : 1.1
+	},
+	"campaign_skills" : [
+		"Semper Fi"
+	],
+	"player_air_support": [
+		"F4F Wildcat", "P-39Q Airacobra", "SBD Dauntless"
+	],
+	"player_arty_support": [
+		"Destroyer", "Cruiser", "Battleship", "M1A1 75mm Pack Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["M3 37mm AT Gun"],
+		"Assault" : ["Flame Thrower Team", "Combat Engineer Team"],
+		"Anti-Infantry" : ["SMG Squad", "HMG Team", "M3 37mm AT Gun"],
+		"Recon" : ["M3A1 Scout Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M1A1 75mm Pack Howitzer"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_arty_support": {
+		"Empire of Japan" : [
+			"Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun",
+			"Type 92 70mm Bn Gun", "Type 92 10cm Cannon", "Battleship"
+		]
+	},
+	"enemy_air_support": {
+		"Empire of Japan" : [
+			"Mitsubishi A6M"
+		]
+	},
+	"enemy_unit_list" : {
+		"Empire of Japan" : [
+			"Type 97 Chi-Ha",
+			"Type 91 Armoured Car",
+			
+			"Type 94 37mm AT Gun",
+			
+			"Type 93 AA Gun", "Type 98 20mm AA Gun", "Type 88 75mm AA Gun",
+			
+			"Type 11 37mm Infantry Gun",
+			"Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun",
+			"Type 92 70mm Bn Gun", "Type 92 10cm Cannon",
+			
+			"Type 94 Truck", "Type 95 Scout Car",
+			"Riflemen",
+			
+			"SMG Squad", "HMG Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", 
+			"Flame Thrower Team", "Combat Engineer Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Medium Tank" : 0,
+		"Armoured Car" : 5,
+		"Anti-Tank Gun" : 25,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 10,
+		"Truck" : 15,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 100
+	},
+	"enemy_transported_units" : {
+		"Empire of Japan" : {
+			"Type 94 Truck" : {
+				"Riflemen" : 60,
+				"Combat Engineer Team" : 40,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"Type 95 Scout Car" : {
+				"Combat Engineer Team" : 40,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 20,
+	"calendar_weeks": [
+		{
+			"start_date" :"1942.08.12",
+			"location" : "-9.41,160.03",
+			"coastal_chance" : 100,
+			"combat_chance" : 60,
+			"average_resistance" : 3,
+			"week_title" : "Patrols from Lunga Point",
+			"week_description" : "From August 7th Allied forces have landed and set up defenses around Henderson Airfield near Lunga Point. We know that Japanese forces are entrenched on the island, but we will need to recon the area to find them.",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 50.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Volcanic Sand" : 15
+			}
+		},
+		{
+			"start_date" :"1942.08.21",
+			"end_date" : "1942.08.21",
+			"location" : "-9.41,160.03",
+			"coastal_chance" : 80,
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Battle of the Tenaru",
+			"week_description" : "As combat engineers work quickly to make Henderson Airfield operational, an early-morning attack on Alligator Creek announces the arrival of Japanese reinforcements to the island.",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 50.0,
+			"terrain_odds_modifier" : {
+				"Volcanic Sand" : 10
+			}
+		},
+		{
+			"start_date" : "1942.08.22",
+			"end_date" : "1942.09.22",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" :"1942.09.23",
+			"end_date" : "1942.09.27",
+			"location" : "-9.44,159.96",
+			"combat_chance" : 40,
+			"average_resistance" : 4,
+			"week_title" : "Stragglers in the Matanikau Valley",
+			"week_description" : "A large Japanese force has landed on the western side of the island and appears to be preparing for another attack on the airfield. In the meantime, Marine units spread out to attack scattered groups of Japanese troops that remain close to our defensive lines.",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Dense Jungle" : 30,
+				"Hills" : 20
+			}
+		},
+		{
+			"start_date" :"1942.10.06",
+			"end_date" : "1942.10.09",
+			"location" : "-9.41,160.03",
+			"combat_chance" : 60,
+			"average_resistance" : 6,
+			"week_title" : "Crossing the Matanikau River",
+			"week_description" : "We have reports of a Japanese infantry division that has landed east of the Matanikau River. We must advance on their positions before they have a chance to dig in.",
+			"mission_odds" : {
+				"Spearhead" : 50,
+				"Advance" : 50
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_fortifications" : "TRUE"
+		},
+		{
+			"start_date" :"1942.10.23",
+			"end_date" : "1942.10.26",
+			"location" : "-9.41,160.03",
+			"combat_chance" : 100,
+			"coastal_chance" : 100,
+			"average_resistance" : 6,
+			"week_title" : "The Battle for Henderson Field",
+			"week_description" : "Several Japanese regiments, including tanks, have descended on our defensive perimeter around the airfield, launching a series of attacks in an attempt to break through our lines.",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_class_odds_modifier" : {
+				"Medium Tank" : "10"
+			}
+		},
+		{
+			"start_date" :"1942.11.01",
+			"location" : "-9.41,160.03",
+			"combat_chance" : 50,
+			"coastal_chance" : 80,
+			"average_resistance" : 4,
+			"week_title" : "Advancing Westward",
+			"week_description" : "Having successfully held Henderson Airfield, our forces now strike west to attack isolated Japanese units that continue to land on the north coast of the island.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Patrol" : 50,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_fortifications" : "TRUE",
+			"enemy_class_odds_modifier" : {
+				"Medium Tank" : "0"
+			}
+		},
+		{
+			"start_date" :"1942.11.08",
+			"location" : "-9.41,160.03",
+			"combat_chance" : 70,
+			"coastal_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Attacking Point Cruz and Matanikau",
+			"week_description" : "Fresh Japanese forces continue to land on the coast, frustrating our attempts to gain control of this key region of the island.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 70
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_fortifications" : "TRUE"
+		}
+	]
+}

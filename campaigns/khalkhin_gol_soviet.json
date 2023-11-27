@@ -1,6 +1,7 @@
 {
 	"name" : "Khalkhin Gol (Soviet Union)",
 	"creator" : "flori2412",
+	"difficulty" : "6",
 	"start_date" : "1939.07.03",
 	"end_date" : "1939.08.28",
 	"player_nation" : "Soviet Union",
@@ -8,23 +9,30 @@
 	"region" : "Asian Steppes",
 	"desc" : "Join the Soviet border troops in Mongolia as they are facing a Japanese offensive near the Khalkhin Gol River.",
 	"player_unit_list" : [
-		"T-26 M33", "T-26 M37/39", "BT-5 M34", "BT-7 M37", "BT-7A"
+		"BA-6", "BA-10", "BA-20",
+		"T-26 M33", "T-26 M37/39", "BT-2", "BT-5 M34", "BT-7 M37", "BT-7A",
+		"OT-130", "OT-133"
 	],
 	"player_squad_list" : {
 		"BT-7 M37" : ["BT-7 M37", "BT-7A"],
 		"BT-7A" : ["BT-7 M37", "BT-7A"]
 	},
 	"tank_vp_modifiers" : {
-		"T-26 M33" : 1.1
+		"BA-6" : 1.1,
+		"BA-20" : 1.6,
+		"T-26 M33" : 1.1,
+		"BT-2" : 1.1
 	},
 	"campaign_skills" : [
 		"Centralized Fire"
 	],
 	"player_air_support": [
-		"I-153 Chaika"
+		"I-16", "I-153 Chaika"
 	],
 	"player_arty_support": [
-		"76.2mm PP obr. 27", "76.2mm obr. 00/02P", "76.2mm obr. 36", "107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38", "152mm GP obr. 37"
+		"76.2mm PP obr. 27", "76.2mm obr. 00/02P", "76.2mm obr. 36", "107mm obr. 10/30",
+		"122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+		"152mm G obr. 38", "152mm GP obr. 37"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
@@ -44,18 +52,19 @@
 		"Empire of Japan" : ["Kawasaki Ki-32"]
 	},
 	"enemy_arty_support": {
-		"Empire of Japan" : ["Type 92 70mm Battalion Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 38 15cm Howitzer", "Type 96 15cm Howitzer"]
+		"Empire of Japan" : ["Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 38 15cm Howitzer", "Type 96 15cm Howitzer"]
 	},
 	"enemy_unit_list" : {
 		"Empire of Japan" : [
 			"Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)", "Type 95 Ha-Go", "Type 89 I-Go", "Type 97 Chi-Ha",
+			"Type 91 SS-Ki",
 			"Type 94 37mm AT Gun", 
-			"Type 11 37mm Infantry Gun", "Type 92 70mm Battalion Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", 
+			"Type 11 37mm Infantry Gun", "Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", 
 			"Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 4 15cm Howitzer", "Type 96 15cm Howitzer", 
 			"Type 88 75mm AA Gun",
 			"Type 94 Truck", "Type 95 Scout Car",
 			"Riflemen",
-			"HMG Team", "AT Rifle Team", "Medium Mortar Team",
+			"HMG Team", "AT Rifle Team", "Medium Mortar Team", "Combat Engineer Team",
 			"Rifle Cavalry",
 			"Motorcycle MG Team"
 		]
@@ -86,12 +95,6 @@
 				"AT Rifle Team" : 50
 			}
 		}
-	},
-	"decorations_list" : {
-		"600" : "Medal for Battle Merit",
-		"800" : "Order of the Red Star",
-		"900" : "Order of the Red Banner",
-		"1000" : "Order of Lenin"
 	},
 	"combat_days" : 12,
 	"calendar_weeks": [
@@ -149,7 +152,8 @@
 			"week_description" : "Our infantry had to repel a series of Japanese night attacks over the last two weeks while our armoured forces were kept in reserve. Your unit has crossed the river and received reinforcements. We need to repel another Japanese assault on the east bank of the river.",
 			"mission_odds" : {
 				"Battle" : 40,
-				"Counterattack" : 60
+				"Hold the Line": 30,
+				"Counterattack" : 30
 			},
 			"enemy_nations" : ["Empire of Japan"],
 			"air_support_level" : 60.0,
@@ -173,7 +177,7 @@
 			"combat_chance" : 80,
 			"average_resistance" : 7,
 			"week_title" : "Soviet Assault",
-			"week_description" : "General Zhukov has reinforced our troops with hundreds of planes, guns, tanks and thousands of soldiers. The time has come to crush any Japanese resistance near the Khalkhin Gol.",
+			"week_description" : "General Zhukov has reinforced our troops with hundreds of planes, guns, tanks, and thousands of soldiers. The time has come to crush any Japanese resistance near the Khalkhin Gol.",
 			"mission_odds" : {
 				"Battle" : 80,
 				"Counterattack" : 20

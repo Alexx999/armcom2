@@ -1,0 +1,218 @@
+{
+	"name" : "Battle of Luzon (USA)",
+	"creator" : "Standard Campaign",
+	"difficulty" : "8",
+	"start_date" : "1945.01.10",
+	"end_date" : "1945.01.29",
+	"player_nation" : "United States of America",
+	"enemy_nations" : ["Empire of Japan"],
+	"enemy_fanatic" : "TRUE",
+	"region" : "South Pacific",
+	"desc" : "Join the 716th Tank Battalion (Wolfpack) as it supports an amphibious landing to retake the main Philippine island of Luzon.",
+	"player_unit_list" : [
+		"M5A1 Stuart", "M4A3 Sherman", "M4(105) Sherman", "M8 Greyhound"
+	],
+	"tank_vp_modifiers" : {
+		"M5A1 Stuart" : 1.5,
+		"M4(105) Sherman" : 1.3,
+		"M8 Greyhound" : 1.6
+	},
+	"campaign_skills" : [
+		"Superior Firepower"
+	],
+	"player_air_support": [
+		"P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt",
+		"P-51 Mustang (CAS)", "P-51 Mustang"
+	],
+	"player_arty_support": [
+		"Destroyer", "Cruiser", "Battleship", "M8 HMC", "M2A1 105mm Howitzer", "M1 155mm Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["Bazooka Team", "M1 57mm AT Gun"],
+		"Assault" : ["Flame Thrower Team", "Combat Engineer Team"],
+		"Anti-Infantry" : ["M3A1 half-track", "SMG Squad", "HMG Team"],
+		"Recon" : ["Willys MB", "M29 Weasel", "M8 Greyhound", "M20 Utility Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M2A1 105mm Howitzer"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 half-track" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Bazooka Team" : 20,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"Bazooka Team" : 40,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_arty_support": {
+		"Empire of Japan" : [
+			"Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun",
+			"Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer",
+			"Type 92 10cm Cannon", "Year-38 12cm Howitzer", "Type 4 15cm Howitzer",
+			"Type 96 15cm Howitzer"
+		]
+	},
+	"enemy_unit_list" : {
+		"Empire of Japan" : [
+			"Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)", "Type 91 SS-Ki",
+			"Type 95 Ha-Go",
+			"Type 97 Chi-Ha", "Type 97 Chi-Ha (late)",
+			"Type 1 Ho-Ni I", "Type 4 Ho-Ro",
+			"Type 91 Armoured Car",
+			"Type 1 47mm AT Gun", "Type 94 37mm AT Gun",
+			"Type 93 AA Gun", "Type 98 20mm AA Gun", "Type 88 75mm AA Gun",
+			"Type 96 AA Gun", "Type 96 AA Gun (2)", "Type 96 AA Gun (3)",
+			"Type 10 120mm AA Gun",
+			"Type 11 37mm Infantry Gun", "Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun",
+			"Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun",
+			"Type 91 10cm Howitzer", "Type 92 10cm Cannon",
+			"Year-38 12cm Howitzer", "Year-3 14cm Naval Gun",
+			"Type 4 15cm Howitzer", "Type 96 15cm Howitzer",
+			"Type 1 Ho-Ki",
+			"Type 94 Truck",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", 
+			"Flame Thrower Team", "Combat Engineer Team", "Nikuhaku Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Tankette" : 25,
+		"Light Tank" : 20,
+		"Medium Tank" : 5,
+		"Assault Gun" : 5,
+		"Armoured Car" : 15,
+		"Anti-Tank Gun" : 25,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 15,
+		"APC" : 10,
+		"Truck" : 20,
+		"Infantry Squad" : 80,
+		"Support Weapon Team" : 100
+	},
+	"enemy_transported_units" : {
+		"Empire of Japan" : {
+			"Type 94 Truck" : {
+				"Riflemen" : 60,
+				"Combat Engineer Team" : 40,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"Type 1 Ho-Ki" : {
+				"Riflemen" : 60,
+				"Combat Engineer Team" : 40,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 20,
+	"calendar_weeks": [
+		{
+			"start_date" : "1945.01.10",
+			"end_date" : "1945.01.14",
+			"location" : "16.28,120.2",
+			"coastal_chance" : 100,
+			"combat_chance" : 90,
+			"landmines_chance" : 15,
+			"average_resistance" : 9,
+			"week_title" : "Landings at Lingayen Gulf",
+			"week_description" : "An allied assault is taking place on the Japanese-occupied island of Luzon. Supported by naval and air attacks, American forces attack the beachhead.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 50.0,
+			"enemy_fortifications" : "TRUE",
+			"special_unit_rarity" : {
+				"Combat Engineer Team" : 80
+			}
+			
+		},
+		{
+			"start_date" : "1945.01.15",
+			"end_date" : "1945.01.18",
+			"location" : "16.05,120.59",
+			"combat_chance" : 90,
+			"landmines_chance" : 15,
+			"average_resistance" : 9,
+			"week_title" : "Drive Toward Binalonan",
+			"week_description" : "We have advanced about 20 miles from the beach, but Japanese armoured detachments are mounting a counterattack to keep us from advancing further.",
+			"mission_odds" : {
+				"Counterattack" : 70,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 70.0,
+			"enemy_fortifications" : "TRUE",
+			"special_unit_rarity" : {
+				"Combat Engineer Team" : 80
+			}
+		},
+		{
+			"start_date" : "1945.01.19",
+			"location" : "16.06,120.66",
+			"combat_chance" : 90,
+			"landmines_chance" : 5,
+			"average_resistance" : 9,
+			"week_title" : "Assault on San Manuel",
+			"week_description" : "Our battlegroup has been assigned to help with the assault on San Manuel, a town between the Sinocalan and Agno rivers heavily defended by Japanese armoured forces.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 80.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 30
+			},
+			"enemy_fortifications" : "TRUE",
+			"special_unit_rarity" : {
+				"Combat Engineer Team" : 60
+			}
+		},
+		{
+			"start_date" : "1945.01.26",
+			"end_date" : "1945.01.29",
+			"location" : "16.06,120.66",
+			"combat_chance" : 90,
+			"landmines_chance" : 5,
+			"average_resistance" : 6,
+			"week_title" : "Taking San Manuel",
+			"week_description" : "Japanese resistance continues, but we are slowly reducing their forces holding San Manuel.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0,
+			"terrain_odds_modifier" : {
+				"Villages" : 60
+			},
+			"enemy_fortifications" : "TRUE",
+			"special_unit_rarity" : {
+				"Combat Engineer Team" : 40
+			}
+		}
+	]
+}

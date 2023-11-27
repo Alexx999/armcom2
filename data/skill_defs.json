@@ -1,317 +1,1006 @@
 {
 	"Trained Commander": {
 		"desc" : "Allows crewmen to operate Commander positions without penalty.",
-		"antirequisites" : ["Experienced Commander"]
+		"antirequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Knowledge" : 5
+		}
 	},
 	
 	"Experienced Commander": {
 		"desc" : "Allows crewmen to operate Commander positions without penalty and to gain Commander-specific skills.",
-		"prerequisite" : "Trained Commander",
-		"replaces" : "Trained Commander"
+		"prerequisites" : ["Trained Commander"],
+		"replaces" : "Trained Commander",
+		"stat_req" : {
+			"Knowledge" : 8
+		}
 	},
 	
 	"Trained Gunner": {
 		"desc" : "Allows crewmen to operate Gunner positions without penalty.",
-		"antirequisites" : ["Experienced Gunner"]
+		"antirequisites" : ["Experienced Gunner"],
+		"stat_req" : {
+			"Knowledge" : 3
+		}
 	},
 	
 	"Experienced Gunner": {
 		"desc" : "Allows crewmen to operate Gunner positions without penalty and to gain Gunner-specific skills.",
-		"prerequisite" : "Trained Gunner",
-		"replaces" : "Trained Gunner"
+		"prerequisites" : ["Trained Gunner"],
+		"replaces" : "Trained Gunner",
+		"stat_req" : {
+			"Knowledge" : 5
+		}
 	},
 	
 	"Trained Driver": {
 		"desc" : "Allows crewmen to operate Driver positions without penalty.",
-		"antirequisites" : ["Experienced Driver"]
+		"antirequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Knowledge" : 3
+		}
 	},
 	
 	"Experienced Driver": {
 		"desc" : "Allows crewmen to operate Driver positions without penalty and to gain Driver-specific skills.",
-		"prerequisite" : "Trained Driver",
-		"replaces" : "Trained Driver"
+		"prerequisites" : ["Trained Driver"],
+		"replaces" : "Trained Driver",
+		"stat_req" : {
+			"Knowledge" : 5
+		}
 	},
-	
 	
 	
 	
 	"Fire Spotter": {
-		"desc" : "Slightly increases effect of Direct Fire action.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander"
+		"desc" : "Slightly increases effect of Direct Fire action. Cannot be used when crewman is also serving as Gunner.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Perception" : 4
+		}
 	},
 	
 	"MG Spotter": {
-		"desc" : "Greatly increases effect of Direct Fire action when attacking with a Machine Gun.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Fire Spotter"
+		"desc" : "Greatly increases effect of Direct Fire action when a crewmate is attacking with a Machine Gun.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Fire Spotter"],
+		"stat_req" : {
+			"Perception" : 6
+		}
 	},
 	
 	"Gun Spotter": {
-		"desc" : "Greatly increases effect of Direct Fire action when attacking with a Gun.",
-		"position_list" : ["Commander"],
-		"prerequisite" : "Fire Spotter"
+		"desc" : "Greatly increases effect of Direct Fire action when a crewmate is attacking with a Gun.",
+		"position_list" : ["Commander", "Commander/Loader"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Fire Spotter"],
+		"stat_req" : {
+			"Perception" : 6
+		}
 	},
+	
 	
 	"Driver Direction": {
 		"desc" : "Slightly increases effect of Direct Movement action.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander"
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Perception" : 3
+		}
 	},
 	
 	"Lay of the Land": {
 		"desc" : "Greatly increases effect of Direct Movement action when attempting Hull Down.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Driver Direction"
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Driver Direction"],
+		"stat_req" : {
+			"Perception" : 5
+		}
 	},
 	
 	"Forward!": {
 		"desc" : "Greatly increases effect of Direct Movement action when moving forward.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Driver Direction"
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Driver Direction"],
+		"stat_req" : {
+			"Perception" : 5
+		}
 	},
+	
 	
 	"Enemy Spotted!": {
 		"desc" : "Less chance of being ambushed at the start of a battle encounter.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander",
-		"antirequisites" : ["Motti", "Unique Opportunities"]
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"antirequisites" : ["Motti", "Unique Opportunities"],
+		"stat_req" : {
+			"Perception" : 6
+		}
 	},
+	
+	"Never Surprised": {
+		"desc" : "Much less chance of being ambushed at the start of a battle encounter.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Enemy Spotted!"],
+		"replaces" : "Enemy Spotted!",
+		"antirequisites" : ["Motti", "Unique Opportunities"],
+		"stat_req" : {
+			"Perception" : 8
+		}
+	},
+	
 	
 	"Explorer": {
 		"desc" : "Greater chance of quickly finding a crossing point when attempting to ford a river.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander"
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Knowledge" : 5
+		}
 	},
+	
+	"Frogman": {
+		"desc" : "Much greater chance of quickly finding a crossing point when attempting to ford a river.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander", "Explorer"],
+		"replaces" : "Explorer",
+		"stat_req" : {
+			"Knowledge" : 7
+		}
+	},
+	
 	
 	"Natural Leader": {
-		"desc" : "All other crewmen in the tank have a bonus to Morale checks.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander"
+		"desc" : "All other crewmen in the tank enjoy a bonus to any Morale checks they must take.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Morale" : 6
+		}
 	},
+	
+	"Inspiring Leader": {
+		"desc" : "All other crewmen in the tank enjoy a large bonus to any Morale checks they must take.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander", "Natural Leader"],
+		"replaces" : "Natural Leader",
+		"stat_req" : {
+			"Morale" : 8
+		}
+	},
+	
+	
+	"Coordination": {
+		"desc" : "All crewmen accumulate less fatigue due to good coordination and rotation of tasks.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"stat_req" : {
+			"Knowledge" : 7
+		}
+	},
+	
+	"Excellent Coordination": {
+		"desc" : "All crewmen accumulate much less fatigue due to good coordination and rotation of tasks.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Coordination"],
+		"replaces" : "Coordination",
+		"stat_req" : {
+			"Knowledge" : 9
+		}
+	},
+	
 	
 	"Tactical Retreat": {
-		"desc" : "Bonus chance to withdraw from a battle when Directing Movement.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander"
+		"desc" : "Increased chance to successfully withdraw from a battle when Directing Movement.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Perception" : 5
+		}
 	},
 	
+	"Better Part of Valour": {
+		"desc" : "Greatly increased chance to successfully withdraw from a battle when Directing Movement.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander", "Tactical Retreat"],
+		"replaces" : "Tactical Retreat",
+		"stat_req" : {
+			"Perception" : 7
+		}
+	},
+	
+	
 	"Improved Recon": {
-		"desc" : "Recon reports on enemy resistance will be more accurate.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"prerequisite" : "Experienced Commander"
+		"desc" : "Recon reports on enemy resistance in zones will be more accurate.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Perception" : 7
+		}
+	},
+	
+	"Expert Recon": {
+		"desc" : "Recon reports on enemy resistance in zones will be much more accurate.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander", "Improved Recon"],
+		"replaces" : "Improved Recon",
+		"stat_req" : {
+			"Perception" : 9
+		}
+	},
+	
+	
+	"Keen Senses": {
+		"desc" : "Your observational senses have become sharpened and you keep a constant watch for enemy contact. Enemy units are more likely to start the Scenario further away from you.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"antirequisites" : ["Unique Opportunities"],
+		"stat_req" : {
+			"Perception" : 6
+		}
+	},
+	
+	"Honed Senses": {
+		"desc" : "Your observational senses have become greatly sharpened and you keep a constant watch for enemy contact. Enemy units are much more likely to start the Scenario further away from you.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander", "Keen Senses"],
+		"antirequisites" : ["Unique Opportunities"],
+		"replaces" : "Keen Senses",
+		"stat_req" : {
+			"Perception" : 8
+		}
+	},
+	
+	
+	"Primo Victoria!": {
+		"desc" : "You are skilled at close-combat fighting. Overrun attacks are more effective.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander"],
+		"stat_req" : {
+			"Grit" : 5
+		}
+	},
+	
+	"Dakka Dakka!": {
+		"desc" : "You are a ruthless expert in close-combat fighting. Overrun attacks are much more effective.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
+		"prerequisites" : ["Experienced Commander", "Primo Victoria!"],
+		"replaces" : "Primo Victoria!",
+		"stat_req" : {
+			"Grit" : 7
+		}
 	},
 	
 	
 	"Quick Trigger": {
-		"desc" : "Slightly increases chance of maintaining Rate of Fire when firing a Gun.",
+		"desc" : "Slightly increases chance of maintaining Rate of Fire when crewman is firing a Gun.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Experienced Gunner"
+		"prerequisites" : ["Experienced Gunner"],
+		"stat_req" : {
+			"Knowledge" : 5
+		}
 	},
 	
 	"Time on Target": {
-		"desc" : "Greatly increases chance of maintaining Rate of Fire when firing a Gun at a stationary target.",
+		"desc" : "Greatly increases chance of maintaining Rate of Fire when crewman is firing a Gun at a stationary target.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Quick Trigger"
+		"prerequisites" : ["Quick Trigger"],
+		"stat_req" : {
+			"Knowledge" : 7
+		}
 	},
 	
-	"Burst Fire": {
-		"desc" : "Slightly increases chance of maintaining Rate of Fire when firing a Machine Gun.",
-		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader", "Assistant Driver",
-		"Port MG Gunner", "Starboard MG Gunner", "MG Gunner"]
+	"Skeet Shooter": {
+		"desc" : "Greatly increases chance of maintaining Rate of Fire when crewman is firing a Gun at a moving target.",
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisites" : ["Quick Trigger"],
+		"stat_req" : {
+			"Knowledge" : 7
+		}
 	},
+	
 	
 	"Crack Shot": {
-		"desc" : "Slightly increases chance to hit when firing a Gun.",
+		"desc" : "Slightly increases chance to hit when crewman is firing a Gun.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Experienced Gunner"
+		"prerequisites" : ["Experienced Gunner"],
+		"stat_req" : {
+			"Perception" : 4
+		}
+	},
+	
+	"Expert Shot": {
+		"desc" : "Greatly increases chance to hit when crewman is firing a Gun. Does not stack with Crack Shot.",
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisites" : ["Experienced Gunner", "Crack Shot", "Target Tracker", "Sniper"],
+		"stat_req" : {
+			"Perception" : 9
+		}
 	},
 	
 	"Target Tracker": {
-		"desc" : "Greatly increases chance to hit firing a Gun at a moving target.",
+		"desc" : "Greatly increases chance to hit when crewman is firing a Gun at a moving target. Stacks with Crack/Expert Shot, Sniper, and Target Focus.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Crack Shot"
+		"prerequisites" : ["Crack Shot"],
+		"stat_req" : {
+			"Perception" : 6
+		}
 	},
 	
 	"Sniper": {
-		"desc" : "Greatly increases chance to hit firing a Gun at a long-range target.",
+		"desc" : "Greatly increases chance to hit when crewman is firing a Gun at a long-range target. Stacks with Crack/Expert Shot, Target Tracker, and Target Focus.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Crack Shot"
+		"prerequisites" : ["Crack Shot"],
+		"stat_req" : {
+			"Perception" : 7
+		}
 	},
+	
+	
+	
+	
+	"The Immobilizer": {
+		"desc" : "Reduces penalty to hit when crewman is attempting to immobilize a target vehicle.",
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisites" : ["Crack Shot"],
+		"stat_req" : {
+			"Perception" : 6
+		}
+	},
+	
 	
 	"Target Focus": {
-		"desc" : "Reduces the effect of precipitation when firing a Gun.",
+		"desc" : "Reduces the effect of precipitation when crewman is firing a Gun.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Crack Shot"
+		"prerequisites" : ["Crack Shot"],
+		"stat_req" : {
+			"Perception" : 6
+		}
 	},
+	
 	
 	"Knows Weak Spots": {
-		"desc" : "Slightly increases chance of scoring a Critical Hit when firing a Gun at an armoured target.",
+		"desc" : "Slightly increases chance of scoring a Critical Hit when crewman is firing a Gun at an armoured target.",
 		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
-		"prerequisite" : "Experienced Gunner"
+		"prerequisites" : ["Experienced Gunner"],
+		"stat_req" : {
+			"Knowledge" : 5
+		}
 	},
+	
+	"The Penetrator": {
+		"desc" : "Greatly increases chance of scoring a Critical Hit when crewman is firing a Gun at an armoured target.",
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisites" : ["Experienced Gunner", "Knows Weak Spots"],
+		"replaces" : "Knows Weak Spots",
+		"stat_req" : {
+			"Knowledge" : 8
+		}
+	},
+	
+	
+	"Basic Gyro Use": {
+		"desc" : "Allows the crewman to use the gyrostabilizer on a Gun.",
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisites" : ["Experienced Gunner"],
+		"stat_req" : {
+			"Knowledge" : 3
+		}
+	},
+	
+	"Advanced Gyro Use": {
+		"desc" : "Allows the crewman to fully make use of the gyrostabilizer on a Gun.",
+		"position_list" : ["Commander/Gunner", "Gunner", "Gunner/Loader"],
+		"prerequisites" : ["Basic Gyro Use"],
+		"replaces" : "Basic Gyro Use",
+		"stat_req" : {
+			"Knowledge" : 6
+		}
+	},
+	
 	
 	"Gun Maintenance": {
-		"desc" : "Decreases chance of a jam or breakdown for the gun that the crewman is reloading. Also helps when attempting to unjam a weapon.",
-		"position_list" : ["Loader"]
+		"desc" : "Decreases chance of a jam or breakdown for the gun that the crewman is reloading.",
+		"position_list" : ["Loader", "Commander/Loader", "Gunner/Loader"],
+		"stat_req" : {
+			"Knowledge" : 4
+		}
 	},
+	
+	"Gun Expert": {
+		"desc" : "Greatly decreases chance of a jam or breakdown for the gun that the crewman is reloading.",
+		"position_list" : ["Loader", "Commander/Loader", "Gunner/Loader"],
+		"prerequisites" : ["Gun Maintenance"],
+		"replaces" : "Gun Maintenance",
+		"stat_req" : {
+			"Knowledge" : 7
+		}
+	},
+	
 	
 	"Fast Hands": {
-		"desc" : "Slightly increases chance of maintaining Rate of Fire when reloading a Gun.",
-		"position_list" : ["Loader"]
+		"desc" : "Slightly increases chance of maintaining Rate of Fire when crewman is reloading a Gun.",
+		"position_list" : ["Loader", "Commander/Loader"],
+		"stat_req" : {
+			"Grit" : 4
+		}
 	},
 	
-	"Ammo Scrounger" : {
-		"desc" : "Increased number of rare ammo available at start of day.",
-		"position_list" : ["Loader"]
+	"Lightning Hands": {
+		"desc" : "Greatly increases chance of maintaining Rate of Fire when crewman is reloading a Gun.",
+		"position_list" : ["Loader", "Commander/Loader"],
+		"prerequisites" : ["Fast Hands"],
+		"replaces" : "Fast Hands",
+		"stat_req" : {
+			"Grit" : 6
+		}
 	},
+	
+	
+	"Ammo Scrounger" : {
+		"desc" : "Increases the number of rare ammo available for all guns when starting a combat day.",
+		"position_list" : ["Loader", "Commander/Loader"],
+		"stat_req" : {
+			"Knowledge" : 4
+		}
+	},
+	
+	"Ammo Bargainer" : {
+		"desc" : "Greatly increases the number of rare ammo available for all guns when starting a combat day.",
+		"position_list" : ["Loader", "Commander/Loader"],
+		"prerequisites" : ["Ammo Scrounger"],
+		"replaces" : "Ammo Scrounger",
+		"stat_req" : {
+			"Knowledge" : 7
+		}
+	},
+	
 	
 	"Quick Shifter": {
 		"desc" : "Slightly increases chance of a successful Move Forward or Backward action.",
-		"position_list" : ["Driver"],
-		"prerequisite" : "Experienced Driver"
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Knowledge" : 3
+		}
 	},
+	
+	"Lightning Shifter": {
+		"desc" : "Greatly increases chance of a successful Move Forward or Backward action.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Quick Shifter"],
+		"replaces" : "Quick Shifter",
+		"stat_req" : {
+			"Knowledge" : 6
+		}
+	},
+	
+	
+	"Leadfoot": {
+		"desc" : "Increases the chance of an extra move when driving a Fast Tank or Fast Wheeled vehicle.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Knowledge" : 5
+		}
+	},
+	
+	"Goldfoot": {
+		"desc" : "Greatly increases the chance of an extra move when driving a Fast Tank or Fast Wheeled vehicle.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Leadfoot"],
+		"replaces" : "Leadfoot",
+		"stat_req" : {
+			"Knowledge" : 7
+		}
+	},
+	
 	
 	"Eye for Cover": {
 		"desc" : "Slightly increases chance to achieve Hull Down status after moving.",
-		"position_list" : ["Driver"],
-		"prerequisite" : "Experienced Driver"
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Perception" : 4
+		}
 	},
+	
+	"Instinct for Cover": {
+		"desc" : "Greatly increases chance to achieve Hull Down status after moving.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Eye for Cover"],
+		"replaces" : "Eye for Cover",
+		"stat_req" : {
+			"Perception" : 8
+		}
+	},
+	
 	
 	"Eye for Terrain": {
 		"desc" : "Slightly increases chance to enter desired terrain type when moving or repositioning.",
-		"position_list" : ["Driver"],
-		"prerequisite" : "Experienced Driver"
-	},	
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Perception" : 6
+		}
+	},
+	
+	"Instinct for Terrain": {
+		"desc" : "Greatly increases chance to enter desired terrain type when moving or repositioning.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Eye for Terrain"],
+		"replaces" : "Eye for Terrain",
+		"stat_req" : {
+			"Perception" : 8
+		}
+	},
+	
 	
 	"Cautious Driver": {
 		"desc" : "Decreases chance of bogging down and triggering land mines.",
-		"position_list" : ["Driver"],
-		"prerequisite" : "Experienced Driver"
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Perception" : 5
+		}
 	},
+	
+	"Very Cautious Driver": {
+		"desc" : "Greatly decreases chance of bogging down and triggering land mines.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Cautious Driver"],
+		"replaces" : "Cautious Driver",
+		"stat_req" : {
+			"Perception" : 8
+		}
+	},
+	
+	
+	"Mudrunner": {
+		"desc" : "Increases chance of a successful unbogging attempt.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Perception" : 5
+		}
+	},
+	
+	"Swamprunner": {
+		"desc" : "Greatly increases chance of a successful unbogging attempt.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Mudrunner"],
+		"replaces" : "Mudrunner",
+		"stat_req" : {
+			"Perception" : 7
+		}
+	},
+	
 	
 	"Mechanic": {
-		"desc" : "Decreases chance of breakdown when moving on the Scenario map. Also helps when attempting to unjam a weapon.",
-		"position_list" : ["Driver"],
-		"prerequisite" : "Experienced Driver"
+		"desc" : "Decreases the chance of breakdown when moving on the Scenario map.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Knowledge" : 6
+		}
 	},
+	
+	"Expert Mechanic": {
+		"desc" : "Greatly decreases the chance of breakdown when moving on the Scenario map.",
+		"position_list" : ["Driver", "Co-Driver", "Rear Driver"],
+		"prerequisites" : ["Experienced Driver", "Mechanic"],
+		"replaces" : "Mechanic",
+		"stat_req" : {
+			"Knowledge" : 8
+		}
+	},
+	
+	
+	"Reverse!": {
+		"desc" : "Increases the chance of a successful reverse move action.",
+		"position_list" : ["Driver", "Co-Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver"],
+		"stat_req" : {
+			"Perception" : 5
+		}
+	},
+	
+	"I Said Reverse!": {
+		"desc" : "Greatly increases the chance of a successful reverse move action.",
+		"position_list" : ["Driver", "Co-Driver"],
+		"bu_penalty" : true,
+		"prerequisites" : ["Experienced Driver", "Reverse!"],
+		"replaces" : "Reverse!",
+		"stat_req" : {
+			"Perception" : 7
+		}
+	},
+	
 	
 	"Shell Tosser": {
-		"desc" : "Increases chance of RoF when crewman is on Pass Ammo command.",
-		"position_list" : ["Assistant Driver"]
+		"desc" : "Increases the chance of maintaining Rate of Fire when crewman is on Pass Ammo command.",
+		"position_list" : ["Assistant Driver"],
+		"stat_req" : {
+			"Grit" : 4
+		}
 	},
+	
+	"Shell Pitcher": {
+		"desc" : "Greatly increases the chance of maintaining Rate of Fire when crewman is on Pass Ammo command.",
+		"position_list" : ["Assistant Driver"],
+		"prerequisites" : ["Shell Tosser"],
+		"replaces" : "Shell Tosser",
+		"stat_req" : {
+			"Grit" : 6
+		}
+	},
+	
+	
+	"Good Comms": {
+		"desc" : "Decreases chance of a friendly fire artillery or air attack on your squad.",
+		"position_list" : ["Radio Operator"],
+		"stat_req" : {
+			"Knowledge" : 4
+		}
+	},
+	
+	
+	"Steady Hands": {
+		"desc" : "Reduces movement penalty when crewman is firing a Machine Gun.",
+		"stat_req" : {
+			"Grit" : 2
+		}
+	},
+	
+	"Burst Fire": {
+		"desc" : "Slightly increases chance of maintaining Rate of Fire when crewman is firing a Machine Gun.",
+		"stat_req" : {
+			"Grit" : 4
+		}
+	},
+	
+	
+	"Unsticky Situation": {
+		"desc" : "Improves chance when crewman attempts to unjam a weapon.",
+		"stat_req" : {
+			"Knowledge" : 2
+		}
+	},
+	
+	"Apply Hammer": {
+		"desc" : "Greatly improves chance when crewman attempts to unjam a weapon.",
+		"prerequisites" : ["Unsticky Situation"],
+		"replaces" : "Unsticky Situation",
+		"stat_req" : {
+			"Knowledge" : 5
+		}
+	},
+	
+	
+	"Light 'Em Up": {
+		"desc" : "Flamethrower attacks by this crewman have +2 to firepower.",
+		"stat_req" : {
+			"Knowledge" : 3
+		}
+	},
+	
+	"They Call Him Ronson": {
+		"desc" : "Flamethrower attacks by this crewman have +10% chance to maintain Rate of Fire.",
+		"prerequisites" : ["Light 'Em Up"],
+		"stat_req" : {
+			"Knowledge" : 5
+		}
+	},
+	
+	"Fuel Saver": {
+		"desc" : "Some flamethrower attacks by this crewman will consume no flamethrower fuel.",
+		"stat_req" : {
+			"Knowledge" : 5
+		}
+	},
+	
+	"Conflagration": {
+		"desc" : "Flamethrower attacks by this crewman are not affected by the attacker moving, pivoting, or rotating the turret.",
+		"stat_req" : {
+			"Knowledge" : 7
+		}
+	},
+	
 	
 	"Eagle Eyed": {
-		"desc" : "When hatch is open, slightly increases chance to spot and identify enemy units."
+		"desc" : "When CE, slightly increases chance for this crewman to spot and identify enemy units.",
+		"stat_req" : {
+			"Perception" : 4
+		}
 	},
 	
+	"Trap Spotter": {
+		"desc" : "When BU, slightly increases chance for this crewman to spot and identify enemy units.",
+		"stat_req" : {
+			"Perception" : 6
+		}
+	},
+	
+	
+	"Fire Fighter": {
+		"desc" : "Reduces the chance of a fire starting when tank is knocked out, to a minimum of 2%. Effect stacks if multiple crewmen have this skill.",
+		"stat_req" : {
+			"Knowledge" : 4
+		}
+	},
+	
+	
+	"Infantry Specialist": {
+		"desc" : "Small bonus to all attacks by this crewman against Infantry and Cavalry targets. Not possible to add any other Target Specialist skill after this one.",
+		"antirequisites" : ["Gun Specialist", "Vehicle Specialist"],
+		"stat_req" : {
+			"Knowledge" : 6
+		}
+	},
+	
+	"Gun Specialist": {
+		"desc" : "Small bonus to all attacks by this crewman against Gun targets. Not possible to add any other Target Specialist skill after this one.",
+		"antirequisites" : ["Infantry Specialist", "Vehicle Specialist"],
+		"stat_req" : {
+			"Knowledge" : 6
+		}
+	},
+	
+	"Vehicle Specialist": {
+		"desc" : "Small bonus to all attacks by this crewman against Vehicle targets. Not possible to add any other Target Specialist skill after this one.",
+		"antirequisites" : ["Infantry Specialist", "Gun Specialist"],
+		"stat_req" : {
+			"Knowledge" : 6
+		}
+	},
+	
+	
 	"Quick Reflexes": {
-		"desc" : "When hatch is open, slightly decreases chance of injury or death from incoming firepower attacks.",
-		"antirequisites" : ["Lightning Reflexes"]
+		"desc" : "When CE, slightly decreases this crewman's chance of injury or death from incoming firepower attacks.",
+		"antirequisites" : ["Lightning Reflexes"],
+		"stat_req" : {
+			"Perception" : 4
+		}
 	},
 	
 	"Lightning Reflexes": {
-		"desc" : "When hatch is open, greatly decreases chance of injury or death from incoming firepower attacks.",
-		"prerequisite" : "Quick Reflexes",
-		"replaces" : "Quick Reflexes"
+		"desc" : "When CE, greatly decreases this crewman's chance of injury or death from incoming firepower attacks.",
+		"prerequisites" : ["Quick Reflexes"],
+		"replaces" : "Quick Reflexes",
+		"stat_req" : {
+			"Perception" : 6
+		}
 	},
+	
 	
 	"Gymnast": {
-		"desc" : "Slightly increases chance to successfully bail out."
+		"desc" : "Increases chance for this crewman to successfully bail out, and to rescue an unconscious crewman when bailing out.",
+		"stat_req" : {
+			"Grit" : 4
+		}
 	},
 	
-	"Acclimatized (Desert)": {
-		"desc" : "Reduced chance of gaining fatigue from Extreme Hot conditions."
+	
+	"Fighting Spirit": {
+		"desc" : "Adds a chance that crewman breaks out of Field Hospital and returns to duty before the minimum period is up.",
+		"stat_req" : {
+			"Grit" : 4
+		}
+	},
+	
+	
+	"Gunslinger": {
+		"desc" : "Small arms attacks by this crewman are more effective, including covering fire during bail-out.",
+		"antirequisites" : ["Spray and Pray"],
+		"stat_req" : {
+			"Grit" : 5
+		}
+	},
+	
+	"Spray and Pray": {
+		"desc" : "This crewman carries an SMG, increasing the firepower of their small arms attacks, including covering fire during bail-out.",
+		"prerequisites" : ["Gunslinger"],
+		"replaces" : "Gunslinger",
+		"stat_req" : {
+			"Grit" : 7
+		}
+	},
+	
+	
+	"Only a Scratch": {
+		"desc" : "This crewman has a slightly reduced chance of being sent to the Field Hospital for an injury.",
+		"stat_req" : {
+			"Grit" : 6
+		}
+	},
+	
+	"Only a Flesh Wound": {
+		"desc" : "This crewman has a greatly reduced chance of being sent to the Field Hospital for an injury.",
+		"prerequisites" : ["Only a Scratch"],
+		"replaces" : "Only a Scratch",
+		"stat_req" : {
+			"Grit" : 8
+		}
+	},
+	
+	
+	"Medical Experience": {
+		"desc" : "Increases effectiveness of this crewman's First Aid actions, making it more likely that an attempt to patch up or stabilize an injury will succeed.",
+		"stat_req" : {
+			"Knowledge" : 4
+		}
+	},
+	
+	"Medical Training": {
+		"desc" : "Greatly increases effectiveness of this crewman's First Aid actions, making it more likely that an attempt to patch up or stabilize an injury will succeed.",
+		"prerequisites" : ["Medical Experience"],
+		"replaces" : "Medical Experience",
+		"stat_req" : {
+			"Knowledge" : 8
+		}
+	},
+	
+	
+	"Acclimatized": {
+		"desc" : "Reduced chance of this crewman gaining fatigue from Hot and Cold conditions.",
+		"stat_req" : {
+			"Grit" : 6
+		}
+	},
+	
+	"Acclimatized (Heat)": {
+		"desc" : "Reduced chance of this crewman gaining fatigue from Extreme Hot conditions.",
+		"prerequisites" : ["Acclimatized"],
+		"stat_req" : {
+			"Grit" : 8
+		}
 	},
 	
 	"Acclimatized (Nordic)": {
-		"desc" : "Reduced chance of gaining fatigue from Extreme Cold conditions."
+		"desc" : "Reduced chance of this crewman gaining fatigue from Extreme Cold conditions.",
+		"prerequisites" : ["Acclimatized"],
+		"stat_req" : {
+			"Grit" : 8
+		}
 	},
 	
 	
-	
-	"Blitzkrieg": {
-		"desc" : "Modern warfare relies on shock attacks from fast-moving armoured and motorized units. Travel time on the Campaign Day map is reduced.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"campaign_skill" : true
-	},
 	
 	"Combined Operations": {
-		"desc" : "Modern warfare relies on coorindation between multiple types of forces. Support requests are always more likely to be granted.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"campaign_skill" : true
-	},
-	
-	"Defend the Motherland": {
-		"desc" : "The very future of your nation is at stake. Crew start with a higher morale stat.",
+		"desc" : "Modern warfare relies on coordination between multiple types of forces. Support requests are always more likely to be granted.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Centralized Fire": {
 		"desc" : "Assault guns and artillery batteries coordinate to concentrate fire on targets. Artillery attacks are more effective and more likely to be granted.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Motti": {
 		"desc" : "Finnish troops know the terrain very well, and concentrate on isolating pockets of enemy forces. Finnish forces cannot be ambushed, and tanks are less likely to bog in snowy terrain.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Defensive Strategy": {
 		"desc" : "The French command has been planning for years for a defensive, Great War style conflict. Destroying enemy units is worth 1 extra VP, but capturing hex zones 1 less VP.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Combined Bombardment": {
 		"desc" : "British experience in the Great War led to the tactic of massed bombardments to pin down enemy infantry and guns. Artillery bombardments are more effective against these targets.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"campaign_skill" : true
-	},
-	
-	"To Victory!": {
-		"desc" : "Canadian troops are all volunteers, and are highly trained and motivated, quickly gaining a reputation as assault troops. Crewmen start with a higher Grit stat.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Superior Firepower": {
 		"desc" : "American forces are well-supplied with ammunition, and are not afraid to use it. Rate of Fire chance for all machine gun weapons is increased.",
-		"position_list" : ["Commander", "Commander/Gunner"],
-		"campaign_skill" : true
-	},
-	
-	"Audacia": {
-		"desc" : "Although only somewhat trained and often ill-equipped, the tankers of the Babini Group consistently surprised the British with their bold attacks and maneuvers. All crewmen start with a higher Perception stat.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Unique Opportunities": {
 		"desc" : "Under the command of Erwin Rommel, the Afrika Korps wages an unconventional campaign of deception and positioning. Enemy units will be more likely to start the Scenario further away from you, and you are less likely to be Ambushed.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Ad Hoc": {
 		"desc" : "The 7th Armoured Division was adept at organizing their forces quickly to seize opportunities as they appeared. Travel time to reach the front lines each morning is reduced, and time required to request support is also reduced.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
 	},
 	
 	"Prepared Positions": {
-		"desc" : "Fighting on familiar territory brings many advantages. River crossings automatically succeed, and when moving in Scenarios it's easier to enter a desired terrain type.",
-		"position_list" : ["Commander", "Commander/Gunner"],
+		"desc" : "Fighting on familiar territory brings many advantages. River crossings are always found quickly, and when moving in Scenarios it's easier to enter a desired terrain type.",
+		"position_list" : ["Commander", "Commander/Gunner", "Commander/Loader"],
 		"campaign_skill" : true
+	},
+	
+	
+	"Defend the Motherland": {
+		"desc" : "The very future of your nation is at stake. Crew start with a higher morale stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Exceptional Efforts": {
+		"desc" : "Belgium sought to remain neutral but prepared for a defensive war nonetheless. Destroying enemy units is worth 1 extra VP, but capturing hex zones 1 less VP. Crewmen start with a slightly higher Morale stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"To Victory!": {
+		"desc" : "Canadian troops are all volunteers, and are highly trained and motivated, quickly gaining a reputation as assault troops. Crewmen start with a higher Grit stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Semper Fi": {
+		"desc" : "The US Marine Corps plays a central role in the Pacific, fighting in difficult terrain against a resilient enemy. Marine crews start with higher Morale and are more resistant to Fatigue.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Audacia": {
+		"desc" : "Although only somewhat trained and often ill-equipped, Italian tank commanders consistently surprised their foes in North Africa with their bold attacks and maneuvers. All crewmen start with a higher Perception stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
 	},
 	
 	"Baptism of Fire": {
-		"desc" : "Excellent training can help prepare soldiers, but they must still experience the crucible of actual combat. Crewman start with a higher Knowledge stat, and will thus learn faster from their initial, perhaps difficult, experiences in battle.",
-		"campaign_skill" : true
+		"desc" : "Excellent training can help prepare soldiers, but they must still experience the crucible of actual combat. New crewmen start with a higher Knowledge stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
 	},
 	
 	"Imperial Ambitions": {
-		"desc" : "The soldiers of the Imperial Japanese Army are the vanguard of imperial expansion, and are highly motivated. Crews start with a higher Morale stat.",
+		"desc" : "The soldiers of the Imperial Japanese Army are the vanguard of imperial expansion, and are highly motivated. New crewmen start with a higher Morale stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Poland is Not Yet Lost" : {
+		"desc" : "You are fighting to help liberate your homeland. New crewmen start with a higher Morale stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Total Sacrifice" : {
+		"desc" : "Japan's armed forces will fight to the last man if necessary to expand and defend its empire. New crewmen start with an exceptionally high Morale stat.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Fighting Qualities" : {
+		"desc" : "In the face of desperate circumstances, your veteran troops are well-tested and highly disciplined. New crewmen start with higher Morale and Knowledge stats.",
+		"campaign_skill" : true,
+		"stat_bonus_skill" : true
+	},
+	
+	"Acclimatized (Desert)": {
+		"desc" : "Experience in desert fighting means reduced chance of this crewman gaining fatigue from Extreme Hot conditions.",
 		"campaign_skill" : true
 	}
 }

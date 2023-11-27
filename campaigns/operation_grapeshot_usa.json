@@ -1,0 +1,272 @@
+{
+	"name" : "Operation Grapeshot (USA)",
+	"creator" : "Stein",
+	"difficulty" : "6",
+	"start_date" : "1945.04.14",
+	"end_date" : "1945.05.02",
+	"player_nation" : "United States of America",
+	"enemy_nations" : ["Germany"],
+	"region" : "Italy",
+	"desc" : "Join the US 1st Armored Division in its final operation to bring an end to the war in Italy.",
+	"player_unit_list" : [
+		"M8 Greyhound", "M20 Utility Car", "M3A1 Scout Car",
+		"M4 Sherman", "M4A1 Sherman", "M4A3 Sherman", "M4A3(75)W Sherman",
+		"M4A3E2(75)W Sherman", "M4A3E2(76)W Sherman",
+		"M4A1(76)W Sherman", "M4A3(76)W Sherman",
+		"M4(105) Sherman", "M4A3(105) Sherman",
+		"M5A1 Stuart", "M10 Wolverine", "M18 Hellcat",
+		"M24 Chaffee",
+		"M8 HMC", "M7 Priest", "M7B1 Priest"
+	],
+	"tank_vp_modifiers" : {
+		"M8 Greyhound" : 1.6,
+		"M20 Utility Car" : 1.7,
+		"M3A1 Scout Car" : 1.8,
+		"M4 Sherman" : 1.2,
+		"M4A3 Sherman" : 1.1,
+		"M4(105) Sherman" : 1.3,
+		"M4A3(105) Sherman" : 1.3,
+		"M5A1 Stuart" : 1.4,
+		"M24 Chaffee" : 1.2,
+		"M8 HMC" : 1.5,
+		"M7 Priest" : 1.5,
+		"M7B1 Priest" : 1.5
+	},
+	"player_squad_list" : {
+		"M8 Greyhound" : ["M8 Greyhound", "M20 Utility Car"],
+		"M20 Utility Car" : ["M8 Greyhound", "M20 Utility Car"],
+		"M5A1 Stuart" : ["M5A1 Stuart", "M24 Chaffee"],
+		"M24 Chaffee" : ["M5A1 Stuart", "M24 Chaffee"],
+		"M7 Priest" : ["M7 Priest", "M7B1 Priest"],
+		"M7B1 Priest" : ["M7 Priest", "M7B1 Priest"]
+	},
+	"campaign_skills" : [
+		"Superior Firepower"
+	],
+	"player_air_support": [
+		"P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt", "P-51 Mustang (CAS)", "P-51 Mustang"
+	],
+	"player_arty_support": [
+		"M7 Priest", "M7B1 Priest", "M8 HMC", "M2A1 105mm Howitzer", "M1 155mm Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["Bazooka Team", "M10 Wolverine", "M18 Hellcat"],
+		"Anti-Infantry" : ["M3A1 half-track", "SMG Squad", "HMG Team", "Flame Thrower Team"],
+		"Recon" : ["M3A1 Scout Car", "M8 Greyhound", "M5A1 Stuart", "M24 Chaffee"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M2A1 105mm Howitzer", "M8 HMC", "M7 Priest", "M7B1 Priest"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 half-track" : {
+			"Riflemen" : 90,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Bazooka Team" : 30,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 10,
+			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"Bazooka Team" : 40,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Germany" : [
+			"Bf 109", "Bf 109 (fighter)", 
+			"Fw 190", "Fw 190 (fighter)", "Me 262", "Me 262 A-2a"
+		]
+	},
+	"enemy_arty_support": {
+		"Germany" : [
+			"7.5cm leIG 18", "10cm sK 18", "10.5cm leFH 18", "15cm sFH 18", "15cm sIG 33", "StuH 42", "Sturmpanzer IV", 
+			"Wespe", "Hummel", "Grille Ausf. H", "Grille Ausf. K", "Panzerwerfer 42", "15cm Nebelwerfer 41"
+		]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Panzer III N", "Panzer III M", "Panzer IV H", "Panzer IV J", "Panzer VG",
+			"Panzer VIe (Late)", "Panzer VIb",
+			"StuG III G", "StuG IV", "StuH 42", "Hummel", "Wespe", "Grille Ausf. H", "Grille Ausf. K", 
+			"Panzerwerfer 42", "SPW 250/7", "SPW 250/8", "SPW 251/2", "SPW 251/9",
+			"Marder III H", "Marder III M", "Jagdpanzer IV (early)", "Jagdpanzer IV", "Jagdpanzer IV/70", 
+			"Jagdpanzer 38(t)", "Nashorn", "SPW 251/10", "SPW 251/22",
+			"PSW 221", "PSW 222", "PSW 231 (8 rad)", "PSW 233", "PSW 234/2", "SPW 250/9", "SPW 250/10",
+			"PaK 35/36", "PaK 38", "PaK 40", "PaK 43", "PaK 43/41", "8.8 cm Raketenwerfer 43",
+			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm Nebelwerfer 41",
+			"2cm FlaK 38", "3.7cm FlaK 43", "8.8cm FlaK 18 o. 36",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1", "Flakpanzer 38(t)",
+			"SPW 250/1", "SPW 251/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "Panzerschreck Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", 
+			"Flame Thrower Team", "Combat Engineer Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Assault Gun" : 80,
+		"Tank Destroyer" : 50,
+		"Medium Tank" : 20,
+		"Heavy Tank" : 10,
+		"Armoured Car" : 80,
+		"Anti-Tank Gun" : 35,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 5,
+		"Self-Propelled AA Gun" : 5,
+		"APC" : 70,
+		"Truck" : 50,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 50
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 15,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 35
+			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 15,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 35
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 15,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 35
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 15,
+				"Flame Thrower Team" : 10,
+				"Panzerschreck Team" : 35
+			}
+		}
+	},
+	"combat_days" : 12,
+	"calendar_weeks": [
+		{
+			"start_date" : "1945.04.14",
+			"end_date" : "1945.04.14",
+			"location" : "44.14,11.84",
+			"landmines_chance" : 15,
+			"coastal_chance" : 100,
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Over the Senio River",
+			"week_description" : "After days of heavy bombardment, we begin our assault on the battered German lines positioned on the Senio river.",
+			"mission_odds" : {
+				"Advance" : 70,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 75.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.04.15",
+			"end_date" : "1945.04.15",
+			"location" : "40.68,14.80",
+			"coastal_chance" : 100,
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Battle for the Santerno",
+			"week_description" : "Having crossed the Senio, next up we must secure our side of the Santerno river before we can attempt a crossing.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"unit_support_level" : 45.0
+		},
+		{
+			"start_date" : "1945.04.16",
+			"location" : "44.42,11.74",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "The Road to Bondeno",
+			"week_description" : "With two rivers bested, we now set our sights on the hamlet of Bondeno, the location of a major German stronghold.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 40,
+				"Counterattack" : 10,
+				"Spearhead" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 75.0,
+			"unit_support_level" : 75.0
+		},
+		{
+			"start_date" : "1945.04.23",
+			"end_date" : "1945.04.23",
+			"location" : "44.89,11.40",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"week_title" : "Taking Bondeno",
+			"week_description" : "Finally, after days of fighting, we reach Bondeno. Secure it for our forces so we can continue our advance.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 20.0,
+			"arty_support_level" : 20.0,
+			"unit_support_level" : 35.0
+		},
+		{
+			"start_date" : "1945.04.24",
+			"end_date" : "1945.04.25",
+			"location" : "45.14,11.11",
+			"combat_chance" : 60,
+			"average_resistance" : 6,
+			"week_title" : "Fighting Onwards",
+			"week_description" : "With Bondeno liberated, our tanks are to lead the advance towards the major city of Verona.",
+			"mission_odds" : {
+				"Spearhead" : 60,
+				"Advance" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1945.04.26",
+			"location" : "48.77,5.49",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Liberation of Verona",
+			"week_description" : "With the infantry and tanks at the outskirts of the city poised to strike, it's time to liberate the people",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 25.0,
+			"arty_support_level" : 25.0,
+			"unit_support_level" : 35.0
+		}
+	]
+}

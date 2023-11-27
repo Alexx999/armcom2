@@ -1,0 +1,639 @@
+{
+	"name" : "Moscow to Stalingrad (USSR)",
+	"creator" : "Standard Campaign",
+	"difficulty" : "8",
+	"start_date" : "1942.01.10",
+	"end_date" : "1942.12.23",
+	"player_nation" : "Soviet Union",
+	"enemy_nations" : ["Germany"],
+	"region" : "Western USSR",
+	"desc" : "Our war with Germany continues. Fight on the Western Front from our counterattacks outside of Moscow to the defense of Stalingrad.",
+	"player_unit_list" : [
+		"BA-6", "BA-10", "BA-20",
+		"T-50", "T-50 (Late)", "T-60 M40", "T-60 M42", "T-26 M37/39", "T-70",
+		"BT-5 M34", "BT-7 M37", "T-34 M40", "T-34 M41", "T-34 M42", "T-34 M43 (early)",
+		"T-34 M43 (late)", "T-34-57", "M3S", "M3L", "Mark II", "Mark II 76mm", "Mark III", "KV-1E",
+		"KV-1 M41", "ZiS-30", "SU-75", "LT-38 Praga", "T-III", "T-IV",
+		"OT-133", "OT-34 M41", "OT-34 M42"
+	],
+	"player_squad_list" : {
+		"T-34 M40" : ["T-34 M40", "T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)"],
+		"T-34 M41" : ["T-34 M40", "T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)"],
+		"T-34 M42" : ["T-34 M40", "T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)"],
+		"T-34 M43 (early)" : ["T-34 M40", "T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)"],
+		"T-34 M43 (late)" : ["T-34 M40", "T-34 M41", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)"],
+		"KV-1 M39/40" : ["KV-1 M39/40", "KV-1E"],
+		"BT-5 M34" : ["BT-5 M34", "BT-7 M37"],
+		"BT-7 M37" : ["BT-5 M34", "BT-7 M37"]
+	},
+	"tank_vp_modifiers" : {
+		"T-60 M40" : 1.4,
+		"BA-6" : 1.5,
+		"BA-10" : 1.4,
+		"BA-20" : 2.0,
+		"T-26 M37/39" : 1.2,
+		"T-34 M43 (late)" : 0.9,
+		"T-34-57" : 0.9,
+		"KV-1E" : 0.7,
+		"KV-1 M41" : 0.6,
+		"BT-5 M34" : 1.3,
+		"BT-7 M37" : 1.3,
+		"T-34 M40" : 1.1,
+		"T-34 M42" : 0.9,
+		"M3L" : 1.2,
+		"Mark II" : 1.1,
+		"Mark III" : 1.3,
+		"ZiS-30" : 1.6,
+		"OT-133" : 1.2
+	},
+	"campaign_skills" : [
+		"Defend the Motherland"
+	],
+	"player_air_support": [
+		"Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "Hurricane Mk IIB", "Spitfire Mk V", "P-39Q Airacobra", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Yak-9"
+	],
+	"player_arty_support": [
+		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 42", "76.2mm obr. 00/02P",
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+		"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "Bazooka Team (USSR)", "45mm obr. 1932", "45mm obr. 1942", "57mm obr. 1943", "SU-12", "ZiS-30"],
+		"Anti-Infantry" : ["ZIS-5 Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "Heavy Mortar Team"],
+		"Recon" : ["BA-6", "BA-10", "BA-20"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 36", "BM-13"]
+	},
+	"friendly_transported_units" : {
+		"ZIS-5 Truck" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Germany" : ["Hs 123", "Ju 87B Stuka", "Ju 87D Stuka", "Hs 129", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"]
+	},
+	"enemy_arty_support": {
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41", "StuH 42"]
+	},
+	"enemy_unit_list" : {
+		"Germany" : [
+			"Panzer II F", "Panzer II J", "Panzer 38(t) E", "Panzer III H", "Panzer III J",
+			"Panzer III L", "Panzer III M", "Panzer III N", "Flammpanzer III M",
+			"Panzer IV E", "Panzer IV F1", "Panzer IV F2", "Panzer IV G", "Panzer IV H",
+			"Panzer T-70", "Panzer T-34 747 M41", "Panzer T-34 747 M42", "Panzer KV-1E 753",
+			"Flammpanzer B2 F",
+			"StuG III E", "StuG III F", "StuG III F (late)", "StuG III G", "StuH 42", "StuIG 33B",
+			"SPW 251/2", "SPW 250/7", "SPW 250/8", "SPW 251/9",
+			"Panzerjager I", "Marder III", "Marder III H", "Marder III M", "SPW 251/10",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "Panzerspahwagen P204", "SPW 250/10",
+			"PaK 35/36", "PaK 36", "PaK 38", "PaK 40", "PaK 97/38",
+			"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41",
+			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"SPW 250/1", "SPW 251/1",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 70,
+		"Medium Tank" : 60,
+		"Heavy Tank" : 15,
+		"Tank Destroyer" : 25,
+		"Assault Gun" : 25,
+		"Armoured Car" : 40,
+		"Anti-Tank Gun" : 30,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
+		"Truck" : 90,
+		"APC" : 70,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 30
+	},
+	"enemy_transported_units" : {
+		"Germany" : {
+			"Opel Blitz 3-ton" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"SPW 251/1" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			}
+		}
+	},
+	"combat_days" : 60,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.01.10",
+			"location" : "55.79,36.96",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Liberating Lotoshino and Shakhovskaya",
+			"week_description" : "With German forces within striking distance of Moscow, we have launched a massive counterattack in the dead of winter.",
+			"mission_odds" : {
+				"Urban Assault" : 50,
+				"Battle" : 30,
+				"Advance" : 20
+			},
+			"terrain_odds_modifier": {
+				"Fortification" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.01.17",
+			"location" : "55.79,36.96",
+			"combat_chance" : 60,
+			"average_resistance" : 7,
+			"week_title" : "Liberating Ruza, Dorokhovo, Mozhaisk and Vereya",
+			"week_description" : "Our counterattacks continue, as we aim to take key urban areas on the outskirts of Moscow.",
+			"mission_odds" : {
+				"Urban Assault" : 40,
+				"Battle" : 30,
+				"Advance" : 30
+			},
+			"terrain_odds_modifier": {
+				"Fortification" : 15
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.01.24",
+			"location" : "56.26,34.33",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Liberating Rzhev",
+			"week_description" : "We must take the key city of Rzhev, as paratroopers assist us by attacking the Germans from behind their lines.",
+			"mission_odds" : {
+				"Urban Assault" : 70,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.01.31",
+			"location" : "56.26,34.33",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Liberating Rzhev II",
+			"week_description" : "We continue to attack the German occupiers of the key city of Rzhev.",
+			"mission_odds" : {
+				"Urban Assault" : 70,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.02.07",
+			"end_date" : "1942.04.03",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.04.04",
+			"location" : "55.21,34.30",
+			"combat_chance" : 70,
+			"average_resistance" : 7,
+			"week_title" : "Attacking Near Vyazma",
+			"week_description" : "Our offensive continues, and we have been tasked with hitting the German line around the town of Vyazma.",
+			"mission_odds" : {
+				"Urban Assault" : 30,
+				"Battle" : 50,
+				"Advance" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.04.11",
+			"location" : "55.21,34.30",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"week_title" : "Counterstrikes Near Vyazma",
+			"week_description" : "Our offensive has been slowed, as we work to consolodate our recent gains. The Germans now launch counterattacks on our new lines.",
+			"mission_odds" : {
+				"Urban Defense" : 20,
+				"Hold the Line" : 30,
+				"Battle" : 20,
+				"Counterattack" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.04.18",
+			"location" : "55.21,34.30",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Counterstrikes Near Vyazma II",
+			"week_description" : "The Germans continue to launch counterattacks against our lines.",
+			"mission_odds" : {
+				"Urban Defense" : 20,
+				"Hold the Line" : 40,
+				"Counterattack" : 20,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.04.25",
+			"end_date" : "1942.05.11",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.05.12",
+			"end_date" : "1942.05.15",
+			"location" : "49.99,36.23",
+			"combat_chance" : 90,
+			"average_resistance" : 9,
+			"week_title" : "Operation Fredericus",
+			"week_description" : "We have been reassigned to the Ukraine, just in time to join Marshal Timoshenko's assault on German forces around the city of Kharkov.",
+			"mission_odds" : {
+				"Urban Assault" : 50,
+				"Battle" : 20,
+				"Advance" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.05.16",
+			"location" : "49.99,36.23",
+			"combat_chance" : 70,
+			"average_resistance" : 7,
+			"week_title" : "Second Battle of Kharkov",
+			"week_description" : "Our assault has ground to a halt, and now we risk being trapped along with the entire 28th army by a German pincer movement.",
+			"mission_odds" : {
+				"Urban Defense" : 20,
+				"Hold the Line" : 40,
+				"Fighting Withdrawal" : 40
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 20.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.05.23",
+			"end_date" : "1942.05.28",
+			"location" : "49.99,36.23",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"week_title" : "Escaping the Trap",
+			"week_description" : "The army is nearly surrounded, we must break out and rejoin friendly forces.",
+			"mission_odds" : {
+				"Urban Assault" : 20,
+				"Spearhead" : 80
+			},
+			"enemy_nations" : ["Germany"],
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 20.0
+		},
+		{
+			"start_date" : "1942.05.29",
+			"end_date" : "1942.06.27",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.06.28",
+			"location" : "51.61,38.22",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"week_title" : "Battle of Voroezh",
+			"week_description" : "We have escaped encirclement and now join forces defending against a new German advance toward the city of Voronezh.",
+			"mission_odds" : {
+				"Hold the Line" : 30,
+				"Fighting Withdrawal" : 30,
+				"Counterattack" : 20,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 30.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 30.0
+		},
+		{
+			"start_date" : "1942.07.05",
+			"end_date" : "1942.07.06",
+			"location" : "51.63,38.71",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Battle of Voroezh II",
+			"week_description" : "The Germans draw closer to Voronezh, but our resistance continues to grow as we defend the outskirts of the city.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.07.07",
+			"end_date" : "1942.07.11",
+			"location" : "51.66,39.18",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Defending Voroezh",
+			"week_description" : "German forces have reached the city but are short on infantry support; we must join the Soviet troops pouring into the city in its defense.",
+			"mission_odds" : {
+				"Urban Defense" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0,
+			"enemy_class_odds_modifier" : {
+				"Infantry Squad" : "20"
+			}
+		},
+		{
+			"start_date" : "1942.07.12",
+			"end_date" : "1942.07.24",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.07.25",
+			"location" : "50.90,40.07",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Withdrawing Southward",
+			"week_description" : "Voroezh has fallen; now we must slow the German advance southward toward the city of Stalingrad.",
+			"mission_odds" : {
+				"Hold the Line" : 40,
+				"Fighting Withdrawal" : 40,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0,
+			"enemy_class_odds_modifier" : {
+				"Infantry Squad" : "100"
+			}
+		},
+		{
+			"start_date" : "1942.08.01",
+			"location" : "50.04,40.88",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Withdrawing Southward II",
+			"week_description" : "We continue our fighting withdrawl along the Don river toward Stalingrad, harassing German forces whereever we can.",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 50,
+				"Patrol" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.08.08",
+			"location" : "49.67,42.23",
+			"combat_chance" : 30,
+			"average_resistance" : 3,
+			"week_title" : "Withdrawing Southward III",
+			"week_description" : "The German advance continues, but we must not allow them to join the forces attacking Stalingrad.",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 50,
+				"Patrol" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.08.15",
+			"location" : "49.46,43.55",
+			"combat_chance" : 50,
+			"average_resistance" : 4,
+			"week_title" : "Backs to the Volga",
+			"week_description" : "The German advance has nearly reached the Volga river and Stalingrad, but our resistance grows steadily.",
+			"mission_odds" : {
+				"Hold the Line" : 20,
+				"Fighting Withdrawal" : 30,
+				"Battle" : 40,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.08.22",
+			"end_date" : "1942.09.04",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.09.05",
+			"end_date" : "1942.09.05",
+			"location" : "48.76,44.44",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Counterstrike from Stalingrad",
+			"week_description" : "Our forces have launched a massive counterstrike from Stalingrad toward German positions on the outskirts of the city.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1942.09.12",
+			"location" : "48.74,44.51",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Withdrawing Into Stalingrad",
+			"week_description" : "Our counterstrike has failed, and now we must fall back into the city and defend it street by street.",
+			"mission_odds" : {
+				"Urban Defense" : 50,
+				"Fighting Withdrawal" : 25,
+				"Battle" : 25
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0,
+			"enemy_class_odds_modifier" : {
+				"Support Weapon Team" : "100"
+			}
+		},
+		{
+			"start_date" : "1942.09.19",
+			"location" : "48.76,44.44",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Rattenkrieg",
+			"week_description" : "The battle to defend Stalingrad has become what the Germans are calling 'Rattenkrieg' - Rat Warfare, as every building and corner becomes a battleground.",
+			"mission_odds" : {
+				"Urban Assault" : 20,
+				"Urban Defense" : 80
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1942.09.26",
+			"location" : "48.76,44.44",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Defending the Northern District",
+			"week_description" : "The Germans have taken the southern part of the city and now threaten the northern, industrial district of Stalingrad.",
+			"mission_odds" : {
+				"Urban Assault" : 10,
+				"Urban Defense" : 90
+			},
+			"terrain_odds_modifier": {
+				"Factories" : 40,
+				"Storage Tanks" : 20
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 40.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1942.10.03",
+			"location" : "48.76,44.44",
+			"combat_chance" : 40,
+			"average_resistance" : 8,
+			"week_title" : "Mired in the Northern District",
+			"week_description" : "We continue to hold on to the massive factories in the northern district of Stalingrad.",
+			"mission_odds" : {
+				"Urban Defense" : 100
+			},
+			"terrain_odds_modifier": {
+				"Factories" : 50,
+				"Storage Tanks" : 30
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 20.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.10.10",
+			"end_date" : "1942.11.18",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.11.19",
+			"end_date" : "1942.11.23",
+			"location" : "48.96,44.01",
+			"combat_chance" : 50,
+			"average_resistance" : 6,
+			"week_title" : "Operation Uranus",
+			"week_description" : "We have joined a massive operation that seeks to surround the German forces assaulting Stalingrad.",
+			"mission_odds" : {
+				"Spearhead" : 50,
+				"Battle" : 25,
+				"Advance" : 25
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 100.0,
+			"enemy_class_odds_modifier" : {
+				"Support Weapon Team" : "75"
+			}
+		},
+		{
+			"start_date" : "1942.12.12",
+			"location" : "48.93,42.53",
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Operation Winter Storm",
+			"week_description" : "The German 6th Army is now surrounded, and we must now close the noose on the trapped forces.",
+			"mission_odds" : {
+				"Advance" : 25,
+				"Battle" : 75
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 100.0
+		},
+		{
+			"start_date" : "1942.12.19",
+			"end_date" : "1942.12.23",
+			"location" : "48.93,42.53",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Operation Winter Storm",
+			"week_description" : "We continue to harass and attack the trapped 6th Army, in spite of ever-worsening weather conditions.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Germany"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		}
+	]
+}

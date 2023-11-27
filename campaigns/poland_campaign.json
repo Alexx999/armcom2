@@ -1,6 +1,7 @@
 {
 	"name" : "The Poland Campaign",
 	"creator" : "Standard Campaign",
+	"difficulty" : "3",
 	"start_date" : "1939.09.01",
 	"end_date" : "1939.10.06",
 	"player_nation" : "Germany",
@@ -8,76 +9,127 @@
 	"region" : "Northeastern Europe",
 	"desc" : "Join the 3rd Panzer Division in the invasion of Poland, 1939.",
 	"player_unit_list" : [
-		"Panzer I B", "Panzer II A", "Panzer 35(t)", "Panzer 38(t) A", "Panzer III D",
-		"Panzer III F", "Panzer IV A", "Panzer IV C"
+		"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
+		"Panzer I A", "Panzer I B", "Panzer II A", "Panzer II D/E", "Panzer 35(t)",
+		"Panzer 38(t) A", "Panzer III D", "Panzer III F", "Panzer IV A", "Panzer IV C",
+		"8.8cm FlaK 18 Sfl."
 	],
 	"player_squad_list" : {
-		"Panzer II A" : ["Panzer II A", "Panzer 35(t)", "Panzer 38(t) A"],
-		"Panzer 38(t) A" : ["Panzer II A", "Panzer 35(t)", "Panzer 38(t) A"],
+		"Panzer II D/E" : ["Panzer II A", "Panzer II D/E"],
+		"Panzer 35(t)" : ["Panzer 35(t)", "Panzer 38(t) A"],
+		"Panzer 38(t) A" : ["Panzer 35(t)", "Panzer 38(t) A"],
 		"Panzer III D" : ["Panzer III D", "Panzer III F"],
 		"Panzer III F" : ["Panzer III D", "Panzer III F"],
-		"Panzer IV A" : ["Panzer IV A", "Panzer IV C"],
-		"Panzer IV C" : ["Panzer IV A", "Panzer IV C"]
+		"8.8cm FlaK 18 Sfl." : ["8.8cm FlaK 18 Sfl.", "Panzer I B", "Panzer I B"]
 	},
 	"tank_vp_modifiers" : {
+		"Sd. Kfz. 13" : 1.8,
+		"Panzer I A" : 1.5,
 		"Panzer I B" : 1.4,
 		"Panzer II A" : 1.3,
 		"Panzer III D" : 1.1,
-		"Panzer IV C" : 0.9
+		"Panzer IV C" : 0.9,
+		"PSW 221" : 1.4,
+		"PSW 222" : 1.5,
+		"PSW 231 (6 rad)" : 1.2,
+		"PSW 231 (8 rad)" : 1.1,
+		"8.8cm FlaK 18 Sfl." : 0.7
 	},
 	"campaign_skills" : [
 		"Combined Operations"
 	],
 	"player_air_support": [
-		"Ju 87B Stuka"
+		"Hs 123", "Ju 87B Stuka", "Bf 109 (fighter)", "Bf 110 (fighter)"
 	],
 	"player_arty_support": [
 		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "8.8cm FlaK 18 o. 36"],
-		"Anti-Infantry" : ["SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
-		"Recon" : ["PSW 231 (6 rad)", "PSW 231 (8 rad)"],
-		"Artillery" : ["Medium Mortar Team", "7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18"]
+		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "4.7cm PaK 187", "3.7cm FlaK 36/37", "8.8cm FlaK 18 o. 36", "Krupp Protze (37mm)", "Sd. Kfz. 10 (37mm)", "8.8cm FlaK 18 Sfl."],
+		"Anti-Infantry" : ["Opel Blitz 3-ton", "Einheitsdiesel 2500", "Borgward B 3000", "Mercedes-Benz L3000", "Henschel 33 3000", "SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18"]
 	},
 	"friendly_transported_units" : {
-		"SPW 251/1" : {
+		"Opel Blitz 3-ton" : {
+			"Riflemen" : 60,
+			"SMG Squad" : 20,
+			"HMG Team" : 30,
+			"Light Mortar Team" : 30,
+			"Flame Thrower Team" : 20
+		},
+		"Einheitsdiesel 2500" : {
+			"Riflemen" : 50,
+			"HMG Team" : 20,
+			"Light Mortar Team" : 10,
+			"Flame Thrower Team" : 20,
+			"SMG Squad" : 20
+		},
+		"Borgward B 3000" : {
 			"Riflemen" : 80,
+			"HMG Team" : 30,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 25
+		},
+		"Henschel 33 3000" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20,
+			"Light Mortar Team" : 20,
+			"Medium Mortar Team" : 30
+		},
+		"Mercedes-Benz L3000" : {
+			"Riflemen" : 70,
+			"HMG Team" : 25,
+			"SMG Squad" : 20,
+			"Light Mortar Team" : 25,
+			"Flame Thrower Team" : 15,
+			"Medium Mortar Team" : 15
+		},		
+		"SPW 251/1" : {
+			"Riflemen" : 40,
+			"SMG Squad" : 40,
 			"HMG Team" : 20,
 			"Flame Thrower Team" : 10
 		}
 	},
+	"enemy_air_support": {
+		"Poland" : ["PZL P.11", "PZL.23"]
+	},
 	"enemy_arty_support": {
-		"Poland" : ["75mm wz. 02/26", "105mm wz. 29"]
+		"Poland" : ["75mm wz. 97", "75mm wz. 02/26", "100mm wz. 14/19", "105mm wz. 29", "120mm wz. 78-31", "155mm wz. 17", "220mm wz. 32"]
 	},
 	"enemy_unit_list" : {
 		"Poland" : [
 			"TK-3", "TKS", "TKS (20mm)",
-			"Renault FT", "Renault FT (MG)",
-			"Vickers 6-Ton Mark E", "7TP",
-			"wz. 34 (MG)", "wz. 34 (37mm)",
-			"37mm wz. 36", 
-			"75mm wz. 02/26", "105mm wz. 29",
-			"75mm wz. 97/25",
-			"Polski Fiat 621",
+			"Renault FT (POL)", "Renault FT (MG, POL)", "Renault FT Kegresse (POL)",
+			"Vickers 6-Ton Type A", "Vickers 6-Ton Mark E", "R35 (POL)", "H39 (POL)",
+			"VAU-33 (early)", "VAU-33 (late)", "7TP dw", "7TP", "9TP", 
+			"wz. 20 Peugeot", "wz. 28 (MG)", "wz. 28 (37mm)", "wz. 29", "wz. 34 (MG)", "wz. 34 (37mm)",
+			"37mm wz. 16", "37mm wz. 36", 
+			"75mm wz. 97", "75mm wz. 02/26", "100mm wz. 14/19", "105mm wz. 29", "120mm wz. 78-31", "155mm wz. 17",
+			"40mm wz. 36", "75mm wz. 97/25", "75mm wz. 36",
+			"Polski Fiat 621 AA",
+			"Polski Fiat 508", "Polski Fiat 621", "Polski Fiat 508/518", "Ursus A", "Praga RV 2-ton (POL)", "Chevrolet 4x2 RD (POL)", 
 			"Riflemen",
-			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Fiat 508 Taczanka",
-			"Rifle Cavalry",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team",
+			"Combat Engineer Team", "Fiat 508/518 Taczanka",
+			"Rifle Cavalry", "Taczanka", 
 			"Light Artillery Car"
 		]
 	},
 	"enemy_unit_class_odds" : {
 		"Tankette" : 40,
-		"Light Tank" : 25,
-		"Armoured Car" : 80,
-		"Anti-Tank Gun" : 60,
-		"Artillery Gun" : 20,
+		"Light Tank" : 20,
+		"Armoured Car" : 10,
+		"Anti-Tank Gun" : 50,
+		"Artillery Gun" : 30,
 		"Anti-Aircraft Gun" : 25,
-		"Truck" : 80,
+		"Self-Propelled AA Gun" : 5,
+		"Truck" : 55,
 		"Infantry Squad" : 100,
-		"Support Weapon Team" : 75,
-		"Cavalry Squad" : 20,
-		"Armoured Train Car" : 10
+		"Support Weapon Team" : 80,
+		"Cavalry Squad" : 45,
+		"Armoured Train Car" : 5 
 	},
 	"enemy_transported_units" : {
 		"Poland" : {
@@ -85,18 +137,42 @@
 				"Riflemen" : 40,
 				"AT Rifle Team" : 20,
 				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 25,
+				"Combat Engineer Team" : 10,
+				"HMG Team" : 30
+			},
+			"Polski Fiat 508/518" : {
+				"AT Rifle Team" : 30,
+				"Combat Engineer Team" : 50,
+				"Light Mortar Team" : 20
+			},
+			"Ursus A" : {
+				"Riflemen" : 70,
+				"AT Rifle Team" : 10,
+				"Light Mortar Team" : 30,
 				"Medium Mortar Team" : 10,
+				"Combat Engineer Team" : 35,
+				"HMG Team" : 20
+			},
+			"Praga RV 2-ton (POL)" : {
+				"Riflemen" : 60,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 40,
+				"Medium Mortar Team" : 15,
+				"Combat Engineer Team" : 25,
+				"HMG Team" : 20
+			},
+			"Chevrolet 4x2 RD (POL)" : {
+				"Riflemen" : 60,
+				"AT Rifle Team" : 25,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 10,
+				"Combat Engineer Team" : 10,
 				"HMG Team" : 20
 			}
 		}
 	},
-	"decorations_list" : {
-		"700" : "Iron Cross Second Class",
-		"900" : "Iron Cross First Class",
-		"1000" : "Knight's Cross",
-		"1100" : "Knight's Cross with Oak Leaves"
-	},
-	"combat_days" : 16,
+	"combat_days" : 20,
 	"calendar_weeks": [
 		{
 			"start_date" : "1939.09.01",
@@ -116,7 +192,8 @@
 			"unit_support_level" : 80.0,
 			"terrain_odds_modifier" : {
 				"Forest" : 30
-			}
+			},
+			"enemy_fortifications" : "TRUE"
 		},
 		{
 			"start_date" : "1939.09.08",

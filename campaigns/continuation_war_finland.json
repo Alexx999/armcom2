@@ -1,6 +1,7 @@
 {
 	"name" : "The Continuation War (Finland)",
 	"creator" : "Standard Campaign",
+	"difficulty" : "7",
 	"start_date" : "1941.07.10",
 	"end_date" : "1941.12.06",
 	"player_nation" : "Finland",
@@ -8,25 +9,27 @@
 	"region" : "Nordic",
 	"desc" : "We now have an opportunity to re-capture territory lost during the Winter War, as we join Germany in an attack on the Soviet Union.",
 	"player_unit_list" : [
-		"T-26 M33 (FIN)", "T-26 M37/39 (FIN)", "T-28E M40 (FIN)", "KV-1E"
+		"BA-10 (FIN)", 
+		"T-26 M33 (FIN)", "T-26 M37/39 (FIN)", "T-28E M40 (FIN)", "KV-1 M39/40 (FIN)", "T-37A (FIN)",
+		"T-34 M40 (FIN)"
 	],
-	"player_unit_dates" : {
-		"KV-1E" : "1941.07.25"
-	},
 	"player_squad_list" : {
 		"T-26 M33 (FIN)" : ["T-26 M33 (FIN)", "T-26 M37/39 (FIN)"],
 		"T-26 M37/39 (FIN)" : ["T-26 M33 (FIN)", "T-26 M37/39 (FIN)"]
 	},
 	"tank_vp_modifiers" : {
+		"BA-10 (FIN)" : 1.2,
 		"T-26 M33 (FIN)" : 1.1,
 		"T-28E M40 (FIN)" : 0.8,
-		"KV-1E" : 0.8
+		"KV-1 M39/40 (FIN)" : 0.7,
+		"T-37A (FIN)" : 1.2,
+		"T-34 M40 (FIN)" : 0.7
 	},
 	"campaign_skills" : [
-		"Motti"
+		"Motti", "Acclimatized", "Acclimatized (Nordic)"
 	],
 	"player_air_support": [
-		"Fokker CX"
+		"Fokker C.X", "Fiat G.50 (FIN)", "MS.406 (FIN)", "MS.410 (FIN)"
 	],
 	"player_arty_support": [
 		"105 K/13", "76 K/02", "76 RK/27", "122 H/38", "150 H/40"
@@ -47,32 +50,33 @@
 		}
 	},
 	"enemy_air_support": {
-		"Soviet Union" : ["I-153 Chaika", "Il-2 Sturmovik"]
+		"Soviet Union" : ["I-153 Chaika", "Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Hurricane Mk IIB"]
 	},
 	"enemy_arty_support": {
 		"Soviet Union" : [
 			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
-			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
-			"152mm GP obr. 37"
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
 		]
 	},
 	"enemy_unit_list" : {
 		"Soviet Union" : [
-			"T-60 M40", "T-26 M33", "T-26 M37/39",
-			"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57",
+			"T-60 M40", "T-26 M33", "T-26 M37/39", "BT-2", "BT-5 M34", "BT-7 M37", "BT-7A",
+			"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57", "T-34 M42",
 			"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "KV-2",
+			"OT-130", "OT-133",
 			"ZiS-30",
-			"BT-5 M34", "BT-7 M37", "BT-7A", "SU-12",
+			"SU-12", "BM-13",
 			"BA-6", "BA-10", "BA-20",
-			"45mm obr. 1932",
+			"45mm obr. 1932", "57mm obr. 1943",
 			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
-			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
-			"152mm GP obr. 37",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37",
 			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
 			"GAZ-4M-AA", "ZIS-42-AA",
 			"ZIS-5 Truck",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad", 
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Rifle Cavalry",
 			"Motorcycle MG Team"
 		]
@@ -106,10 +110,6 @@
 				"Flame Thrower Team" : 20
 			}
 		}
-	},
-	"decorations_list" : {
-		"1100" : "Order of the White Rose of Finland",
-		"1500" : "Order of the Cross of Liberty"
 	},
 	"combat_days" : 45,
 	"calendar_weeks": [
@@ -281,8 +281,8 @@
 			"week_title" : "Holding the Svir River",
 			"week_description" : "We have reached the Svir River, but Soviet forces are trying to deny us a bridgehead on the river.",
 			"mission_odds" : {
-				"Battle" : 30,
-				"Counterattack" : 70
+				"Hold the Line" : 70,
+				"Counterattack" : 30
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"arty_support_level" : 80.0,
@@ -301,7 +301,8 @@
 			"week_title" : "Counterattacks Across the Svir",
 			"week_description" : "We have been unable to advance beyond the Svir River, and Soviet forces are launching counterattacks to try and regain this side.",
 			"mission_odds" : {
-				"Counterattack" : 80,
+				"Hold the Line" : 50,
+				"Counterattack" : 30,
 				"Fighting Withdrawal" : 20
 			},
 			"enemy_nations" : ["Soviet Union"],
@@ -316,8 +317,9 @@
 			"week_title" : "More Counterattacks",
 			"week_description" : "Soviet forces continue their counterattacks across the Svir River.",
 			"mission_odds" : {
-				"Counterattack" : 80,
-				"Fighting Withdrawal" : 20
+				"Hold the Line" : 70,
+				"Counterattack" : 20,
+				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"arty_support_level" : 80.0,
@@ -336,8 +338,9 @@
 			"week_title" : "Counterattacks",
 			"week_description" : "Soviet forces continue to launch counterattacks across the Svir River.",
 			"mission_odds" : {
-				"Counterattack" : 80,
-				"Fighting Withdrawal" : 20
+				"Hold the Line" : 80,
+				"Counterattack" : 10,
+				"Fighting Withdrawal" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"arty_support_level" : 80.0,

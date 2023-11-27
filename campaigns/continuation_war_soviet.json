@@ -1,6 +1,7 @@
 {
 	"name" : "The Continuation War (Soviet Union)",
 	"creator" : "Standard Campaign",
+	"difficulty" : "5",
 	"start_date" : "1941.07.10",
 	"end_date" : "1941.12.06",
 	"player_nation" : "Soviet Union",
@@ -8,19 +9,21 @@
 	"region" : "Nordic",
 	"desc" : "Join the Soviet defenders of Karelia as Finland seeks to recapture territory that it had lost during the Winter War.",
 	"player_unit_list" : [
+		"BA-6", "BA-10", "BA-20",
 		"T-60 M40", "T-26 M33", "T-26 M37/39",
-		"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57",
+		"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57", "T-34 M42",
 		"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "KV-2",
-		"BT-5 M34", "BT-7 M37", "BT-7A", "SU-12",
-		"ZiS-30"
+		"BT-2", "BT-5 M34", "BT-7 M37", "BT-7A",
+		"ZiS-30", "OT-130", "OT-133"
 	],
 	"player_squad_list" : {
 		"T-26 M33" : ["T-26 M33", "T-26 M37/39"],
 		"T-26 M37/39" : ["T-26 M33", "T-26 M37/39"],
 		"T-28 M34" : ["T-28 M34", "T-28E M40"],
 		"T-28E M40" : ["T-28 M34", "T-28E M40"],
-		"T-34 M40" : ["T-34 M40", "T-34 M41"],
-		"T-34 M41" : ["T-34 M40", "T-34 M41"],
+		"T-34 M40" : ["T-34 M40", "T-34 M41", "T-34 M42"],
+		"T-34 M41" : ["T-34 M40", "T-34 M41", "T-34 M42"],
+		"T-34 M42" : ["T-34 M40", "T-34 M41", "T-34 M42"],
 		"KV-1 M39/40" : ["KV-1 M39/40", "KV-1E"],
 		"KV-1E" : ["KV-1 M39/40", "KV-1E"],
 		"BT-5 M34" : ["BT-5 M34", "BT-7 M37", "BT-7A"],
@@ -28,34 +31,38 @@
 		"BT-7A" : ["BT-5 M34", "BT-7 M37", "BT-7A"]
 	},
 	"tank_vp_modifiers" : {
+		"BA-6" : 1.5,
+		"BA-10" : 1.4,
+		"BA-20" : 2.0,
 		"T-26 M33" : 1.3,
 		"T-26 M37/39" : 1.2,
 		"T-28 M34" : 1.1,
 		"T-34 M41" : 0.9,
+		"T-34 M42" : 0.9,
 		"T-34-57" : 0.8,
 		"KV-1 M39/40" : 0.8,
 		"KV-1E" : 0.7,
 		"KV-1 M41" : 0.6,
 		"KV-2" : 0.9,
 		"BT-7A" : 1.2,
+		"BT-2" : 1.4,
 		"BT-5 M34" : 1.3,
 		"BT-7 M37" : 1.3,
-		"SU-12" : 1.3,
 		"ZiS-30" : 1.6
 	},
 	"campaign_skills" : [
 		"Defend the Motherland"
 	],
 	"player_air_support": [
-		"I-153 Chaika", "Il-2 Sturmovik"
+		"I-153 Chaika", "Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Hurricane Mk IIB"
 	],
 	"player_arty_support": [
 		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
-		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
-		"152mm GP obr. 37"
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+		"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
+		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "57mm obr. 1943", "SU-12"],
 		"Anti-Infantry" : ["ZIS-5 Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
 		"Recon" : ["BA-6", "BA-10", "BA-20"],
 		"Artillery" : ["Light Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39"]
@@ -70,6 +77,11 @@
 			"Flame Thrower Team" : 20
 		}
 	},
+	"enemy_air_support": {
+		"Finland" : [
+			"Fokker C.X", "Fiat G.50 (FIN)", "MS.406 (FIN)", "MS.410 (FIN)"
+		]
+	},
 	"enemy_arty_support": {
 		"Finland" : [
 			"105 K/13", "76 K/02", "76 RK/27", "122 H/38", "150 H/40"
@@ -77,22 +89,21 @@
 	},
 	"enemy_unit_list" : {
 		"Finland" : [
-			"T-26 M33 (FIN)", "T-26 M37/39 (FIN)", "T-28E M40 (FIN)", "KV-1E",
+			"T-26 M33 (FIN)", "T-26 M37/39 (FIN)",
+			"BT-5 M34 (FIN)", "BT-7 M37 (FIN)", "T-28E M40 (FIN)",
+			"KV-1 M39/40 (FIN)", "T-37A (FIN)", "T-34 M40 (FIN)",
 			"BT-42",
 			"BA-10 (FIN)",
 			"37 PstK/37", "45 PstK/32", "75 PstK/97-38",
 			"105 K/13", "76 K/02", "76 RK/27", "122 H/38", "150 H/40",
 			"20 ItK/38", "40 ItK/38",
 			"3-ton Truck",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Flame Thrower Team",
-			"Rifle Cavalry",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Rifle Cavalry", "Light Artillery Car",
 			"Motorcycle MG Team"
 		]
 	},
-	"enemy_captured_units" : [
-		"KV-1E"
-	],
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 30,
 		"Medium Tank" : 10,
@@ -106,7 +117,8 @@
 		"Infantry Squad" : 100,
 		"Support Weapon Team" : 75,
 		"Cavalry Squad" : 20,
-		"Motorcycle Team" : 30
+		"Motorcycle Team" : 30,
+		"Armoured Train Car" : 1
 	},
 	"enemy_transported_units" : {
 		"Finland" : {
@@ -120,12 +132,6 @@
 			}
 		}
 	},
-	"decorations_list" : {
-		"1100" : "Medal for Battle Merit",
-		"1200" : "Order of the Red Star",
-		"1500" : "Order of the Red Banner",
-		"1800" : "Order of Lenin"
-	},
 	"combat_days" : 45,
 	"calendar_weeks": [
 		{
@@ -136,8 +142,9 @@
 			"week_title" : "Defending Karelia",
 			"week_description" : "With Operation Barbarossa raging in Eastern Europe, the Finns have launched an assault into our territory in Karelia.",
 			"mission_odds" : {
-				"Counterattack" : 20,
-				"Fighting Withdrawal" : 80
+				"Hold the Line" : 50,
+				"Fighting Withdrawal" : 30,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 60.0,
@@ -150,11 +157,11 @@
 			"combat_chance" : 80,
 			"average_resistance" : 8,
 			"week_title" : "Encirclement",
-			"week_description" : "The Finns are trying to cut us off from reinforcement; we must drive them back and hold out supply lines open.",
+			"week_description" : "The Finns are trying to cut us off from reinforcement; we must drive them back and hold our supply lines open.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Spearhead" : 50
-				
+				"Spearhead" : 40,
+				"Hold the Line" : 30,
+				"Battle" : 30
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 60.0,
@@ -174,9 +181,10 @@
 			"week_title" : "Falling Back Toward Leningrad",
 			"week_description" : "The II Corps is moving into the Karelian Isthmus toward Leningrad, we must stop them at all costs.",
 			"mission_odds" : {
-				"Counterattack" : 20,
-				"Battle" : 10,
-				"Fighting Withdrawal" : 70
+				"Fighting Withdrawal" : 50,
+				"Hold the Line" : 30,
+				"Counterattack" : 10,
+				"Battle" : 10
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 60.0,
@@ -191,7 +199,8 @@
 			"week_title" : "Defending Vyborg",
 			"week_description" : "We have fallen back to the coastal city of Vyborg, as the Finns attempt to encircle us yet again.",
 			"mission_odds" : {
-				"Counterattack" : 60,
+				"Hold the Line" : 40,
+				"Counterattack" : 20,
 				"Battle" : 20,
 				"Fighting Withdrawal" : 20
 			},
@@ -208,7 +217,8 @@
 			"week_title" : "Defending Vyborg II",
 			"week_description" : "We continue our defense of Vyborg against the Finnish invaders.",
 			"mission_odds" : {
-				"Counterattack" : 80,
+				"Hold the Line" : 60,
+				"Counterattack" : 20,
 				"Battle" : 20
 			},
 			"enemy_nations" : ["Finland"],
@@ -224,8 +234,8 @@
 			"week_title" : "Defending the Vuoksi River",
 			"week_description" : "Vyborg is nearly cut off - we now withdraw toward the strategically-important Vuoksi River to defend it.",
 			"mission_odds" : {
-				"Counterattack" : 20,
-				"Fighting Withdrawal" : 80
+				"Fighting Withdrawal" : 80,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 30.0,
@@ -238,12 +248,12 @@
 			"location" : "60.24,30.30",
 			"combat_chance" : 50,
 			"average_resistance" : 7,
-			"week_title" : "Withdraw To the Border",
+			"week_title" : "Withdrawl To the Border",
 			"week_description" : "Many of our divisions have been wiped out and cut off from resupply. We now draw close to our original border with Finland.",
 			"mission_odds" : {
-				"Counterattack" : 20,
-				"Battle" : 60,
-				"Fighting Withdrawal" : 20
+				"Fighting Withdrawal" : 40,
+				"Battle" : 30,
+				"Counterattack" : 30
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 80.0,
@@ -263,8 +273,9 @@
 			"week_title" : "Defending East Karelia",
 			"week_description" : "While Finnish forces beseige Leningrad, we have been deployed to East Karelia to defend it against another Finnish assault.",
 			"mission_odds" : {
-				"Counterattack" : 20,
-				"Battle" : 80
+				"Hold the Line" : 40,
+				"Counterattack" : 30,
+				"Battle" : 30
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 30.0,
@@ -279,9 +290,9 @@
 			"week_title" : "Falling Back to the Svir River",
 			"week_description" : "The Finnish assault continues into Russian territory; we now fall back toward the Svir River, cutting across Leningrad Oblast.",
 			"mission_odds" : {
+				"Fighting Withdrawal" : 70,
 				"Counterattack" : 20,
-				"Battle" : 10,
-				"Fighting Withdrawal" : 70
+				"Battle" : 10
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 50.0,
@@ -296,8 +307,8 @@
 			"week_title" : "Holding the Svir River",
 			"week_description" : "Finnish forces have reached the Svir River, but we must deny them a bridgehead on the river.",
 			"mission_odds" : {
-				"Battle" : 30,
-				"Counterattack" : 70
+				"Hold the Line" : 80,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Finland"],
 			"air_support_level" : 50.0,
@@ -332,7 +343,7 @@
 			"combat_chance" : 80,
 			"average_resistance" : 9,
 			"week_title" : "More Counterattacks",
-			"week_description" : "We continue out counterattacks across the Svir River.",
+			"week_description" : "We continue our counterattacks across the Svir River.",
 			"mission_odds" : {
 				"Advance" : 20,
 				"Spearhead" : 50,

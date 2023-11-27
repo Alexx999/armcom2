@@ -1,0 +1,329 @@
+{
+	"name" : "Battle of Iwo Jima",
+	"creator" : "Standard Campaign",
+	"difficulty" : "8",
+	"start_date" : "1945.02.19",
+	"end_date" : "1945.03.22",
+	"player_nation" : "United States of America",
+	"enemy_nations" : ["Empire of Japan"],
+	"enemy_fanatic" : "TRUE",
+	"region" : "South Pacific",
+	"desc" : "Join the Marine units assaulting the heavily fortified island of Iwo Jima, in order to secure it as a staging area for the future invasion of the Japanese home islands.",
+	"player_unit_list" : [
+		"M4A3 Sherman", "M4A3R5 Sherman", "LVT(A)-1", "LVT(A)-4"
+	],
+	"tank_vp_modifiers" : {
+		"M4A3R5 Sherman" : 0.9,
+		"LVT(A)-1" : 1.3,
+		"LVT(A)-4" : 1.1
+	},
+	"campaign_skills" : [
+		"Semper Fi"
+	],
+	"player_air_support": [
+		"P-38 Lightning (CAS)", "P-38 Lightning (fighter)", "P-47 Thunderbolt",
+		"P-51 Mustang (CAS)", "P-51 Mustang", "F4F Wildcat", "P-39Q Airacobra", "SBD Dauntless"
+	],
+	"player_arty_support": [
+		"Destroyer", "Cruiser", "Battleship", "M1A1 75mm Pack Howitzer",
+		"M2A1 105mm Howitzer", "M1 155mm Howitzer"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["Bazooka Team", "M3 37mm AT Gun"],
+		"Assault" : ["Flame Thrower Team", "Combat Engineer Team"],
+		"Anti-Infantry" : ["LVT-4", "SMG Squad", "HMG Team", "M3 37mm AT Gun"],
+		"Recon" : ["M3A1 Scout Car"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "M1A1 75mm Pack Howitzer"]
+	},
+	"friendly_transported_units" : {
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10,
+			"Combat Engineer Team" : 10
+		},
+		"LVT-4" : {
+			"Riflemen" : 80,
+			"Combat Engineer Team" : 20
+		}
+	},
+	"enemy_arty_support": {
+		"Empire of Japan" : [
+			"Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun",
+			"Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer",
+			"Type 92 10cm Cannon", "Year-38 12cm Howitzer", "Type 4 15cm Howitzer",
+			"Type 96 15cm Howitzer"
+		]
+	},
+	"enemy_unit_list" : {
+		"Empire of Japan" : [
+			"Type 1 47mm AT Gun", "Type 94 37mm AT Gun",
+			"Type 93 AA Gun", "Type 98 20mm AA Gun", "Type 88 75mm AA Gun",
+			"Type 96 AA Gun", "Type 96 AA Gun (2)", "Type 96 AA Gun (3)",
+			"Type 10 120mm AA Gun",
+			"Type 11 37mm Infantry Gun", "Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun",
+			"Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun",
+			"Type 91 10cm Howitzer", "Type 92 10cm Cannon",
+			"Year-38 12cm Howitzer", "Year-3 14cm Naval Gun",
+			"Type 4 15cm Howitzer", "Type 96 15cm Howitzer",
+			"Type 94 Truck", "Type 95 Scout Car",
+			"Riflemen",
+			"SMG Squad", "HMG Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", 
+			"Flame Thrower Team", "Combat Engineer Team", "Nikuhaku Team",
+			"Chi-Ha (Dug-In)"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Anti-Tank Gun" : 30,
+		"Artillery Gun" : 20,
+		"Anti-Aircraft Gun" : 20,
+		"Truck" : 15,
+		"Infantry Squad" : 80,
+		"Support Weapon Team" : 100,
+		"Dug-In Tank" : 10
+	},
+	"enemy_transported_units" : {
+		"Empire of Japan" : {
+			"Type 94 Truck" : {
+				"Riflemen" : 60,
+				"Combat Engineer Team" : 40,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"Type 95 Scout Car" : {
+				"Combat Engineer Team" : 40,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 20,
+	"calendar_weeks": [
+		{
+			"start_date" : "1945.02.19",
+			"end_date" : "1945.02.24",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 100,
+			"combat_chance" : 100,
+			"average_resistance" : 10,
+			"week_title" : "Operation Detachment",
+			"week_description" : "This week we land on Iwo Jima, continuing our drive toward the Japanese home islands. Resistance is expected to be fierce, and the terrain favours the defenders.",
+			"mission_days" : {
+				"1945.02.19" : "Amphibious Assault"
+			},
+			"early_day_end" : {
+				"1945.02.19" : "14:00"
+			},
+			"mission_odds" : {
+				"Spearhead" : 20,
+				"Major Battle" : 80
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 30.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Dense Jungle" : 0,
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Volcanic Sand" : 75,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 50,
+				"Combat Engineer Team" : 40
+			}
+		},
+		{
+			"start_date" : "1945.02.25",
+			"end_date" : "1945.02.27",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 50,
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"week_title" : "Assaulting the Pool Table",
+			"week_description" : "We have held the beachhead, but at great cost. The terrain beyond the coast is nearly flat and featureless, giving the Japanese defenders a distinct advantage.",
+			"mission_odds" : {
+				"Major Battle" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 50.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Jungle" : 0,
+				"Dense Jungle" : 0,
+				"Hills" : 0,
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Volcanic Sand" : 55,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 50,
+				"Combat Engineer Team" : 40
+			}
+		},
+		{
+			"start_date" : "1945.02.28",
+			"end_date" : "1945.03.04",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 50,
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"week_title" : "Taking the Hills and Ridges",
+			"week_description" : "We have secured the beach and the airfield, but Japanese forces are well dug-in. Support the infantry as they assault each fortified hill and ridge in their drive northward.",
+			"mission_odds" : {
+				"Counterattack" : 20,
+				"Major Battle" : 80
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 80.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Jungle" : 10,
+				"Dense Jungle" : 0,
+				"Hills" : 20,
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Volcanic Sand" : 15,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 40,
+				"Combat Engineer Team" : 30
+			}
+		},
+		{
+			"start_date" : "1942.03.05",
+			"end_date" : "1942.03.05",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1945.03.06",
+			"end_date" : "1942.03.08",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 20,
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"week_title" : "Breaking the Stalemate",
+			"week_description" : "The Marines finally control about two thirds of the island, including the southern airfield, but the Japanese continue to resist our advance. Assaults continue daily in hopes of breaking through the Japanese lines.",
+			"mission_odds" : {
+				"Counterattack" : 50,
+				"Major Battle" : 50
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 80.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Jungle" : 10,
+				"Dense Jungle" : 0,
+				"Hills" : 20,
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Volcanic Sand" : 15,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 30,
+				"Combat Engineer Team" : 20
+			}
+		},
+		{
+			"start_date" : "1945.03.09",
+			"end_date" : "1942.03.11",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 20,
+			"combat_chance" : 70,
+			"average_resistance" : 8,
+			"week_title" : "Breakthrough",
+			"week_description" : "Some Marine patrols have finally reached the northeast coast of the island. If we press the assault now, we can split the Japanese defenders into two.",
+			"mission_odds" : {
+				"Advance" : 80,
+				"Major Battle" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 15,
+				"Combat Engineer Team" : 10
+			}
+		},
+		{
+			"start_date" : "1945.03.12",
+			"end_date" : "1942.03.16",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 20,
+			"combat_chance" : 50,
+			"average_resistance" : 6,
+			"week_title" : "Mopping Up",
+			"week_description" : "With the Japanese defenders now split in two, there only remain pockets of resistance left to mop up.",
+			"mission_odds" : {
+				"Patrol" : 80,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 10,
+				"Combat Engineer Team" : 10
+			}
+		},
+		{
+			"start_date" : "1945.03.17",
+			"end_date" : "1942.03.22",
+			"location" : "24.78,141.32",
+			"coastal_chance" : 20,
+			"combat_chance" : 50,
+			"average_resistance" : 6,
+			"week_title" : "Taking the Gorge",
+			"week_description" : "Only one area of Iwo Jima continues to be held by the Japanese - a heavily fortified area known as 'The Gorge', where the Japanese commander Lt General Kuribayashi awaits our assault.",
+			"mission_odds" : {
+				"Major Battle" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 100.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 100.0,
+			"enemy_fortifications" : "TRUE",
+			"terrain_odds_modifier" : {
+				"Rice Paddies" : 0,
+				"Cogon Grass" : 0,
+				"Lake" : 0
+			},
+			"special_unit_rarity" : {
+				"Nikuhaku Team" : 5,
+				"Combat Engineer Team" : 5
+			}
+		}
+	]
+}

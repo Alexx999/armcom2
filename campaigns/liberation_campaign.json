@@ -1,6 +1,7 @@
 {
 	"name" : "The Liberation Campaign of the Red Army",
 	"creator" : "Standard Campaign",
+	"difficulty" : "2",
 	"start_date" : "1939.09.17",
 	"end_date" : "1939.10.06",
 	"player_nation" : "Soviet Union",
@@ -8,7 +9,10 @@
 	"region" : "Northeastern Europe",
 	"desc" : "Soviet invasion of Poland, September 1939.",
 	"player_unit_list" : [
-		"T-26 M33", "T-26 M37/39", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34"
+		"BA-6", "BA-10", "BA-20",
+		"T-37A", "T-38", "T-40",
+		"T-26 M33", "T-26 M37/39", "BT-2", "BT-5 M34", "BT-7 M37", "BT-7A", "T-28 M34",
+		"OT-130", "OT-133"
 	],
 	"player_squad_list" : {
 		"T-26 M33" : ["T-26 M33", "T-26 M37/39"],
@@ -17,17 +21,27 @@
 		"BT-7A" : ["BT-7 M37", "BT-7A"]
 	},
 	"tank_vp_modifiers" : {
+		"BA-6" : 1.2,
+		"BA-10" : 1.1,
+		"BA-20" : 1.7,
+		"T-37A" : 1.4,
+		"T-38" : 1.4,
+		"T-40" : 1.5,
 		"T-26 M37/39" : 0.9,
+		"BT-2" : 1.2,
 		"BT-5 M34" : 1.1,
 		"T-28 M34" : 0.8
 	},
 	"campaign_skills" : [
 		"Centralized Fire"
 	],
+	"player_air_support": [
+		"I-16", "I-153 Chaika"
+	],
 	"player_arty_support": [
 		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 00/02P",
-		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
-		"152mm GP obr. 37"
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+		"152mm G obr. 38", "152mm GP obr. 37"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
@@ -42,21 +56,25 @@
 			"Flame Thrower Team" : 20
 		}
 	},
+	"enemy_air_support": {
+		"Poland" : ["PZL P.11", "PZL.23"]
+	},
 	"enemy_arty_support": {
 		"Poland" : ["75mm wz. 02/26", "105mm wz. 29"]
 	},
 	"enemy_unit_list" : {
 		"Poland" : [
 			"TK-3", "TKS", "TKS (20mm)",
-			"Renault FT", "Renault FT (MG)",
-			"Vickers 6-Ton Mark E", "7TP",
+			"Renault FT (POL)", "Renault FT (MG, POL)",
+			"Vickers 6-Ton Type A", "Vickers 6-Ton Mark E", "7TP", "R35 (POL)",
 			"wz. 34 (MG)", "wz. 34 (37mm)",
 			"37mm wz. 36", 
 			"75mm wz. 02/26", "105mm wz. 29",
 			"75mm wz. 97/25",
 			"Polski Fiat 621",
 			"Riflemen",
-			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Fiat 508 Taczanka",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team",
+			"Combat Engineer Team", "Fiat 508 Taczanka",
 			"Rifle Cavalry",
 			"Light Artillery Car"
 		]
@@ -85,12 +103,6 @@
 			}
 		}
 	},
-	"decorations_list" : {
-		"400" : "Medal for Battle Merit",
-		"600" : "Order of the Red Star",
-		"700" : "Order of the Red Banner",
-		"800" : "Order of Lenin"
-	},
 	"combat_days" : 12,
 	"calendar_weeks": [
 		{
@@ -106,6 +118,7 @@
 				"Spearhead" : 50
 			},
 			"enemy_nations" : ["Poland"],
+			"air_support_level" : 80.0,
 			"arty_support_level" : 80.0,
 			"unit_support_level" : 80.0
 		},
@@ -122,6 +135,7 @@
 				"Spearhead" : 35
 			},
 			"enemy_nations" : ["Poland"],
+			"air_support_level" : 80.0,
 			"arty_support_level" : 80.0,
 			"unit_support_level" : 80.0,
 			"enemy_class_odds_modifier" : {
@@ -140,6 +154,7 @@
 				"Spearhead" : 5
 			},
 			"enemy_nations" : ["Poland"],
+			"air_support_level" : 80.0,
 			"arty_support_level" : 80.0,
 			"unit_support_level" : 80.0,
 			"enemy_class_odds_modifier" : {

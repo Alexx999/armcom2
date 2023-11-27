@@ -1,0 +1,593 @@
+{
+	"name" : "Invasion of Ukraine (Germany)",
+	"creator" : "flori2412",
+	"difficulty" : "7",
+	"start_date" : "1941.06.22",
+	"end_date" : "1941.12.02",
+	"player_nation" : "Germany",
+	"enemy_nations" : ["Soviet Union"],
+	"region" : "Western USSR",
+	"desc" : "Germany has invaded its former ally the Soviet Union. Join the armoured forces of the Army Group South as they advance into Ukraine.",
+	"player_unit_list" : [
+		"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "Panzerspahwagen P204",
+		"Panzer I B", "Panzer II F", "Panzer 35(t)", "Panzer 38(t) A", "Panzer 38(t) E",
+		"Panzer III F", "Panzer III G", "Panzer III H", "Panzer IV D", "Panzer IV E", "Panzer IV F1",
+		"StuG III B",
+		"Panzerjager I",
+		"SOMUA S35 (GER)", "R35 (GER)", "H39 (GER)",
+		"Panzer T-26 737 M33", "Panzer BT 742", "Panzer T-60 743", "Panzer T-34 747 M40",
+		"Panzer T-34 747 M41", "Panzer KV-1A 753", "Panzer KV-1E 753"
+	],
+	"player_squad_list" : {
+		"Panzer I B" : ["Panzer I B", "Panzer II F"],
+		"Panzer II F" : ["Panzer I B", "Panzer II F"],
+		
+		"Panzer 35(t)" : ["Panzer 35(t)", "Panzer 38(t) A", "Panzer 38(t) E"],
+		"Panzer 38(t) A" : ["Panzer 35(t)", "Panzer 38(t) A", "Panzer 38(t) E"],
+		"Panzer 38(t) E" : ["Panzer 35(t)", "Panzer 38(t) A", "Panzer 38(t) E"],
+		
+		"Panzer III F" : ["Panzer III F", "Panzer III G", "Panzer III H"],
+		"Panzer III G" : ["Panzer III F", "Panzer III G", "Panzer III H"],
+		"Panzer III H" : ["Panzer III F", "Panzer III G", "Panzer III H"],
+		
+		"Panzer IV D" : ["Panzer IV D", "Panzer IV E", "Panzer IV F1"],
+		"Panzer IV E" : ["Panzer IV D", "Panzer IV E", "Panzer IV F1"],
+		"Panzer IV F1" : ["Panzer IV D", "Panzer IV E", "Panzer IV F1"],
+		
+		"Panzer T-34 747 M40" : ["Panzer T-34 747 M40", "Panzer T-34 747 M41"],
+		"Panzer T-34 747 M41" : ["Panzer T-34 747 M40", "Panzer T-34 747 M41"],
+		
+		"Panzer KV-1A 753" : ["Panzer KV-1A 753", "Panzer KV-1E 753"],
+		"Panzer KV-1E 753" : ["Panzer KV-1A 753", "Panzer KV-1E 753"]
+	},
+	"tank_vp_modifiers" : {
+		"Sd. Kfz. 13" : 1.8,
+		"PSW 221" : 1.5,
+		"PSW 222" : 1.4,
+		"PSW 231 (6 rad)" : 1.4,
+		"PSW 231 (8 rad)" : 1.3,
+		"Panzerspahwagen P204" : 1.3,
+		"Panzer I B" : 1.2,
+		"Panzer II F" : 1.1,
+		"Panzer 38(t) E" : 0.9,
+		"Panzer III H" : 0.9,
+		"Panzer IV F1" : 0.8,
+		"Panzerjager I" : 1.2,
+		"SOMUA S35 (GER)" : 0.9,
+		"Panzer T-34 747 M40" : 0.9,
+		"Panzer T-34 747 M41" : 0.8,
+		"KV-1 M39/40" : 0.9,
+		"Panzer KV-1E 753" : 0.8
+	},
+	"campaign_skills" : [
+		"Combined Operations"
+	],
+	"player_air_support": [
+		"Ju 87B Stuka", "Ju 87D Stuka", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"
+	],
+	"player_arty_support": [
+		"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "PaK 35/36", "PaK 36", "PaK 38", "PaK 97/38", "8.8cm FlaK 18 o. 36", "Panzerjager I"],
+		"Anti-Infantry" : ["SPW 250/1", "SPW 251/1", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "StuG III B", "SPW 250/8"],
+		"Recon" : ["Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "Panzerspahwagen P204"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "SPW 251/2", "SPW 250/7", "7.5cm leIG 18", "10cm sK 18"]
+	},
+	"friendly_transported_units" : {
+		"SPW 250/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"SPW 251/1" : {
+			"Riflemen" : 60,
+			"HMG Team" : 10,
+			"SMG Squad" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Soviet Union" : ["I-153 Chaika", "Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Hurricane Mk IIB"]
+	},
+	"enemy_arty_support": {
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
+		]
+	},
+	"enemy_unit_list" : {
+		"Soviet Union" : [
+			"T-37A", "T-38", "T-40",
+			"T-60 M40", "T-26 M33", "T-26 M37/39",
+			"BT-5 M34", "BT-7 M37", "BT-7A",
+			"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34 M42",
+			"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "T-35",
+			"OT-130", "OT-133",
+			"SU-12", "BM-13",
+			"BA-6", "BA-10", "BA-20",
+			"45mm obr. 1932", "57mm obr. 1943",
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA",
+			"ZIS-5 Truck", 
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Light Artillery Car",
+			"Motorcycle MG Team",
+			"Rifle Cavalry"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Tankette" : 15,
+		"Light Tank" : 80,
+		"Medium Tank" : 40,
+		"Heavy Tank" : 5,
+		"Assault Gun" : 20,
+		"Armoured Car" : 50,
+		"Anti-Tank Gun" : 60,
+		"Artillery Gun" : 35,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Armoured Train Car" : 10,
+		"Motorcycle Team" : 30,
+		"Cavalry Squad" : 20
+	},
+	"enemy_transported_units" : {
+		"Soviet Union" : {
+			"ZIS-5 Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			}
+		}
+	},
+	"combat_days" : 60,
+	"calendar_weeks": [
+		{
+			"start_date" : "1941.06.22",
+			"end_date" : "1941.06.22",
+			"location" : "51.49,23.73",
+			"combat_chance" : 100,
+			"average_resistance" : 7,
+			"week_title" : "Operation Barbarossa",
+			"week_description" : "While our brothers-in-arms further north are moving towards Smolensk, the Army Group South has orders to advance into Ukraine. Our offensive will begin with a concentrated attack on the Soviet 5th Army east of Lublin. We will have to be mindful of the marshy terrain in this area.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 100.0,
+			"terrain_odds_modifier" : {
+				"Marsh" : 50
+			}
+		},
+		{
+			"start_date" : "1941.06.23",
+			"end_date" : "1941.06.26",
+			"location" : "50.25,25.50",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "The Battle of Brody and Dubno",
+			"week_description" : "We managed to overrun the 5th Army despite the difficult terrain. Our next objective is to secure the area between Dubno and Brody. Be aware that the Soviet troops in front of us are equipped with a large number of heavily armoured tanks and will most likely attempt to launch counterattacks.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Spearhead" : 10,
+				"Battle" : 30,
+				"Counterattack" : 40
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 100,
+				"Medium Tank" : 60,
+				"Heavy Tank" : 20
+			}
+		},
+		{
+			"start_date" : "1941.06.27",
+			"end_date" : "1941.06.30",
+			"location" : "50.25,25.50",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Armoured Counterattacks",
+			"week_description" : "We are facing multiple fierce but poorly coordinated counterattacks by armoured Soviet units. They have stopped our advance, but if we can inflict sufficient casualties on the enemy, we will quickly regain the upper hand.",
+			"mission_odds" : {
+				"Hold the Line" : 30,
+				"Battle" : 30,
+				"Counterattack" : 40
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.07.01",
+			"end_date" : "1941.07.01",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.07.02",
+			"end_date" : "1941.07.04",
+			"location" : "49.70,26.77",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"landmines_chance" : 5,
+			"week_title" : "Towards Uman",
+			"week_description" : "We have repelled the Soviet counterattacks, inflicting devastating casualties on the enemy. Now we can press the advantage by advancing south-east towards the city of Uman, where we intend to destroy the remnants of the Russian troops.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 60,
+				"Medium Tank" : 30,
+				"Heavy Tank" : 5
+			}
+		},
+		{
+			"start_date" : "1941.07.05",
+			"end_date" : "1941.07.08",
+			"location" : "49.96,28.06",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 20,
+			"week_title" : "The Stalin Line",
+			"week_description" : "We need to break through a fortified defensive line to continue our advance towards Uman. Fortunately, some of the defensive positions in front of us are unmanned or poorly equipped because the Soviets did not have enough time to prepare themselves.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 60.0,
+			"enemy_class_odds_modifier" : {
+				"Anti-Tank Gun" : 90,
+				"Artillery Gun" : 50
+			},
+			"terrain_odds_modifier" : {
+				"Fortification" : 25
+			}
+		},
+		{
+			"start_date" : "1941.07.09",
+			"end_date" : "1941.07.15",
+			"location" : "49.85,28.72",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Counterattacks near Berdychiv",
+			"week_description" : "We were able to break through the Stalin Line, but the Russians are attempting to stop our advance yet again. We are under attack near the Ukrainian city of Berdychiv.",
+			"mission_odds" : {
+				"Hold the Line" : 40,
+				"Battle" : 30,
+				"Counterattack" : 20,
+				"Patrol" : 10
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 60.0,
+			"enemy_class_odds_modifier" : {
+				"Anti-Tank Gun" : 60,
+				"Artillery Gun" : 35
+			}
+		},
+		{
+			"start_date" : "1941.07.16",
+			"end_date" : "1941.07.23",
+			"location" : "48.91,30.04",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "The Battle of Uman",
+			"week_description" : "The remnants of the Soviet 6th, 12th and 26th Armies have retreated to positions around Uman, 150 km south of Kiev. Our tanks have orders to push through the enemy lines and approach the city from the north-west, allowing us to encircle the bulk of the enemy troops further south.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Spearhead" : 30,
+				"Battle" : 40
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.07.24",
+			"end_date" : "1941.07.30",
+			"location" : "48.77,30.22",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Taking Uman",
+			"week_description" : "We have gained a lot of ground and are still advancing, taking Uman and its surroundings in the process. Our infantry units are securing our northern flank while we are closing the encirclement of the Russian troops south of the city.",
+			"mission_odds" : {
+				"Urban Assault" : 30,
+				"Advance" : 30,
+				"Spearhead" : 20,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.07.31",
+			"end_date" : "1941.08.04",
+			"location" : "48.61,30.22",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "Encirclement",
+			"week_description" : "The Russian troops south of Uman are now surrounded. We are attacking them from all sides, killing and capturing tens of thousands of soldiers.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack": 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.08.05",
+			"end_date" : "1941.08.08",
+			"location" : "48.61,30.22",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"week_title" : "Crushing the Enemy",
+			"week_description" : "The resistance of the enemy troops trapped in the pocket south of Uman is growing weaker. We have almost won this battle.",
+			"mission_odds" : {
+				"Battle" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.08.09",
+			"end_date" : "1941.08.27",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.08.28",
+			"end_date" : "1941.08.31",
+			"location" : "49.55,32.22",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"landmines_chance" : 5,
+			"week_title" : "Dnieper Crossing",
+			"week_description" : "After our victory at Uman, Army Group South managed to secure large parts of the area west and south-west of the River Dnieper. Now it is time to cross the river at Kremenchuk and move into position for a pincer maneuver against the Soviet troops holding Kiev.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.09.01",
+			"end_date" : "1941.09.09",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.09.10",
+			"end_date" : "1941.09.13",
+			"location" : "50.44,32.52",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Closing the Gap East of Kiev",
+			"week_description" : "Our forces are now in position east of Kiev. Our orders are to advance from the south until we meet the 3rd Panzer Division coming from the north in order to cut off hundreds of thousands of Russian soldiers in and around the city.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 40,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.09.14",
+			"end_date" : "1941.09.19",
+			"location" : "50.46,31.71",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "The Kiev Pocket",
+			"week_description" : "Having completed the encirclement of the enemy troops in and around Kiev, we are now attacking them from the east, breaking their resistance and separating individual units from each other. Some of the Russian soldiers are desperately trying to break out of the pocket.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 60,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.09.20",
+			"end_date" : "1941.09.26",
+			"location" : "50.43,31.19",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Victory at Kiev",
+			"week_description" : "Our infantry units have gained control of Kiev. The largest encirclement in military history is about to end with another crushing defeat for the Red Army.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.09.27",
+			"end_date" : "1941.09.30",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.10.01",
+			"end_date" : "1941.10.07",
+			"location" : "46.95,34.85",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"coastal_chance" : 50,
+			"week_title" : "The Battle of the Azov Sea",
+			"week_description" : "The Soviet 9th and 18th Armies have launched a counteroffensive along the Azov Sea to stop the advance of our brothers-in-arms and Romanian allies into Crimea and the east of Ukraine. Our unit will attack the enemy forces from the north and cut them off by taking Melitopol and Berdiansk.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.10.08",
+			"end_date" : "1941.10.11",
+			"location" : "46.54,35.03",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"coastal_chance" : 80,
+			"week_title" : "Finishing off the 9th and 18th Armies",
+			"week_description" : "Melitopol and Berdiansk have been taken. The Soviet attackers are now cut off from their allies further east. We will attack them from the east and destroy them in another pincer maneuver.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 50,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.10.12",
+			"end_date" : "1941.10.12",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.10.13",
+			"end_date" : "1941.10.16",
+			"location" : "47.13,38.11",
+			"combat_chance" : 80,
+			"average_resistance" : 4,
+			"coastal_chance" : 100,
+			"landmines_chance" : 5,
+			"week_title" : "Advancing East",
+			"week_description" : "The defeat of the Soviet 9th and 18th Armies resulted in taking another 100,000 Soviet prisoners of war. We are advancing east along the Azov Sea, taking towns and villages along the way. Soon we will reach the Caucasus.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1941.10.17",
+			"end_date" : "1941.10.17",
+			"location" : "47.27,38.88",
+			"combat_chance" : 100,
+			"average_resistance" : 5,
+			"week_title" : "Taganrog",
+			"week_description" : "Taking the Russian port city of Taganrog on the other side of the River Mius is our next objective on the way to the Caucasus. Provide support to our infantry units during the assault.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.10.18",
+			"end_date" : "1941.11.16",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.11.17",
+			"end_date" : "1941.11.21",
+			"location" : "47.26,39.70",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "The Battle of Rostov",
+			"week_description" : "The Russian Rasputitsa autumn rains have slowed down our advance, but now we are finally ready to attack the city of Rostov, the final remaining obstacle between us and the Caucasus.",
+			"mission_odds" : {
+				"Urban Assault" : 50, 
+				"Battle" : 30,
+				"Counterattack": 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 80,
+				"Medium Tank" : 40,
+				"Heavy Tank" : 5
+			}
+		},
+		{
+			"start_date" : "1941.11.22",
+			"end_date" : "1941.11.26",
+			"location" : "47.26,39.70",
+			"combat_chance" : 40,
+			"average_resistance" : 5,
+			"week_title" : "Securing the Area around Rostov",
+			"week_description" : "We have taken the city, but there are still Soviet troops in the surrounding area. Patrol it and engage any enemies you encounter!",
+			"mission_odds" : {
+				"Patrol" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1941.11.27",
+			"end_date" : "1941.12.02",
+			"location" : "47.29,39.30",
+			"combat_chance" : 80,
+			"average_resistance" : 10,
+			"week_title" : "Retreat!",
+			"week_description" : "Coming from the north, the Soviet 37th Army has launched a surprise attack on Rostov. We do not have the strength to hold the city and must fall back behind the River Mius near Taganrog before we end up surrounded!",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 30.0
+		}
+	]
+}

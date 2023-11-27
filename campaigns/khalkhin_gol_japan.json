@@ -1,6 +1,7 @@
 {
 	"name" : "Khalkhin Gol (Japan)",
 	"creator" : "flori2412",
+	"difficulty" : "7",
 	"start_date" : "1939.07.03",
 	"end_date" : "1939.08.28",
 	"player_nation" : "Empire of Japan",
@@ -8,7 +9,8 @@
 	"region" : "Asian Steppes",
 	"desc" : "Join the Japanese forces in Mongolia as they attempt to drive back Soviet border troops across the Khalkhin Gol River.",
 	"player_unit_list" : [
-		"Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)", "Type 95 Ha-Go", "Type 89 I-Go", "Type 97 Chi-Ha"
+		"Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)", "Type 95 Ha-Go",
+		"Type 89 I-Go", "Type 97 Chi-Ha", "Type 91 SS-Ki"
 	],
 	"player_squad_list" : {
 		"Type 97 Te-Ke (MG)" : ["Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)"],
@@ -25,7 +27,7 @@
 		"Imperial Ambitions"
 	],
 	"player_arty_support": [
-		"Type 92 70mm Battalion Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 4 15cm Howitzer", "Type 96 15cm Howitzer"
+		"Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer", "Type 92 10cm Cannon", "Type 38 15cm Howitzer", "Type 4 15cm Howitzer", "Type 96 15cm Howitzer"
 	],
 	"player_air_support": [
 		"Kawasaki Ki-32"
@@ -34,7 +36,7 @@
 		"Anti-Armour" : ["AT Rifle Team", "Type 94 37mm AT Gun"],
 		"Anti-Infantry" : ["Type 94 Truck", "HMG Team", "Riflemen", "Rifle Cavalry"],
 		"Recon" : ["Motorcycle MG Team", "Type 94 Te-Ke", "Type 97 Te-Ke (MG)", "Type 97 Te-Ke (37mm)"],
-		"Artillery" : ["Medium Mortar Team", "Type 11 37mm Infantry Gun", "Type 92 70mm Battalion Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer"]
+		"Artillery" : ["Medium Mortar Team", "Type 11 37mm Infantry Gun", "Type 92 70mm Bn Gun", "Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun", "Type 91 10cm Howitzer"]
 	},
 	"friendly_transported_units" : {
 		"Type 94 Truck" : {
@@ -43,22 +45,27 @@
 		}
 	},
 	"enemy_air_support": {
-		"Soviet Union" : ["I-153 Chaika"]
+		"Soviet Union" : ["I-16", "I-153 Chaika"]
 	},
 	"enemy_arty_support": {
-		"Soviet Union" : ["76.2mm PP obr. 27", "76.2mm obr. 00/02P", "76.2mm obr. 36", "107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38", "152mm GP obr. 37"]
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 00/02P", "76.2mm obr. 36",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37"
+		]
 	},
 	"enemy_unit_list" : {
 		"Soviet Union" : [
-			"T-26 M33", "T-26 M37/39", "BT-5 M34", "BT-7 M37", "BT-7A",
+			"T-26 M33", "T-26 M37/39", "BT-2", "BT-5 M34", "BT-7 M37", "BT-7A",
 			"BA-6", "BA-10", "BA-20", "SU-12",
+			"OT-130", "OT-133",
 			"45mm obr. 1932",
 			"76.2mm PP obr. 27", "76.2mm obr. 00/02P", "76.2mm obr. 36", "107mm obr. 10/30", 
-			"122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38", "152mm GP obr. 37",
-			"85mm obr. 1939",
+			"122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37", "85mm ZP obr. 39",
 			"ZIS-5 Truck",
 			"Riflemen", "SMG Squad",
-			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Flame Thrower Team",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Rifle Cavalry"
 		]
 	},
@@ -86,12 +93,6 @@
 			}
 		}
 	},
-	"decorations_list" : {
-		"800" : "Order of the Rising Sun Eighth Class",
-		"1000" : "Order of the Rising Sun Seventh Class",
-		"1100" : "Order of the Rising Sun Sixth Class",
-		"1200" : "Order of the Rising Sun Fifth Class"
-	},
 	"combat_days" : 16,
 	"calendar_weeks": [
 		{
@@ -117,10 +118,11 @@
 			"combat_chance" : 80,
 			"average_resistance" : 8,
 			"week_title" : "Soviet Counterattacks",
-			"week_description" : "Our initial assault surprised the enemy troops, but we were not able to break their resistance and lost our air superiority. While an allied task force is retreating from the west bank of the Khalkhin Gol, we will dug in to the east of the river and hold our positions.",
+			"week_description" : "Our initial assault surprised the enemy troops, but we were not able to break their resistance and lost our air superiority. While an allied task force is retreating from the west bank of the Khalkhin Gol, we will dig in to the east of the river and hold our positions.",
 			"mission_odds" : {
 				"Battle" : 30,
-				"Counterattack" : 70
+				"Hold the Line": 50,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 30.0,
@@ -188,7 +190,8 @@
 			"week_description" : "General Zhukov has reinforced the Soviet troops with hundreds of planes, guns, tanks and thousands of soldiers. The Soviets are attacking us in full force now. We must do our best to contain their advance.",
 			"mission_odds" : {
 				"Battle" : 20,
-				"Counterattack" : 80
+				"Hold the Line": 70,
+				"Counterattack" : 10
 			},
 			"enemy_nations" : ["Soviet Union"],
 			"air_support_level" : 20.0,

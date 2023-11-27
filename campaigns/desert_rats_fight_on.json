@@ -1,6 +1,7 @@
 {
 	"name" : "The Desert Rats Fight On!",
 	"creator" : "flori2412",
+	"difficulty" : "9",
 	"start_date" : "1942.01.21",
 	"end_date" : "1942.11.04",
 	"player_nation" : "United Kingdom",
@@ -8,16 +9,16 @@
 	"region" : "North Africa",
 	"desc" : "Join the British and Commonwealth forces in North Africa as they struggle to contain the advance of the Afrika Korps into Libya and Egypt and eventually turn the tide at El Alamein.",
 	"player_unit_list" : [
+		"Daimler Scout Car", "Daimler Armoured Car", "Marmon-Herrington III", "Humber II", "AEC I", "M3A1 Scout Car",
+		"Bishop", "M7 Priest",
 		"Stuart I", "Stuart III", "Crusader I", "Crusader I CS", "Crusader II", "Crusader II CS", "Crusader III", 
 		"Grant I", "Lee II", "Lee V", "Lee VI", "Grant II", "Sherman I", "Sherman II",
 		"Matilda II", "Matilda II CS", "Valentine II", "Valentine III", "Valentine IV", "Valentine V",
-		"Churchill IV", "M13/40", "M14/41"
+		"Churchill I", "Churchill II", "Churchill IV", "M11/39 (UK)", "M13/40 (UK)", "M14/41 (UK)"
 	],
-	"player_unit_dates" : {
-		"M13/40" : "1942.01.01",
-		"M14/41" : "1942.08.01"
-	},
 	"player_squad_list" : {
+		"Daimler Scout Car" : ["Daimler Scout Car", "Daimler Armoured Car"],
+		"Daimler Armoured Car" : ["Daimler Scout Car", "Daimler Armoured Car"],
 		"Stuart III" : ["Stuart III", "Stuart I"],
 		"Crusader I" : ["Crusader I", "Crusader I CS"],
 		"Crusader I CS" : ["Crusader I", "Crusader I CS"],
@@ -31,9 +32,18 @@
 		"Sherman II" : ["Sherman II", "Sherman I"],
 		"Matilda II" : ["Matilda II", "Matilda II CS"],
 		"Matilda II CS" : ["Matilda II", "Matilda II CS"],
-		"M14/41" : ["M14/41", "M13/40"]
+		"M13/40 (UK)" : ["M14/41 (UK)", "M13/40 (UK)"],
+		"M14/41 (UK)" : ["M14/41 (UK)", "M13/40 (UK)"]
 	},
 	"tank_vp_modifiers" : {
+		"Daimler Scout Car" : 1.9,
+		"Daimler Armoured Car" : 1.5,
+		"Marmon-Herrington III" : 1.8,
+		"Humber II" : 1.6,
+		"AEC I" : 1.2,
+		"M3A1 Scout Car" : 1.8,
+		"Bishop" : 1.2,
+		"M7 Priest" : 1.3,
 		"Stuart I" : 1.3,
 		"Stuart III" : 1.2,
 		"Crusader I" : 1.3,
@@ -47,22 +57,23 @@
 		"Valentine III" : 1.2,
 		"Valentine IV" : 1.3,
 		"Valentine V" : 1.2,
-		"M13/40" : 1.3,
-		"M14/41" : 1.2
+		"M11/39 (UK)" : 1.5,
+		"M13/40 (UK)" : 1.3,
+		"M14/41 (UK)" : 1.2
 	},
 	"campaign_skills" : [
 		"Ad Hoc"
 	],
 	"player_arty_support": [
-		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
+		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", "Bishop", "M7 Priest"
 	],
 	"player_air_support": [
-		"P-40 Warhawk"
+		"P-40 Warhawk", "Hurricane Mk IIB", "Hurricane Mk IIC", "Hurricane Mk IID", "Spitfire Mk V", "Spitfire Mk IX"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "OQF 2-Pounder", "OQF 6-Pounder", "AT Rifle Carrier", "2 Pdr Portee", "6 Pdr Portee"],
 		"Anti-Infantry" : ["Morris 15 cwt", "Bren Gun Carrier", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
-		"Recon" : ["Daimler Scout Car", "Marmon-Herrington III", "Humber II", "AEC I", "Daimler Armoured Car"],
+		"Recon" : ["Daimler Scout Car", "Daimler Armoured Car", "Marmon-Herrington III", "Humber II", "AEC I", "M3A1 Scout Car"],
 		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "OQF 18-Pounder", "OQF 25-Pounder", "Bishop", "M7 Priest"]
 	},
 	"friendly_transported_units" : {
@@ -82,65 +93,63 @@
 			"Light Mortar Team" : 30,
 			"Medium Mortar Team" : 20,
 			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"AT Rifle Team" : 40,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
 		}
 	},
 	"enemy_arty_support": {
 		"Italy" : ["65/17", "75/27", "100/17", "105/28"],
-		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18"]
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41"]
 	},
 	"enemy_air_support": {
-		"Italy" : ["Fiat CR.42 Falco", "Ju 87 Picchiatello"],
-		"Germany" : ["Ju 87B Stuka"]
+		"Italy" : ["Fiat CR.42 Falco", "Ju 87 Picchiatello", "Fiat G.50", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"],
+		"Germany" : ["Ju 87B Stuka", "Ju 87D Stuka", "Hs 129", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"]
 	},
 	"enemy_unit_list" : {
 		"Italy" : [
-			"L6/40", "M11/39", "M13/40", "M14/41",
-			"Semovente da 47/32", "Semovente da 75/18",
+			"L6/40", "M13/40", "M14/41", "L3 Lf", "L3 Lf (Trailer)", "L5/30 (Fiat 3000)",
+			"Semovente da 47/32", "Semovente da 75/18", "Semovente da 90/53", "R35 (ITA)",
 			"47/32",
-			"AB 41",
+			"AB 41", "AB Lancia 1Z",
 			"65/17", "75/27", "100/17", "105/28",
 			"20/65",
 			"Autocannone da 20/65",
 			"Fiat 626",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Germany" : [
 			"Panzer II F", "Panzer III H", "Panzer III L", "Panzer III M", "Panzer III N",
 			"Panzer III J", "Panzer IV D", "Panzer IV E", "Panzer IV F1", "Panzer IV F2", 
-			"Panzer IV G", "Panzer IV H", "Stuart I", "Stuart III", "Crusader I", "Crusader II", 
-			"Crusader III", "Matilda II", "Valentine II", "Valentine III",
+			"Panzer IV G", "Panzer IV H",
+			"Panzer M3 740", "Kreuzer Panzer Mk VI 746", "Panzer Mark II 748",
+			"Panzer M3 740 (Late)", "Kreuzer Panzer Mk VI 746",
+			"Panzer Mk VI 746 (III)", "Panzer Mk III 749", "Panzer Mk III 749 (Late)",
+			"SPW 250/7", "SPW 251/2", "SPW 250/8", "SPW 251/9",
 			"Panzerjager I", "Marder II", "Marder III",
-			"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
-			"PaK 38", "PaK 40",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
+			"PaK 35/36", "PaK 38", "PaK 40",
 			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", 
 			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
-			"Sd. Kfz. 7/1",
-			"Opel Blitz 3-ton", "Kfz 1",
-			"SPW 251/1", "SPW 251/2",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
+			"SPW 250/1", "SPW 251/1",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
-	},
-	"enemy_captured_units" : [
-		"Stuart I", "Stuart III", "Crusader I", "Crusader II", "Crusader III", "Matilda II", "Valentine II", "Valentine III"
-	],
-	"enemy_unit_dates" : {
-		"Stuart I" : "1942.01.01",
-		"Stuart III" : "1942.06.26",
-		"Crusader I" : "1942.01.01",
-		"Crusader II" : "1942.05.26",
-		"Crusader III" : "1942.06.26",
-		"Matilda II" : "1942.01.01",
-		"Valentine II" : "1942.01.01",
-		"Valentine III" : "1942.05.26"
 	},
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 30,
 		"Medium Tank" : 70,
 		"Heavy Tank" : 50,
+		"Assault Gun" : 20,
 		"Tank Destroyer" : 40,
 		"Armoured Car" : 80,
 		"Anti-Tank Gun" : 60,
@@ -173,6 +182,22 @@
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
 			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
 			"SPW 251/1" : {
 				"Riflemen" : 60,
 				"HMG Team" : 10,
@@ -182,12 +207,6 @@
 				"Flame Thrower Team" : 10
 			}
 		}
-	},
-	"decorations_list" : {
-		"4400" : "Military Medal",
-		"4600" : "Military Cross",
-		"4800" : "Distinguished Service Order",
-		"5100" : "Victoria Cross"
 	},
 	"combat_days" : 66,
 	"calendar_weeks": [
@@ -199,7 +218,7 @@
 			"average_resistance" : 8,
 			"coastal_chance" : 80,
 			"landmines_chance" : 20,
-			"week_title" : "Rommel strikes back",
+			"week_title" : "Rommel Strikes Back",
 			"week_description" : "Having received reinforcements and supplies from across the Mediterranean Sea, the Afrika Korps has launched a surprise attack at Agedabia and the surrounding area. Our forces are disorganised and scattered. We need to fall back to the north and prepare ourselves to defend Benghazi.",
 			"mission_odds" : {
 				"Counterattack" : 20,
@@ -216,10 +235,11 @@
 			"average_resistance" : 9,
 			"coastal_chance" : 90,
 			"landmines_chance" : 30,
-			"week_title" : "The fall of Benghazi",
+			"week_title" : "The Fall of Benghazi",
 			"week_description" : "Our unit has made it to Benghazi, but we are lacking the strength to hold the city. Repel any German and Italian attacks until we are ready to evacuate our troops.",
 			"mission_odds" : {
-				"Counterattack" : 100
+				"Hold the Line" : 80,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"arty_support_level" : 50.0,
@@ -257,8 +277,8 @@
 			"week_title" : "The Battle of Gazala",
 			"week_description" : "After several months of inactivity, the Germans and Italians have launched a large-scale offensive against the Gazala Line, attacking us from the west and south. We must not let them break through!",
 			"mission_odds" : {
-				"Battle" : 40,
-				"Counterattack" : 60
+				"Hold the Line" : 60,
+				"Battle" : 40
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"arty_support_level" : 80.0,
@@ -289,11 +309,11 @@
 			"average_resistance" : 9,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "Heavy casualties",
+			"week_title" : "Heavy Casualties",
 			"week_description" : "The Axis forces have knocked out most of our tanks and the situation is critical. Our Free French allies are still holding Bir Hakeim, but we will not be able to support them much longer. Hold your position if possible, but retreat to the east if necessary.",
 			"mission_odds" : {
-				"Counterattack" : 30,
-				"Fighting Withdrawal" : 70
+				"Hold the Line" : 50,
+				"Fighting Withdrawal" : 50
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"arty_support_level" : 50.0,
@@ -308,7 +328,7 @@
 			"coastal_chance" : 80,
 			"landmines_chance" : 20,
 			"week_title" : "The Gazala Gallop",
-			"week_description" : "On 13th June, now known as 'Black Saturday', enemy forces managed to overrun the Gazala Line, taking thousands of our soldiers prisoner. In the east, Rommel's troops are about to cut off our only escape route. We have no choice but to retreat towards Egypt, even if it means abandoning Tobruk and our garrison inside the city.",
+			"week_description" : "On 13th June, now known as 'Black Saturday', enemy forces managed to overrun the Gazala Line. In the east, Rommel's troops are about to cut off our only escape route. We have no choice but to retreat towards Egypt, even if it means abandoning Tobruk and our garrison inside the city.",
 			"mission_odds" : {
 				"Fighting Withdrawal" : 100
 			},
@@ -331,9 +351,10 @@
 			"week_title" : "The Battle of Mersa Matruh",
 			"week_description" : "Tobruk has fallen and Rommel's troops are still on our heels. We are forced to fight another battle south of the fortress port of Mersa Matruh. Despite the valuable support of the Desert Airforce, we can only hope to delay the enemy advance before having to retreat further east into Egypt.",
 			"mission_odds" : {
+				"Fighting Withdrawal" : 40,
+				"Hold the Line" : 20,
 				"Battle" : 20,
-				"Counterattack" : 40,
-				"Fighting Withdrawal" : 40
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"air_support_level" : 50.0,
@@ -349,9 +370,10 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 40,
 			"week_title" : "The First Battle of El Alamein",
-			"week_description" : "Having withdrawn to a strongly fortified position less than 70 miles from Alexandria, we are being attacked by Rommel's forces yet again. However, this time the enemy is running low on supplies and we can rely on excellent air support. Our unit has been ordered to help repel the German and Italian assault on Ruweisat Ridge in the south.",
+			"week_description" : "Having withdrawn to a strongly fortified position less than 70 miles from Alexandria, we are being attacked by Rommel's forces yet again. However, this time the enemy is running low on supplies. Our unit will help repel the German and Italian assault on Ruweisat Ridge in the south.",
 			"mission_odds" : {
-				"Battle" : 60,
+				"Hold the Line" : 20,
+				"Battle" : 40,
 				"Counterattack" : 40
 			},
 			"enemy_nations" : ["Italy", "Germany"],
@@ -370,7 +392,7 @@
 			"average_resistance" : 5,
 			"coastal_chance" : 0,
 			"landmines_chance" : 40,
-			"week_title" : "A lull in the fighting",
+			"week_title" : "A Lull in the Fighting",
 			"week_description" : "The Germans and Italians have failed to break our lines. Now they are digging in and waiting for reinforcements. Patrol the area around Ruweisat Ridge and engage any enemy units.",
 			"mission_odds" : {
 				"Patrol" : 100
@@ -493,10 +515,10 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 40,
 			"week_title" : "The Battle of Alam el Halfa",
-			"week_description" : "Having failed to break through at El Alamein, the Afrika Korps is trying to encircle our troops by attacking us further south. Fortunately, we knew about Rommel's plans beforehand and are well-prepared this time. We are going to let the Germans and Italians attack the ridge of Alam el Halfa, where our tanks and anti-tank guns are already waiting for them in entrenched positions.",
+			"week_description" : "Having failed to break through at El Alamein, the Afrika Korps is now attacking us further south. Fortunately, we knew about Rommel's plans beforehand. We are going to let the enemy attack the ridge of Alam el Halfa, where our forces are already waiting in entrenched positions.",
 			"mission_odds" : {
-				"Battle" : 20,
-				"Counterattack" : 80
+				"Hold the Line" : 80,
+				"Battle" : 20
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"air_support_level" : 80.0,
@@ -539,7 +561,7 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 40,
 			"week_title" : "The Second Battle of El Alamein",
-			"week_description" : "Yesterday evening our forces launched a large-scale attack on the German and Italian battle lines west and south-west of El Alamein. Our unit has been posted in the north and will advance towards Miteiriya Ridge and Kidney Ridge further west. Proceed with caution - we have to expect fierce resistance and our engineers have not yet cleared most of the minefields in this area.",
+			"week_description" : "Yesterday evening our forces launched a large-scale attack on the German and Italian battle lines west and south-west of El Alamein. Our unit has been posted in the north and will advance towards Miteiriya Ridge and Kidney Ridge further west. Watch out for the minefields in this area.",
 			"mission_odds" : {
 				"Battle" : 80,
 				"Advance" : 20
@@ -557,11 +579,11 @@
 			"average_resistance" : 8,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "Axis counterattacks",
-			"week_description" : "Because of heavy casualties, General Montgomery ordered to halt all attacks further south. However, the battle is still waging here in the north, around Kidney Ridge, and Rommel is trying to push us back at all cost. Hold the line and inflict as many casualties on the Germans and Italians as you can!",
+			"week_title" : "Axis Counterattacks",
+			"week_description" : "Because of heavy casualties, General Montgomery ordered to halt all attacks further south. However, the battle is still raging here in the north, around Kidney Ridge, and Rommel is trying to push us back at all cost. Hold the line and inflict as many casualties on the Germans and Italians as you can!",
 			"mission_odds" : {
-				"Battle" : 30,
-				"Counterattack" : 70
+				"Hold the Line" : 70,
+				"Battle" : 30
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"air_support_level" : 80.0,
@@ -576,7 +598,7 @@
 			"average_resistance" : 7,
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
-			"week_title" : "The crumbling",
+			"week_title" : "The Crumbling",
 			"week_description" : "We managed to repel the Axis counterattacks, but the battle is far from over and both sides are suffering heavy casualties. We must wear down the German and Italian resistance in the north to prepare a decisive push through the enemy defences.",
 			"mission_odds" : {
 				"Battle" : 100
@@ -595,7 +617,7 @@
 			"coastal_chance" : 0,
 			"landmines_chance" : 30,
 			"week_title" : "Operation Supercharge",
-			"week_description" : "Both sides have lost many soldiers, guns and vehicles, but due to our numerical superiority we have finally gained the upper hand. We are going to attack the Italians and Germans in full force and break their resistance. The enemy positions are still being defended by numerous anti-tank guns. Destroy them with artillery and infantry support if necessary!",
+			"week_description" : "Both sides have lost many soldiers, guns and vehicles, but we have finally gained the upper hand. We are going to attack the Italians and Germans in full force and break their resistance. The enemy positions are still being defended by numerous anti-tank guns. Be careful!",
 			"mission_odds" : {
 				"Advance" : 80,
 				"Spearhead" : 20
@@ -617,8 +639,8 @@
 			"average_resistance" : 5,
 			"coastal_chance" : 0,
 			"landmines_chance" : 10,
-			"week_title" : "The last stand of the Italians",
-			"week_description" : "Rommel used his last fuel reserves and vehicles to withdraw his German soldiers from the battlefield. Even though they have been left behind without any chance to defeat us, a significant number of Italian troops are trying to stop us from pursuing their allies. We need to take them out.",
+			"week_title" : "The Last Stand of the Italians",
+			"week_description" : "Rommel used his last fuel reserves and vehicles to withdraw his German soldiers from the battlefield. Having been left behind without any chance to defeat us, a significant number of Italian troops are trying to stop us from pursuing their allies. We need to take them out.",
 			"mission_odds" : {
 				"Battle" : 100
 			},

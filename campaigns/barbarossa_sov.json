@@ -1,18 +1,19 @@
 {
 	"name" : "Barbarossa to Moscow (Soviet Union)",
 	"creator" : "Standard Campaign",
+	"difficulty" : "7",
 	"start_date" : "1941.06.22",
 	"end_date" : "1941.12.05",
 	"player_nation" : "Soviet Union",
 	"enemy_nations" : ["Germany"],
-	"region" : "Western Russia",
-	"desc" : "Germany has broken its promise of non-agression and crossed the border into Eastern Poland. Join the defense against this new enemy.",
+	"region" : "Western USSR",
+	"desc" : "Germany has broken its promise of non-aggression and crossed the border into Eastern Poland. Join the defense against this new enemy.",
 	"player_unit_list" : [
-		"T-60 M40", "T-26 M33", "T-26 M37/39",
-		"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57",
+		"BA-6", "BA-10", "BA-20",
+		"T-37A", "T-38", "T-40", "T-60 M40", "T-26 M33", "T-26 M37/39",
+		"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34-57", "T-34 M42",
 		"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "KV-2",
-		"BT-5 M34", "BT-7 M37", "BT-7A", "SU-12",
-		"ZiS-30"
+		"BT-2", "BT-5 M34", "BT-7 M37", "BT-7A", "OT-130", "OT-133", "ZiS-30"
 	],
 	"player_squad_list" : {
 		"T-26 M33" : ["T-26 M33", "T-26 M37/39"],
@@ -28,37 +29,46 @@
 		"BT-7A" : ["BT-5 M34", "BT-7 M37", "BT-7A"]
 	},
 	"tank_vp_modifiers" : {
+		"BA-6" : 1.5,
+		"BA-10" : 1.4,
+		"BA-20" : 2.0,
+		"T-37A" : 1.8,
+		"T-38" : 1.8,
+		"T-40" : 1.7,
 		"T-26 M33" : 1.3,
 		"T-26 M37/39" : 1.2,
 		"T-28 M34" : 1.1,
 		"T-34 M41" : 0.9,
+		"T-34 M42" : 0.9,
 		"T-34-57" : 0.8,
 		"KV-1 M39/40" : 0.8,
 		"KV-1E" : 0.7,
 		"KV-1 M41" : 0.6,
 		"KV-2" : 0.9,
 		"BT-7A" : 1.2,
+		"BT-2" : 1.4,
 		"BT-5 M34" : 1.3,
 		"BT-7 M37" : 1.3,
-		"SU-12" : 1.3,
-		"ZiS-30" : 1.6
+		"ZiS-30" : 1.6,
+		"OT-133" : 1.3,
+		"OT-130" : 1.2
 	},
 	"campaign_skills" : [
 		"Defend the Motherland"
 	],
 	"player_air_support": [
-		"I-153 Chaika", "Il-2 Sturmovik"
+		"I-153 Chaika", "Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Hurricane Mk IIB"
 	],
 	"player_arty_support": [
 		"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
-		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
-		"152mm GP obr. 37"
+		"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+		"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
 	],
 	"player_unit_support" : {
-		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "SU-12"],
+		"Anti-Armour" : ["AT Rifle Team", "45mm obr. 1932", "57mm obr. 1943", "SU-12"],
 		"Anti-Infantry" : ["ZIS-5 Truck", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
 		"Recon" : ["BA-6", "BA-10", "BA-20"],
-		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39"]
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "76.2mm PP obr. 27", "76.2mm obr. 36", "BM-13"]
 	},
 	"friendly_transported_units" : {
 		"ZIS-5 Truck" : {
@@ -68,45 +78,38 @@
 		}
 	},
 	"enemy_air_support": {
-		"Germany" : ["Ju 87B Stuka"]
+		"Germany" : ["Hs 123", "Ju 87B Stuka", "Ju 87D Stuka", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"]
 	},
 	"enemy_arty_support": {
-		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33"]
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41"]
 	},
 	"enemy_unit_list" : {
 		"Germany" : [
-			"Panzer I B", "Panzer II F",
+			"Panzer I A", "Panzer I B", "Panzer II F", "Flammpanzer II",
 			"Panzer 35(t)", "Panzer 38(t) A", "Panzer 38(t) E", "Panzer III F", "Panzer III G",
 			"Panzer III H", "Panzer III J", "Panzer IV D", "Panzer IV E", "Panzer IV F1",
-			"SOMUA S35 (GER)", "R35 (GER)", "H39 (GER)", "T-26 M33", "BT-7 M37",
-			"T-60 M40", "T-34 M40", "T-34 M41",
+			"SOMUA S35 (GER)", "R35 (GER)", "H39 (GER)",
+			"Panzer T-26 737 M33", "Panzer BT 742", "Panzer T-60 743",
+			"Panzer T-34 747 M40", "Panzer T-34 747 M41",
+			"Flammpanzer B2 F",
 			"StuG III B",
 			"Panzerjager I",
-			"PSW 221", "PSW 222", "PSW 231 (8 rad)",
-			"PaK 35/36", "PaK 38", "PaK 97/38",
-			"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)", "Panzerspahwagen P204",
+			"PaK 35/36", "PaK 36", "PaK 38", "PaK 97/38",
+			"7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41",
 			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
-			"Sd. Kfz. 7/1",
-			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
 			"SPW 251/1", "SPW 251/2",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
-	},
-	"enemy_captured_units" : [
-		"T-26 M33", "BT-7 M37", "T-60 M40", "T-34 M40", "T-34 M41"
-	],
-	"enemy_unit_dates" : {
-		"T-26 M33" : "1941.07.15",
-		"BT-7 M37" : "1941.07.15",
-		"T-60 M40" : "1941.07.15",
-		"T-34 M40" : "1941.07.15",
-		"T-34 M41" : "1941.07.15"
 	},
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 90,
 		"Medium Tank" : 50,
+		"Heavy Tank" : 10,
 		"Assault Gun" : 30,
 		"Tank Destroyer" : 35,
 		"Armoured Car" : 50,
@@ -151,12 +154,6 @@
 			}
 		}
 	},
-	"decorations_list" : {
-		"1500" : "Medal for Battle Merit",
-		"2000" : "Order of the Red Star",
-		"2500" : "Order of the Red Banner",
-		"3000" : "Order of Lenin"
-	},
 	"combat_days" : 40,
 	"calendar_weeks": [
 		{
@@ -167,8 +164,9 @@
 			"week_title" : "Defend the Motherland!",
 			"week_description" : "Germany has launched an invasion of our territory in Eastern Poland. Join the defense against this surprise attack.",
 			"mission_odds" : {
-				"Battle" : 85,
-				"Counterattack" : 15
+				"Hold the Line" : 40,
+				"Battle" : 30,
+				"Counterattack" : 30
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 40.0,
@@ -197,10 +195,11 @@
 			"combat_chance" : 60,
 			"average_resistance" : 8,
 			"week_title" : "Capturing Smolensk",
-			"week_description" : "Our lines have been pushed back to the Russian border with Poland. Fast-moving mechanized German forces are trying to cut us off in a pincer attack near Smolensk.",
+			"week_description" : "Our lines have been pushed back to the east. Fast-moving mechanized German forces are trying to cut us off in a pincer attack near Smolensk.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 40,
+				"Battle" : 30,
+				"Counterattack" : 30
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 30.0,
@@ -215,9 +214,10 @@
 			"week_title" : "Holding the Gap",
 			"week_description" : "Smolensk has been captured, but we must hold back the pincer attack to allow our forces to withdraw eastwards.",
 			"mission_odds" : {
+				"Hold the Line" : 20,
+				"Counterattack" : 30,
 				"Advance" : 25,
-				"Battle" : 25,
-				"Counterattack" : 50
+				"Battle" : 25
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 20.0,
@@ -232,8 +232,9 @@
 			"week_title" : "Holding the Gap II",
 			"week_description" : "We continue to fight a rearguard action, protecting the withdrawl toward Moscow.",
 			"mission_odds" : {
-				"Counterattack" : 50,
-				"Fighting Withdrawal" : 50
+				"Fighting Withdrawal" : 50,
+				"Hold the Line" : 30,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 20.0,
@@ -248,7 +249,8 @@
 			"week_title" : "Holding the Gap III",
 			"week_description" : "Nearly 300,000 of our soldiers and over 3000 tanks are now nearly cut off from retreat, now more than ever we need to keep the lifeline open.",
 			"mission_odds" : {
-				"Battle" : 60,
+				"Hold the Line" : 40,
+				"Battle" : 20,
 				"Counterattack" : 20,
 				"Fighting Withdrawal" : 20
 			},
@@ -271,7 +273,8 @@
 			"week_description" : "After a brief pause, Germany has launched a renewed offensive this week. We must support the two defensive lines centered on Vyazma and Mozhaysk.",
 			"mission_odds" : {
 				"Battle" : 60,
-				"Counterattack" : 40
+				"Hold the Line" : 20,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 70.0,
@@ -286,9 +289,9 @@
 			"week_title" : "Battles of Vyazma and Bryansk",
 			"week_description" : "Vyazma and Mozhaysk are nearly encircled. Now we must hold the line to protect four of our armies from being encircled.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 30,
-				"Fighting Withdrawal" : 20
+				"Hold the Line" : 60,
+				"Battle" : 20,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 70.0,
@@ -303,8 +306,9 @@
 			"week_title" : "Mozhaysk Defensive Line",
 			"week_description" : "We have withdrawn to help fortify a hastily-constructed defensive line on the route to Moscow.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Counterattack" : 50
+				"Hold the Line" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 70.0,
@@ -319,7 +323,8 @@
 			"week_title" : "Protecting Tula",
 			"week_description" : "A German spearhead has struck south toward the strongholds of the Mozhaysk Defensive Line, protecting the city of Tula, and we are attacking their vanguard forces.",
 			"mission_odds" : {
-				"Battle" : 80,
+				"Battle" : 60,
+				"Hold the Line" : 20,
 				"Fighting Withdrawal" : 20
 			},
 			"enemy_nations" : ["Germany"],
@@ -340,9 +345,9 @@
 			"week_title" : "Taking Tula",
 			"week_description" : "After some weeks, presumably waiting for resupply, the Germans have resumed their advance on Tula.",
 			"mission_odds" : {
-				"Battle" : 50,
-				"Fighting Withdrawal" : 20,
-				"Counterattack" : 30
+				"Hold the Line" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 70.0,
@@ -357,7 +362,8 @@
 			"week_title" : "Kashira",
 			"week_description" : "Flanking counterattacks from our forces have slowed the German advance, but we they now approach within striking distance of Kashira, on the highway to Moscow.",
 			"mission_odds" : {
-				"Battle" : 80,
+				"Hold the Line" : 40,
+				"Battle" : 40,
 				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
@@ -371,7 +377,7 @@
 			"combat_chance" : 90,
 			"average_resistance" : 10,
 			"week_title" : "Kashira Counterattacks",
-			"week_description" : "They have been unable to take the city, and now we have launched a fierce counterattack while their lines are overextended.",
+			"week_description" : "German forces have been unable to take the city, and now we have launched a fierce counterattack while their lines are overextended.",
 			"mission_odds" : {
 				"Spearhead" : 80,
 				"Battle" : 20

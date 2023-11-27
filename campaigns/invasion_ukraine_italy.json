@@ -1,0 +1,443 @@
+{
+	"name" : "Invasion of Ukraine (Italy)",
+	"creator" : "flori2412",
+	"difficulty" : "9",
+	"start_date" : "1941.08.10",
+	"end_date" : "1941.12.28",
+	"player_nation" : "Italy",
+	"enemy_nations" : ["Soviet Union"],
+	"region" : "Western USSR",
+	"desc" : "Join the armoured forces of the Italian Expeditionary Corps on the Eastern Front as they participate in the invasion of Ukraine.",
+	"player_unit_list" : [
+		"AB 40", "AB 41", "L3/35", "L6/40"
+	],
+	"tank_vp_modifiers" : {
+		"AB 40" : 1.2,
+		"AB 41" : 1.1,
+		"L3/35" : 1.3
+	},
+	"campaign_skills" : [
+		"Audacia"
+	],
+	"player_air_support": [
+		"Ju 87 Picchiatello", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"
+	],
+	"player_arty_support": [
+		"65/17", "75/27", "100/17", "105/28"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "37/45", "47/32"],
+		"Anti-Infantry" : ["Fiat 626", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team", "Rifle Cavalry"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "Heavy Mortar Team"],
+		"Recon" : ["Motorcycle MG Team", "AB 40", "AB 41", "L3/35", "L6/40"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "65/17", "75/27", "100/17", "105/28"]
+	},
+	"friendly_transported_units" : {
+		"Fiat 626" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20,
+			"Light Mortar Team" : 10,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Soviet Union" : ["I-153 Chaika", "Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Hurricane Mk IIB"]
+	},
+	"enemy_arty_support": {
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37", "BM-13"
+		]
+	},
+	"enemy_unit_list" : {
+		"Soviet Union" : [
+			"T-37A", "T-38", "T-40",
+			"T-60 M40", "T-26 M33", "T-26 M37/39",
+			"BT-5 M34", "BT-7 M37", "BT-7A",
+			"T-28 M34", "T-28E M40", "T-34 M40", "T-34 M41", "T-34 M42",
+			"Mark II", "Mark III", "KV-1 M39/40", "KV-1E", "KV-1 M41", "T-35",
+			"OT-130", "OT-133",
+			"SU-12", "BM-13",
+			"BA-6", "BA-10", "BA-20",
+			"45mm obr. 1932", "57mm obr. 1943",
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "122mm obr. 31/37",
+			"152mm G obr. 38", "152mm GP obr. 37",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA",
+			"ZIS-5 Truck", 
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Light Artillery Car",
+			"Motorcycle MG Team",
+			"Rifle Cavalry"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Tankette" : 15,
+		"Light Tank" : 60,
+		"Medium Tank" : 30,
+		"Heavy Tank" : 5,
+		"Assault Gun" : 20,
+		"Armoured Car" : 50,
+		"Anti-Tank Gun" : 60,
+		"Artillery Gun" : 35,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Armoured Train Car" : 10,
+		"Motorcycle Team" : 30,
+		"Cavalry Squad" : 20
+	},
+	"enemy_transported_units" : {
+		"Soviet Union" : {
+			"ZIS-5 Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			}
+		}
+	},
+	"combat_days" : 45,
+	"calendar_weeks": [
+		{
+			"start_date" : "1941.08.10",
+			"end_date" : "1941.08.12",
+			"location" : "47.34,31.61",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "First Contact",
+			"week_description" : "Having advanced into Ukraine, the Italian Expeditionary Corps has made contact with the enemy south-east of Voznesensk, close to the River Bug. The Soviets are retreating towards the city of Mykolaiv further south. We will try to stop them dead in their tracks.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 40,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.08.13",
+			"end_date" : "1941.09.20",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.09.21",
+			"end_date" : "1941.09.23",
+			"location" : "48.92,33.79",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"landmines_chance" : 10,
+			"week_title" : "Crossing the River Dnieper",
+			"week_description" : "Together with the German 17th Army, we are going to cross the River Dnieper north-west of the city of Dnipropetrovsk. The Soviets on the other side of the river are not going to make this easy for us. Expect heavy resistance!",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 30,
+				"Battle" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.09.24",
+			"end_date" : "1941.09.26",
+			"location" : "48.92,34.49",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Defending the Bridgehead",
+			"week_description" : "We have crossed the River Dnieper and established a bridgehead next to the town of Carycanka, encircling more than 10,000 enemy soldiers at the village of Petrikovka behind us. We need to hold it against Soviet counterattacks until we are ready to attack Petrikovka from all sides.",
+			"mission_odds" : {
+				"Hold the Line" : 50,
+				"Battle" : 30,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.09.28",
+			"end_date" : "1941.09.30",
+			"location" : "48.78,34.55",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Petrikovka",
+			"week_description" : "All our troops are in position. We are going to close the gap between our units by advancing on the Soviet troops at Petrikovka from the north-west, north-east and south-east at the same time.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 60,
+				"Counterattack" : 10
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1941.10.01",
+			"end_date" : "1941.10.05",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.10.06",
+			"end_date" : "1941.10.08",
+			"location" : "48.59,35.58",
+			"combat_chance" : 50,
+			"average_resistance" : 3,
+			"week_title" : "Advancing East",
+			"week_description" : "The Italian Expeditionary Corps will advance further into Ukraine as a part of General von Kleist's First Panzer Army.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1941.10.09",
+			"end_date" : "1941.10.11",
+			"location" : "48.53,35.87",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Assault on Pavlohrad",
+			"week_description" : "Our troops will join the German assault on the Ukrainian city of Pavlohrad, located on the eastern bank of the River Vovca.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"enemy_class_odds_modifier" : {
+				"Rifle Cavalry" : 0
+			}
+		},
+		{
+			"start_date" : "1941.10.12",
+			"end_date" : "1941.10.17",
+			"location" : "48.36,36.80",
+			"combat_chance" : 50,
+			"average_resistance" : 3,
+			"week_title" : "Towards Stalino",
+			"week_description" : "Having taken Pavlohrad, we are pushing towards the city of Stalino, the heart of the strategically important Donbass region.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0,
+			"enemy_class_odds_modifier" : {
+				"Rifle Cavalry" : 20
+			}
+		},
+		{
+			"start_date" : "1941.10.18",
+			"end_date" : "1941.10.20",
+			"location" : "48.53,35.87",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Taking Stalino",
+			"week_description" : "The assault on the most important city of the Donbass region has begun. The Italian Expeditionary Corps will concentrate its attack on the railway station in the north-west while our German allies are going secure the rest of the city.",
+			"mission_odds" : {
+				"Urban Assault" : 100
+			},
+			"terrain_odds_modifier": {
+				"Train Station" : 40
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"enemy_class_odds_modifier" : {
+				"Rifle Cavalry" : 0
+			}
+		},
+		{
+			"start_date" : "1941.10.22",
+			"end_date" : "1941.10.28",
+			"location" : "48.22,37.98",
+			"combat_chance" : 50,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Pursuit",
+			"week_description" : "We have orders to pursue the Red Army troops who have escaped the fighting in Stalino and are withdrawing towards the city of Rykovo to the north-east of our position. Our bombers are now operating from the nearby Stalino airport and are ready to provide support.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 30,
+				"Battle" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.10.29",
+			"end_date" : "1941.11.01",
+			"location" : "48.23,38.20",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"landmines_chance" : 5,
+			"week_title" : "Rykovo",
+			"week_description" : "Rykovo is being defended by three Soviet divisions. We have to expect heavy resistance both inside and around the city.",
+			"mission_odds" : {
+				"Urban Assault" : 50,
+				"Battle" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1941.11.02",
+			"end_date" : "1941.11.05",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.11.06",
+			"end_date" : "1941.11.08",
+			"location" : "48.33,38.59",
+			"combat_chance" : 80,
+			"average_resistance" : 5,
+			"week_title" : "Emergency at Nikitovka",
+			"week_description" : "Parts of the Pasubio Division - one of the units of the Italian Expeditionary Corps - have been surrounded by the enemy at the town of Nikitovka, east of Rykovo. We need to rush to their aid before they are annihilated!",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Spearhead" : 60
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 50.0,
+			"enemy_class_odds_modifier" : {
+				"Rifle Cavalry" : 20
+			}
+		},
+		{
+			"start_date" : "1941.11.09",
+			"end_date" : "1941.11.12",
+			"location" : "48.34,38.87",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"landmines_chance" : 5,
+			"week_title" : "Breaking the Encirclement of Nikitovka",
+			"week_description" : "Soldiers of the Pasubio Division are fighting for their lives at Nikitovka. We need to break the resistance of the Soviet forces in front of us in order to allow our brothers-in-arms to fall back to Horlivka to the west of here.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.11.13",
+			"end_date" : "1941.11.14",
+			"location" : "48.33,38.59",
+			"combat_chance" : 50,
+			"average_resistance" : 6,
+			"week_title" : "Retreat to Horlivka",
+			"week_description" : "We were able to break the encirclement of Nikitovka and are falling back to the west together with the Pasubio Division, with Soviet forces in close pursuit!",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 90.0,
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.11.15",
+			"end_date" : "1941.12.04",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.12.05",
+			"end_date" : "1941.12.09",
+			"location" : "48.23,38.20",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "The Battle of Chazepetovka",
+			"week_description" : "We are consolidating our position at Rykovo and preparing for the Russian winter. Some enemy forces - including Siberian infantry and Cossack cavalry - are harassing our infantry at the village of Chazepetovka. Help them fend off the attacks!",
+			"mission_odds" : {
+				"Battle" : 30,
+				"Counterattack" : 50,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_class_odds_modifier" : {
+				"Light Tank" : 80,
+				"Medium Tank" : 40,
+				"Rifle Cavalry" : 40
+			}
+		},
+		{
+			"start_date" : "1941.12.10",
+			"end_date" : "1941.12.14",
+			"location" : "48.23,38.20",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Holding the Line",
+			"week_description" : "The enemy attacks are getting weaker, but our troops have also taken some casualties. Keep fending off the Soviet attacks!",
+			"mission_odds" : {
+				"Hold the Line" : 40,
+				"Counterattack" : 40,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1941.12.15",
+			"end_date" : "1941.12.25",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1941.12.26",
+			"end_date" : "1941.12.28",
+			"location" : "48.30,38.56",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "The Christmas Battle",
+			"week_description" : "The Soviets are still keeping us under pressure. They have attacked our troops and German allies at Debalceve to the north-east of Rykovo on Christmas Day and managed to push them back. Together with German infantry and tank units, the Italian Expeditionary Corps is mounting a counterattack.",
+			"mission_odds" : {
+				"Hold the Line" : 40,
+				"Battle" : 30,
+				"Counterattack" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0,
+			"enemy_class_odds_modifier" : {
+				"Rifle Cavalry" : 20
+			}
+		}
+	]
+}

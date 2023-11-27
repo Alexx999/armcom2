@@ -1,0 +1,294 @@
+{
+	"name" : "Jungle Rats",
+	"difficulty" : "5",
+	"start_date" : "1942.02.24",
+	"end_date" : "1942.05.05",
+	"player_nation" : "United Kingdom",
+	"enemy_nations" : ["Empire of Japan"],
+	"region" : "Southeast Asia",
+	"desc" : "After helping to turn the tide in North Africa, the 7th Armoured Brigade was en route to East Asia when word arrived that Singapore fell. Instead they were posted to Burma to defend it from Japanese invasion.",
+	"player_unit_list" : [
+		"Daimler Scout Car", "Daimler Armoured Car", "Humber II", "M2A4 Light Tank (UK)", "Stuart I"
+	],
+	"player_squad_list" : {
+		"Daimler Scout Car" : ["Daimler Scout Car", "Daimler Armoured Car"],
+		"Daimler Armoured Car" : ["Daimler Scout Car", "Daimler Armoured Car"],
+		"M2A4 Light Tank (UK)" : ["M2A4 Light Tank (UK)", "Stuart I"],
+		"Stuart I" : ["M2A4 Light Tank (UK)", "Stuart I"]
+	},
+	"tank_vp_modifiers" : {
+		"Daimler Scout Car" : 1.3,
+		"Humber II" : 1.1,
+		"M2A4 Light Tank (UK)" : 0.8,
+		"Stuart I" : 0.8
+	},
+	"campaign_skills" : [
+		"Fighting Qualities"
+	],
+	"player_air_support": [
+		"Hurricane Mk I", "Hurricane Mk IIB", "Hurricane Mk IIC"
+	],
+	"player_arty_support": [
+		"OQF 25-Pounder", "Heavy Mortar Team"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "AT Rifle Carrier"],
+		"Anti-Infantry" : ["Morris 15 cwt", "Bren Gun Carrier", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
+		"Recon" : ["Daimler Scout Car", "Daimler Armoured Car", "Humber II"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "OQF 25-Pounder"]
+	},
+	"friendly_transported_units" : {
+		"Bren Gun Carrier" : {
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		},
+		"Morris 15 cwt" : {
+			"Riflemen" : 80,
+			"SMG Squad" : 20,
+			"HMG Team" : 40,
+			"Light Mortar Team" : 30,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Empire of Japan" : ["Kawasaki Ki-32"]
+	},
+	"enemy_arty_support": {
+		"Empire of Japan" : ["Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", "Type 90 75mm Field Gun"]
+	},
+	"enemy_unit_list" : {
+		"Empire of Japan" : [
+			"Type 94 Te-Ke", "Type 95 Ha-Go", "Stuart I (JP)",
+			"Type 91 Armoured Car", "Type 93 Armoured Car",
+			"Type 94 37mm AT Gun", 
+			"Type 41 75mm Mountain Gun", "Type 94 75mm Mountain Gun", "Type 38 75mm Field Gun", 
+			"Type 90 75mm Field Gun",
+			"Type 88 75mm AA Gun",
+			"Type 94 Truck", "Type 95 Scout Car",
+			"Riflemen",
+			"HMG Team", "AT Rifle Team", "Medium Mortar Team", "Combat Engineer Team", "Nikuhaku Team", "Flame Thrower Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Tankette" : 35,
+		"Light Tank" : 25,
+		"Armoured Car" : 15,
+		"Anti-Tank Gun" : 45,
+		"Artillery Gun" : 25,
+		"Anti-Aircraft Gun" : 5,
+		"Truck" : 60,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 40,
+		"Motorcycle Team" : 10
+	},
+	"enemy_transported_units" : {
+		"Empire of Japan": {
+			"Type 94 Truck" : {
+				"Riflemen" : 80,
+				"HMG Team" : 20,
+				"AT Rifle Team" : 20,
+				"Medium Mortar Team" : 20
+			},
+			"Type 95 Scout Car" : {
+				"HMG Team" : 50,
+				"AT Rifle Team" : 50
+			}
+		}
+	},
+	"combat_days" : 28,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.02.24",
+			"end_date" : "1942.02.28",
+			"location" : "17.48,96.72",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Defending Near Waw Village",
+			"week_description" : "The Japanese XVth Army has advanced into Burma from Siam, and has recently taken a key crossing on the Sittang River. Although Burma is very poor tank country, we must defend the line as best we can.",
+			"mission_odds" : {
+				"Hold the Line" : 60,
+				"Fighting Withdrawal" : 20,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.03.02",
+			"end_date" : "1942.03.02",
+			"location" : "17.48,96.72",
+			"combat_chance" : 100,
+			"average_resistance" : 8,
+			"week_title" : "Retaking Waw Village",
+			"week_description" : "Japanese forces have taken Waw village, an important crossroad in the region, and we must take it back.",
+			"mission_odds" : {
+				"Advance" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 90.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.03.04",
+			"end_date" : "1942.03.04",
+			"location" : "17.48,96.72",
+			"combat_chance" : 100,
+			"average_resistance" : 9,
+			"week_title" : "Counterattacks and Retreat",
+			"week_description" : "Having failed to retake Waw village, the Japanese have launched a massive counterattack. We must fall back to HQ.",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.03.05",
+			"end_date" : "1942.03.05",
+			"location" : "17.16,96.33",
+			"combat_chance" : 100,
+			"average_resistance" : 10,
+			"week_title" : "Roadblock",
+			"week_description" : "The 33rd Division of the Japanese army has fortified the main road back toward the capital of Rangoon. We must try and break through before the city is taken.",
+			"mission_odds" : {
+				"Spearhead" : 100
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 100.0,
+			"unit_support_level" : 90.0
+		},
+		{
+			"start_date" : "1942.03.06",
+			"end_date" : "1942.03.12",
+			"location" : "17.21,96.96",
+			"combat_chance" : 50,
+			"average_resistance" : 5,
+			"week_title" : "Withdrawing to the Irrawaddy",
+			"week_description" : "Incredibly, the Japanese have abandoned their roadblock and taken Rangoon, but not before allied forces were able to withdraw northward. We now fight a rearguard action, protecting the main force moving toward the Irrawaddy river.",
+			"mission_odds" : {
+				"Patrol" : 40,
+				"Fighting Withdrawal" : 60
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 80.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.03.13",
+			"end_date" : "1942.03.27",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.03.28",
+			"end_date" : "1942.03.30",
+			"location" : "18.49,95.51",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Retaking Paungde",
+			"week_description" : "Our convoy of British and Indian troops has reached Prome, but Japanese forces are close behind us. Chinese forces having failed to keep the main road open, we must attack the town of Paungde to keep the pressure on the Japanese attackers.",
+			"mission_odds" : {
+				"Battle" : 80,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"air_support_level" : 20.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.04.02",
+			"end_date" : "1942.04.09",
+			"location" : "19.78,95.20",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"week_title" : "Rearguard Toward Dayindabo",
+			"week_description" : "The Japanese assault continues, but it is vital that the oil fields of Yenangyaung be denied to them. We must withdraw to a new battleline near the river city of Dayindabo.",
+			"mission_odds" : {
+				"Patrol" : 20,
+				"Fighting Withdrawal" : 80
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.04.12",
+			"end_date" : "1942.04.15",
+			"location" : "19.78,95.20",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"week_title" : "Battle of Yenaungyaung",
+			"week_description" : "The Japanese forces have arrived, and we must now support our allied forces while striking at the advancing Japanese lines where we can.",
+			"mission_odds" : {
+				"Advance" : 20,
+				"Battle" : 50,
+				"Counterattack" : 20,
+				"Spearhead" : 10
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.04.16",
+			"end_date" : "1942.04.18",
+			"location" : "19.78,95.20",
+			"combat_chance" : 90,
+			"average_resistance" : 7,
+			"week_title" : "Counterattacks",
+			"week_description" : "Although the oil fields had to be destroyed, the 28th Chinese infantry division has arrived. They have no guns or tanks, so we will help support their counterattacks southward.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Battle" : 20,
+				"Spearhead" : 30
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.04.23",
+			"end_date" : "1942.04.30",
+			"location" : "20.88,95.86",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"week_title" : "Up the Burma Road",
+			"week_description" : "The 7th has been ordered up the main road toward Mandalay along with the remaining Chinese infantry. We expect scattered but determined Japanese resistance.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Spearhead" : 70
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"arty_support_level" : 30.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.05.01",
+			"end_date" : "1942.05.05",
+			"location" : "22.39,95.15",
+			"combat_chance" : 60,
+			"average_resistance" : 5,
+			"week_title" : "Toward India",
+			"week_description" : "Mandalay has been destroyed by Japanese attacks, and any remaining allied forces in Burma are retreating toward India. We form the rearguard of a massive convoy of exhausted and injured troops.",
+			"mission_odds" : {
+				"Patrol" : 20,
+				"Fighting Withdrawal" : 80
+			},
+			"enemy_nations" : ["Empire of Japan"],
+			"arty_support_level" : 20.0,
+			"unit_support_level" : 30.0
+		}
+	]
+}

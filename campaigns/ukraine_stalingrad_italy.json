@@ -1,0 +1,377 @@
+{
+	"name" : "Ukraine to Stalingrad (Italy)",
+	"creator" : "flori2412",
+	"difficulty" : "10",
+	"start_date" : "1942.07.10",
+	"end_date" : "1942.12.21",
+	"player_nation" : "Italy",
+	"enemy_nations" : ["Soviet Union"],
+	"region" : "Western USSR",
+	"desc" : "Join the armoured forces of the 8th Italian Army as they support the German advance on Stalingrad.",
+	"player_unit_list" : [
+		"AB 41", "L3/35", "L6/40", "Semovente da 47/32"
+	],
+	"tank_vp_modifiers" : {
+		"AB 41" : 1.2,
+		"L3/35" : 1.4,
+		"L6/40" : 1.2
+	},
+	"campaign_skills" : [
+		"Audacia"
+	],
+	"player_air_support": [
+		"Ju 87 Picchiatello", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"
+	],
+	"player_arty_support": [
+		"65/17", "75/27", "100/17", "105/28"
+	],
+	"player_unit_support" : {
+		"Anti-Armour" : ["AT Rifle Team", "37/45", "47/32", "Semovente da 47/32"],
+		"Anti-Infantry" : ["Fiat 626", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team", "Rifle Cavalry"],
+		"Urban" : ["SMG Squad", "Flame Thrower Team", "Heavy Mortar Team"],
+		"Recon" : ["Motorcycle MG Team", "AB 41", "L3/35", "L6/40"],
+		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "65/17", "75/27", "100/17", "105/28"]
+	},
+	"friendly_transported_units" : {
+		"Fiat 626" : {
+			"Riflemen" : 80,
+			"HMG Team" : 20,
+			"Light Mortar Team" : 10,
+			"Flame Thrower Team" : 10
+		}
+	},
+	"enemy_air_support": {
+		"Soviet Union" : ["Su-2", "Il-2 Sturmovik", "Petlyakov Pe-2", "Hurricane Mk IIB", "Spitfire Mk V", "P-39Q Airacobra", "I-16", "MiG-3", "LaGG-3", "Yak-1", "Yak-7", "Yak-9"]
+	},
+	"enemy_arty_support": {
+		"Soviet Union" : [
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
+			"152mm GP obr. 37", "BM-13"
+		]
+	},
+	"enemy_unit_list" : {
+		"Soviet Union" : [
+			"T-50", "T-50 (Late)", "T-60 M40", "T-60 M42", "T-26 M37/39", "T-70", "BT-5 M34", "BT-7 M37", "LT-38 Praga", "M3L",
+			"T-34 M40", "T-34 M41", "T-34-57", "T-34 M42", "T-34 M43 (early)", "T-34 M43 (late)", "M3S", "T-III", "T-IV",
+			"Mark II", "Mark II 76mm", "Mark III", "KV-1E", "KV-1 M41",
+			"ZiS-30",
+			"SU-12", "SU-75", "BM-13",
+			"BA-6", "BA-10",
+			"45mm obr. 1932", "45mm obr. 1942", "57mm obr. 1943",
+			"76.2mm PP obr. 27", "76.2mm obr. 36", "76.2mm obr. 39", "76.2mm obr. 00/02P",
+			"107mm obr. 10/30", "122mm G obr. 10/30", "122mm G obr. 38", "152mm G obr. 38",
+			"152mm GP obr. 37",
+			"37mm ZP obr. 39", "76.2mm ZP obr. 38", "85mm ZP obr. 39",
+			"GAZ-4M-AA", "ZIS-42-AA",
+			"MG Carrier",
+			"ZIS-5 Truck", "Dodge 3/4-ton Truck",
+			"Riflemen", "SMG Squad", "Paratrooper Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
+			"Motorcycle MG Team"
+		]
+	},
+	"enemy_unit_class_odds" : {
+		"Light Tank" : 70,
+		"Medium Tank" : 60,
+		"Heavy Tank" : 15,
+		"Tank Destroyer" : 25,
+		"Assault Gun" : 25,
+		"Armoured Car" : 40,
+		"Anti-Tank Gun" : 30,
+		"Artillery Gun" : 15,
+		"Anti-Aircraft Gun" : 15,
+		"Self-Propelled AA Gun" : 10,
+		"APC" : 20,
+		"Truck" : 90,
+		"Infantry Squad" : 100,
+		"Support Weapon Team" : 75,
+		"Motorcycle Team" : 30
+	},
+	"enemy_transported_units" : {
+		"Soviet Union" : {
+			"ZIS-5 Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"Dodge 3/4-ton Truck" : {
+				"Riflemen" : 50,
+				"SMG Squad" : 20,
+				"HMG Team" : 30,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 20
+			},
+			"MG Carrier" : {
+				"SMG Squad" : 20,
+				"HMG Team" : 40,
+				"AT Rifle Team" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			}
+		}
+	},
+	"combat_days" : 35,
+	"calendar_weeks": [
+		{
+			"start_date" : "1942.07.10",
+			"end_date" : "1942.07.16",
+			"location" : "49.08,37.34",
+			"combat_chance" : 70,
+			"average_resistance" : 5,
+			"landmines_chance" : 5,
+			"week_title" : "Advance towards the River Don",
+			"week_description" : "The Italian Expeditionary Corps in Russia has received significant reinforcements and is now a part of the 8th Italian Army. Our troops will support a major German offensive in the southern sector of the Eastern Front. We are advancing south-east from Charkov, towards the River Don.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 50
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.07.17",
+			"end_date" : "1942.07.20",
+			"location" : "48.14,38.91",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"landmines_chance" : 5,
+			"week_title" : "Krasny Lutsch",
+			"week_description" : "We are facing heavy Soviet resistance around the town of Krasny Lutsch, about 70 km east of Stalino. Our forces are going to surround the defenders from the north and south, forcing them to abandon their positions.",
+			"mission_odds" : {
+				"Advance" : 40,
+				"Battle" : 30,
+				"Counterattack" : 10,
+				"Urban Assault" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.07.21",
+			"end_date" : "1942.07.23",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.07.24",
+			"end_date" : "1942.07.29",
+			"location" : "48.81,40.58",
+			"combat_chance" : 70,
+			"average_resistance" : 6,
+			"landmines_chance" : 5,
+			"week_title" : "Supporting the Bersaglieri",
+			"week_description" : "Some German units are suffering heavy casualties trying to cross the River Don north-west of Stalingrad. Our Bersaglieri are rushing to their aid. Our unit will join them and support their advance against any Soviet counterattacks.",
+			"mission_odds" : {
+				"Advance" : 50,
+				"Spearhead" : 30,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.07.30",
+			"end_date" : "1942.08.03",
+			"location" : "49.49,42.65",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"landmines_chance" : 10,
+			"week_title" : "Clash near Serafimovich",
+			"week_description" : "Striking from their bridgehead at Serafimovich, the Soviets are mounting strong counterattacks against our German allies and the Bersaglieri. We must regain control over the battlefield and push the Russians back to the River Don!",
+			"mission_odds" : {
+				"Battle" : 40,
+				"Hold the Line" : 40,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 70.0
+		},
+		{
+			"start_date" : "1942.08.04",
+			"end_date" : "1942.08.08",
+			"location" : "49.49,42.65",
+			"combat_chance" : 80,
+			"average_resistance" : 8,
+			"landmines_chance" : 10,
+			"week_title" : "Relentless Counterattacks",
+			"week_description" : "Both our Bersaglieri and the Soviet attackers are suffering heavy casualties near Serafimovich. We must hold our positions until we have received enough reinforcements to destroy the enemy bridgehead south of the River Don.",
+			"mission_odds" : {
+				"Battle" : 20,
+				"Hold the Line" : 40,
+				"Counterattack" : 20,
+				"Patrol" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 60.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.08.09",
+			"end_date" : "1942.08.13",
+			"location" : "49.56,42.70",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"landmines_chance" : 10,
+			"week_title" : "Attacking the Bridgehead near Serafimovich",
+			"week_description" : "We have received reinforcements and held the line against the Soviet counterattacks. Now we can push forward and destroy the enemy bridgehead south of the River Don.",
+			"mission_odds" : {
+				"Advance" : 30,
+				"Battle" : 50,
+				"Counterattack" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.08.14",
+			"end_date" : "1942.08.19",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.08.20",
+			"end_date" : "1942.08.21",
+			"location" : "49.37,42.98",
+			"combat_chance" : 90,
+			"average_resistance" : 10,
+			"landmines_chance" : 5,
+			"week_title" : "Soviet Counteroffensive",
+			"week_description" : "The German 6th Army is about to launch the assault on Stalingrad, but the Soviets trying to cut off our allies' supply lines, approaching from the village of Bobrovsky in the west and Kremenskaya in the east. We must stop the enemy attempts at crossing the River Don at all cost!",
+			"mission_odds" : {
+				"Battle" : 30,
+				"Hold the Line" : 40,
+				"Counterattack" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 50.0
+		},
+		{
+			"start_date" : "1942.08.22",
+			"end_date" : "1942.08.24",
+			"location" : "49.26,43.04",
+			"combat_chance" : 80,
+			"average_resistance" : 9,
+			"week_title" : "Retreating to the South",
+			"week_description" : "After two days of bitter fighting, the troops of the Sforzesca division have been overwhelmed by the Russian attackers. Your unit has no choice but to retreat south. Cover the withdrawal of our infantry whenever you can, but do not let the enemy surround you, commander!",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 70,
+				"Hold the Line" : 15,
+				"Counterattack" : 15
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 20.0,
+			"unit_support_level" : 30.0
+		},
+		{
+			"start_date" : "1942.08.25",
+			"end_date" : "1942.08.27",
+			"location" : "49.26,43.04",
+			"combat_chance" : 80,
+			"average_resistance" : 7,
+			"week_title" : "Stabilising the Frontline",
+			"week_description" : "Along with other allied troops, the Celere Division has launched a fierce counterattack to stop the Russian advance and protect the German supply lines to Stalingrad. The situation south of the River Don is still chaotic, but if we can push back the enemy, we may be able to regain control.",
+			"mission_odds" : {
+				"Fighting Withdrawal" : 20,
+				"Hold the Line" : 20,
+				"Counterattack" : 20,
+				"Battle" : 20,
+				"Advance" : 20
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 60.0,
+			"arty_support_level" : 50.0,
+			"unit_support_level" : 60.0
+		},
+		{
+			"start_date" : "1942.08.28",
+			"end_date" : "1942.09.01",
+			"location" : "49.29,43.05",
+			"combat_chance" : 80,
+			"average_resistance" : 6,
+			"week_title" : "Regaining Control",
+			"week_description" : "Our forces are slowly pushing back the Soviets towards the Don River in the north, but we must keep up the pressure and avoid another enemy breakthrough at all cost. It is our responsibility to protect the German supply lines until the 6th Army can capture Stalingrad.",
+			"mission_odds" : {
+				"Hold the Line" : 20,
+				"Counterattack" : 20,
+				"Battle" : 30,
+				"Advance" : 30
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 70.0,
+			"arty_support_level" : 70.0,
+			"unit_support_level" : 80.0
+		},
+		{
+			"start_date" : "1942.09.02",
+			"end_date" : "1942.12.15",
+			"refitting" : "TRUE"
+		},
+		{
+			"start_date" : "1942.12.16",
+			"end_date" : "1942.12.16",
+			"location" : "50.05,40.49",
+			"combat_chance" : 100,
+			"average_resistance" : 6,
+			"week_title" : "Operation Little Saturn",
+			"week_description" : "While the first few months of the Battle of Stalingrad seemed to go in our favour, the Soviets are now launching a series of counterattacks to encircle the German, Hungarian, Romanian and German forces in and around the city. The Italian forces are under attack, too. We must hold the line!",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"air_support_level" : 50.0,
+			"arty_support_level" : 80.0,
+			"unit_support_level" : 80.0,
+			"enemy_unit_class_odds_modifier" : {
+				"Light Tank" : 20,
+				"Medium Tank" : 10,
+				"Heavy Tank" : 5,
+				"Tank Destroyer" : 10,
+				"Assault Gun" : 10,
+				"Armoured Car" : 15
+			}
+		},
+		{
+			"start_date" : "1942.12.17",
+			"end_date" : "1942.12.21",
+			"location" : "49.62,40.95",
+			"combat_chance" : 100,
+			"average_resistance" : 10,
+			"week_title" : "Deadly Armoured Assault",
+			"week_description" : "We repelled the initial assault south of Verkhny Mamon, but now a large number of heavily armoured tanks are approaching us. We do not have enough fuel to retreat. Hold your position as long as you can, commander! Your sacrifice might save the lives of hundreds of Italian soldiers!",
+			"mission_odds" : {
+				"Hold the Line" : 100
+			},
+			"enemy_nations" : ["Soviet Union"],
+			"arty_support_level" : 40.0,
+			"unit_support_level" : 40.0,
+			"enemy_unit_class_odds_modifier" : {
+				"Light Tank" : 30,
+				"Medium Tank" : 100,
+				"Heavy Tank" : 40,
+				"Tank Destroyer" : 25,
+				"Assault Gun" : 25,
+				"Armoured Car" : 25
+			}
+		}
+	]
+}

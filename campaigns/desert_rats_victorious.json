@@ -1,6 +1,7 @@
 {
 	"name" : "Desert Rats Victorious",
 	"creator" : "flori2412",
+	"difficulty" : "6",
 	"start_date" : "1942.12.11",
 	"end_date" : "1943.05.07",
 	"player_nation" : "United Kingdom",
@@ -8,16 +9,16 @@
 	"region" : "North Africa",
 	"desc" : "Join the British and Commonwealth forces in North Africa as they finally defeat the Afrika Korps.",
 	"player_unit_list" : [
+		"Daimler Scout Car", "Daimler Armoured Car", "Marmon-Herrington III", "Humber II", "AEC I", "M3A1 Scout Car",
+		"Bishop", "M7 Priest",
 		"Stuart I", "Stuart III", "Crusader I", "Crusader I CS", "Crusader II", "Crusader II CS", "Crusader III", 
 		"Grant I", "Lee II", "Lee V", "Lee VI", "Grant II", "Sherman I", "Sherman II",
 		"Matilda II", "Matilda II CS", "Valentine II", "Valentine III", "Valentine IV", "Valentine V",
-		"Valentine VIII", "Valentine IX", "Churchill IV", "Churchill IV NA(75)", "M13/40", "M14/41"
+		"Valentine VIII", "Valentine IX", "Churchill I", "Churchill IV", "M13/40 (UK)", "M14/41 (UK)"
 	],
-	"player_unit_dates" : {
-		"M13/40" : "1942.01.01",
-		"M14/41" : "1942.08.01"
-	},
 	"player_squad_list" : {
+		"Daimler Scout Car" : ["Daimler Scout Car", "Daimler Armoured Car"],
+		"Daimler Armoured Car" : ["Daimler Scout Car", "Daimler Armoured Car"],
 		"Stuart III" : ["Stuart III", "Stuart I"],
 		"Crusader I" : ["Crusader I", "Crusader I CS"],
 		"Crusader I CS" : ["Crusader I", "Crusader I CS"],
@@ -35,9 +36,18 @@
 		"Valentine IX" : ["Valentine IX", "Valentine V"],
 		"Churchill IV" : ["Churchill IV", "Churchill IV NA(75)"],
 		"Churchill IV NA(75)" : ["Churchill IV", "Churchill IV NA(75)"],
-		"M14/41" : ["M14/41", "M13/40"]
+		"M13/40 (UK)" : ["M14/41 (UK)", "M13/40 (UK)"],
+		"M14/41 (UK)" : ["M14/41 (UK)", "M13/40 (UK)"]	
 	},
 	"tank_vp_modifiers" : {
+		"Daimler Scout Car" : 1.9,
+		"Daimler Armoured Car" : 1.5,
+		"Marmon-Herrington III" : 1.8,
+		"Humber II" : 1.6,
+		"AEC I" : 1.2,
+		"M3A1 Scout Car" : 1.8,
+		"Bishop" : 1.2,
+		"M7 Priest" : 1.3,
 		"Stuart I" : 1.3,
 		"Stuart III" : 1.2,
 		"Crusader I" : 1.3,
@@ -53,22 +63,22 @@
 		"Valentine V" : 1.2,
 		"Valentine VIII": 1.1,
 		"Valentine IX": 1.1,
-		"M13/40" : 1.3,
-		"M14/41" : 1.2
+		"M13/40 (UK)" : 1.3,
+		"M14/41 (UK)" : 1.2
 	},
 	"campaign_skills" : [
 		"Ad Hoc"
 	],
 	"player_arty_support": [
-		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer"
+		"OQF 18-Pounder", "OQF 25-Pounder", "OQF 4.5\" Howitzer", "Bishop", "M7 Priest"
 	],
 	"player_air_support": [
-		"P-40 Warhawk"
+		"P-40 Warhawk", "Hurricane Mk IIB", "Hurricane Mk IIC", "Hurricane Mk IID", "Spitfire Mk V", "Spitfire Mk IX"
 	],
 	"player_unit_support" : {
 		"Anti-Armour" : ["AT Rifle Team", "OQF 2-Pounder", "OQF 6-Pounder", "AT Rifle Carrier", "2 Pdr Portee", "6 Pdr Portee"],
 		"Anti-Infantry" : ["Morris 15 cwt", "Bren Gun Carrier", "SMG Squad", "HMG Team", "Riflemen", "Flame Thrower Team"],
-		"Recon" : ["Daimler Scout Car", "Marmon-Herrington III", "Humber II", "AEC I", "Daimler Armoured Car"],
+		"Recon" : ["Daimler Scout Car", "Daimler Armoured Car", "Marmon-Herrington III", "Humber II", "AEC I", "M3A1 Scout Car"],
 		"Artillery" : ["Light Mortar Team", "Medium Mortar Team", "OQF 18-Pounder", "OQF 25-Pounder", "Bishop", "M7 Priest"]
 	},
 	"friendly_transported_units" : {
@@ -88,66 +98,63 @@
 			"Light Mortar Team" : 30,
 			"Medium Mortar Team" : 20,
 			"Flame Thrower Team" : 10
+		},
+		"M3A1 Scout Car" : {
+			"HMG Team" : 60,
+			"AT Rifle Team" : 40,
+			"Light Mortar Team" : 40,
+			"Medium Mortar Team" : 20,
+			"Flame Thrower Team" : 10
 		}
 	},
 	"enemy_arty_support": {
 		"Italy" : ["65/17", "75/27", "100/17", "105/28"],
-		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18"]
+		"Germany" : ["7.5cm leIG 18", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", "15cm sIG 33", "15cm Nebelwerfer 41"]
 	},
 	"enemy_air_support": {
-		"Italy" : ["Fiat CR.42 Falco", "Ju 87 Picchiatello"],
-		"Germany" : ["Ju 87B Stuka"]
+		"Italy" : ["Fiat CR.42 Falco", "Ju 87 Picchiatello", "Fiat G.50", "Macchi C.200", "Macchi C.200 CB", "Macchi C.202"],
+		"Germany" : ["Ju 87B Stuka", "Ju 87D Stuka", "Hs 129", "Bf 109", "Bf 110 (fighter-bomber)", "Bf 109 (fighter)", "Bf 110 (fighter)", "Fw 190 (fighter)"]
 	},
 	"enemy_unit_list" : {
 		"Italy" : [
-			"L6/40", "M11/39", "M13/40", "M14/41",
-			"Semovente da 47/32", "Semovente da 75/18",
+			"L6/40", "M13/40", "M14/41", "L3 Lf", "L3 Lf (Trailer)", "L5/30 (Fiat 3000)",
+			"Semovente da 47/32", "Semovente da 75/18", "Semovente da 90/53", "R35 (ITA)",
 			"47/32",
-			"AB 41", "AS 42 - MG AA", "AS 42 - AA", "AS 42 - MG", "AS 42 - AT",
+			"AB 41", "AB Lancia 1Z", "AS 42 - MG AA", "AS 42 - AA", "AS 42 - MG", "AS 42 - AT",
 			"65/17", "75/27", "100/17", "105/28",
 			"20/65",
 			"Autocannone da 20/65",
 			"Fiat 626",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		],
 		"Germany" : [
 			"Panzer II F", "Panzer III H", "Panzer III L", "Panzer III M", "Panzer III N",
 			"Panzer III J", "Panzer IV D", "Panzer IV E", "Panzer IV F1", "Panzer IV F2", 
-			"Panzer IV G", "Panzer IV H", "Panzer VIe", 
-			"Stuart I", "Stuart III", "Crusader I", "Crusader II", "Crusader III", 
-			"Matilda II", "Valentine II", "Valentine III",
-			"Panzerjager I", "Marder II", "Marder III",
-			"PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
-			"PaK 38", "PaK 40",
+			"Panzer IV G", "Panzer IV H", "Panzer VIe",
+			"Panzer M3 740", "Kreuzer Panzer Mk VI 746", "Panzer Mark II 748",
+			"Panzer M3 740 (Late)", "Kreuzer Panzer Mk VI 746",
+			"Panzer Mk VI 746 (III)", "Panzer Mk III 749", "Panzer Mk III 749 (Late)",
+			"SPW 250/7", "SPW 251/2", "SPW 250/8", "SPW 251/9",
+			"Panzerjager I", "Marder II", "Marder III", "SPW 251/10",
+			"Sd. Kfz. 13", "PSW 221", "PSW 222", "PSW 231 (6 rad)", "PSW 231 (8 rad)",
+			"PaK 35/36", "PaK 38", "PaK 40", "8.8 cm Raketenwerfer 43",
 			"7.5cm leIG 18", "15cm sIG 33", "10.5cm leFH 18", "10cm sK 18", "15cm sFH 18", 
 			"2cm FlaK 38", "8.8cm FlaK 18 o. 36",
-			"Sd. Kfz. 7/1",
-			"Opel Blitz 3-ton", "Kfz 1",
+			"Sd. Kfz. 10/4", "Sd. Kfz. 7/1",
+			"Opel Blitz 3-ton", "Buessing-NAG 4500 Truck", "Kfz 1",
 			"SPW 251/1", "SPW 251/2",
-			"Riflemen",
-			"SMG Squad", "HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team",
+			"Riflemen", "SMG Squad",
+			"HMG Team", "AT Rifle Team", "Light Mortar Team", "Medium Mortar Team", "Heavy Mortar Team", "Flame Thrower Team", "Combat Engineer Team",
 			"Motorcycle MG Team"
 		]
-	},
-	"enemy_captured_units" : [
-		"Stuart I", "Stuart III", "Crusader I", "Crusader II", "Crusader III", "Matilda II", "Valentine II", "Valentine III"
-	],
-	"enemy_unit_dates" : {
-		"Stuart I" : "1942.12.11",
-		"Stuart III" : "1942.12.11",
-		"Crusader I" : "1942.12.11",
-		"Crusader II" : "1942.12.11",
-		"Crusader III" : "1942.12.11",
-		"Matilda II" : "1942.12.11",
-		"Valentine II" : "1942.12.11",
-		"Valentine III" : "1942.12.11"
 	},
 	"enemy_unit_class_odds" : {
 		"Light Tank" : 30,
 		"Medium Tank" : 70,
 		"Heavy Tank" : 50,
+		"Assault Gun" : 20,
 		"Tank Destroyer" : 40,
 		"Armoured Car" : 80,
 		"Anti-Tank Gun" : 60,
@@ -180,6 +187,22 @@
 				"Medium Mortar Team" : 20,
 				"Flame Thrower Team" : 10
 			},
+			"Buessing-NAG 4500 Truck" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
+			"SPW 250/1" : {
+				"Riflemen" : 60,
+				"HMG Team" : 10,
+				"SMG Squad" : 20,
+				"Light Mortar Team" : 30,
+				"Medium Mortar Team" : 20,
+				"Flame Thrower Team" : 10
+			},
 			"SPW 251/1" : {
 				"Riflemen" : 60,
 				"HMG Team" : 10,
@@ -189,12 +212,6 @@
 				"Flame Thrower Team" : 10
 			}
 		}
-	},
-	"decorations_list" : {
-		"2600" : "Military Medal",
-		"2800" : "Military Cross",
-		"3100" : "Distinguished Service Order",
-		"3400" : "Victoria Cross"
 	},
 	"combat_days" : 40,
 	"calendar_weeks": [
@@ -275,7 +292,8 @@
 			"week_title" : "The Battle of Medenine",
 			"week_description" : "The Afrika Korps has occupied a heavily fortified defensive line close to the Tunisian town of Mareth, north-west of here. In order to delay our upcoming assault, some enemy troops are launching a spoiling attack at our forces at Medenine, but we are well-prepared to deal with them.",
 			"mission_odds" : {
-				"Counterattack" : 100
+				"Hold the Line" : 50,
+				"Counterattack" : 50
 			},
 			"enemy_nations" : ["Italy", "Germany"],
 			"air_support_level" : 80.0,
@@ -298,7 +316,8 @@
 			"week_title" : "Flanking the Mareth Line",
 			"week_description" : "Our troops have been mounting indecisive frontal attacks on the Mareth Line over the last few days. We are carrying out a flanking maneuver through the mountains to the west, but the Germans are mounting counterattacks. Help our infantry repel them!",
 			"mission_odds" : {
-				"Counterattack" : 100
+				"Hold the Line" : 80,
+				"Counterattack" : 20
 			},
 			"enemy_nations" : ["Germany"],
 			"air_support_level" : 50.0,
@@ -410,7 +429,7 @@
 			"average_resistance" : 4,
 			"coastal_chance" : 0,
 			"landmines_chance" : 10,
-			"week_title" : "The final push",
+			"week_title" : "The Final Push",
 			"week_description" : "We were unable to overcome the Axis defenses at Enfidaville. While the Eighth Army will keep the enemy there in check, your unit will join the First Army in its advance towards Tunis. The enemy forces in North Africa are on the brink of defeat. Keep pressing forward until they finally surrender!",
 			"mission_odds" : {
 				"Advance" : 80,

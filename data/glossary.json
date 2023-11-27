@@ -1,0 +1,421 @@
+{
+	"English" :	{
+		
+		"AA" : "Anti-Aircraft. Weapons designed to damage, destroy, or drive off enemy aircraft.",
+		
+		"AAMG" : "Anti-Aircraft Machine Gun. Usually a high-powered machine gun, mounted on the roof of the turret. Crewman must usually be CE to operate or unjam it, although some can be operated remotely. If followed by a plus sign, it is a high-calibre MG.",
+		
+		"Abandon Tank" : "If this command is given, your crew will bail out of your tank and leave it behind. Only available when tank is immobilized or a crewman is dead.",
+		
+		"Acquired Target" : "Guns and MGs gain one level of Acquired Target after each attack, up to a maximum of two levels. Each level adds a bonus to hit or affect. AC is lost if the target moves, if you move, or sometimes if you are hit but not penetrated.",
+		
+		"Advancing Fire" : "Used on the Campaign Map, only available if your tank has 1+ HE rounds and an operational gun to fire them, and/or one or more MGs. Some HE rounds will be expended, but if a battle is triggered after movement, there's a good chance that enemy units will start Pinned by your fire.",
+		
+		"Air Support" : "One type of support that may be available to you during a Campaign Day, needs to be requested before you travel into a new zone on the Campaign Day map. Not possible during Overcast weather or if there is any Fog.",
+		
+		"Ambush" : "If your squad is Ambushed, then enemy units get a chance to attack first before you do. The chance varies depending on the local terrain, crew skills, and whether at least one crewman is CE during travel.",
+		
+		"AP" : "Armour-Piercing. One type of gun ammunition, used against armoured targets. Not very effective against guns and infantry.",
+		
+		"Armour" : "Protection against damage on vehicles. Armour values for units are normally given for the Turret or Upper structure, and for the Hull. The two values (x/x) represent the front and side armour values respectively. Rear armour is always one level lower than the Side armour value for the same location.",
+		
+		"Armoured Car" : "A type of wheeled armoured vehicle, usually with a lighter gun or just an MG as its main armament.",
+		
+		"Artillery Support" : "One type of support that may be available to you during a Campaign Day, needs to be requested before you travel into a new zone on the Campaign Day map.",
+		
+		"Assistant Driver" : "One type of position in a vehicle. Normally responsible for operating the Hull MG if there is one.",
+		
+		"AT Gun" : "Anti-Tank Gun. A gun primarily designed for attacking armoured targets.",
+		
+		"AT Rifle" : "Anti-Tank Rifle. A weapon used primarily in the early part of the war. Can penetrate lightly armoured tanks but has a limited range.",
+		
+		"ATV" : "All-Terrain Vehicle. Refers to vehicles with good off-road capability. Movement chance is not affected by terrain type, and it has less chance to be Bogged Down.",
+		
+		"Bail Out" : "If your tank is penetrated and badly damaged, your crew will need to leave the tank as quickly as possible. Crew may have been injured by the initial hit that knocked out the tank, and may be injured during the bail-out process as well.",
+		
+		"Barrel" : "The main part of a Gun weapon. Gun barrel length affects its accuracy at longer ranges and its armour-penetration power. S means a short barrel, L means long, and LL means very long.",
+		
+		"Bogged Down" : "If your tank gets bogged down it means it's stuck in place, and your driver will need to work to free it. Bogging is more likely in vehicles with higher ground pressure, and in rough terrain.",
+		
+		"BMG" : "Bow Machine Gun: A machine gun mounted on the front of a vehicle. Usually operated by the Driver or Assistant Driver. If followed by a plus sign, it is a high-calibre MG.",
+		
+		"Broken Down" : "Weapons have a very small chance of breaking each time they are used, and cannot be repaired until the end of the combat day.",
+		
+		"BU" : "Buttoned Up. Crewman has his hatch closed and is protected from damage coming from outside the tank that does not penetrate the armour.",
+		
+		"C" : "Canister Ammunition. Contains steel balls that pepper the target area like a giant shotgun shell. Affects all targets in a hex, but will not penetrate armour.",
+		
+		"CE" : "Crew Exposed. Crewman has his hatch open or otherwise does not have protection from incoming fire. If (L) appears after CE, then the position has a large hatch, which means that the crewman is more vulnerable but has bonuses to spot and bail-out while CE. If CE is yellow, it means that the crewman is spotting out of the hatch, and is thus especially vulnerable to incoming attacks.",
+		
+		"CMG" : "Co-axial Machine Gun. A machine gun that is mounted in a turret on the same axis as a main gun, or as the main weapon. Cannot normally fire in the same turn as the main gun. If followed by a plus sign, it is a high-calibre MG.",
+		
+		"Commander" : "The commander leads the tank crew, and does not normally operate the main gun himself, freeing him up to direct fire or spot concealed enemies.",
+		
+		"Concealed" : "If a unit on the scenario map is Concealed, it means that you know a unit is there but you don't yet know its identity. Firing at concealed units is much more difficult. Spotting a unit will remove this penalty and reveal its identity.",
+		
+		"Destroyed" : "Units that are destroyed are taken out of the battle. The crew or individual fighters are either dead or scattered, and the unit ceases to be a threat.",
+		
+		"Direct Fire" : "A command open to Commanders, gives a bonus to all weapon fire from the tank for that turn. More effective when the commander is CE.",
+		
+		"Direct Movement" : "A command open to Commanders, gives a bonus to all move actions for that turn. More effective when the commander is CE.",
+		
+		"Dug-In" : "Infantry and gun units can be dug-in, which means that they have dug into the earth and created foxholes to protect them. Area Fire and HE attacks against dug-in units will be slightly less effective. A unit loses dug-in status if it moves, but it can attempt to dig-in again in a new location.",
+		
+		"Dust" : "Dust can exist around any type of unit, but is more likely in the desert and urban combat, when ground conditions are dry, and when the temperature is hot. Units may generate dust when moving. Makes units more difficult to spot and hit.",
+		
+		"Driver" : "The crewman responsible for driving the tank.",
+		
+		"Ds" : "See: Dust",
+		
+		"Enemy Resistance" : "See: Resistance.",
+		
+		"Entrenched" : "Infantry and Gun units can be entrenched, which means they are protected by trenches, sandbags, and the like. Area fire and HE attacks against entrenched units will be less effective. Units lose entrenched status if they move, and cannot gain this status again during a battle.",
+		
+		"Fate Points" : "Represents in an abstract way the forces of Fate protecting the player and their crew. Each Fate Point will automatically be used to save the Commander (if Player Commander is active) or can be used to force an incoming attack to automatically miss. A limited number of Fate Points are available each day.",
+		
+		"Fatigue" : "A representation of mental and physical fatigue experienced by crewmen. Each battle has the chance of adding fatigue points to crewmen, which decrease the effectiveness of their skills. Crewmen may lose Fatigue when waiting in place, or as the result of a random event. Crewmen lose all Fatigue Points at the end of each Combat Day.",
+		
+		"First Aid" : "A command open to all crewmen, if a fellow crewman has a Critical injury, this will give him a bonus to recover.",
+		
+		"Flamethrower" : "Also FTR. A weapon that projects burning fuel onto a target. Very effective against unprotected targets, less effective against armoured vehicles but can still penetrate through air vents and destroy them.",
+		
+		"FTR" : "See: Flamethrower.",
+		
+		"Fortified" : "Infantry and Gun units can be fortified, which means that they occupy a stone or concrete fortified position. Area fire and HE attacks against fortified units will be much less effective. Units lose fortified status if they move, and cannot gain this status again during a battle.",
+		
+		"FP" : "Firepower. An abstract representation of the effect of small-arms, machine gun, and explosive damage. Has the potential to reduce, rout, or destroy unarmoured units, and can injure any exposed crew in the player's armoured vehicle. Firepower is cumulative during the same turn, so FP applied from different attacks will be added up and resolved all at once at the end of a phase.",
+		
+		"FT" : "Fast Turret. A vehicle turret that can rotate very quickly, giving a small modifier to hit if a weapon on it attacks in the same turn as rotating.",
+		
+		"FXT" : "Fixed Turret. A vehicle with a superstructure that cannot rotate. Weapons are limited to firing toward the front of the vehicle.",
+		
+		"G" : "Gyrostabilizer. Helps to keep the turret stable while in motion, reducing the penalty for firing while moving. A Gunner needs to have the Basic Gyro Use skill to benefit from it, and the penalty is further reduced if the Gunner has the Advanced Gyro Use skill.", 
+		
+		"Grit" : "Crewman stat, represents resistance to physical damage. Crewmen with high Grit will be less likely to be injured.",
+		
+		"Gun" : "A large-calibre weapon that fires a projectile. Note that in game terms, MGs are not counted as 'guns' for skills and stats purposes.",
+		
+		"Gunner" : "The crewman responsible for operating a Gun. Can sometimes be combined with another role, as with the Gunner/Loader position.",
+		
+		"Half-Tracked" : "Some vehicles have a set of tracks in the rear and a pair of wheels in the front to aid steering. These vehicles move like Wheeled vehicles but have a lower chance of getting Bogged Down.",
+		
+		"Hamada" : "Flat and featureless terrain, covered in a layer of sharp stones. Movement in Hamada terrain is more likely to create Dust, and HE hits on units in this terrain apply +25% firepower from the sharp stones acting like shrapnel.",
+		
+		"Hatch" : "A small opening near to a position on an armoured vehicle. Crewmen can usually operate their position with hatch open, giving them better visibility of the surrounding terrain, but leaving them vulnerable to incoming firepower. Some small turrets have the hatch on the rear of the turret, meaning that the main armament cannot be operated when the crewman is CE.",
+		
+		"HD" : "Hull Down. A vehicle that is Hull Down has its Hull protected behind something large and solid such as a hill or stone wall. Any incoming hits that strike the Hull will likely have no effect. HD status is centered on the direction shown, and is less effective further away from that direction.",
+		
+		"HE" : "High Explosive. One type of gun ammunition, used against unarmoured targets. If a Hit is secured with HE, it will apply Firepower to the target. HE effectiveness can be affected by the weather, terrain, and target status (eg. fortified.)",
+		
+		"Heroic" : "Sometimes enemy units may be inspired to become Heroic during a battle. Heroic enemies are less likely to surrender, less likely to move away from the player, and more likely to attack if they can.",
+		
+		"Hex" : "A six-sided shape, used in the game to represent an area of terrain. On the Campaign Day map, hexes are pointy-topped and represent an area of about 1.5 km across. In the Scenario Map, they are flat-topped and represent an area of about 120 meters across. The visual contents of a hex are abstract representations of varied terrain.",
+		
+		"HMG" : "Heavy Machine Gun. Usually operated by a team of 2-3 people with a large, tripod-mounted machine gun. Able to penetrate light armour and produces a fair amount of Firepower.",
+		
+		"Hull" : "The body of a vehicle, usually better armoured than the Turret or Superstructure. The player tank's Hull is always facing upward on the Scenario map, and all other units rotate around it accordingly.",
+		
+		"HVSS" : "Horizontal Volute Spring Suspension. An advanced type of suspension for tracked vehicles. Slightly improves base movement chance and slightly decreases bog chance.",
+		
+		"Jammed" : "Weapons have a small chance of becoming jammed with each use. The crewman operating the weapon must try to un-jam the weapon during a subsequent turn.",
+		
+		"KIA" : "Killed in Action. The crewman has died during the Combat Day.",
+		
+		"Knocked Out" : "The armoured vehicle has been damaged to an extent where it can no longer operate, and the crew must Bail Out of the vehicle.",
+		
+		"Knowledge" : "Crew stat, applies a small bonus to all crew actions.",
+		
+		"Landmine" : "If landmines are present in a Campaign Day map zone and a battle takes place there, then every time any unit on the Scenario map moves or repositions, there's a chance that it will trigger a landmine explosion. This may destroy units or immobilize vehicles.",
+		
+		"LMG" : "Light Machine Gun. A portable weapon capable of a high rate of automatic fire. Riflemen and paratrooper squads may carry one of these weapons.",
+		
+		"LoS" : "Line of Sight. The Scenario Map is an abstract representation of a battlefield, with many details not shown. If two units have Line of Sight between them, it means that there is nothing blocking a potential attack or Spotting attempt. LoS is always reciprocal. To gain LoS on an enemy unit, either you or the other unit must move or reposition.",
+		
+		"Loader" : "The crewman responsible for loading and reloading a gun. With a Loader on a reload command, the Gun will have a higher chance of maintaining Rate of Fire.",
+		
+		"Main Gun" : "The main armament for the vehicle.",
+		
+		"MMG" : "Medium Machine Gun. A portable weapon capable of a high rate of automatic fire and with a good range. Riflemen and paratrooper squads may carry one of these weapons.",
+		
+		"Modifier" : "Many actions in the game succeed or fail based on an abstract 'roll' against a chance expressed as a percentage. Factors that influence the odds of success or failure are quantified as 'modifiers,' each of which may increase or decrease the chances of the action succeeding.",
+		
+		"Molotov Cocktail" : "An often improvised weapon consisting of a container filled with flammable liquid, which is lit before throwing. The flames can penetrate armoured vehicles through air vents and may damage them.",
+		
+		"Morale" : "Crew stat, crew with higher Morale are more likely to recover quickly from negative status effects.",
+		
+		"Muddy" : "A type of ground weather condition. Muddy ground increases travel time on the Campaign Day map, and on roads in regions that have poor quality roads. Makes movement on the scenario map less likely, and bogging down more likely. Reduces the effect of HE rounds.",
+		
+		"N/A" : "Not Allowed. Means that a command or action is not allowed in the current circumstances.",
+		
+		"NR" : "No Radio. This armoured vehicle is not normally equipped with a radio capable of transmitting voice communication. If followed by a number, then a radio is fitted during and after that calendar year.",
+		
+		"OT" : "Open-Topped. This armoured vehicle has no roof protection, meaning that the crew compartment is vulnerable to close combat and ballistic attacks.", 
+		
+		"OTR" : "Open Turret Rear. The turret on this vehicle is open-topped, and the rear facing of the turret is open, meaning that if any attacks hit that area there is no armour protection.",
+		
+		"Overrun" : "A command that becomes available to Drivers if there is one or more enemy units in the hex directly in front of the player tank. In the movement phase you and your squad will move close to the enemy but will not enter a new hex, and during the shooting phase, after the enemy units have a chance to perform defensive fire, any attacks on units directly in front will get a point blank bonus, and any successful area fire attacks will have double effective firepower. Your tank and squad will return to their usual position at the end of the turn.",
+		
+		"Penetration" : "The AP attack has penetrated the armour, meaning that enemy units are destroyed and the player unit will either suffer some kind of damage or will be knocked-out completely.",
+		
+		"Perception" : "Crew stat, crew with high Perception are better at spotting concealed enemy units.",
+		
+		"PH" : "Penetrating Hit. If the player tank takes a penetrating hit but is not knocked out, it can continue to fight but will need to be replaced after the combat day is over.",
+		
+		"Pinned" : "Non-vehicle units that take Firepower attacks have a chance of being Pinned, which restricts their ability to move and gives them a penalty to attack until they recover.",
+		
+		"Player Commander" : "An option that can be selected at the start of a new campaign. If active, the Commander crewman represents the player, and if he is killed, the campaign is over.",
+		
+		"Promotion" : "Crewmen can be promoted during the course of a campaign, giving them 2 free advance points.",
+		
+		"Rd" : "Radio damaged, may be repaired by a crewman.",
+		
+		"Ready Rack" : "A container for ammunition that is nearby the Gun, making is easier and faster to reload it. If the Ready Rack is active and a Loader is using it to reload a gun, the odds of maintaining RoF will be higher. The contents of the rack will need to be replenished at some point, however, from the tank's General Stores.",
+		
+		"Recon" : "An action on the Campaign Day map, which will reveal the enemy strength in an adjacent hex zone that is not already friendly-controlled.",
+		
+		"Reduced" : "Infantry and Gun units that take Firepower may be reduced as a result, meaning some of their crewmen or personnel have been take out of action, but the unit is still operational. Reduced units are less effective at attacking, and are more likely to be destroyed by firepower in subsequent attacks.",
+		
+		"Recce" : "Recce (Reconnaissance) units are designed to move fast and scout the enemy. Recce units are less likely to be ambushed, and have a higher chance of making an extra move action.",  
+		
+		"Reposition" : "A command available to Drivers in Scenarios. Will possibly generate a new type of terrain for your tank, and may change LoS between you and enemy units.",
+		
+		"Resistance" : "A measure of how many enemy forces are active within a given zone. The higher the resistance level in a zone, the greater the chance that you will encounter enemy forces and trigger a battle.",
+		
+		"Restricted" : "When referring to a turret, means that it is an old-style, one-man turret, often with manual traverse. Because of the limited space, the main turret weapon cannot be operated when the operating crewman is CE.",
+		
+		"Return to Base" : "An option available on the Campaign Day, to be used when continuing with the remainder of the Combat Day would be difficult or impossible.",
+		
+		"RMG" : "Rear Machine Gun: A machine gun mounted on the back of a vehicle's hull or turret. If followed by a plus sign, it is a high-calibre MG.",
+
+		"RoF" : "Rate of Fire. The ability to attack twice or more in a single turn. Various factors influence the chance to maintain RoF.",
+		
+		"Rotate Turret" : "This action will allow you to change the facing of your turret. You must have a crewman in the turret on an Operate weapon command in order to rotate the turret.",
+		
+		"Routed" : "Infantry and Gun units that take Firepower may be Routed as a result, meaning that they cannot attack and they will try to withdraw from the battle.",
+		
+		"RR" : "See: Ready Rack",
+		
+		"RST" : "Restricted Slow Turret. Refers to a small turret, often with a single crewman, that can only rotate slowly. Has a substantial penalty for weapons that fire in the same turn as the turret is rotated. Additionally, there's so little space that crewmen normally need to be Buttoned Up to operate weapons.",
+		
+		"Rx" : "Radio destroyed, may not be used for the rest of the combat day.",
+		
+		"Shaken" : "A temporary condition of Crewmen that can result from an injury or near-injury. The crewman will be more likely to be injured until they recover from this condition.",
+		
+		"Skill" : "Crewmen can start with skills and can add them during the campaign by spending Advance Points. Skills provide bonuses to certain actions.",
+		
+		"Sm" : "See: Smoke",
+		
+		"Smoke" : "Smoke can be randomly present on the battlefield, or can be created by Smoke ammunition. Makes spotting concealed units more difficult, and applies a penalty to hit.",
+		
+		"Spot" : "A command normally available to all crewmen, which allows them to attempt to reveal concealed enemy units. The crewman's Field of View will be indicated on the Scenario map with highlighted hexes. This is also the default command for crewmen with nothing better to do.",
+		
+		"ST" : "Slow Turret. Refers to a turret that can only rotate slowly. Has a substantial penalty for weapons that fire in the same turn as the turret is rotated.",
+		
+		"Stores" : "The general ammunition storage for the tank.",
+		
+		"Stunned" : "A condition that crewmen can attain through injury or incoming attacks. Stunned crewmen can still act but suffer penalties until they recover.",
+		
+		"Tank" : "An armoured fighting vehicle, usually with a rotatable turret.",
+		
+		"Tank Destroyer" : "An armoured vehicle designed for attacking tanks. Usually only lightly armoured but with a powerful anti-armour main gun.",
+		
+		"Terrain" : "Both the Campaign Day and the Scenario maps have their own types of terrain, which affect movement speed, cover from incoming attacks, etc. The terrain type of the Campaign Day hex will determine the types of terrain encountered on the Scenario map if a battle takes place there.",
+		
+		"TEM" : "Terrain Effects Modifier. Applies a modifier to incoming attacks based on the density and cover provided by the terrain.",
+		
+		"Turret" : "The rotatable upper part of a tank. Any weapon mounted in the turret, and crewman positioned in the turret, will have their field of view changed if the turret is rotated.",
+		
+		"TMG" : "Turret Machine Gun: A machine gun mounted in a small rotatable turret. Can be fired while hull-down. If followed by a plus sign, it is a high-calibre MG.",
+		
+		"Unconscious" : "A condition that crewmen can attain through injury. Unconscious crewmen cannot act until their recover, but since they are slumped down in their position they are not normally vulnerable to incoming fire, even if technically CE.",
+		
+		"Unit Support" : "One type of support that may be available to you during a Campaign Day, needs to be requested before you travel into a new zone on the Campaign Day map, or before you Wait in Place. Once you move or wait, a menu will pop up allowing you to choose a category of requested support.",
+		
+		"Victory Points (VP)" : "An abstract representation of combat success. Higher VP means a more successful campaign. VP earned during the Combat Day are also used to calculate Experience Points awarded to surviving Crewmen."
+	
+	},
+	
+	"German" : {
+		
+		"AA MG" : "Anti-Aircraft Machine Gun / Flugabwehr-Maschinengewehr - Diese Waffe befindet sich normalerweise oben auf einem Panzer oder anderem Fahrzeug. Sie dient eigentlich der Abwehr von Flugzeugen, kann aber auch gegen Bodentruppen eingesetzt werden, die sich in unmittelbarer Nähe befinden. Das Flugabwehr-Maschinengewehr kann in der Regel in jede beliebige Richtung feuern.",
+		
+		"Abandon Tank" : "Panzer aufgeben (d.h. verlassen und zurücklassen)",
+		
+		"Acquired Target" : "erfasstes Ziel - Dadurch, dass der Schütze bereits einen Schuss oder mehrere Schüsse auf das Ziel abgegeben hat, ist seine Trefferchance besser als zu Beginn. Dieser Bonus geht verloren, wenn sich das Ziel oder der Angreifer bewegt oder wenn ein anderes Ziel anvisiert wird.",
+		
+		"Advancing Fire" : "'Beschuss beim Vorrücken' - Wenn die/der Spieler(in) beim Vorrücken in feindliches Gebiet diese Option verwendet, feuern die Panzer auf Stellungen, in denen sich feindliche Einheiten befinden könnten. Dieser Beschuss verbraucht hochexplosive Granaten (siehe 'HE') und führt dazu, dass Feinde im Falle eines Kampfes zu Beginn festgenagelt (siehe 'Pinned') sein können, was ihre Treffsicherheit und Mobilität erheblich einschränkt.",
+		
+		"Air Support" : "Luftunterstützung - Wenn die/der Spieler(in) beim Vorrücken Luftunterstützung anfordert, besteht eine Chance, dass feindliche Einheiten im Falle eines Kampfes durch verbündete Kampfflugzeuge zerstört oder geschwächt werden, bevor sie agieren können. Dies ist nicht möglich, wenn der Himmel vollständig bewölkt ('overcast') ist.",
+		
+		"Alert" : "alarmiert - Eine feindliche Einheit in diesem Zustand hat die Anwesenheit der Panzer-Einheit des Spielers auf dem Schlachtfeld bemerkt.",
+		
+		"Ambush" : "Hinterhalt - Bei einem Hinterhalt dürfen feindliche Einheiten zuerst agieren. Sie können die/den Spieler(in) sofort unter Beschuss nehmen. Die Wahrscheinlichkeit eines Hinterhalts ist geringer, wenn mindestens ein Besatzungsmitglied beim Vorrücken in feindliches Gebiet seine Klappe (siehe 'Hatch') geöffnet hat.",
+		
+		"AP" : "Armour-Piercing / Panzerbrechende Munition - Dieser Granatentyp wird gegen gepanzerte Fahrzeuge eingesetzt.",
+		
+		"Armour" : "Panzerung - Je stärker die Panzerung eines Fahrzeugs, desto eher werden Geschosse an ihr abprallen, ohne irgendeinen nennenswerten Schaden anzurichten. Im Spiel wird die Stärke der Panzerung mit einem Punktesystem dargestellt: Die erste Zahl zeigt immer die Frontpanzerung, die zweite die Seitenpanzerung. Die hintere Panzerung ist immer genau einen Punkt schwächer als die Seitenpanzerung. Die meisten gepanzerten Fahrzeuge sind vorne am stärksten gepanzert. Meistens sind der Turm (bzw. der obere Teil des Fahrzeugs) und die Wanne unterschiedlich stark gepanzert.",
+		
+		"Armoured Car" : "Gepanzertes Fahrzeug - Dieser Begriff bezeichnet vollständig oder teilweise gepanzerte Fahrzeuge, die sich anders als Panzer auf Rädern fortbewegen.",
+		
+		"Artillery Support" : "Artillerieunterstützung - Wenn die/der Spieler(in) dies beim Vorrücken anfordert, besteht eine Chance, dass feindliche Einheiten im Falle eines Kampfes durch Artilleriebeschuss zerstört oder geschwächt werden, bevor sie agieren können.",
+		
+		"Assistant Driver" : "'Fahrerassistent' - Dieses Besatzungsmitglied befindet sich in der Nähe des Fahrers und bedient in der Regel ein Maschinengewehr im Rumpf. Der Fahrerassistent kann auch beim Nachladen der Kanone helfen, indem er Granaten aus dem Hauptmunitionslager (siehe 'Stores') dem Lader oder Kanonier im Turm des Panzers reicht (siehe 'Pass Ammo').",
+		
+		"AT Gun" : "Anti-Tank Gun / Panzerabwehrkanone, Panzerabwehrgeschütz",
+		
+		"AT Rifle" : "Anti-Tank Rifle / Panzerbüchse (wörtlich: 'Panzerabwehrgewehr') - Eine spezielle Schusswaffe mit besonders hoher Durchschlagskraft, die Fahrzeuge mit leichter Panzerung schwer beschädigen kann.",
+		
+		"Bail-out" : "Notausstieg - Die Panzerbesatzung versucht, den schwer beschädigten Panzer so schnell wie möglich zu verlassen, bevor er in Flammen aufgeht oder explodiert.",
+		
+		"Barrel" : "Lauf - Je länger der Lauf einer Kanone ist, desto genauer und durchschlagskräftiger ist sie. 'S' steht für einen besonders kurzen Lauf, 'L' und 'LL' bezeichnen einen besonders langen Lauf.",
+		
+		"Bogged down" : "festgefahren - Der Panzer ist beim Fahren steckengeblieben und muss erst mit einem 'Attempt Unbog'-Befehl an den Fahrer befreit werden, bevor er sich wieder bewegen kann. Dies passiert besonders häufig in schwierigem Gelände (Sumpfland, Schlamm, Schnee...).",
+		
+		"Broken down" : "defekt, kaputt - Kanonen und Maschinengewehre können beim Schießen kaputtgehen. In diesem Fall sind sie für den Rest des Gefechtstages unbrauchbar. Am Ende des Tages werden sie wieder repariert.",
+		
+		"BU" : "Buttoned Up / Dieser Begriff bedeutet, dass das Besatzungsmitglied seine Klappe an der Außenseite des Panzers geschlossen hat. Dies schränkt die Sicht ein, schützt aber vor Kugeln und Granatsplittern.",
+		
+		"CE" : "Crew Exposed / Dieser Begriff bedeutet, dass das Besatzungsmitglied seine Klappe an der Außenseite des Panzers geöffnet hat. Dies verschafft ihm eine bessere Sicht, beinhaltet aber auch das Risiko, von Kugeln und Granatsplittern getroffen zu werden.",
+		
+		"Co-ax MG" : "Co-axial Machine Gun / koaxiales Maschinengewehr - Diese Waffe dreht sich zusammen mit dem Turm des Panzers und wird in der Regel vom Kanonier bedient.",
+		
+		"Commander" : "Kommandant",
+		
+		"Concealed" : "verdeckt, verborgen - Eine Einheit in diesem Zustand ist noch nicht gesichtet und identifiziert worden. Dies wird auf der Gefechtskarte mit einem Fragezeichen gekennzeichnet.",
+		
+		"Destroyed" : "zerstört",
+		
+		"Direct Fire" : "'Feuerbeobachtung' - Der Kommandant leitet den/die Schützen beim Schießen an. Dies führt zu genauerem und dadurch effektiverem Beschuss.",
+		
+		"Direct Movement" : "'Fahranleitung' - Der Kommandant achtet auf das Gelände und hilft dem Fahrer beim Manövrieren. Dadurch kommt der Panzer schneller voran oder findet eher Deckung.",
+		
+		"Driver" : "Fahrer",
+		
+		"Dug-in" : "eingegraben (in Schützenlöchern) - Die Einheit ist in Schützenlöchern in Deckung gegangen. MG-Feuer hat dadurch eine leicht verringerte Chance, sie zu treffen. HE-Granaten richten unter dieser Bedingung etwas weniger Schaden an als normalerweise.",
+		
+		"Entrenched" : "eingegraben (in einem Schützengraben) - Die Einheit hat sich in einem Schützengraben verschanzt. MG-Feuer hat dadurch eine deutlich verringerte Chance, sie zu treffen. HE-Granaten richten unter dieser Bedingung nur noch wenig Schaden an.",
+		
+		"Fast Turret" : "schnell drehbarer Turm - Dieser Ausdruck weist darauf hin, dass sich der Turm des Panzers besonders schnell drehen lässt. Dies führt dazu, dass sich die Genauigkeit der Kanone bzw. des koaxialen Maschinengewehrs weniger stark verringert als normalerweise, wenn in derselben Runde der Turm gedreht und die entsprechende Waffe abgefeuert wird.",
+		
+		"Fate Points" : "'Schicksalspunkte' - Wenn die/der Spieler(in) diese Option zu Beginn der Kampagne aktiviert hat, kann sie/er an jedem Gefechtstag eine begrenzte Zahl von Schicksalspunkten einsetzen, um eine Garantie zu erhalten, dass der Panzer in einer gefährlichen Situation nicht zerstört oder beschädigt wird. Außerdem schützen Schicksalspunkte den Panzerkommandanten automatisch vor tödlichen Verletzungen, wenn die Option 'Player Commander' (siehe unten) aktiviert ist.",
+		
+		"Fatigue" : "Erschöpfung - Die Mitglieder der Panzerbesatzung können mit der Zeit an Erschöpfung leiden, wenn sie pausenlos kämpfen müssen. Je stärker die Erschöpfung, desto ineffektiver werden die Aktionen der einzelnen Soldaten.",
+		
+		"Firepower (FP)" : "Feuerkraft - Angriffe mit MG-Feuer oder hochexplosiver Munition erzeugen in ArmCom2 Feuerkraft. Je mehr Feuerkraft auf ein Ziel angewandt wird, desto eher wird es am Ende der Angriffsphase zerstört, teilweise zerstört, in die Flucht geschlagen oder festgenagelt.",
+		
+		"First Aid" : "Erste Hilfe - Das Besatzungsmitglied kann mit dieser Aktion versuchen, einem Verwundeten zu helfen und z.B. eine lebensgefährliche Blutung zu stoppen.",
+		
+		"Fortified" : "Fortification / befestigt / Befestigung - Die feindliche Einheit hat sich in einer befestigten Stellung wie z.B. einem Bunker verschanzt. MG-Feuer hat dadurch eine stark verringerte Chance, sie zu treffen. HE-Granaten richten unter dieser Bedingung kaum noch Schaden an, können die Befestigung aber mit etwas Glück zerstören und dadurch einen großen Feuerkraft-Bonus generieren, der die Einheit höchstwahrscheinlich sofort zerstört (siehe 'Firepower').",
+		
+		"Grit" : "'Schneid, Mumm' - Die Fähigkeit eines Soldaten, Verletzungen zu ertragen und sich nicht von ihnen beeinflussen zu lassen.",
+		
+		"Gunner" : "Kanonier/Schütze",
+		
+		"Hatch" : "Eine Klappe an der Außenseite des Panzers, die sich von einem Besatzungsmitglied öffnen oder schließen lässt. 'CE' bedeutet, dass die Klappe geöffnet ist. Dadurch kann das Besatzungsmitglied besser sehen, was außerhalb des Panzers vor sich geht, aber auch von Kugeln oder Granatsplittern getroffen werden. 'BU' bedeutet, dass die Klappe geschlossen ist.",
+		
+		"HE" : "High Explosive / Hochexplosive Munition - Dieser Granatentyp wird gegen Infanterie, Geschütze und ungepanzerte Fahrzeuge eingesetzt.",
+		
+		"Heroic" : "heroisch, heldenhaft - Eine feindliche Einheit in diesem Zustand wird sich besonders aggressiv verhalten und nur mit sehr geringer Wahrscheinlichkeit vom Schlachtfeld fliehen.",
+		
+		"Hex" : "Fachbegriff für die einzelnen hexagonalen (d.h. sechseckigen) Felder auf der Gelände- oder Gefechtskarte.",
+		
+		"HMG Team" : "Heavy Machine Gun Team / Kleiner Infanterietrupp mit einem schweren Maschinengewehr",
+		
+		"Hull" : "Wanne - Dieser Begriff bezeichnet den unteren Teil eines Panzers oder ähnlichen Fahrzeugs, d.h. alles, was sich unter dem Turm befindet. Auf der Gefechtskarte zeigt ein Pfeil neben der Abkürzung 'H' an, in welche Richtung die Wanne eines Fahrzeugs ausgerichtet ist.",
+		
+		"Hull Down (HD)" : "'Wanne in Deckung' - Der untere Teil des Panzers oder ähnlichen Fahrzeugs befindet sich hinter einem soliden Hindernis wie z.B. einer Mauer. Es ist dadurch sehr unwahrscheinlich, dass die Wanne von einem Geschoss getroffen wird, aber der Turm oder obere Teil des Fahrzeugs ist immer noch sichtbar. Die/Der Spieler(in) kann den Fahrer mit dem 'Hull Down'-Befehl anweisen, den Panzer in eine solche geschützte Position zu bringen. Waffen, die sich unten in der Wanne befinden, können in dieser Situation nicht benutzt werden, da die Deckung ihr Schussfeld blockiert. Die Richtung, von der aus Geschosse von der Deckung in einem Winkel von etwa 100° abgeblockt werden können, wird auf der Gefechtskarte mit einem Pfeil neben der Abkürzung 'HD' angezeigt.",
+		
+		"Hull MG" : "Maschinengewehr in der Wanne - Wenn ein Panzer über diese Waffe verfügt, befindet sie sich normalerweise vorne unten und kann nur auf Ziele feuern, die sich direkt vor dem Panzer befinden.",
+		
+		"Jammed" : "blockiert, verklemmt - Kanonen und Maschinengewehre können beim Feuern Ladehemmung bekommen. In diesem Fall können sie nicht mehr abgefeuert werden, bis der Schütze die Ladehemmung beseitigt hat. Dies kann eine oder mehrere Runden dauern.",
+		
+		"KIA" : "Killed In Action / im Kampf gefallen",
+		
+		"Knocked Out" : "ausgeschaltet - Der Panzer ist durch eine panzerbrechende Granate oder andere Waffe so schwer beschädigt worden, dass er jeden Moment in Flammen aufgehen oder explodieren kann. In diesem Fall muss die Crew so schnell wie möglich aussteigen und sich in Sicherheit bringen (siehe 'Bail-out').",
+		
+		"Knowledge" : "Wissen - Die Lernfähigkeit eines Soldaten; sie beeinflusst, wie schnell ein Soldat Erfahrung sammelt und weitere Punkte zur Verbesserung seiner Fähigkeiten erhält.",
+		
+		"Landmine(s)" : "Landmine(n) - In manchen Gebieten befinden sich Minenfelder. Diese sind auf der strategischen Karte mit roten Punkten gekennzeichnet. Wenn die/der Spieler(in) in einem Minenfeld angegriffen wird, besteht während des Kampfes für jede Einheit (einschließlich des Spielerpanzers) ein Risiko, eine Mine zur Explosion zu bringen, wenn sie die Position wechselt.",
+		
+		"Line of Sight (LoS)" : "Sichtlinie - Die Panzerbesatzung kann eine feindliche Einheit nur sichten, identifizieren und unter Beschuss nehmen, wenn eine Sichtlinie besteht. Dasselbe gilt für den Feind. Manchmal haben die verbündeten Panzerbesatzungen eine Sichtlinie, auch wenn die/der Spieler(in) keine hat (oder umgekehrt). Um eine Chance zu haben, eine Sichtlinie herzustellen, muss eine der beiden betroffenen Einheiten die Position wechseln.",
+		
+		"Loader" : "'Lader' - Ein Besatzungsmitglied, dessen Hauptaufgabe das Nachladen der Kanone ist.",
+		
+		"Main Gun" : "Hauptwaffe - Dieser Begriff bezeichnet in der Regel die Kanone des Panzers.",
+		
+		"Modifier" : "Modifikator - Eine Bedingung, die die Chance, ein Ziel zu treffen oder die Panzerung eines Fahrzeugs zu durchschlagen, positiv oder negativ beeinflusst.",
+		
+		"Morale" : "Moral - Die Fähigkeit eines Soldaten, psychischem Druck zu widerstehen und auch in beängstigenden Situationen handlungsfähig zu bleiben.",
+		
+		"Mortar Team" : "Mörser-Team - Diese Infanterie-Einheiten können die/den Spieler(in) auf jede beliebige Distanz mit Granaten beschießen. Es besteht jedoch nur bei einem kritischen Treffer ein Risiko, dass der Panzer zerstört wird. Bei einem solchen Treffer schlägt die Granate auf der oberen Panzerung auf, die nur halb so dick ist wie die Seitenpanzerung der Wanne (siehe 'Armour'). Normale Treffer verursachen Explosionen in der Nähe des Panzers und können Besatzungsmitglieder verwunden, deren Klappen (siehe 'Hatch') geöffnet sind, aber den Panzer nicht beschädigen.",
+		
+		"Overrun" : "'überrennen, überfahren' - Diese Aktion steht dem Fahrer zur Verfügung, wenn sich ein feindlicher Infanterietrupp oder eine Geschützbesatzung direkt vor dem Panzer befindet. Bei einem Overrun-Angriff bewegen sich die Panzer direkt auf das Ziel zu. Maschinengewehrfeuer wird dadurch besonders effektiv, aber die angegriffene Einheit kann mit einem spontanen Angriff auf den Panzer der Spielerin / des Spielers oder auf einen verbündeten Panzer reagieren.",
+		
+		"Pass Ammo" : "Munition weiterreichen - MIt dieser Aktion kann der Fahrerassistent dem Lader oder Kanonier Granaten aus dem Hauptmunitonslager (siehe 'Stores') reichen und dadurch die Feuerrate der Kanone verbessern. Diese Aktion ist jedoch wirkungslos, wenn zum Nachladen das 'Ready Rack' (siehe unten) statt des Hauptmunitionslagers verwendet wird.",
+		
+		"Penetrate" : "Penetration / durchdringen / Durchdringung (von Panzerung) - Eine Granate, die die Panzerung eines Fahrzeugs durchschlägt, kann es zerstören oder schwer beschädigen und die Besatzung töten oder verwunden.",
+		
+		"Perception" : "Wahrnehmung - Die Fähigkeit eines Soldaten, feindliche Einheiten zu sichten und zu identifizieren.",
+		
+		"Periscope" : "Periskop - Ein Sehrohr, mit dem ein Besatzungsmitglied in eingeschränktem Maße nach draußen schauen kann, ohne seine Klappe öffnen zu müssen.",
+		
+		"Pinned" : "festgenagelt - Eine festgenagelte Einheit kann nicht die Position wechseln und leidet unter stark verringerter Treffsicherheit, wenn sie einen Angriff durchführt.",
+		
+		"Player Commander" : "'Spieler-Kommandant' - Wenn diese Option zu Beginn der Kampagne aktiviert wird, endet das Spiel mit dem Tod des Panzerkommandanten.",
+		
+		"Promotion" : "Beförderung - Wenn ein Soldat befördert wird, erhält er zwei zusätzliche Punkte, mit denen er Fähigkeiten erwerben oder verbessern kann.",
+		
+		"Radio Operator" : "Funker (bedient das Funkgerät des Panzers)",
+		
+		"Rate of Fire (RoF)" : "Feuerrate - Die Feuerrate wird beim Abfeuern einer Kanone oder eines Maschinengewehrs mit einer Prozentzahl ausgedrückt. Diese Zahl gibt die Wahrscheinlichkeit an, dass der Schütze nach einem Schuss oder einer Salve erneut feuern kann. Die Feuerrate der Kanone ist höher, wenn zum Nachladen das 'Ready Rack' (siehe unten) verwendet wird. Sie steigt auch an, wenn die/der Spieler(in) dem Lader den Befehl zum Nachladen gibt, während der Kanonier sie abfeuert. Auch ein 'Pass Ammo'-Befehl (siehe oben) an den Fahrerassistenten kann die Feuerrate steigern, wenn zum Nachladen das Hauptmunitionslager (siehe 'Stores') verwendet wird.",
+		
+		"Ready Rack" : "Ein kleiner Bereich zur Munitionslagerung direkt neben der Kanone. Granaten, die sich im 'Ready Rack' befinden, können schneller in die Kanone geladen werden als Granaten im Hauptmunitionslager (siehe 'Stores') des Panzers.",
+		
+		"Recon" : "Aufklärung - Mit dieser Option kann die/der Spieler(in) die mögliche Anzahl feindlicher Einheiten in einem angrenzenden Gebiet in Erfahrung bringen. Es handelt sich aber immer nur um eine Schätzung, die nicht genau stimmen muss.",
+		
+		"Reduced" : "reduziert / teilweise zerstört - Die Einheit ist noch nicht völlig besiegt, hat aber Verluste erlitten und ist dadurch weniger gefährlich als zu Beginn des Kampfes.",
+		
+		"Reposition" : "Position wechseln (innerhalb eines Feldes auf der Karte) - Wenn die/der Spieler(in) diese Aktion durchführt, kann der Fahrer versuchen, den Panzer in einen bestimmten Geländetyp zu manövrieren.",
+		
+		"RST" : "Restricted Slow Turret / eingeschränkter langsamer Turm - Der Turm des Panzers lässt sich nur langsam drehen, was zu einer stärkeren Verringerung der Genauigkeit führt, wenn die/der Spieler/in in demselben Zug den Turm dreht und eine im Turm befestigte Waffe abfeuert. Außerdem kann der Kommandant (der in solchen Türmer auch der Kanonier ist) nicht gleichzeitig die Umgebung aus einer geöffnete Klappe beobachten (siehe 'hatch' und 'CE') und die Waffe (MG oder Kanone) abfeuern. Er kann nur schießen, wenn sein Status 'BU' (siehe oben) ist.",
+		
+		"Restricted Turret (r)" : "'eingeschränkter Turm' - Dieser Ausdruck weist darauf hin, dass der Kommandant im Turm des Panzers nicht gleichzeitig die Klappe (siehe 'Hatch') öffnen und die Waffe (MG oder Kanone) abfeuern kann. Er kann also nur schießen, wenn sein Status 'BU' (siehe oben) ist.",
+		
+		"Return to Base" : "zur Basis zurückkehren (führt zum vorzeitigen Ende des Kampfeinsatzes)",
+		
+		"Routed" : "in die Flucht geschlagen - Wenn eine Einheit diesen Zustand erleidet, wird sie nicht länger angreifen und stattdessen versuchen, vom Schlachtfeld zu fliehen.",
+		
+		"Shaken" : "erschüttert - Besatzungsmitglieder können in diesen Zustand geraten, wenn sie eine besonders gefährliche Situation durchlebt haben. Bis sie sich wieder beruhigt haben, werden sie sich unvorsichtiger verhalten als normalerweise. Dadurch besteht ein erhöhtes Risiko, dass sie verwundet werden, wenn der Panzer unter Beschuss gerät.",
+		
+		"Skill" : "Fähigkeit - Jeder Soldat kann beim Levelaufstieg bestimmte Fähigkeiten erwerben, die ihm und dem Rest der Panzerbesatzung Vorteile verschaffen.",
+		
+		"Smoke" : "Rauch - Rauchgranaten dienen dazu, das Sichtfeld des Gegners einzuschränken und so seine Trefferchance bei einem Schuss zu verringern. Der Panzerkommandant kann in einem Gefecht Rauch in Form von Handgranaten benutzen. Manche Panzer verfügen über Nebelwerfer (siehe 'Smoke Mortar'), mit denen ein bestimmtes Besatzungsmitglied Rauchgranaten abfeuern kann, die effektiver als die Handgranaten des Kommandanten sind. Später im Krieg werden auch Rauchgranaten verfügbar, die sich mit der Kanone des Panzers auf einen Gegner abfeuern lassen. Rauchwolken können auf dem Schlachtfeld manchmal auch zufällig auftauchen (als Folge vorheriger Kampfhandlungen).",
+		
+		"Smoke Mortar" : "Nebelwerfer - Es handelt sich hierbei um einen kleinen, in den Turm des Panzers eingebauten Mörser, mit dem ein bestimmtes Besatzungsmitglied (meistens der Lader) Rauchgranaten abfeuern kann, um den Panzer vor feindlichem Beschuss zu schützen.",
+		
+		"Spot" : "sichten - Mit dieser Aktion versucht ein Besatzungsmitglied, unbekannte feindliche Einheiten ('concealed units') innerhalb seines Sichtfeldes zu sichten und zu identifizieren. Diese Einheiten sind auf der Gefechtskarte mit einem Fragezeichen markiert.",
+		
+		"ST" : "Slow Turret / langsamer Turm - Der Turm des Panzers dreht sich besonders langsam, weil er z.B. keinen elektrischen Antrieb hat. Dadurch verringert sich die Genauigkeit stärker, wenn die/der Spieler/in in demselben Zug den Turm dreht und eine im Turm befestigte Waffe abfeuert.",
+		
+		"Stores" : "Hauptmunitionslager des Panzers",
+		
+		"Stunned" : "benommen - Besatzungsmitglieder in diesem Zustand stehen vorübergehend unter Schock. Sie sind zwar noch handlungsfähig, doch ihre Aktionen sind weniger effektiv als normalerweise.",
+		
+		"Tank" : "Panzer",
+		
+		"Tank Destroyer" : "Panzerjäger, Jagdpanzer - Ein Panzer, der vor allem für die Bekämpfung anderer Panzer konstruiert wurde.",
+		
+		"Target" : "Ziel",
+		
+		"Terrain" : "Gelände - Das Gelände beeinflusst die Möglichkeit der Panzerbesatzung, den Panzer zu bewegen oder in Deckung (siehe 'Hull Down') zu manövrieren.",
+		
+		"Turret" : "Turm - Der Turm eines Panzers lässt sich in den meisten Fällen drehen. Er enthält meistens die Kanone und ggf. das koaxiale Maschinengewehr. Die Panzerung des Turms unterscheidet sich häufig von der der Wanne und wird im Spiel separat angezeigt.",
+		
+		"Turret MG" : "Turm-Maschinengewehr - Ein fest installiertes Maschinengewehr oberhalb der Wanne des Panzers. Dieser MG-Typ hat anders als das koaxiale Maschinengewehr (siehe 'Co-ax MG') ein festes Schussfeld unabhängig von der Ausrichtung des Turms. Anders als ein in der Wanne installiertes Maschinengewehr (siehe 'Hull MG') kann es auch dann abgefeuert werden, wenn der Panzer in Deckung (siehe 'Hull Down') ist. Der Schütze kann in der Regel Ziele auf kurze oder mittlere Distanz innerhalb seines Schussfeldes anvisieren.",
+		
+		"Unconscious" : "bewusstlos - Besatzungsmitglieder in diesem Zustand sind nicht mehr handlungsfähig, bis sie das Bewusstsein zurückerlangen.",
+		
+		"Victory Points (VP)" : "'Siegespunkte' - Diese Punkte sammelt die/der Spieler(in) durch die Zerstörung feindlicher Einheiten, Eroberung von Gebieten oder Erfüllung von Missionszielen. Durch das Sammeln von Siegespunkten gewinnen die Besatzungsmitglieder an Erfahrung und können bei Stufenaufstiegen ihre Fähigkeiten verbessern."
+
+	}
+}
